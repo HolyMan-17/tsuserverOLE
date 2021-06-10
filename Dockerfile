@@ -5,6 +5,7 @@ RUN apk --no-cache add git
 WORKDIR /app
 
 COPY requirements.txt start_server.py ./
+RUN apk --no-cache add gcc musl-dev
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
