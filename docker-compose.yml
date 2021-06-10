@@ -2,7 +2,7 @@ version: "3.3"
 services:
     tsuserver:
         build: .
-        image: tsuserver
+        image: tsuserverCC
         ports:
             - 27016:27016
             - 50001:50001
