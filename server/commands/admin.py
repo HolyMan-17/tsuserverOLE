@@ -13,6 +13,7 @@ from server.exceptions import ClientError, ServerError, ArgumentError
 from . import mod_only
 
 __all__ = [
+	'ooc_cmd_derp',
 	'ooc_cmd_motd',
 	'ooc_cmd_help',
 	'ooc_cmd_kick',
@@ -168,6 +169,15 @@ def ooc_cmd_ghost(client, arg):
 	else:
 		client.ghost = True
 		client.send_ooc('You are now a ghost.')
+"""
+A fun command Steel made to try out his knowledge of how AO's admin.py file works.
+Syntax should be /derp, if 'ooc_cmd_' is to be interpreted as such, like the rest of these commands.
+It should check if you're an admin, then if you are, post an OOC message.
+"""
+def ooc_cmd_derp(client, arg):
+	if not client.is_admin:
+		raise ClientError('You aren''t an admin.')
+	client.send_ooc('I am Steel and I speak for the admin.py file.')
 
 def ooc_cmd_permit(client, arg):
 	if not client.is_mod:
