@@ -70,5 +70,7 @@ def parse_client_info(client):
     prefix = f'[{ipid:<15}][{client.id:<3}][{client.name}]'
     if client.is_mod:
         prefix += '[MOD]'
+    if client.is_admin:
+        prefix += '[ADMIN]'
     return prefix
     
