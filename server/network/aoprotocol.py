@@ -363,11 +363,26 @@ class AOProtocol(asyncio.Protocol):
 		except ClientError:
 			return
 
+	"""
+	This handles the entirety of IC message handling.
+	Things that could be broken out into their own functions:
+	-Version handling for legacies and current version
+	"""
+
 	def net_cmd_ms(self, args):
 		"""IC message.
 		
 		Refer to the implementation for details.
+		-Steel: Doing some documentation on this giga-function. You'll find my stuff sprinkled about through here.
+		It's mostly theorized ideas of what the code is doing as I read, with references to functions and the files they come from.
+		Enjoy. And good luck.
+		"""
 
+		"""
+		is_checked is part of the ban checking process, which is found in net_cmd_hi further up this file.
+		is_muted is kind of obvious.
+		can_send_message is defined in server/area_manager.py, checking to see if you can send a message in an area.
+		'permission' is if you can use Web AO or not, I think. It's granted by ooc_cmd_permit in server/admin.py.
 		"""
 		if not self.client.is_checked:
 			return
@@ -395,6 +410,12 @@ class AOProtocol(asyncio.Protocol):
 		additive = 0
 		effect = ""
 		pair_order = 0
+		"""
+		Client validation for the message starts here.
+
+		-Break off into net_cmd_validate_pre26, calling validate_net_cmd with appropriate parameters
+		Looks like it runs the IC message from the client through the validator, then returns 
+		"""
 		if self.validate_net_cmd(args, self.ArgType.STR, # msg_type
 								 self.ArgType.STR_OR_EMPTY, self.ArgType.STR, # pre, folder
 								 self.ArgType.STR, self.ArgType.STR, # anim, text
@@ -405,6 +426,9 @@ class AOProtocol(asyncio.Protocol):
 								 self.ArgType.INT, self.ArgType.INT): # ding, color
 			# Pre-2.6 validation monstrosity.
 			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color = args
+		"""
+		-Break off into net_cmd_validate_130, calling validate_net_cmd with appropriate parameters
+		"""
 		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
 								   self.ArgType.STR,
 								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
@@ -415,6 +439,9 @@ class AOProtocol(asyncio.Protocol):
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
+		"""
+		-Break off into net_cmd_validate_135, calling validate_net_cmd with appropriate parameters
+		"""
 		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
 								   self.ArgType.STR,
 								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
@@ -426,6 +453,9 @@ class AOProtocol(asyncio.Protocol):
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
+		"""
+		-Break off into net_cmd_validate_140, calling validate_net_cmd with appropriate parameters
+		"""
 		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
 								   self.ArgType.STR,
 								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
@@ -437,6 +467,9 @@ class AOProtocol(asyncio.Protocol):
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
+		"""
+		-Break off into net_cmd_validate_27, calling validate_net_cmd with appropriate parameters
+		"""
 		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
 								   self.ArgType.STR,
 								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
@@ -449,6 +482,10 @@ class AOProtocol(asyncio.Protocol):
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
+		"""
+		-Break off into net_cmd_validate_29, calling validate_net_cmd with appropriate parameters.
+		I think this is the latest set of validations... God, what a mess.
+		"""
 		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR, #msg_type, pre, folder
 								   self.ArgType.STR, #anim
 								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT, #text, pos, sfx, anim_type
@@ -467,11 +504,24 @@ class AOProtocol(asyncio.Protocol):
 				return
 		else:
 			return
+		"""
+		Client message validation ends here.
+		"""
+
+		"""
+		Showname is set here, followed by an iniswap check. is_iniswap takes the client, a 'pre', the anim integer I think, folder name and sfx.
+		Considering the context, I think it's checking to see if you are iniswapped?
+		You can find is_iniswap in server/network/area_manager.py
+		"""
 		self.client.showname = showname
 		if self.client.area.is_iniswap(self.client, pre, anim,
 				folder, sfx):
 			self.client.send_ooc("Iniswap/custom emotes are blocked in this area")
 			return
+
+		"""
+		Checking if charcurse (ooc_cmd_charcurse in server/commands/character.py) Charcurse is 
+		"""
 		if len(self.client.charcurse) > 0 and \
 			folder != self.client.char_name:
 			self.client.send_ooc(
