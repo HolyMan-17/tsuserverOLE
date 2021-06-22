@@ -3,19 +3,11 @@
   bglock: true
   evidence_mod: Mods
   locking_allowed: false
-  iniswap_allowed: true
-  shouts_allowed: false
-  showname_changes_allowed: true
-- area: Lounge
-  background: DGSCourtroomEnglish
-  bglock: true
-  evidence_mod: Mods
-  locking_allowed: false
-  iniswap_allowed: true
+  iniswap_allowed: false
   shouts_allowed: false
   showname_changes_allowed: true
 - area: User Hub
-  background: DGSCourtroomJapanese
+  background: DGSCourtroomEnglishAnim
   abbreviation: UHUB
   bglock: true
   evidence_mod: Mods
@@ -25,95 +17,51 @@
   showname_changes_allowed: true
   is_hub: true
   hubtype: user
-- area: Arcade Hub
-  background: DGSCourtroomEnglish
-  abbreviation: AHUB
-  bglock: true
+- area: Courtroom 1
+  background: AACourtHD
+  bglock: false
+  evidence_mod: CM
+  locking_allowed: true
+  iniswap_allowed: true
+  shouts_allowed: true
+  showname_changes_allowed: true
+- area: Courtroom 2
+  background: AJCourtHD
+  bglock: false
+  evidence_mod: CM
+  locking_allowed: true
+  iniswap_allowed: true
+  shouts_allowed: true
+  showname_changes_allowed: true
+- area: Courtroom 3
+  background: AJCourtHD
+  bglock: false
+  evidence_mod: CM
+  locking_allowed: true
+  iniswap_allowed: true
+  shouts_allowed: true
+  showname_changes_allowed: true
+- area: Courtroom 4
+  background: DDCourtroomHD
+  bglock: false
+  evidence_mod: CM
+  locking_allowed: true
+  iniswap_allowed: true
+  shouts_allowed: true
+  showname_changes_allowed: true
+- area: Courtroom 5
+  background: DGSCourtroomEnglishAnim
+  bglock: false
+  evidence_mod: CM
+  locking_allowed: true
+  iniswap_allowed: true
+  shouts_allowed: true
+  showname_changes_allowed: true
+- area: Ministry of Justice
+  background: DGS2BarokOffice
+  bglock: false
   evidence_mod: Mods
-  locking_allowed: false
-  iniswap_allowed: true
-  shouts_allowed: false
-  showname_changes_allowed: true
-  is_hub: true
-  hubtype: arcade
-- area: Courtroom Hub
-  background: AACourtroomHD
-  abbreviation: CRHUB
-  bglock: false
-  evidence_mod: Mods
   locking_allowed: true
   iniswap_allowed: true
-  showname_changes_allowed: true
-  is_hub: true
-  hubtype: courtroom
-- area: Hub 1
-  background: P4AMeetingRoom
-  bglock: false
-  evidence_mod: CM
-  locking_allowed: true
-  iniswap_allowed: true
-  showname_changes_allowed: true
-  is_hub: true
-  hub_id: 1
-- area: Hub 2
-  background: P4AMeetingRoom
-  bglock: false
-  evidence_mod: CM
-  locking_allowed: true
-  iniswap_allowed: true
-  showname_changes_allowed: true
-  is_hub: true
-  hub_id: 2
-- area: Hub 3
-  background: P4AMeetingRoom
-  bglock: false
-  evidence_mod: CM
-  locking_allowed: true
-  iniswap_allowed: true
-  showname_changes_allowed: true
-  is_hub: true
-  hub_id: 3
-- area: Hub 4
-  background: P4AMeetingRoom
-  bglock: false
-  evidence_mod: CM
-  locking_allowed: true
-  iniswap_allowed: true
-  showname_changes_allowed: true
-  is_hub: true
-  hub_id: 4
-- area: Hub 5
-  background: P4AMeetingRoom
-  bglock: false
-  evidence_mod: CM
-  locking_allowed: true
-  iniswap_allowed: true
-  showname_changes_allowed: true
-  is_hub: true
-  hub_id: 5
-- area: Hub 6
-  background: P4AMeetingRoom
-  bglock: false
-  evidence_mod: CM
-  locking_allowed: true
-  iniswap_allowed: true
-  showname_changes_allowed: true
-  is_hub: true
-  hub_id: 6
-- area: Hub 7
-  background: P4AMeetingRoom
-  bglock: false
-  evidence_mod: CM
-  locking_allowed: true
-  iniswap_allowed: true
-  showname_changes_allowed: true
-  is_hub: true
-  hub_id: 7
-- area: Staff Room
-  background: P4AMeetingRoom
-  bglock: true
-  evidence_mod: Mods
-  locking_allowed: false
-  iniswap_allowed: true
-  shouts_allowed: false
+  shouts_allowed: true
   showname_changes_allowed: true
