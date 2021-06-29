@@ -114,7 +114,7 @@ def music2yaml_and_launch_server():
     # it instead checks for our install path, then adds on /config/music.yaml. This is made with the assumption that
     # start_server.py is being run from the same folder base AND config are in!
     # I mean... I'd be surprised if it wasn't, that's why it's hardcoded. -Steel
-    
+
     # Parse arguments
     yaml_path = os.getcwd() + "/config/music.yaml"
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
@@ -225,7 +225,7 @@ def music2yaml_and_launch_server():
             print("Scan aborted! No changes have been written to disk.")
             sys.exit(2)
 
-    print("Scan complete." + " " * 20)
+    print("Scan complete in folder: " + path + " " * 20)
 
     # Add the uncategorized category if it was used
     if not uncategorized_category_present and len(uncategorized_category["songs"]) != 0:
@@ -243,7 +243,6 @@ def music2yaml_and_launch_server():
 
 def main():
     # lol just run music2yaml, that's what starts the server
-    print('I\'m in main!')
     music2yaml_and_launch_server()
 
 if __name__ == '__main__':
