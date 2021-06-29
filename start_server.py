@@ -114,7 +114,7 @@ def ordered_dump(data, stream=None, Dumper=NoAliasDumper, **kwds):
     return yaml.dump(data, stream, OrderedDumper, **kwds)
 
 
-def music2yaml_and_launch_server()
+def music2yaml_and_launch_server():
 
     # This is literally just the main part of the music2yaml.py script pasted into main().
     # We do a grind through music, put together our music list, then the server launches.
