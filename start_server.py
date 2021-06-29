@@ -66,7 +66,7 @@ def check_deps():
 
 def main():
     # lol just run music2yaml first
-
+    print('I\'m in main!')
     music2yaml_and_launch_server()
 
 if __name__ == '__main__':
