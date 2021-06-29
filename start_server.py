@@ -103,7 +103,6 @@ def ordered_dump(data, stream=None, Dumper=NoAliasDumper, **kwds):
     OrderedDumper.add_representer(OrderedDict, _dict_representer)
     return yaml.dump(data, stream, OrderedDumper, **kwds)
 
-
 def music2yaml_and_launch_server():
 
     # This is literally just the main part of the music2yaml.py script pasted into main().
@@ -235,7 +234,7 @@ def music2yaml_and_launch_server():
 def main():
     # lol just run music2yaml, that's what starts the server
     print('I\'m in main!')
-    music2yaml_and_launch_server()    
+    music2yaml_and_launch_server()
 
 if __name__ == '__main__':
     print('tsuserverCC - an Attorney Online server')
