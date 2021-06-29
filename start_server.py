@@ -136,8 +136,9 @@ def music2yaml_and_launch_server():
         print("error: --no-new and --new-only flags conflict. Please only choose one.")
         sys.exit(1)
 
-    # Check if we are inside the base/sounds/music folder
-    path = os.getcwd() + "/base/sounds/music"
+    # Gonna hardcode this path for the time being since os.getcwd() is giving me /app for some reason?
+    # Fuckin' weird. -Steel
+    path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music"
 
     # Since this is being run from start_server.py now, instead of a script we can just throw anywhere,
     # probably best we have a sturdy path to operate from. Basically, path will be:
@@ -225,9 +226,7 @@ def music2yaml_and_launch_server():
             print("Scan aborted! No changes have been written to disk.")
             sys.exit(2)
 
-    print(yaml_path)
-    print(path)
-    
+    print("Music.yaml path: " + yaml_path)
     print("Scan complete in folder: " + path + " " * 20)
 
     # Add the uncategorized category if it was used
