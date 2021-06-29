@@ -64,16 +64,6 @@ def check_deps():
                 'or another error occurred.')
 
 
-def main():
-    # lol just run music2yaml first
-    print('I\'m in main!')
-    music2yaml_and_launch_server()
-
-if __name__ == '__main__':
-    print('tsuserverCC - an Attorney Online server')
-    check_deps()
-    main()
-
 # So this seems to be where the whole server kicks off. If we want the YAML builder to
 # fire properly, this'd be a good starting point. main() will ALWAYS launch first, so we want
 # that function to call our stuff first before server.start() runs!
@@ -237,7 +227,17 @@ def music2yaml_and_launch_server():
     # Write the final config to file if everything went well
     with open(yaml_path, "w") as yaml_file:
         yaml_file.write(dump)
-
+    
     from server.tsuserver import TsuServerCC
     server = TsuServerCC()
     server.start()
+
+def main():
+    # lol just run music2yaml, that's what starts the server
+    print('I\'m in main!')
+    music2yaml_and_launch_server()    
+
+if __name__ == '__main__':
+    print('tsuserverCC - an Attorney Online server')
+    check_deps()
+    main()
