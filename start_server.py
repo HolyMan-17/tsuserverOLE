@@ -110,8 +110,13 @@ def music2yaml_and_launch_server():
     # Iiiiii think. XYZ may wanna take a look at this too, my C++-fu is way better than my Python Style.
     # -Steel
 
+    # First thing's first, updated the yaml_path so, instead of just checking for music.yaml,
+    # it instead checks for our install path, then adds on /config/music.yaml. This is made with the assumption that
+    # start_server.py is being run from the same folder base AND config are in!
+    # I mean... I'd be surprised if it wasn't, that's why it's hardcoded. -Steel
+    
     # Parse arguments
-    yaml_path = "music.yaml"
+    yaml_path = os.getcwd() + "/config/music.yaml"
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument("yaml_path", metavar="yaml_path", type=str, help="path to music.yaml")
     parser.add_argument("-n", "--no-new", action="store_true", help="do not add new songs to the music.yaml")
@@ -132,10 +137,15 @@ def music2yaml_and_launch_server():
         sys.exit(1)
 
     # Check if we are inside the base/sounds/music folder
-    path = os.getcwd()
-    if path.split("\\")[-1] != "music":
-        print("error: You need to run this script from the music folder.")
-        sys.exit(1)
+    path = os.getcwd() + "/base/sounds/music"
+
+    # Since this is being run from start_server.py now, instead of a script we can just throw anywhere,
+    # probably best we have a sturdy path to operate from. Basically, path will be:
+    # <Path leading to the folder this script is run from> + /base/sounds/music.
+
+    #if path.split("\\")[-1] != "/base/sounds/music":
+    #    print("error: You need to run this script from the music folder.")
+    #    sys.exit(1)
 
     # Read/parse music.yaml
     config = None
