@@ -225,6 +225,9 @@ def music2yaml_and_launch_server():
             print("Scan aborted! No changes have been written to disk.")
             sys.exit(2)
 
+    print(yaml_path)
+    print(path)
+    
     print("Scan complete in folder: " + path + " " * 20)
 
     # Add the uncategorized category if it was used

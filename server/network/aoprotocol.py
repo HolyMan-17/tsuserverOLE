@@ -426,9 +426,8 @@ class AOProtocol(asyncio.Protocol):
 								 self.ArgType.INT, self.ArgType.INT): # ding, color
 			# Pre-2.6 validation monstrosity.
 			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color = args
-		"""
-		-Break off into net_cmd_validate_130, calling validate_net_cmd with appropriate parameters
-		"""
+
+		#-Break off into net_cmd_validate_130, calling validate_net_cmd with appropriate parameters
 		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
 								   self.ArgType.STR,
 								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
@@ -439,9 +438,8 @@ class AOProtocol(asyncio.Protocol):
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
-		"""
-		-Break off into net_cmd_validate_135, calling validate_net_cmd with appropriate parameters
-		"""
+		
+		#-Break off into net_cmd_validate_135, calling validate_net_cmd with appropriate parameters
 		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
 								   self.ArgType.STR,
 								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
@@ -453,9 +451,8 @@ class AOProtocol(asyncio.Protocol):
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
-		"""
-		-Break off into net_cmd_validate_140, calling validate_net_cmd with appropriate parameters
-		"""
+		
+		#-Break off into net_cmd_validate_140, calling validate_net_cmd with appropriate parameters
 		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
 								   self.ArgType.STR,
 								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
