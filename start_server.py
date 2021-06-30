@@ -315,7 +315,7 @@ def main():
     print("os.getcwd(): " + os.getcwd())
     print("os.path.join for music.yaml: " + os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
 
-    music_yaml_path = os.path.join(os.getcwd(),"./config/music.yaml")
+    music_yaml_path = os.path.join(os.getcwd(),"config/music.yaml")
     music_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music")
 
     char_yaml_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml")
