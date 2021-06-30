@@ -103,7 +103,7 @@ def ordered_dump(data, stream=None, Dumper=NoAliasDumper, **kwds):
     OrderedDumper.add_representer(OrderedDict, _dict_representer)
     return yaml.dump(data, stream, OrderedDumper, **kwds)
 
-def music2yaml_and_launch_server():
+def music2yaml():
 
     # This is literally just the main part of the music2yaml.py script pasted into main().
     # We do a grind through music, put together our music list, then the server launches.
@@ -138,7 +138,7 @@ def music2yaml_and_launch_server():
 
     # Gonna hardcode this path for the time being since os.getcwd() is giving me /app for some reason?
     # Fuckin' weird. -Steel
-    path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music"
+    path = os.getcwd() + "/base/sounds/music"
 
     # Since this is being run from start_server.py now, instead of a script we can just throw anywhere,
     # probably best we have a sturdy path to operate from. Basically, path will be:
@@ -239,13 +239,94 @@ def music2yaml_and_launch_server():
     with open(yaml_path, "w") as yaml_file:
         yaml_file.write(dump)
     
+
+
+def character2yaml():
+    yaml_path = os.getcwd() + "/config/characters.yaml"
+    path = os.getcwd() + "/characters"
+
+    print("yaml_path: " + yaml_path)
+    print ("path: " + path)
+
+    # Read/parse characters.yaml
+    config = None
+    try:
+        with open(yaml_path, "r") as yaml_file:
+            config = ordered_load(yaml_file.read())
+    except OSError:
+        print(f"The YAML file {yaml_path} could not be opened. A new one will be created.")
+
+    # Note from music2yaml.py: "config will be none if the file could not be loaded or a blank file was loaded."
+    if config is None:
+        config = []
+
+    print("\nconfig:")
+    print(config)
+    # Extract character names from the YAML. I think this should do it.
+    # music2yaml does it via category, then song (category inside category), then track (which is a name and a length).
+    # track's 'name' is then dumped into song_names, but I don't think we need to do that.
+    chars = []
+    for character in config:
+        chars.append(character)
+
+    print("\nchars:")
+    print(chars)
+    # We don't need to do as much categorization work as music,
+    # Plus, we only want to add new characters.
+
+    file_list = os.listdir(path)
+    file_list = [f for f in file_list if f not in chars]
+
+    print("\nfile_list:")
+    print(file_list)
+    # Now we're looking for folder names, not specific files.
+
+    characters = []
+    progress = 0
+    progress_max = len(file_list)
+    for file in file_list:
+        progress += 1
+        try:
+            # Just build the characters list, really.
+            
+            print("\ncharacter: ")
+            print(file)
+            print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
+            
+            config.append(file)
+
+            print("\ncharacters: ")
+            print(config)
+
+        except KeyboardInterrupt:
+            print()
+            print("Scan aborted, no changes written to disk.")
+            sys.exit(2)
+
+    print ("Character scan complete." + " " * 20)
+
+    # Now we just write everything to the file.
+
+    dump = ordered_dump(config, default_flow_style=False)
+
+    print("dump:\n")
+    print(dump)
+    # Aaand write it
+    with open(yaml_path, "w") as yaml_file:
+        yaml_file.write(dump)
+
+def main():
+    # FIRST, WE SET THE WORKING DIRECTORY!!!
+    # This is necessary to make os.getcwd() (get current working directory) to behave, because otherwise it returns /app!
+
+    os.chdir('/tsuserver3cc-musicautoscan/OLEAO-ServerCC')
+    
+    music2yaml()
+    character2yaml()
+
     from server.tsuserver import TsuServerCC
     server = TsuServerCC()
     server.start()
-
-def main():
-    # lol just run music2yaml, that's what starts the server
-    music2yaml_and_launch_server()
 
 if __name__ == '__main__':
     print('tsuserverCC - an Attorney Online server')
