@@ -310,20 +310,27 @@ def main():
     # and use some variables.
 
     # Alright Python. CAN YOU SEE /THE ROOT FUCKING DIRECTORY?/
-    #music_yaml_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"
-    #music_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music"
 
-    #char_yaml_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml"
-    #char_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters"
+    print(self.path())
+    print(os.getcwd())
+    print(os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
 
-    yaml_path = "/music.yaml"
-    path = "/characters/"
+    music_yaml_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml")
+    music_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music")
 
-    #music2yaml(music_yaml_path, music_path)
-    #character2yaml(char_yaml_path, char_path)
+    char_yaml_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml")
+    char_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters")
 
-    music2yaml(yaml_path, path)
-    character2yaml(yaml_path, path)
+    #yaml_path = "/music.yaml"
+    #path = "/characters/"
+
+    sys.exit(2)
+
+    music2yaml(music_yaml_path, music_path)
+    character2yaml(char_yaml_path, char_path)
+
+    #music2yaml(yaml_path, path)
+    #character2yaml(yaml_path, path)
 
     from server.tsuserver import TsuServerCC
     server = TsuServerCC()
