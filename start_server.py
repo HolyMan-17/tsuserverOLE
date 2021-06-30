@@ -316,14 +316,14 @@ def main():
     #char_yaml_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml"
     #char_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters"
 
-    root = "/"
+    root = "/tsuserver3cc-musicautoscan"
 
     #music2yaml(music_yaml_path, music_path)
     #character2yaml(char_yaml_path, char_path)
 
     music2yaml(root, root)
     character2yaml(root, root)
-    
+
     from server.tsuserver import TsuServerCC
     server = TsuServerCC()
     server.start()
