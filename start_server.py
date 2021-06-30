@@ -317,7 +317,7 @@ def main():
     #char_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters"
 
     yaml_path = "/music.yaml"
-    path = "/characters"
+    path = "/characters/"
 
     #music2yaml(music_yaml_path, music_path)
     #character2yaml(char_yaml_path, char_path)
