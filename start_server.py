@@ -334,7 +334,10 @@ def main():
     try:
         with open(music_yaml_path, "r") as yaml_file:
             config = ordered_load(yaml_file.read())
-
+    except KeyboardInterrupt:
+        print("Critical testing going on, please don't press anything!")
+        sys.exit(2)
+    
     sys.exit(2)
 
     music2yaml(music_yaml_path, music_path)
