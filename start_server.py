@@ -321,6 +321,10 @@ def main():
     char_yaml_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml")
     char_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters")
 
+    print(music_yaml_path)
+    print(music_path)
+    print(char_yaml_path)
+    print(char_path)
     #yaml_path = "/music.yaml"
     #path = "/characters/"
 
