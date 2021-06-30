@@ -311,9 +311,9 @@ def main():
 
     # Alright Python. CAN YOU SEE /THE ROOT FUCKING DIRECTORY?/
 
-    print(self.path())
-    print(os.getcwd())
-    print(os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
+    print("self.path: " + self.path())
+    print("os.getcwd(): " + os.getcwd())
+    print("os.path.join for music.yaml" + os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
 
     music_yaml_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml")
     music_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music")
@@ -321,10 +321,11 @@ def main():
     char_yaml_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml")
     char_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters")
 
-    print(music_yaml_path)
-    print(music_path)
-    print(char_yaml_path)
-    print(char_path)
+    print("os.path.dirname: " + os.path.dirname(__file__))
+    print("music_yaml_path: " + music_yaml_path)
+    print("music_path: " + music_path)
+    print("char_yaml_path: " + char_yaml_path)
+    print("char_path: " + char_path)
     #yaml_path = "/music.yaml"
     #path = "/characters/"
 
