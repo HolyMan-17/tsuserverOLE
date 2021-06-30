@@ -311,7 +311,7 @@ def main():
 
     # Alright Python. CAN YOU SEE /THE ROOT FUCKING DIRECTORY?/
 
-    print("self.path: " + self.path())
+    #print("self.path: " + self.path())
     print("os.getcwd(): " + os.getcwd())
     print("os.path.join for music.yaml" + os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
 
