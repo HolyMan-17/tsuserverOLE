@@ -321,7 +321,12 @@ def main():
     char_yaml_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml")
     char_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters")
 
-    print("os.listdir(): " + os.listdir(os.getcwd()))
+    listdir = os.listdir(os.getcwd())
+
+    for f in listdir:
+        print(f)
+    
+    #print("os.listdir(): " + os.listdir(os.getcwd())) - Causes an error, don't use this
     print("os.path.dirname: " + os.path.dirname(__file__))
     print("music_yaml_path: " + music_yaml_path)
     print("music_path: " + music_path)
