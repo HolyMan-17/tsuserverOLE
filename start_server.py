@@ -103,7 +103,7 @@ def ordered_dump(data, stream=None, Dumper=NoAliasDumper, **kwds):
     OrderedDumper.add_representer(OrderedDict, _dict_representer)
     return yaml.dump(data, stream, OrderedDumper, **kwds)
 
-def music2yaml():
+def music2yaml(yaml_path, path):
 
     # This is literally just the main part of the music2yaml.py script pasted into main().
     # We do a grind through music, put together our music list, then the server launches.
@@ -116,9 +116,7 @@ def music2yaml():
     # I mean... I'd be surprised if it wasn't, that's why it's hardcoded. -Steel
 
     # Parse arguments
-    yaml_path = os.getcwd() + "/config/music.yaml"
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
-    parser.add_argument("yaml_path", metavar="yaml_path", type=str, help="path to music.yaml")
     parser.add_argument("-n", "--no-new", action="store_true", help="do not add new songs to the music.yaml")
     parser.add_argument("-s", "--new-only", action="store_true", help="only scan for new songs")
 
@@ -128,17 +126,12 @@ def music2yaml():
         parser.print_help()
         sys.exit(1)
 
-    yaml_path = args.yaml_path
     no_new = args.no_new
     new_only = args.new_only
 
     if no_new and new_only:
         print("error: --no-new and --new-only flags conflict. Please only choose one.")
         sys.exit(1)
-
-    # Gonna hardcode this path for the time being since os.getcwd() is giving me /app for some reason?
-    # Fuckin' weird. -Steel
-    path = os.getcwd() + "/base/sounds/music"
 
     # Since this is being run from start_server.py now, instead of a script we can just throw anywhere,
     # probably best we have a sturdy path to operate from. Basically, path will be:
@@ -241,10 +234,7 @@ def music2yaml():
     
 
 
-def character2yaml():
-    yaml_path = os.getcwd() + "/config/characters.yaml"
-    path = os.getcwd() + "/characters"
-
+def character2yaml(yaml_path, path):
     print("yaml_path: " + yaml_path)
     print ("path: " + path)
 
@@ -316,14 +306,17 @@ def character2yaml():
         yaml_file.write(dump)
 
 def main():
-    # FIRST, WE SET THE WORKING DIRECTORY!!!
-    # This is necessary to make os.getcwd() (get current working directory) to behave, because otherwise it returns /app!
+    # os.getcwd() is giving me a headache, so I'm going to make things a little easier on myself,
+    # and use some variables.
 
-    print("Working directory: " + os.getcwd())
-    os.chdir(r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/")
+    music_yaml_path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"
+    music_path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music"
 
-    music2yaml()
-    character2yaml()
+    char_yaml_path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml"
+    char_path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters"
+
+    music2yaml(music_yaml_path, music_path)
+    character2yaml(char_yaml_path, char_path)
 
     from server.tsuserver import TsuServerCC
     server = TsuServerCC()
