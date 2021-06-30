@@ -322,8 +322,8 @@ def main():
     #music2yaml(music_yaml_path, music_path)
     #character2yaml(char_yaml_path, char_path)
 
-    music2yaml(root, root)
-    character2yaml(root, root)
+    music2yaml(yaml_path, path)
+    character2yaml(yaml_path, path)
 
     from server.tsuserver import TsuServerCC
     server = TsuServerCC()
