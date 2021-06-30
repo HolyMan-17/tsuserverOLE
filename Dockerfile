@@ -13,5 +13,5 @@ COPY server/ server/
 COPY migrations/ migrations/
 COPY characters/ characters/
 
-CMD python ./start_server.py -s ./config/music.yaml
+CMD python ./start_server.py -s
 
