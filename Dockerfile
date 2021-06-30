@@ -2,7 +2,7 @@ FROM python:3.7-alpine
 
 RUN apk --no-cache add git
 
-WORKDIR ./tsuserver3cc-musicautoscan/OLEAO-ServerCC/
+WORKDIR /tsuserver3cc-musicautoscan/OLEAO-ServerCC/
 
 COPY requirements.txt start_server.py ./
 RUN apk --no-cache add gcc musl-dev
