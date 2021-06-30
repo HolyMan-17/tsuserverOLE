@@ -309,11 +309,11 @@ def main():
     # os.getcwd() is giving me a headache, so I'm going to make things a little easier on myself,
     # and use some variables.
 
-    music_yaml_path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"
-    music_path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music"
+    music_yaml_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"
+    music_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music"
 
-    char_yaml_path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml"
-    char_path = "/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters"
+    char_yaml_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml"
+    char_path = r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters"
 
     music2yaml(music_yaml_path, music_path)
     character2yaml(char_yaml_path, char_path)
