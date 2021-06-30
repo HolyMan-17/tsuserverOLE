@@ -10,6 +10,6 @@ services:
             - ./storage:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/storage
             - ./logs:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/logs
             - ./config:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config
-            - ./base/sounds/music:tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music
+            - ./music:tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music
         restart: unless-stopped
 
