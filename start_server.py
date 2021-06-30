@@ -316,10 +316,10 @@ def main():
     print("os.path.join for music.yaml: " + os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
 
     music_yaml_path = os.path.join(os.getcwd(),"config/music.yaml")
-    music_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music")
+    music_path = os.path.join(os.getcwd(),"base/sounds/music")
 
-    char_yaml_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/characters.yaml")
-    char_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/characters")
+    char_yaml_path = os.path.join(os.getcwd(),"config/characters.yaml")
+    char_path = os.path.join(os.getcwd(),"characters")
 
     listdir = os.listdir(os.getcwd())
 
@@ -336,15 +336,7 @@ def main():
     #path = "/characters/"
 
 
-    config = None
-    try:
-        with open(music_yaml_path, "r") as yaml_file:
-            config = ordered_load(yaml_file.read())
-    except KeyboardInterrupt:
-        print("Critical testing going on, please don't press anything!")
-        sys.exit(2)
-    
-    sys.exit(2)
+    #sys.exit(2)
 
     music2yaml(music_yaml_path, music_path)
     character2yaml(char_yaml_path, char_path)

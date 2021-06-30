@@ -12,6 +12,8 @@ RUN pip install -r requirements.txt
 COPY server/ server/
 COPY migrations/ migrations/
 COPY characters/ characters/
+COPY config/ config/
+COPY base/sounds/music/ base/sounds/music/
 
 CMD python ./start_server.py -s
 
