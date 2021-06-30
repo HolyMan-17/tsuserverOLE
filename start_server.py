@@ -313,7 +313,7 @@ def main():
 
     #print("self.path: " + self.path())
     print("os.getcwd(): " + os.getcwd())
-    print("os.path.join for music.yaml" + os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
+    print("os.path.join for music.yaml: " + os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
 
     music_yaml_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml")
     music_path = os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music")
@@ -328,6 +328,12 @@ def main():
     print("char_path: " + char_path)
     #yaml_path = "/music.yaml"
     #path = "/characters/"
+
+
+    config = None
+    try:
+        with open(music_yaml_path, "r") as yaml_file:
+            config = ordered_load(yaml_file.read())
 
     sys.exit(2)
 
