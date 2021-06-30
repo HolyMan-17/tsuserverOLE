@@ -319,7 +319,7 @@ def main():
     # FIRST, WE SET THE WORKING DIRECTORY!!!
     # This is necessary to make os.getcwd() (get current working directory) to behave, because otherwise it returns /app!
 
-    os.chdir("/tsuserver3cc-musicautoscan/OLEAO-ServerCC/")
+    os.chdir(r"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/")
 
     music2yaml()
     character2yaml()
