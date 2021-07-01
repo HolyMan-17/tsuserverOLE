@@ -11,7 +11,7 @@ services:
             - ./logs:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/logs
             - ./config:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config
             - ./base/sounds/music:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/base/sounds/music
-            - /opt/ffmpeg-4.4-amd64-static/ffmpeg:/opt/ffmpeg-4.4-amd64-static/ffmpeg
-            - /opt/ffmpeg-4.4-amd64-static/ffprobe:/opt/ffmpeg-4.4-amd64-static/ffprobe
+            - /opt/ffmpeg-4.4-amd64-static/ffmpeg:ffmpeg
+            - /opt/ffmpeg-4.4-amd64-static/ffprobe:ffprobe
         restart: unless-stopped
 
