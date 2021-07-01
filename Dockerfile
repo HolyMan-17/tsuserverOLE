@@ -6,7 +6,6 @@ WORKDIR /tsuserver3cc-musicautoscan/OLEAO-ServerCC/
 
 COPY requirements.txt start_server.py ./
 RUN apk --no-cache add gcc musl-dev
-RUN apk --no-cache add ffmpeg ffprobe
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN pip install ffprobe3
@@ -14,6 +13,7 @@ RUN pip install ffprobe
 RUN pip install ffmpeg-python
 RUN pip install ffmpeg
 
+COPY --from=mwader/static-ffmpeg:4.1.4-2 /ffmpeg /ffprobe /usr/local/bin/
 COPY server/ server/
 COPY migrations/ migrations/
 COPY characters/ characters/
