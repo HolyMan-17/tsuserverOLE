@@ -16,5 +16,5 @@ COPY characters/ characters/
 COPY config/ config/
 COPY base/sounds/music/ base/sounds/music/
 
-CMD ffmpeg --version
-#CMD python ./start_server.py -s
+CMD ffmpeg --enable-libopus
+CMD python ./start_server.py -s
