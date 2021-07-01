@@ -21,7 +21,7 @@ COPY migrations/ migrations/
 COPY characters/ characters/
 COPY config/ config/
 COPY base/sounds/music/ base/sounds/music/
-#COPY /usr/local/lib/python3.8/dist-packages/ffprobe/ ./ffprobe/
+COPY /dist-packages/ffprobe/ ./ffprobe/
 
 CMD python ./start_server.py -s
 
