@@ -16,5 +16,5 @@ COPY characters/ characters/
 COPY config/ config/
 COPY base/sounds/music/ base/sounds/music/
 
-RUN dir -l /usr/local/bin/
+CMD ffmpeg --version
 #CMD python ./start_server.py -s
