@@ -2,13 +2,13 @@ FROM python:3.8
 
 RUN apt-get update
 
-RUN apt-get install git
+RUN apt-get -y install git
 
 WORKDIR /tsuserver3cc-musicautoscan/OLEAO-ServerCC/
 
 COPY requirements.txt start_server.py ./
-RUN apt-get install gcc
-RUN apt-get install musl-dev
+RUN apt-get -y install gcc
+RUN apt-get -y install musl-dev
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN pip install ffprobe3
