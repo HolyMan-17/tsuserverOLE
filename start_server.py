@@ -172,7 +172,7 @@ def music2yaml(yaml_path, path):
     else:
         uncategorized_category = uncategorized_category[0]
 
-    file_list = os.listdir(os.getcwd())
+    file_list = os.listdir(path)
     if new_only:
         file_list = [f for f in file_list if f not in song_names]
         print("\nfile_list object")
