@@ -1,4 +1,5 @@
-FROM python:3.8
+FROM /usr/local/lib/python3.8/dist-packages/ AS distpack
+FROM python:3.8 AS python
 
 RUN apt-get update
 
@@ -21,7 +22,7 @@ COPY migrations/ migrations/
 COPY characters/ characters/
 COPY config/ config/
 COPY base/sounds/music/ base/sounds/music/
-COPY /dist-packages/ffprobe/ ./ffprobe/
+COPY --from=distpack /dist-packages/ffprobe/ ./ffprobe/
 
 CMD python ./start_server.py -s
 
