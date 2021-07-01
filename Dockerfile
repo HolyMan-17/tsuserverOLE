@@ -17,4 +17,4 @@ COPY config/ config/
 COPY base/sounds/music/ base/sounds/music/
 
 CMD dir -l /usr/local/bin/
-CMD python ./start_server.py -s
+#CMD python ./start_server.py -s
