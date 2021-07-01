@@ -8,6 +8,10 @@ COPY requirements.txt start_server.py ./
 RUN apk --no-cache add gcc musl-dev
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+RUN pip install ffprobe3
+RUN pip install ffprobe
+RUN pip install ffmpeg-python
+RUN pip install ffmpeg
 
 COPY server/ server/
 COPY migrations/ migrations/
