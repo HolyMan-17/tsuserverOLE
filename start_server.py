@@ -175,6 +175,8 @@ def music2yaml(yaml_path, path):
     file_list = os.listdir(os.getcwd())
     if new_only:
         file_list = [f for f in file_list if f not in song_names]
+        print("\nfile_list object")
+        print(file_list)
 
     progress = 0
     progress_max = len(file_list)
@@ -197,6 +199,8 @@ def music2yaml(yaml_path, path):
                 ("name", file), ("length", length)
             ])
 
+            print("\ntrack #{progress}")
+            print(track)
             # There could theoretically be the same song in multiple categories.
             # We'll cover the case just for the sake of it.
             entries = [s for s in songs if s["name"] == file]
@@ -207,6 +211,7 @@ def music2yaml(yaml_path, path):
                 # that matched the name criterion
                 for entry in entries:
                     entry["length"] = track["length"]
+
             elif not no_new:
                 # Add it to the uncategorized category
                 uncategorized_category["songs"].append(track)
@@ -219,8 +224,8 @@ def music2yaml(yaml_path, path):
             print("Scan aborted! No changes have been written to disk.")
             sys.exit(2)
 
-    print("Music.yaml path: " + yaml_path)
-    print("Scan complete in folder: " + path + " " * 20)
+    #print("Music.yaml path: " + yaml_path)
+    #print("Scan complete in folder: " + path + " " * 20)
 
     # Add the uncategorized category if it was used
     if not uncategorized_category_present and len(uncategorized_category["songs"]) != 0:
@@ -235,8 +240,8 @@ def music2yaml(yaml_path, path):
 
 
 def character2yaml(yaml_path, path):
-    print("yaml_path: " + yaml_path)
-    print ("path: " + path)
+    #print("yaml_path: " + yaml_path)
+    #print ("path: " + path)
 
     # Read/parse characters.yaml
     config = None
@@ -250,8 +255,8 @@ def character2yaml(yaml_path, path):
     if config is None:
         config = []
 
-    print("\nconfig:")
-    print(config)
+    #print("\nconfig:")
+    #print(config)
     # Extract character names from the YAML. I think this should do it.
     # music2yaml does it via category, then song (category inside category), then track (which is a name and a length).
     # track's 'name' is then dumped into song_names, but I don't think we need to do that.
@@ -259,16 +264,16 @@ def character2yaml(yaml_path, path):
     for character in config:
         chars.append(character)
 
-    print("\nchars:")
-    print(chars)
+    #print("\nchars:")
+    #print(chars)
     # We don't need to do as much categorization work as music,
     # Plus, we only want to add new characters.
 
     file_list = os.listdir(path)
     file_list = [f for f in file_list if f not in chars]
 
-    print("\nfile_list:")
-    print(file_list)
+    #print("\nfile_list:")
+    #print(file_list)
     # Now we're looking for folder names, not specific files.
 
     characters = []
@@ -279,14 +284,7 @@ def character2yaml(yaml_path, path):
         try:
             # Just build the characters list, really.
             
-            print("\ncharacter: ")
-            print(file)
-            print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
-            
             config.append(file)
-
-            print("\ncharacters: ")
-            print(config)
 
         except KeyboardInterrupt:
             print()
