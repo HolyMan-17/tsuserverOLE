@@ -272,11 +272,10 @@ def character2yaml(yaml_path, path):
     file_list = os.listdir(path)
     file_list = [f for f in file_list if f not in chars]
 
-    #print("\nfile_list:")
-    #print(file_list)
+    print("\nfile_list:")
+    print(file_list)
     # Now we're looking for folder names, not specific files.
 
-    characters = []
     progress = 0
     progress_max = len(file_list)
     for file in file_list:
@@ -285,6 +284,7 @@ def character2yaml(yaml_path, path):
             # Just build the characters list, really.
             
             config.append(file)
+            print("Progress {progress}: " + file)
 
         except KeyboardInterrupt:
             print()
