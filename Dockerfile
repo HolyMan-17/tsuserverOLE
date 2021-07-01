@@ -17,5 +17,5 @@ COPY config/ config/
 COPY base/sounds/music/ base/sounds/music/
 
 CMD ffmpeg
-CMD ffprobe 
+CMD ffprobe
 CMD python ./start_server.py -s
