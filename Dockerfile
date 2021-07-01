@@ -5,7 +5,8 @@ RUN apt-get install git
 WORKDIR /tsuserver3cc-musicautoscan/OLEAO-ServerCC/
 
 COPY requirements.txt start_server.py ./
-RUN apt-get install gcc musl-dev
+RUN apt-get install gcc
+RUN apt-get install musl-dev
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN pip install ffprobe3
