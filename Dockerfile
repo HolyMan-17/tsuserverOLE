@@ -1,15 +1,11 @@
-FROM /usr/local/lib/python3.8/dist-packages/ AS distpack
-FROM python:3.8 AS python
+FROM python:3.7-alpine AS python
 
-RUN apt-get update
-
-RUN apt-get -y install git
+RUN apk add git
 
 WORKDIR /tsuserver3cc-musicautoscan/OLEAO-ServerCC/
 
 COPY requirements.txt start_server.py ./
-RUN apt-get -y install gcc
-RUN apt-get -y install musl-dev
+RUN apk add gcc musl-dev
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 RUN pip install ffprobe3
@@ -22,7 +18,5 @@ COPY migrations/ migrations/
 COPY characters/ characters/
 COPY config/ config/
 COPY base/sounds/music/ base/sounds/music/
-COPY --from=distpack /dist-packages/ffprobe/ ./ffprobe/
 
 CMD python ./start_server.py -s
-
