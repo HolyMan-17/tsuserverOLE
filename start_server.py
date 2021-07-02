@@ -297,8 +297,8 @@ def character2yaml(yaml_path, path):
 
     dump = ordered_dump(config, default_flow_style=False)
 
-    print("dump:\n")
-    print(dump)
+    #print("dump:\n")
+    #print(dump)
     # Aaand write it
     with open(yaml_path, "w") as yaml_file:
         yaml_file.write(dump)
@@ -310,8 +310,8 @@ def main():
     # Alright Python. CAN YOU SEE /THE ROOT FUCKING DIRECTORY?/
 
     #print("self.path: " + self.path())
-    print("os.getcwd(): " + os.getcwd())
-    print("os.path.join for music.yaml: " + os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
+    #print("os.getcwd(): " + os.getcwd())
+    #print("os.path.join for music.yaml: " + os.path.join(os.getcwd(),"/tsuserver3cc-musicautoscan/OLEAO-ServerCC/config/music.yaml"))
 
     music_yaml_path = os.path.join(os.getcwd(),"config/music.yaml")
     music_path = os.path.join(os.getcwd(),"base/sounds/music")
@@ -321,15 +321,15 @@ def main():
 
     listdir = os.listdir(os.getcwd())
 
-    for f in listdir:
-        print(f)
+    #for f in listdir:
+        #print(f)
     
     #print("os.listdir(): " + os.listdir(os.getcwd())) - Causes an error, don't use this
-    print("os.path.dirname: " + os.path.dirname(__file__))
-    print("music_yaml_path: " + music_yaml_path)
-    print("music_path: " + music_path)
-    print("char_yaml_path: " + char_yaml_path)
-    print("char_path: " + char_path)
+    #print("os.path.dirname: " + os.path.dirname(__file__))
+    #print("music_yaml_path: " + music_yaml_path)
+    #print("music_path: " + music_path)
+    #print("char_yaml_path: " + char_yaml_path)
+    #print("char_path: " + char_path)
     #yaml_path = "/music.yaml"
     #path = "/characters/"
 
