@@ -175,8 +175,8 @@ def music2yaml(yaml_path, path):
     file_list = os.listdir(path)
     if new_only:
         file_list = [f for f in file_list if f not in song_names]
-        print("\nfile_list object")
-        print(file_list)
+        #print("\nfile_list object")
+        #print(file_list)
 
     progress = 0
     progress_max = len(file_list)
@@ -199,8 +199,8 @@ def music2yaml(yaml_path, path):
                 ("name", file), ("length", length)
             ])
 
-            print("\ntrack #{progress}")
-            print(track)
+            #print("\ntrack #{progress}")
+            #print(track)
             # There could theoretically be the same song in multiple categories.
             # We'll cover the case just for the sake of it.
             entries = [s for s in songs if s["name"] == file]
