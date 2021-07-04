@@ -55,12 +55,13 @@ class Database:
 
     def __init__(self):
         new = not os.path.exists('storage/db.sqlite3')
-        self.db = sqlite3.connect(DB_FILE)
-        self.db.execute('PRAGMA foreign_keys = ON')
-        self.db.row_factory = sqlite3.Row
         if new:
             self.migrate_json_to_v1()
-        self.migrate()
+        else:
+            self.db = sqlite3.connect(DB_FILE)
+            self.db.execute('PRAGMA foreign_keys = ON')
+            self.db.row_factory = sqlite3.Row
+            self.migrate()
 
     def migrate_json_to_v1(self):
         """Migrate to v1 of the database from JSON."""
