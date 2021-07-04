@@ -10,7 +10,11 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 COPY --from=mwader/static-ffmpeg:4.1.4-2 /ffmpeg /ffprobe /usr/local/bin/
-COPY . ./
+COPY server/ server/
+COPY migrations/ migrations/
+COPY characters/ characters/
+COPY config/ config/
+COPY base/sounds/music/ base/sounds/music/
 
 CMD ffmpeg 
 CMD ffprobe
