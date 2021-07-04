@@ -37,7 +37,7 @@ from textwrap import dedent
 from .exceptions import ServerError
 
 
-DB_FILE = os.getcwd() + 'storage/db.sqlite3'
+DB_FILE = os.getcwd() + '/storage/db.sqlite3'
 _database_singleton = None
 
 def __getattr__(name):
@@ -55,6 +55,8 @@ class Database:
 
     def __init__(self):
         new = not os.path.exists(DB_FILE)
+        print(DB_FILE)
+        
         if new:
             self.migrate_json_to_v1()
         else:
