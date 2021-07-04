@@ -188,7 +188,7 @@ def music2yaml(yaml_path, path):
             # Invoke ffprobe to extract the length
             process = subprocess.Popen(
                 ["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                "-of", "default=noprint_wrappers=1:nokey=1", file],
+                "-of", "default=noprint_wrappers=1:nokey=1", os.path.join(os.getcwd(),file)],
                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT
             )
             out, err = process.communicate()
@@ -219,7 +219,7 @@ def music2yaml(yaml_path, path):
             print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
         except ValueError:
             print("Could not open track {file}. Skipping.")
-            print("Error: " + stderr)
+            
         except KeyboardInterrupt:
             print("Scan aborted! No changes have been written to disk.")
             sys.exit(2)
