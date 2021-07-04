@@ -219,6 +219,7 @@ def music2yaml(yaml_path, path):
             print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
         except ValueError:
             print(f"Could not open track {file}. Skipping.")
+            print("Error: " + stderr)
         except KeyboardInterrupt:
             print()
             print("Scan aborted! No changes have been written to disk.")
