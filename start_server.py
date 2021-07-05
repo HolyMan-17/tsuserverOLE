@@ -175,8 +175,6 @@ def music2yaml(yaml_path, path):
     file_list = os.listdir(path)
     if new_only:
         file_list = [f for f in file_list if f not in song_names]
-        #print("\nfile_list object")
-        #print(file_list)
 
     progress = 0
     progress_max = len(file_list)
@@ -195,11 +193,14 @@ def music2yaml(yaml_path, path):
             )
             out, err = process.communicate()
 
-            #print("out V")
-            #print(out.strip().split("\r\n")[0])
-            #print("length = " + out.decode("utf-8").strip().split("\r\n")[0])
+            # Okay. I'm not sure why this happens, but after doing the decode, strip
+            # and split, the resulting number can't be converted to float by wrapping
+            # it in a 'float' function (float()). It gives you a 'No such file or directory'
+            # error, which... I don't really understand. But, that's why I'm leaving it out.
+            # Keeping the old line too for future refactor if we need to look at this again.
+            # -Steel
+
             length_bef_float = out.decode("utf-8").strip().split("\r\n")[0]
-            length = float(length_bef_float)
             #float(out.decode("utf-8").strip().split("\r\n")[0]) - Old length value
 
             # Compose song/track object
@@ -207,8 +208,6 @@ def music2yaml(yaml_path, path):
                 ("name", file), ("length", length)
             ])
 
-            #print("\ntrack #{progress}")
-            #print(track)
             # There could theoretically be the same song in multiple categories.
             # We'll cover the case just for the sake of it.
             entries = [s for s in songs if s["name"] == file]
