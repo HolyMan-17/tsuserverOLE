@@ -188,7 +188,7 @@ def music2yaml(yaml_path, path):
             # Invoke ffprobe to extract the length
             file_path = '"' + '/base/sounds/music/' + file + '"'
 
-            process = subprocess.Popen(
+            process = subprocess.run(
                 ["ffprobe", "-v", "error", "-show_entries", "format=duration",
                 "-of", "default=noprint_wrappers=1:nokey=1", file_path],
                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT
@@ -205,7 +205,7 @@ def music2yaml(yaml_path, path):
             outlen = len(out)
             outconverted = out.decode("UTF-8").strip().split("\r\n")
 
-            for entry in range(outlen-1):
+            for entry in range(outlen):
                 print(outconverted[entry])
             
             length = float(out[0])
