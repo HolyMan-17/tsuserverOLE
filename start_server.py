@@ -251,7 +251,7 @@ def music2yaml(yaml_path, path):
             print(f"Could not open track {file_path}. Skipping.")
             
         except subprocess.CalledProcessError as cpe:
-            print("CalledProcessError: " + cpe)
+            raise RuntimeError("command '{}' return with error (code {}): {}".format(cpe.cmd, cpe.returncode, cpe.output))
             print("Ran into a process error.")
 
         except KeyboardInterrupt:
