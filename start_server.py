@@ -201,7 +201,8 @@ def music2yaml(yaml_path, path):
             # -Steel
 
             length = float(out[0])
-            print ("File: " + file + " Name: " + file + " Length: " + length)
+            print("File: " + file + " Name: " + file + " Length: ")
+            print(length)
             #float(out.decode("utf-8").strip().split("\r\n")[0]) - Old length value
 
             # Compose song/track object
