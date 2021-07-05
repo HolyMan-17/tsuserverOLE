@@ -29,7 +29,7 @@ import subprocess
 import sys
 import yaml
 import ffmpeg
-import ffprobe
+import FFProbe
 
 from collections import OrderedDict
 
