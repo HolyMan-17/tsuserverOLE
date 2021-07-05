@@ -275,6 +275,8 @@ def music2yaml(yaml_path, path):
 
     dump = ordered_dump(config, default_flow_style=False)
 
+    print(dump)
+    
     # Write the final config to file if everything went well
     with open(yaml_path, "w") as yaml_file:
         yaml_file.write(dump)
