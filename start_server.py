@@ -198,7 +198,7 @@ def music2yaml(yaml_path, path):
             #print("out V")
             #print(out.strip().split("\r\n")[0])
             #print("length = " + out.decode("utf-8").strip().split("\r\n")[0])
-            length = out.decode("utf-8").strip()[0]
+            length = out.decode("utf-8").strip().split("\r\n")[0]
             #float(out.decode("utf-8").strip().split("\r\n")[0]) - Old length value
 
             # Compose song/track object
