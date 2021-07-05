@@ -1,0 +1,1 @@
+ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "base/sounds/music/$1.opus"

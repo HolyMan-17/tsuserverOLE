@@ -180,6 +180,8 @@ def music2yaml(yaml_path, path):
     progress_max = len(file_list)
     for file in file_list:
         progress += 1
+        print("Progress: ")
+        print(progress)
         if file.split(".")[-1] not in ("mp3", "wav", "ogg", "opus"):
             continue
         try:
