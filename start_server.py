@@ -29,6 +29,7 @@ import subprocess
 import sys
 import yaml
 import ffmpeg
+import ffmpeg-python
 
 from collections import OrderedDict
 
