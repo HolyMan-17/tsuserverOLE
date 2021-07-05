@@ -203,7 +203,7 @@ def music2yaml(yaml_path, path):
             # -Steel
 
             outlen = len(out)
-            outconverted = out.decode("utf-8").strip().split("\r\n")
+            outconverted = out.decode("UTF-8").strip().split("\r\n")
 
             for entry in range(outlen-1):
                 print(outconverted[entry])
