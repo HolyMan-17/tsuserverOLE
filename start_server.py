@@ -28,6 +28,8 @@ import re
 import subprocess
 import sys
 import yaml
+import ffmpeg
+import ffprobe
 
 from collections import OrderedDict
 
