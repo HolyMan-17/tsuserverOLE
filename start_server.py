@@ -180,7 +180,7 @@ def music2yaml(yaml_path, path):
     progress_max = len(file_list)
     for file in file_list:
         progress += 1
-        print("Progress: " progress)
+        print("Progress: " + str(progress))
 
         if file.split(".")[-1] not in ("mp3", "wav", "ogg", "opus"):
             continue
@@ -206,8 +206,8 @@ def music2yaml(yaml_path, path):
                 print(out[entry])
             
             length = float(out[0])
-            print("File: " + file + " Name: " + file + " Length: " length)
-            
+            print("File: " + file + " Name: " + file + " Length: " + str(length))
+
             #float(out.decode("utf-8").strip().split("\r\n")[0]) - Old length value
 
             # Compose song/track object
