@@ -203,6 +203,10 @@ def music2yaml(yaml_path, path):
             # Keeping the old line too for future refactor if we need to look at this again.
             # -Steel
 
+            print("Begin raw output")
+            print(process.stdout.decode('utf-8'))
+            print("End raw output")
+
             outlen = len(out)
             outconverted = out.decode("UTF-8").strip().split("\r\n")
 
