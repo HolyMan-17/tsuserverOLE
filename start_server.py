@@ -193,7 +193,6 @@ def music2yaml(yaml_path, path):
                 "-of", "default=noprint_wrappers=1:nokey=1", file_path],
                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT
             )
-            out, err = process.communicate()
 
             # Okay. I'm not sure why this happens, but after doing the decode, strip
             # and split, the resulting number can't be converted to float by wrapping
@@ -202,13 +201,13 @@ def music2yaml(yaml_path, path):
             # Keeping the old line too for future refactor if we need to look at this again.
             # -Steel
 
-            outlen = len(out)
-            outconverted = out.decode("UTF-8").strip().split("\r\n")
+            outlen = len(stdout)
+            outconverted = stdout.decode("UTF-8").strip().split("\r\n")
 
             for entry in range(outlen):
                 print(outconverted[entry])
             
-            length = float(out[0])
+            length = float(stdout[0])
             print("File: " + file + " Name: " + file + " Length: " + str(length))
 
             #float(out.decode("utf-8").strip().split("\r\n")[0]) - Old length value
