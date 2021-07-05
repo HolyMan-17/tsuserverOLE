@@ -213,19 +213,19 @@ def music2yaml(yaml_path, path):
             # Keeping the old line too for future refactor if we need to look at this again.
             # -Steel
 
-            print("Begin raw output")
-            print(out[0])
-            print(out[1])
-            print(out[2])
-            print("End raw output")
+            #print("Begin raw output")
+            #print(out[0])
+            #print(out[1])
+            #print(out[2])
+            #print("End raw output")
 
             outlen = len(out)
             outconverted = out.decode("UTF-8").strip().split("\r\n")
 
-            [print(i) for i in outconverted]
+            [print("outconverted: " + i) for i in outconverted]
             
             length = float(out[0])
-            print("File: " + file + " Name: " + file + " Length: " + str(length))
+            #print("File: " + file + " Name: " + file + " Length: " + str(length))
 
             #float(out.decode("utf-8").strip().split("\r\n")[0]) - Old length value
 
