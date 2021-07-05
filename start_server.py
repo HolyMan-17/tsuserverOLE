@@ -188,10 +188,14 @@ def music2yaml(yaml_path, path):
             # Invoke ffprobe to extract the length
             file_path = '"' + '/base/sounds/music/' + file + '"'
 
+            print("File path set")
+
             process = subprocess.check_output(
                 ["ffprobe","-v","error","-show_entries","format=duration",
                 "-of","default=noprint_wrappers=1:nokey=1"],encoding='utf-8',
                 stdin=file_path,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+
+            print("Process set up")
             #process = subprocess.run(
             #    ["ffprobe", "-v", "error", "-show_entries", "format=duration",
             #    "-of", "default=noprint_wrappers=1:nokey=1"], input=file_path,
@@ -200,6 +204,7 @@ def music2yaml(yaml_path, path):
             out = process.stdout
             err = process.stderr
 
+            print("Made out and err variables")
             # Okay. I'm not sure why this happens, but after doing the decode, strip
             # and split, the resulting number can't be converted to float by wrapping
             # it in a 'float' function (float()). It gives you a 'No such file or directory'
