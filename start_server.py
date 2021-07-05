@@ -192,7 +192,7 @@ def music2yaml(yaml_path, path):
             print("File path set")
 
             ffmpegout = ffmpeg.probe(file_path, cmd='ffprobe')
-            print(ffmpegout.stderr)
+            print(ffmpegout.Error.stderr)
 
             out = subprocess.check_output(
                 ["ffprobe","-v","error","-show_entries","format=duration",
