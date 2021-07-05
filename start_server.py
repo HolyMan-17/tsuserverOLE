@@ -252,6 +252,9 @@ def music2yaml(yaml_path, path):
         except ValueError as ve:
             print("ValueError: " + str(e))
             print(f"Could not open track {file_path}. Skipping.")
+
+        except ffmpeg._run.Error as fferr:
+            print(fferr)
             
         except subprocess.CalledProcessError as cpe:
             raise RuntimeError("command '{}' return with error (code {}): {}".format(cpe.cmd, cpe.returncode, cpe.output))
