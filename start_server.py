@@ -192,8 +192,7 @@ def music2yaml(yaml_path, path):
 
             out = subprocess.check_output(
                 ["ffprobe","-v","error","-show_entries","format=duration",
-                "-of","default=noprint_wrappers=1:nokey=1", file_path],
-                encoding='utf-8')
+                "-of","default=noprint_wrappers=1:nokey=1", file_path])
 
             print("Process set up")
             #process = subprocess.run(
