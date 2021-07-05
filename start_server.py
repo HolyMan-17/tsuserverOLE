@@ -195,7 +195,8 @@ def music2yaml(yaml_path, path):
             )
             out, err = process.communicate()
 
-            print("out = " + float(out[0]))
+            print("out V")
+            print(float(out[0]))
             print("length = " + out.decode("utf-8").strip().split("\r\n")[0])
             length = float(out.decode("utf-8").strip().split("\r\n")[0])
 
