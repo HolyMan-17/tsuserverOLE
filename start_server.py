@@ -190,10 +190,10 @@ def music2yaml(yaml_path, path):
 
             print("File path set")
 
-            process = subprocess.check_output(
+            out = subprocess.check_output(
                 ["ffprobe","-v","error","-show_entries","format=duration",
-                "-of","default=noprint_wrappers=1:nokey=1"],encoding='utf-8',
-                stdin=file_path,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+                "-of","default=noprint_wrappers=1:nokey=1"],
+                encoding='utf-8',stdin=file_path)
 
             print("Process set up")
             #process = subprocess.run(
@@ -201,8 +201,8 @@ def music2yaml(yaml_path, path):
             #    "-of", "default=noprint_wrappers=1:nokey=1"], input=file_path,
             #    stdout=subprocess.PIPE, stderr=subprocess.STDOUT
             #)
-            out = process.stdout
-            err = process.stderr
+            #out = process.stdout
+            #err = process.stderr
 
             print("Made out and err variables")
             # Okay. I'm not sure why this happens, but after doing the decode, strip
@@ -249,7 +249,7 @@ def music2yaml(yaml_path, path):
 
             print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
         except ValueError as e:
-            print(str(e))
+            print("ValueError: " + str(e))
             print(f"Could not open track {file_path}. Skipping.")
             
         except KeyboardInterrupt:
