@@ -195,6 +195,8 @@ def music2yaml(yaml_path, path):
                 stdout=subprocess.PIPE, stderr=subprocess.STDOUT
             )
             out, err = process.communicate()
+
+            print("length = " + out.decode("utf-8").strip().split("\r\n")[0])
             length = float(out.decode("utf-8").strip().split("\r\n")[0])
 
             # Compose song/track object
