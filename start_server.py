@@ -102,7 +102,7 @@ def ordered_dump(data, stream=None, Dumper=NoAliasDumper, **kwds):
             data.items())
 
     OrderedDumper.add_representer(OrderedDict, _dict_representer)
-    return yaml.dump(data, stream, OrderedDumper, **kwds)
+    return yaml.dump(data, stream, OrderedDumper, **kwds, sort_keys=False)
 
 def music2yaml(yaml_path, path):
 
@@ -276,7 +276,7 @@ def music2yaml(yaml_path, path):
     dump = ordered_dump(config, default_flow_style=False)
 
     print(dump)
-    
+
     # Write the final config to file if everything went well
     with open(yaml_path, "w") as yaml_file:
         yaml_file.write(dump)
