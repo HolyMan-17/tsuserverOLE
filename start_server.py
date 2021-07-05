@@ -250,7 +250,7 @@ def music2yaml(yaml_path, path):
             print("ValueError: " + str(e))
             print(f"Could not open track {file_path}. Skipping.")
             
-        except out.CalledProcessError as cpe:
+        except subprocess.CalledProcessError as cpe:
             print("CalledProcessError: " + cpe)
             print("Ran into a process error.")
 
