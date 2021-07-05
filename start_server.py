@@ -186,7 +186,7 @@ def music2yaml(yaml_path, path):
             continue
         try:
             # Invoke ffprobe to extract the length
-            file_path = os.getcwd() + '/base/sounds/music/')
+            file_path = os.getcwd() + '/base/sounds/music/'
             print("Path we're checking: " '"' + file_path + file + '"')
 
             process = subprocess.Popen(
