@@ -192,8 +192,7 @@ def music2yaml(yaml_path, path):
             print("File path set")
 
             ffmpegout = ffmpeg.probe(file_path, cmd='ffprobe')
-            print(ffmpegout.Error.stderr)
-
+            
             out = subprocess.check_output(
                 ["ffprobe","-v","error","-show_entries","format=duration",
                 "-of","default=noprint_wrappers=1:nokey=1", file_path])
@@ -257,6 +256,9 @@ def music2yaml(yaml_path, path):
         except subprocess.CalledProcessError as cpe:
             raise RuntimeError("command '{}' return with error (code {}): {}".format(cpe.cmd, cpe.returncode, cpe.output))
             print("Ran into a process error.")
+
+        except ffmpeg.Error as ff:
+            print(ff.stderr)
 
         except KeyboardInterrupt:
             print("Scan aborted! No changes have been written to disk.")
