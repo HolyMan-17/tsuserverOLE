@@ -192,6 +192,7 @@ def music2yaml(yaml_path, path):
             print("File path set")
 
             ffmpegout = ffmpeg.probe(file_path, cmd='ffprobe')
+            print(ffmpegout.stderr)
 
             out = subprocess.check_output(
                 ["ffprobe","-v","error","-show_entries","format=duration",
@@ -253,8 +254,9 @@ def music2yaml(yaml_path, path):
             print("ValueError: " + str(e))
             print(f"Could not open track {file_path}. Skipping.")
 
-        except ffmpeg._run.Error as fferr:
-            print(fferr)
+        except ffmpeg.Error as fferr:
+            print(fferr.stderr)
+            raise RuntimeError("ffmpeg: command '{}' returned with error (code {}): {}".format(fferr.cmd,fferr.stdout,fferr.stderr))
             
         except subprocess.CalledProcessError as cpe:
             raise RuntimeError("command '{}' return with error (code {}): {}".format(cpe.cmd, cpe.returncode, cpe.output))
