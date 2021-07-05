@@ -186,7 +186,7 @@ def music2yaml(yaml_path, path):
             continue
         try:
             # Invoke ffprobe to extract the length
-            file_path = '"' + '/base/sounds/music/' + file + '"'
+            file_path = '/base/sounds/music/' + file
 
             print("File path set")
 
