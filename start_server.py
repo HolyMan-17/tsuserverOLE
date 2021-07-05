@@ -215,13 +215,14 @@ def music2yaml(yaml_path, path):
 
             print("Begin raw output")
             print(out[0])
+            print(out[1])
+            print(out[2])
             print("End raw output")
 
             outlen = len(out)
             outconverted = out.decode("UTF-8").strip().split("\r\n")
 
-            for entry in range(outlen-1):
-                print(outconverted[entry])
+            [print(outconverted[i]) for i in outconverted]
             
             length = float(out[0])
             print("File: " + file + " Name: " + file + " Length: " + str(length))
