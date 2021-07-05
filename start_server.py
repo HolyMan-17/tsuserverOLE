@@ -208,7 +208,7 @@ def music2yaml(yaml_path, path):
             # -Steel
 
             print("Begin raw output")
-            print(out)
+            print(out[0])
             print("End raw output")
 
             outlen = len(out)
