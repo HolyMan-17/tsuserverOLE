@@ -248,7 +248,8 @@ def music2yaml(yaml_path, path):
                 uncategorized_category["songs"].append(track)
 
             print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
-        except ValueError:
+        except ValueError as e:
+            print(str(e))
             print(f"Could not open track {file_path}. Skipping.")
             
         except KeyboardInterrupt:
