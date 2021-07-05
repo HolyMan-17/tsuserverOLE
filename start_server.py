@@ -195,10 +195,11 @@ def music2yaml(yaml_path, path):
             )
             out, err = process.communicate()
 
-            print("out V")
-            print(out.strip().split("\r\n")[0])
-            print("length = " + out.decode("utf-8").strip().split("\r\n")[0])
-            length = float(out.decode("utf-8").strip().split("\r\n")[0])
+            #print("out V")
+            #print(out.strip().split("\r\n")[0])
+            #print("length = " + out.decode("utf-8").strip().split("\r\n")[0])
+            length = out[0]
+            #float(out.decode("utf-8").strip().split("\r\n")[0]) - Old length value
 
             # Compose song/track object
             track = OrderedDict([
