@@ -191,7 +191,7 @@ def music2yaml(yaml_path, path):
 
             print("File path set")
 
-            ffmpegout = ffmpeg.probe(file_path, cmd='ffprobe')
+            #ffmpegout = ffmpeg.probe(file_path, cmd='ffprobe')
             
             out = subprocess.check_output(
                 ["ffprobe","-v","error","-show_entries","format=duration",
@@ -220,7 +220,7 @@ def music2yaml(yaml_path, path):
             outlen = len(out)
             outconverted = out.decode("UTF-8").strip().split("\r\n")
 
-            for entry in range(outlen):
+            for entry in range(outlen-1):
                 print(outconverted[entry])
             
             length = float(out[0])
