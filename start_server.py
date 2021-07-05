@@ -187,7 +187,7 @@ def music2yaml(yaml_path, path):
             continue
         try:
             # Invoke ffprobe to extract the length
-            file_path = '/base/sounds/music/' + file
+            file_path = 'base/sounds/music/' + file
 
             print("File path set")
 
@@ -254,10 +254,6 @@ def music2yaml(yaml_path, path):
             print("ValueError: " + str(e))
             print(f"Could not open track {file_path}. Skipping.")
 
-        except ffmpeg.Error as fferr:
-            print(fferr.stderr)
-            raise RuntimeError("ffmpeg: command '{}' returned with error (code {}): {}".format(fferr.cmd,fferr.stdout,fferr.stderr))
-            
         except subprocess.CalledProcessError as cpe:
             raise RuntimeError("command '{}' return with error (code {}): {}".format(cpe.cmd, cpe.returncode, cpe.output))
             print("Ran into a process error.")
