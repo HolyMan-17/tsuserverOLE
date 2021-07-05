@@ -202,8 +202,9 @@ def music2yaml(yaml_path, path):
             # Keeping the old line too for future refactor if we need to look at this again.
             # -Steel
 
-            for entry in out:
-                print(out[entry-1])
+            outlen = len(out)
+            for entry in range(outlen-1):
+                print(out[entry])
             
             length = float(out[0])
             print("File: " + file + " Name: " + file + " Length: " + str(length))
