@@ -189,7 +189,7 @@ def music2yaml(yaml_path, path):
             # Invoke ffprobe to extract the length
             file_path = 'base/sounds/music/' + file
 
-            print("File path set")
+            #print("File path set")
 
             #ffmpegout = ffmpeg.probe(file_path, cmd='ffprobe')
             
@@ -197,7 +197,7 @@ def music2yaml(yaml_path, path):
                 ["ffprobe","-v","error","-show_entries","format=duration",
                 "-of","default=noprint_wrappers=1:nokey=1", file_path])
 
-            print("Process set up")
+            #print("Process set up")
             #process = subprocess.run(
             #    ["ffprobe", "-v", "error", "-show_entries", "format=duration",
             #    "-of", "default=noprint_wrappers=1:nokey=1"], input=file_path,
@@ -219,13 +219,13 @@ def music2yaml(yaml_path, path):
             #print(out[2])
             #print("End raw output")
 
-            outlen = len(out)
-            outconverted = out.decode("UTF-8").strip().split("\r\n")
-
+            #outlen = len(out)
+            
             #[print("outconverted: " + i) for i in outconverted]
             
-            length = float(outconverted[0])
-            print("length: " + str(length))
+            length = float(out.decode("UTF-8").strip().split("\r\n")[0])
+            
+            #print("length: " + str(length))
             #print("File: " + file + " Name: " + file + " Length: " + str(length))
 
             #float(out.decode("utf-8").strip().split("\r\n")[0]) - Old length value
