@@ -225,6 +225,8 @@ def music2yaml(yaml_path, path):
 
             if file.split(".")[-1] not in ("mp3", "wav", "ogg", "opus"):
                 continue
+            if progress == 2:
+                sys.exit(1)
             try:
                 # First, we invoke ffprobe to extract the length, just like how it was done before.
                 file_path = 'base/sounds/music/' + file
@@ -243,11 +245,8 @@ def music2yaml(yaml_path, path):
 
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
-                for c,s in file_categories:
-                    print("First Key for array from For loop: " + c)
-                    print("First Value for array from For loop: " + file_categories.get(c))
-                    print("Second Key for array from For loop: " + s)
-                    print("First Value for array from For loop: " + file_categories.get(s))
+                for obj in file_categories:
+                    print(obj)
                     print(filename)
                     #if filename == file_categories.get(k):
                     #    print("We got a key match: " + filename + "\n" + "Key: " + k)
