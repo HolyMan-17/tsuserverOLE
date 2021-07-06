@@ -240,11 +240,13 @@ def music2yaml(yaml_path, path):
 
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
+                if filename.count("[")[0] == 0:
+                    uncategorized_songs.append(track)
+                    continue
+
                 for obj in tags_categories_songs:
                     if filename == obj.get("tag") or filename.split(".") == obj.get("tag"):
                         obj.get("songs").append(track)
-                    else:
-                        uncategorized_songs.append(track)
                 
                 # Songs might show up multiple times in the list.
                 # Unsure how to implement protection for this,
