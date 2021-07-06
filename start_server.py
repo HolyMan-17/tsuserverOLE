@@ -182,7 +182,7 @@ def music2yaml(yaml_path, path):
         for c in categories:
             file_categories.append(
                 OrderedDict([
-                ("category", str(categories(c)), ("songs"), [])
+                ("category", str(c)), ("songs", [])
                 ])
             )
         print(file_categories)
