@@ -252,9 +252,10 @@ def music2yaml(yaml_path, path):
                         v["songs"].value.append(track)
                         key = k
                         value = v
+                        print(key)
+                        print(value)
                 
-                print(key)
-                print(value)
+                
                 
                 
                 # Songs might show up multiple times in the list.
