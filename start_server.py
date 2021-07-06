@@ -246,11 +246,6 @@ def music2yaml(yaml_path, path):
                     else:
                         uncategorized_songs.append(track)
 
-                if len(uncategorized_songs) != 0:
-                    print(uncategorized_songs)
-                    for obj in uncategorized_songs:
-                        print(obj["Uncategorized"].get("songs")
-
                         
                     
                 # Songs might show up multiple times in the list.
@@ -275,6 +270,11 @@ def music2yaml(yaml_path, path):
                 # Alright, we have our track objects. Let's add them to the list...
             except KeyboardInterrupt:
                 print("don't interrupt me I'm workin' :c -Steel")
+
+    if len(uncategorized_songs) != 0:
+        print(uncategorized_songs)
+        for obj in uncategorized_songs:
+            print(obj["Uncategorized"].get("songs")
 
     for obj in tags_categories_songs:
         print("Tag, Category: " + obj.get("tag") + ", " + obj.get("category") + "\nSongs list: ")
