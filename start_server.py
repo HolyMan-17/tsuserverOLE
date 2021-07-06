@@ -102,7 +102,7 @@ def ordered_dump(data, stream=None, Dumper=NoAliasDumper, **kwds):
             data.items())
 
     OrderedDumper.add_representer(OrderedDict, _dict_representer)
-    return yaml.dump(data, stream, OrderedDumper, **kwds, sort_keys=False)
+    return yaml.dump(data, stream, OrderedDumper, **kwds)
 
 def music2yaml(yaml_path, path):
 
@@ -143,6 +143,7 @@ def music2yaml(yaml_path, path):
     #    sys.exit(1)
 
     # Read/parse music.yaml
+    build_new_file = False # Steel: Setting this for category building later.
     config = None
     try:
         with open(yaml_path, "r") as yaml_file:
@@ -152,6 +153,7 @@ def music2yaml(yaml_path, path):
 
     # config will be none if the file could not be loaded or a blank file was loaded.
     if config is None:
+        build_new_file = True
         config = []
 
     # Extract song objects from each category
@@ -160,6 +162,31 @@ def music2yaml(yaml_path, path):
         for track in category["songs"]:
             songs.append(track)
     song_names = [s["name"] for s in songs]
+
+    # Steel: Alright, so now there's another step we need to build here. First, a list of categories.
+
+    categories = ["Ace Attorney", "Justice For All", "Trials & Tribulations", "DGS", "DGS 2",
+                "Apollo Justice", "Ace Attorney HD", "Ace Attorney Investigations", "Ace Attorney Investigations 2",
+                "Dual Destinies", "Ghost Trick", "Jazz", "LBMR", "Piano", "Professor Layton", "Spirit of Justice",
+                "STAFF", "STOP", "Uncategorized"]
+
+    # Steel: Now, we need to iterate through categories in music.yaml and see if they're there. If not, build them.
+    # -We should really only do this if we're building a new music.yaml file, I figure it'll get out of order otherwise.
+
+    if build_new_file:
+        # Steel: We're building a new file, so let's set up our framework.
+        file_categories = []
+
+        # Iterate through each category in our 'categories' list, then create a new
+        # OrderedDict object that we'll later stock up with songs.
+        for c in categories:
+            file_categories.add(OrderedDict([
+                ("category", str(categories(c)), ("songs"), [])
+                ])
+            )
+        print (file_categories)
+        sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
+                    # still tinkering with how this will work.
 
     # Check if there is a category called "Uncategorized"
     # If not, create one
@@ -188,47 +215,12 @@ def music2yaml(yaml_path, path):
         try:
             # Invoke ffprobe to extract the length
             file_path = 'base/sounds/music/' + file
-
-            #print("File path set")
-
-            #ffmpegout = ffmpeg.probe(file_path, cmd='ffprobe')
             
             out = subprocess.check_output(
                 ["ffprobe","-v","error","-show_entries","format=duration",
                 "-of","default=noprint_wrappers=1:nokey=1", file_path])
-
-            #print("Process set up")
-            #process = subprocess.run(
-            #    ["ffprobe", "-v", "error", "-show_entries", "format=duration",
-            #    "-of", "default=noprint_wrappers=1:nokey=1"], input=file_path,
-            #    stdout=subprocess.PIPE, stderr=subprocess.STDOUT
-            #)
-            #out = process.stdout
-            #err = process.stderr
-
-            # Okay. I'm not sure why this happens, but after doing the decode, strip
-            # and split, the resulting number can't be converted to float by wrapping
-            # it in a 'float' function (float()). It gives you a 'No such file or directory'
-            # error, which... I don't really understand. But, that's why I'm leaving it out.
-            # Keeping the old line too for future refactor if we need to look at this again.
-            # -Steel
-
-            #print("Begin raw output")
-            #print(out[0])
-            #print(out[1])
-            #print(out[2])
-            #print("End raw output")
-
-            #outlen = len(out)
-            
-            #[print("outconverted: " + i) for i in outconverted]
             
             length = float(out.decode("UTF-8").strip().split("\r\n")[0])
-            
-            #print("length: " + str(length))
-            #print("File: " + file + " Name: " + file + " Length: " + str(length))
-
-            #float(out.decode("utf-8").strip().split("\r\n")[0]) - Old length value
 
             # Compose song/track object
             track = OrderedDict([
