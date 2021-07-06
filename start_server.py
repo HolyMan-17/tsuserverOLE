@@ -269,13 +269,6 @@ def music2yaml(yaml_path, path):
             except KeyboardInterrupt:
                 print("don't interrupt me I'm workin' :c -Steel")
 
-    if len(uncategorized_songs) != 0:
-        print(uncategorized_songs)
-        for obj in uncategorized_songs:
-            print(obj["Uncategorized"].get("songs")
-    else:
-        print("No uncategorized songs.")
-
     for obj in tags_categories_songs:
         print("Tag, Category: " + obj.get("tag") + ", " + obj.get("category") + "\nSongs list: ")
         print(obj.get("songs"))
