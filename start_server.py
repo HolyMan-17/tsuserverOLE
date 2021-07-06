@@ -204,7 +204,7 @@ def music2yaml(yaml_path, path):
                 ("tag", str(k)), ("category", str(v)), ("songs", [])
                 ])
             )
-        print(tags_categories_songs)
+        #print(tags_categories_songs)
 
         # Steel: Okay, it builds the structure I want. Now, let's see if we can get into iterating through files,
         # and see if they end up in the right categories based on tag.
@@ -215,7 +215,7 @@ def music2yaml(yaml_path, path):
         
         progress = 0
         progress_max = len(file_list)
-        print(progress_max)
+        #print(progress_max)
         #print(list(tags_categories))
 
         #print(list(file_categories))
@@ -225,8 +225,6 @@ def music2yaml(yaml_path, path):
 
             if file.split(".")[-1] not in ("mp3", "wav", "ogg", "opus"):
                 continue
-            if progress == 2:
-                sys.exit(1)
             try:
                 # First, we invoke ffprobe to extract the length, just like how it was done before.
                 file_path = 'base/sounds/music/' + file
