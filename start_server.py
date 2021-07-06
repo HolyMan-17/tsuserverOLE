@@ -243,7 +243,7 @@ def music2yaml(yaml_path, path):
 
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
-                for (k1,v1),(k2,v2) in file_categories:
+                for k1,v1,k2,v2 in file_categories:
                     print("First Key for array from For loop: " + k1)
                     print("First Value for array from For loop: " + v1)
                     print("Second Key for array from For loop: " + k2)
