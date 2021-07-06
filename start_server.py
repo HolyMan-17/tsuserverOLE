@@ -216,9 +216,9 @@ def music2yaml(yaml_path, path):
         progress = 0
         progress_max = len(file_list)
         print(progress_max)
-        print(list(tags_categories))
+        #print(list(tags_categories))
 
-        print(list(file_categories))
+        #print(list(file_categories))
 
         for file in file_list:
             progress += 1
