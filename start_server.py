@@ -240,6 +240,8 @@ def music2yaml(yaml_path, path):
 
                 print(track)
 
+                print(track.name.split("[]"))
+                
                 # Songs might show up multiple times in the list.
                 # Unsure how to implement protection for this,
                 # so I've brought over the original way of doing it and commented it out.
