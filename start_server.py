@@ -198,7 +198,7 @@ def music2yaml(yaml_path, path):
 
         # Iterate through each category in our 'categories' list, then create a new
         # OrderedDict object that we'll later stock up with songs.
-        for k,v in sorted(categories.items(), key=itemgetter(1)):
+        for k,v in sorted(tags_categories.items(), key=itemgetter(1)):
             file_categories.append(
                 OrderedDict([
                 ("category", str(v)), ("songs", [])
