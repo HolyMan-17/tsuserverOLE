@@ -267,7 +267,7 @@ def music2yaml(yaml_path, path):
 
                 # Alright, we have our track objects. Let's add them to the list...
             except KeyboardInterrupt:
-                print("don't interrupt me I'm workin' :c -Steel")
+                print("don't interrupt me I'm workin' :c -Steeld")
 
     if len(uncategorized_songs) != 0:
         print(uncategorized_songs)
