@@ -291,7 +291,7 @@ def music2yaml(yaml_path, path):
                 print("don't interrupt me I'm workin' :c -Steel")
 
     for obj in tags_categories_songs:
-        print("Tag: " + obj.get("tag") + "\nSongs list: " + obj.get("songs"))
+        print("Tag, Category: " + obj.get("tag") + ", " + obj.get("category") + "\nSongs list: " + obj.get("songs"))
     
     sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
                 # still tinkering with how this will work.
