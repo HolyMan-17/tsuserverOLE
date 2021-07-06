@@ -216,7 +216,7 @@ def music2yaml(yaml_path, path):
         progress = 0
         progress_max = len(file_list)
         print(progress_max)
-        
+
         for file in file_list:
             progress += 1
 
@@ -237,6 +237,8 @@ def music2yaml(yaml_path, path):
                 track = OrderedDict([
                     ("name", file), ("length", length)
                 ])
+
+                print(track)
 
                 # Songs might show up multiple times in the list.
                 # Unsure how to implement protection for this,
@@ -261,10 +263,8 @@ def music2yaml(yaml_path, path):
             except KeyboardInterrupt:
                 print("don't interrupt me I'm workin' :c -Steel")
 
-        print(track)
-        sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
-                    # still tinkering with how this will work.
-
+    sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
+                # still tinkering with how this will work.
     # Check if there is a category called "Uncategorized"
     # If not, create one
     uncategorized_category = [c for c in config if c["category"] == "Uncategorized"]
