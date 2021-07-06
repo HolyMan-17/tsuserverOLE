@@ -273,6 +273,8 @@ def music2yaml(yaml_path, path):
         print(uncategorized_songs)
         for obj in uncategorized_songs:
             print(obj["Uncategorized"].get("songs")
+    else:
+        print("No uncategorized songs.")
 
     for obj in tags_categories_songs:
         print("Tag, Category: " + obj.get("tag") + ", " + obj.get("category") + "\nSongs list: ")
