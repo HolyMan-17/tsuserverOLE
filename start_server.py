@@ -194,17 +194,17 @@ def music2yaml(yaml_path, path):
 
     if build_new_file:
         # Steel: We're building a new file, so let's set up our framework.
-        file_categories = []
+        tags_categories_songs = []
 
         # Iterate through each category in our 'categories' list, then create a new
         # OrderedDict object that we'll later stock up with songs.
         for k,v in sorted(tags_categories.items()):
-            file_categories.append(
+            tags_categories_songs.append(
                 OrderedDict([
-                ("category", str(v)), ("songs", [])
+                ("tag", str(k)), ("category", str(v)), ("songs", [])
                 ])
             )
-        print(file_categories)
+        print(tags_categories_songs)
 
         # Steel: Okay, it builds the structure I want. Now, let's see if we can get into iterating through files,
         # and see if they end up in the right categories based on tag.
@@ -245,9 +245,15 @@ def music2yaml(yaml_path, path):
 
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
-                for obj in file_categories:
-                    print(obj.get("songs"))
-                    print(filename)
+                for obj in tags_categories_songs:
+                    if filename == obj.get("tag")
+                        print("----------")
+                        print("Tag match!")
+                        print(obj.get("tag"))
+                        print(obj.get("category"))
+                        print(obj.get("songs"))
+                        print(filename)
+                        print("----------")
                     #if filename == file_categories.get(k):
                     #    print("We got a key match: " + filename + "\n" + "Key: " + k)
 
