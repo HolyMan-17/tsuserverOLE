@@ -246,7 +246,7 @@ def music2yaml(yaml_path, path):
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
                 for obj in tags_categories_songs:
-                    if filename == obj.get("tag")
+                    if filename == obj.get("tag"):
                         print("----------")
                         print("Tag match!")
                         print(obj.get("tag"))
