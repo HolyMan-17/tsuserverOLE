@@ -243,6 +243,8 @@ def music2yaml(yaml_path, path):
                 filename = file.replace("] ", "]    ")
                 print(filename.split("  "))
 
+                list(tags_categories)
+                
                 key = ""
                 value = ""
                 for k, v in tags_categories.items():
