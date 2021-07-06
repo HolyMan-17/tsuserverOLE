@@ -246,7 +246,7 @@ def music2yaml(yaml_path, path):
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
                 for obj in file_categories:
-                    print(obj)
+                    print(obj.get("songs"))
                     print(filename)
                     #if filename == file_categories.get(k):
                     #    print("We got a key match: " + filename + "\n" + "Key: " + k)
