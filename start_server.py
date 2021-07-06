@@ -248,8 +248,8 @@ def music2yaml(yaml_path, path):
                 for k, v in tags_categories.items():
                     tname = track["name"].replace("] ", "]  ").split("  ")
                     print(tname)
-                    if tname[0] == k:
-                        v.append(track)
+                    if tname[0] == k["category"].value:
+                        v["songs"].value.append(track)
                         key = k
                         value = v
                 
