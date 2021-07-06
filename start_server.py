@@ -178,7 +178,7 @@ def music2yaml(yaml_path, path):
                 ("[AAI]", "Ace Attorney Investigations"),
                 ("[AAI2]", "Ace Attorney Investigations 2"),
                 ("[DD]", "Dual Destinies"),
-                ("[GT]", "Ghost Trick")
+                ("[GT]", "Ghost Trick"),
                 ("[JAZZ]", "Jazz"),
                 ("[LBMR]", "LBMR"),
                 ("[PIANO]", "Piano"),
@@ -258,7 +258,7 @@ def music2yaml(yaml_path, path):
                 # Alright, we have our track objects. Let's add them to the list...
             except KeyboardInterrupt:
                 print("don't interrupt me I'm workin' :c -Steel")
-                
+
         print(track)
         sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
                     # still tinkering with how this will work.
