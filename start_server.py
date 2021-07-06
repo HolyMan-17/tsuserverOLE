@@ -163,12 +163,31 @@ def music2yaml(yaml_path, path):
             songs.append(track)
     song_names = [s["name"] for s in songs]
 
-    # Steel: Alright, so now there's another step we need to build here. First, a list of categories.
+    # Steel: Alright, so now there's another step we need to build here. First, a dictionary of categories.
+    # I'm using the key here because that's what's present in the file name of the songs we're checking.
+    # That way, I can just snap up the value from that key, which is the category we want it to end up in.
 
-    categories = ["Ace Attorney", "Justice For All", "Trials & Tribulations", "DGS", "DGS 2",
-                "Apollo Justice", "Ace Attorney HD", "Ace Attorney Investigations", "Ace Attorney Investigations 2",
-                "Dual Destinies", "Ghost Trick", "Jazz", "LBMR", "Piano", "Professor Layton", "Spirit of Justice",
-                "STAFF", "STOP", "Uncategorized"]
+    tags_categories = dict([
+                ("[AA]", "Ace Attorney"),
+                ("[JFA]", "Justice For All"),
+                ("[T&T]", "Trials & Tribulations"),
+                ("[DGS]", "DGS"),
+                ("[DGS2]", "DGS 2"),
+                ("[AJ]", "Apollo Justice"),
+                ("[AAHD]", "Ace Attorney HD"),
+                ("[AAI]", "Ace Attorney Investigations"),
+                ("[AAI2]", "Ace Attorney Investigations 2"),
+                ("[DD]", "Dual Destinies"),
+                ("[GT]", "Ghost Trick")
+                ("[JAZZ]", "Jazz"),
+                ("[LBMR]", "LBMR"),
+                ("[PIANO]", "Piano"),
+                ("[PL]", "Professor Layton"),
+                ("[SoJ]", "Spirit of Justice"),
+                ("[STAFF]", "STAFF"),
+                ("stop~", "STOP"),
+                ("", "Uncategorized")
+            ])
 
     # Steel: Now, we need to iterate through categories in music.yaml and see if they're there. If not, build them.
     # -We should really only do this if we're building a new music.yaml file, I figure it'll get out of order otherwise.
@@ -179,13 +198,66 @@ def music2yaml(yaml_path, path):
 
         # Iterate through each category in our 'categories' list, then create a new
         # OrderedDict object that we'll later stock up with songs.
-        for c in categories:
+        for k,v in sorted(categories.items(), key=itemgetter(1)):
             file_categories.append(
                 OrderedDict([
-                ("category", str(c)), ("songs", [])
+                ("category", str(v)), ("songs", [])
                 ])
             )
         print(file_categories)
+
+        # Steel: Okay, it builds the structure I want. Now, let's see if we can get into iterating through files,
+        # and see if they end up in the right categories based on tag.
+
+        file_list = os.listdir(path)
+        if new_only:
+            file_list = [f for f in file_list if f not in song_names]
+        
+        progress = 0
+        progress_max = len(file_list)
+        for file in file_list:
+            progress += 1
+
+            if file.split(".")[-1] not in ("mp3", "wav", "ogg", "opus"):
+                continue
+            try:
+                # First, we invoke ffprobe to extract the length, just like how it was done before.
+                file_path = 'base/sounds/music/' + file
+
+                out = subprocess.check_output(
+                    ["ffprobe","-v","error","-show_entries","format=duration",
+                    "-of","default=noprint_wrappers=1:nokey=1", file_path]]
+                )
+
+                length = float(out.decode("UTF-8").strip().split("\r\n")[0])
+
+                # Compose the track object we'll put into our songs categories.
+                track = OrderedDict([
+                    ("name", file), ("length", length)
+                ])
+
+                # Songs might show up multiple times in the list.
+                # Unsure how to implement protection for this,
+                # so I've brought over the original way of doing it and commented it out.
+                # Just gonna have to study this later.
+
+                # entries = [s for s in songs if s["name"] == file]
+
+                # Check if the song's already in the file.
+
+                #if len(entries) != 0:
+                # Update the length property in each song entry
+                # that matched the name criterion
+                #for entry in entries:
+                #    entry["length"] = track["length"]
+
+                #elif not no_new:
+                    # Add it to the uncategorized category
+                #    uncategorized_category["songs"].append(track)
+
+                # Alright, we have our track objects. Let's add them to the list...
+
+        print(track)
         sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
                     # still tinkering with how this will work.
 
