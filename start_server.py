@@ -241,10 +241,12 @@ def music2yaml(yaml_path, path):
                     ("name", file), ("length", length)
                 ])
 
-                print(track)
-
                 filename = file.replace("] ", "]    ")
-                print(filename.split("  "))
+                
+                for k,v in file_categories
+                    if track["name"].replace("] ", "]   ").split("  ")[0] == k
+                        print("We got a key match: " + track["name"].replace("] ", "]    ").split("  ") + "\n"
+                        + "Key: " + k)
 
                 
                 #key = ""
