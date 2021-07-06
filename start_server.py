@@ -247,15 +247,9 @@ def music2yaml(yaml_path, path):
 
                 for obj in tags_categories_songs:
                     if filename == obj.get("tag"):
-                        print("----------")
-                        print("Tag match!")
-                        print(obj.get("tag"))
-                        print(obj.get("category"))
                         obj.get("songs").append(track)
-                        print(obj.get("songs"))
-                        print(filename)
-                        print("----------")
-                        continue
+
+                        
                     #if filename == file_categories.get(k):
                     #    print("We got a key match: " + filename + "\n" + "Key: " + k)
 
@@ -298,6 +292,9 @@ def music2yaml(yaml_path, path):
             except KeyboardInterrupt:
                 print("don't interrupt me I'm workin' :c -Steel")
 
+    for obj in tags_categories_songs:
+        print(obj.get("songs"))
+    
     sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
                 # still tinkering with how this will work.
     # Check if there is a category called "Uncategorized"
