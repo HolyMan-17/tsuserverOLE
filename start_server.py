@@ -270,15 +270,25 @@ def music2yaml(yaml_path, path):
                 print("don't interrupt me I'm workin' :c -Steeld")
 
     if len(uncategorized_songs) != 0:
+        print(len(uncategorized_songs))
         print(uncategorized_songs)
-        for obj in uncategorized_songs:
-            print(obj["Uncategorized"].get("songs"))
     else:
         print("No uncategorized songs.")
 
-    for obj in tags_categories_songs:
-        print("Tag, Category: " + obj.get("tag") + ", " + obj.get("category") + "\nSongs list: ")
-        print(obj.get("songs"))
+    print("List output: ")
+    print(list(tags_categories_songs))
+
+    print("Items output: ")
+    print(tags_categories_songs.items())
+
+    print("Keys output: ")
+    print(tags_categories_songs.keys())
+
+    print("Values output: ")
+    print(tags_categories_songs.values())
+    #for obj in tags_categories_songs:
+    #    print("Tag, Category: " + obj.get("tag") + ", " + obj.get("category") + "\nSongs list: ")
+    #    print(obj.get("songs"))
     
     sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
                 # still tinkering with how this will work.
