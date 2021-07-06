@@ -243,6 +243,19 @@ def music2yaml(yaml_path, path):
                 filename = file.replace("] ", "]    ")
                 print(filename.split("  "))
 
+                key = ""
+                value = ""
+                for k, v in tags_categories.items():
+                    tname = track.replace("] ", "]  ").split("  ")
+                    if tname == k:
+                        v.append(track)
+                        key = k
+                        value = v
+                
+                print(key)
+                print(value)
+                
+                
                 # Songs might show up multiple times in the list.
                 # Unsure how to implement protection for this,
                 # so I've brought over the original way of doing it and commented it out.
