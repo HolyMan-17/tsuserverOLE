@@ -215,10 +215,7 @@ def music2yaml(yaml_path, path):
         
         progress = 0
         progress_max = len(file_list)
-        #print(progress_max)
-        #print(list(tags_categories))
-
-        #print(list(file_categories))
+        uncategorized_songs = []
 
         for file in file_list:
             progress += 1
@@ -244,29 +241,18 @@ def music2yaml(yaml_path, path):
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
                 for obj in tags_categories_songs:
-                    if filename == obj.get("tag"):
+                    if filename == obj.get("tag") or filename.split(".") == obj.get("tag"):
                         obj.get("songs").append(track)
+                    else:
+                        uncategorized_songs.append(track)
+
+                if len(uncategorized_songs) != 0:
+                    print(uncategorized_songs)
+                    for obj in uncategorized_songs:
+                        print(obj["Uncategorized"].get("songs")
 
                         
-                    #if filename == file_categories.get(k):
-                    #    print("We got a key match: " + filename + "\n" + "Key: " + k)
-
-                
-                #key = ""
-                #value = ""
-                #for k, v in tags_categories.items():
-                #    tname = track["name"].replace("] ", "]  ").split("  ")
-                #    print(tname)
-                #    if tname[0] == k["category"].value:
-                #        v["songs"].value.append(track)
-                #        key = k
-                #        value = v
-                #        print(key)
-                #        print(value)
-                
-                
-                
-                
+                    
                 # Songs might show up multiple times in the list.
                 # Unsure how to implement protection for this,
                 # so I've brought over the original way of doing it and commented it out.
