@@ -246,8 +246,9 @@ def music2yaml(yaml_path, path):
                 for k,v in file_categories:
                     print("Key for array from For loop: " + k)
                     print("Value for array from For loop: " + v)
-                    if filename == file_categories.get(k):
-                        print("We got a key match: " + filename + "\n" + "Key: " + k)
+                    print(filename)
+                    #if filename == file_categories.get(k):
+                    #    print("We got a key match: " + filename + "\n" + "Key: " + k)
 
                 
                 #key = ""
