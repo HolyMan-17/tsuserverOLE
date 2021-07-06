@@ -240,7 +240,7 @@ def music2yaml(yaml_path, path):
 
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
-                if filename.count("[")[0] == 0:
+                if filename.count("[") == 0:
                     uncategorized_songs.append(track)
                     continue
 
