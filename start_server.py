@@ -251,6 +251,7 @@ def music2yaml(yaml_path, path):
                         print("Tag match!")
                         print(obj.get("tag"))
                         print(obj.get("category"))
+                        obj.get("songs").append(track)
                         print(obj.get("songs"))
                         print(filename)
                         print("----------")
