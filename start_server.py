@@ -272,7 +272,7 @@ def music2yaml(yaml_path, path):
     if len(uncategorized_songs) != 0:
         print(uncategorized_songs)
         for obj in uncategorized_songs:
-            print(obj["Uncategorized"].get("songs")
+            print(obj["Uncategorized"].get("songs"))
     else:
         print("No uncategorized songs.")
 
