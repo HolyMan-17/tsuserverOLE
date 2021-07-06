@@ -281,17 +281,17 @@ def music2yaml(yaml_path, path):
     print(list(tags_categories_songs))
 
     print("\nItems output: ")
-    for obj in tags_categories_items:
+    for obj in tags_categories_songs:
         print(obj.items())
         print("\n")
 
     print("Keys output: ")
-    for obj in tags_categories_items:
+    for obj in tags_categories_songs:
         print(obj.keys())
         print("\n")
 
     print("Values output: ")
-    for obj in tags_categories_items:
+    for obj in tags_categories_songs:
         print(obj.values())
         print("\n")
 
