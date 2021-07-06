@@ -243,19 +243,19 @@ def music2yaml(yaml_path, path):
                 filename = file.replace("] ", "]    ")
                 print(filename.split("  "))
 
-                list(tags_categories)
-                
-                key = ""
-                value = ""
-                for k, v in tags_categories.items():
-                    tname = track["name"].replace("] ", "]  ").split("  ")
-                    print(tname)
-                    if tname[0] == k["category"].value:
-                        v["songs"].value.append(track)
-                        key = k
-                        value = v
-                        print(key)
-                        print(value)
+                print(list(tags_categories))
+
+                #key = ""
+                #value = ""
+                #for k, v in tags_categories.items():
+                #    tname = track["name"].replace("] ", "]  ").split("  ")
+                #    print(tname)
+                #    if tname[0] == k["category"].value:
+                #        v["songs"].value.append(track)
+                #        key = k
+                #        value = v
+                #        print(key)
+                #        print(value)
                 
                 
                 
