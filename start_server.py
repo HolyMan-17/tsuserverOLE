@@ -241,7 +241,7 @@ def music2yaml(yaml_path, path):
                 print(track)
 
                 filename = file.replace("] ", "]    ")
-                print(file.split("  "))
+                print(filename.split("  "))
 
                 # Songs might show up multiple times in the list.
                 # Unsure how to implement protection for this,
