@@ -289,17 +289,18 @@ def music2yaml(yaml_path, path):
     else:
         print("No uncategorized songs.")
 
-    print("~stop songs")
-    stop_cat = [cat for cat in tags_categories_songs if cat.get("category") == "~stop"]
-    print(stop_cat)
-
-    print ("Raw songs outputs")
-    for obj in tags_categories_songs:
-        print("\n")
-        print(obj.items())
-
     print("\n\n\nUncategorized Songs")
     print(uncategorized_category.get("songs"))
+
+    # Steel: Alright, now we have our filled up categories... let's assemble it all together, then push
+    # to a new music.yaml file!
+
+    for obj in tags_categories_songs:
+        config.append(obj)
+
+    config.append(uncategorized_category)
+
+    print(config)
 
     #print("List output: ")
     #print(list(tags_categories_songs))
