@@ -283,7 +283,7 @@ def music2yaml(yaml_path, path):
 
     print("~stop songs")
     stop_cat = [cat for cat in tags_categories_songs if cat.get("category") == "~stop"]
-    print(stop_cat.get("songs"))
+    print(stop_cat)
 
     print("\n\n\nUncategorized Songs")
     print(uncategorized_category.get("songs"))
