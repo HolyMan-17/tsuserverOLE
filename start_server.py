@@ -309,7 +309,7 @@ def music2yaml(yaml_path, path):
     
     # Steel: And thus, when Steel did run dir config on the server...
     # he did indeed find a new music.yaml file... hopefully.
-    
+
     #print("List output: ")
     #print(list(tags_categories_songs))
 
@@ -332,92 +332,92 @@ def music2yaml(yaml_path, path):
     #    print("Tag, Category: " + obj.get("tag") + ", " + obj.get("category") + "\nSongs list: ")
     #    print(obj.get("songs"))
     
-    sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
+    #sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
                 # still tinkering with how this will work.
     # Check if there is a category called "Uncategorized"
     # If not, create one
-    uncategorized_category = [c for c in config if c["category"] == "Uncategorized"]
-    uncategorized_category_present = True
-    if len(uncategorized_category) == 0:
-        uncategorized_category_present = False
-        uncategorized_category = OrderedDict([
-            ("category", "Uncategorized"), ("songs", [])
-        ])
-    else:
-        uncategorized_category = uncategorized_category[0]
+    #uncategorized_category = [c for c in config if c["category"] == "Uncategorized"]
+    #uncategorized_category_present = True
+    #if len(uncategorized_category) == 0:
+    #    uncategorized_category_present = False
+    #    uncategorized_category = OrderedDict([
+    #        ("category", "Uncategorized"), ("songs", [])
+    #    ])
+    #else:
+    #    uncategorized_category = uncategorized_category[0]
 
-    file_list = os.listdir(path)
-    if new_only:
-        file_list = [f for f in file_list if f not in song_names]
+    #file_list = os.listdir(path)
+    #if new_only:
+    #    file_list = [f for f in file_list if f not in song_names]
 
-    progress = 0
-    progress_max = len(file_list)
-    for file in file_list:
-        progress += 1
-        #print("Progress: " + str(progress))
+    #progress = 0
+    #progress_max = len(file_list)
+    #for file in file_list:
+    #    progress += 1
+    #   #print("Progress: " + str(progress))
 
-        if file.split(".")[-1] not in ("mp3", "wav", "ogg", "opus"):
-            continue
-        try:
-            # Invoke ffprobe to extract the length
-            file_path = 'base/sounds/music/' + file
+    #    if file.split(".")[-1] not in ("mp3", "wav", "ogg", "opus"):
+    #        continue
+    #    try:
+    #        # Invoke ffprobe to extract the length
+    #        file_path = 'base/sounds/music/' + file
             
-            out = subprocess.check_output(
-                ["ffprobe","-v","error","-show_entries","format=duration",
-                "-of","default=noprint_wrappers=1:nokey=1", file_path])
+    #        out = subprocess.check_output(
+    #            ["ffprobe","-v","error","-show_entries","format=duration",
+    #            "-of","default=noprint_wrappers=1:nokey=1", file_path])
             
-            length = float(out.decode("UTF-8").strip().split("\r\n")[0])
+    #        length = float(out.decode("UTF-8").strip().split("\r\n")[0])
 
             # Compose song/track object
-            track = OrderedDict([
-                ("name", file), ("length", length)
-            ])
+    #        track = OrderedDict([
+    #            ("name", file), ("length", length)
+    #        ])
 
             # There could theoretically be the same song in multiple categories.
             # We'll cover the case just for the sake of it.
-            entries = [s for s in songs if s["name"] == file]
+    #        entries = [s for s in songs if s["name"] == file]
 
             # Check if the song is in the list
-            if len(entries) != 0:
+    #        if len(entries) != 0:
                 # Update the length property in each song entry
                 # that matched the name criterion
-                for entry in entries:
-                    entry["length"] = track["length"]
+    #            for entry in entries:
+    #                entry["length"] = track["length"]
 
-            elif not no_new:
+    #        elif not no_new:
                 # Add it to the uncategorized category
-                uncategorized_category["songs"].append(track)
+    #            uncategorized_category["songs"].append(track)
 
-            print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
-        except ValueError as ve:
-            print("ValueError: " + str(e))
-            print(f"Could not open track {file_path}. Skipping.")
+    #        print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
+    #    except ValueError as ve:
+    #       print("ValueError: " + str(e))
+    #        print(f"Could not open track {file_path}. Skipping.")
 
-        except subprocess.CalledProcessError as cpe:
-            raise RuntimeError("command '{}' return with error (code {}): {}".format(cpe.cmd, cpe.returncode, cpe.output))
-            print("Ran into a process error.")
+    #    except subprocess.CalledProcessError as cpe:
+    #        raise RuntimeError("command '{}' return with error (code {}): {}".format(cpe.cmd, cpe.returncode, cpe.output))
+     #       print("Ran into a process error.")
 
-        except ffmpeg.Error as ff:
-            print(ff.stderr)
+     #   except ffmpeg.Error as ff:
+    #        print(ff.stderr)
 
-        except KeyboardInterrupt:
-            print("Scan aborted! No changes have been written to disk.")
-            sys.exit(2)
+    #    except KeyboardInterrupt:
+     #       print("Scan aborted! No changes have been written to disk.")
+     #       sys.exit(2)
 
     #print("Music.yaml path: " + yaml_path)
     #print("Scan complete in folder: " + path + " " * 20)
 
     # Add the uncategorized category if it was used
-    if not uncategorized_category_present and len(uncategorized_category["songs"]) != 0:
-        config.append(uncategorized_category)
+    #if not uncategorized_category_present and len(uncategorized_category["songs"]) != 0:
+    #   config.append(uncategorized_category)
 
-    dump = ordered_dump(config, default_flow_style=False)
+    #dump = ordered_dump(config, default_flow_style=False)
 
-    print(dump)
+    #print(dump)
 
     # Write the final config to file if everything went well
-    with open(yaml_path, "w") as yaml_file:
-        yaml_file.write(dump)
+    #with open(yaml_path, "w") as yaml_file:
+    #    yaml_file.write(dump)
     
 
 
