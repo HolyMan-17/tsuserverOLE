@@ -304,36 +304,18 @@ def music2yaml(yaml_path, path):
 
         dump = ordered_dump(config, default_flow_style=False)
 
+        print(dump)
+
+        # Steel: And thus, when Steel did run dir config on the server...
+        # he did indeed find a new music.yaml file. Nice to have this actually work.
         with open(yaml_path, "w") as yaml_file:
             yaml_file.write(dump)
+    else:
+        #Else NOTHING right now, good God I need to make sure the building works first!
+        print("Not doing anything to the music.yaml file right now, this part's under construction.\n-Foreman Steel")
     
-    # Steel: And thus, when Steel did run dir config on the server...
-    # he did indeed find a new music.yaml file... hopefully.
 
-    #print("List output: ")
-    #print(list(tags_categories_songs))
 
-    #print("\nItems output: ")
-    #for obj in tags_categories_songs:
-    #    print(obj.items())
-
-    #print("Keys output: ")
-    #for obj in tags_categories_songs:
-    #    print(obj.keys())
-
-    #print("Values output: ")
-    #for obj in tags_categories_songs:
-    #    print(obj.values())
-    
-        #print(tags_categories_songs.get("category" == "Uncategorized").get("songs"))
-    # TO-DO: Figure out a way to get a particular category and insert stuff into its 'songs' object.
-
-    #for obj in tags_categories_songs:
-    #    print("Tag, Category: " + obj.get("tag") + ", " + obj.get("category") + "\nSongs list: ")
-    #    print(obj.get("songs"))
-    
-    #sys.exit(1) # Steel: Terminating here since we don't want to write anything yet,
-                # still tinkering with how this will work.
     # Check if there is a category called "Uncategorized"
     # If not, create one
     #uncategorized_category = [c for c in config if c["category"] == "Uncategorized"]
