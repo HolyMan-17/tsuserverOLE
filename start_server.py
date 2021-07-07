@@ -185,7 +185,7 @@ def music2yaml(yaml_path, path):
                 ("[PL]", "Professor Layton"),
                 ("[SoJ]", "Spirit of Justice"),
                 ("[STAFF]", "STAFF"),
-                ("stop~", "STOP")
+                ("~stop", "STOP")
             ])
     
     
@@ -239,7 +239,7 @@ def music2yaml(yaml_path, path):
 
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
-                if filename.count("[") == 0:
+                if filename.count("[") == 0 and filename.split(".")[0] != "~stop":
                     uncategorized_songs.append(track)
                     continue
 
@@ -281,6 +281,11 @@ def music2yaml(yaml_path, path):
     else:
         print("No uncategorized songs.")
 
+    print("~stop songs")
+    stop_cat = [cat for cat in tags_categories_songs if cat.get("category") == "~stop"]
+    print(stop_cat.get("songs"))
+
+    print("\n\n\nUncategorized Songs")
     print(uncategorized_category.get("songs"))
 
     #print("List output: ")
