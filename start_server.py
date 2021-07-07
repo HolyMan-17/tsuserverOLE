@@ -250,7 +250,7 @@ def music2yaml(yaml_path, path):
                 # We're past the uncategorized ones, now we'll just start putting categorical songs
                 # in their place.
                 for obj in tags_categories_songs:
-                    if filename.upper() == obj.get("tag") or track.get("name").split(".")[0].upper() == obj.get("tag").upper():
+                    if filename.upper() == obj.get("tag").upper() or track.get("name").split(".")[0].upper() == obj.get("tag").upper():
                         #print("\nSong with a [: " + track.get("name"))
                         obj.get("songs").append(track)
                         continue
@@ -275,8 +275,13 @@ def music2yaml(yaml_path, path):
                 #    uncategorized_category["songs"].append(track)
 
                 # Alright, we have our track objects. Let's add them to the list...
+            except ValueError as ve:
+                print("ValueError: " + str(ve))
+                print(f"Could not open track {file_path}. Skipping.")
+
             except KeyboardInterrupt:
-                print("don't interrupt me I'm workin' :c -Steeld")
+                print("don't interrupt me I'm workin' :c -Steel")
+                print("Also not writing anything to file. Dumping everything we've done so far.")
 
         uncategorized_category = OrderedDict([("tag", ""), ("category", "Uncategorized"), ("songs", [])])
 
@@ -304,12 +309,13 @@ def music2yaml(yaml_path, path):
 
         dump = ordered_dump(config, default_flow_style=False)
 
-        print(dump)
+        #print(dump)
 
         # Steel: And thus, when Steel did run dir config on the server...
         # he did indeed find a new music.yaml file. Nice to have this actually work.
         with open(yaml_path, "w") as yaml_file:
             yaml_file.write(dump)
+
     else:
         #Else NOTHING right now, good God I need to make sure the building works first!
         print("Not doing anything to the music.yaml file right now, this part's under construction.\n-Foreman Steel")
