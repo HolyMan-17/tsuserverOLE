@@ -243,7 +243,7 @@ def music2yaml(yaml_path, path):
                 # something with a square bracket in it, checking the track's name itself to see if it's ~stop.
                 # Since it gets its own pretty little category in the list.
                 if filename.count("[") == 0 and track.get("name").split(".")[0] != "~stop":
-                    print("\nSong without a [: " + track.get("name"))
+                    #print("\nSong without a [: " + track.get("name"))
                     uncategorized_songs.append(track)
                     continue
 
@@ -251,7 +251,7 @@ def music2yaml(yaml_path, path):
                 # in their place.
                 for obj in tags_categories_songs:
                     if filename == obj.get("tag") or track.get("name").split(".")[0] == obj.get("tag"):
-                        print("\nSong with a [: " + track.get("name"))
+                        #print("\nSong with a [: " + track.get("name"))
                         obj.get("songs").append(track)
                         continue
                 
@@ -289,8 +289,8 @@ def music2yaml(yaml_path, path):
     else:
         print("No uncategorized songs.")
 
-    print("\n\n\nUncategorized Songs")
-    print(uncategorized_category.get("songs"))
+    #print("\n\n\nUncategorized Songs")
+    #print(uncategorized_category.get("songs"))
 
     # Steel: Alright, now we have our filled up categories... let's assemble it all together, then push
     # to a new music.yaml file!
@@ -300,8 +300,16 @@ def music2yaml(yaml_path, path):
 
     config.append(uncategorized_category)
 
-    print(config)
+    #print(config)
 
+    dump = ordered_dump(config, default_flow_style=False)
+
+    with open(yaml_path, "w") as yaml_file:
+        yaml_file.write(dump)
+    
+    # Steel: And thus, when Steel did run dir config on the server...
+    # he did indeed find a new music.yaml file... hopefully.
+    
     #print("List output: ")
     #print(list(tags_categories_songs))
 
