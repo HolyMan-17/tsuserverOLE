@@ -277,20 +277,20 @@ def music2yaml(yaml_path, path):
     else:
         print("No uncategorized songs.")
 
-    print("List output: ")
-    print(list(tags_categories_songs))
+    #print("List output: ")
+    #print(list(tags_categories_songs))
 
-    print("\nItems output: ")
-    for obj in tags_categories_songs:
-        print(obj.items())
+    #print("\nItems output: ")
+    #for obj in tags_categories_songs:
+    #    print(obj.items())
 
-    print("Keys output: ")
-    for obj in tags_categories_songs:
-        print(obj.keys())
+    #print("Keys output: ")
+    #for obj in tags_categories_songs:
+    #    print(obj.keys())
 
-    print("Values output: ")
-    for obj in tags_categories_songs:
-        print(obj.values())
+    #print("Values output: ")
+    #for obj in tags_categories_songs:
+    #    print(obj.values())
     
     uncat_obj = None
     for obj in tags_categories_songs:
