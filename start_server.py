@@ -278,34 +278,34 @@ def music2yaml(yaml_path, path):
             except KeyboardInterrupt:
                 print("don't interrupt me I'm workin' :c -Steeld")
 
-    uncategorized_category = OrderedDict([("tag", ""), ("category", "Uncategorized"), ("songs", [])])
+        uncategorized_category = OrderedDict([("tag", ""), ("category", "Uncategorized"), ("songs", [])])
 
-    if len(uncategorized_songs) != 0:
-        for song in uncategorized_songs:
-            uncategorized_category.get("songs").append(song)
-            # Steel: Behold this ungodly abomination because I can't figure out
-            # how to grab a freakin' OrderedDict object from a list, insert into it,
-            # then put it back neatly. Worst librarian :(.
-    else:
-        print("No uncategorized songs.")
+        if len(uncategorized_songs) != 0:
+            for song in uncategorized_songs:
+                uncategorized_category.get("songs").append(song)
+                # Steel: Behold this ungodly abomination because I can't figure out
+                # how to grab a freakin' OrderedDict object from a list, insert into it,
+                # then put it back neatly. Worst librarian :(.
+        else:
+            print("No uncategorized songs.")
 
-    #print("\n\n\nUncategorized Songs")
-    #print(uncategorized_category.get("songs"))
+        #print("\n\n\nUncategorized Songs")
+        #print(uncategorized_category.get("songs"))
 
-    # Steel: Alright, now we have our filled up categories... let's assemble it all together, then push
-    # to a new music.yaml file!
+        # Steel: Alright, now we have our filled up categories... let's assemble it all together, then push
+        # to a new music.yaml file!
 
-    for obj in tags_categories_songs:
-        config.append(obj)
+        for obj in tags_categories_songs:
+            config.append(obj)
 
-    config.append(uncategorized_category)
+        config.append(uncategorized_category)
 
-    #print(config)
+        #print(config)
 
-    dump = ordered_dump(config, default_flow_style=False)
+        dump = ordered_dump(config, default_flow_style=False)
 
-    with open(yaml_path, "w") as yaml_file:
-        yaml_file.write(dump)
+        with open(yaml_path, "w") as yaml_file:
+            yaml_file.write(dump)
     
     # Steel: And thus, when Steel did run dir config on the server...
     # he did indeed find a new music.yaml file... hopefully.
