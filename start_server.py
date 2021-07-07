@@ -237,7 +237,7 @@ def music2yaml(yaml_path, path):
                     ("name", file), ("length", length)
                 ])
 
-                filename = track["name"].replace("] ", "]   ").split("  ").upper()[0]
+                filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
                 # Steel: Since filename isn't going to have anything if we don't actually /get/
                 # something with a square bracket in it, checking the track's name itself to see if it's ~stop.
@@ -250,7 +250,7 @@ def music2yaml(yaml_path, path):
                 # We're past the uncategorized ones, now we'll just start putting categorical songs
                 # in their place.
                 for obj in tags_categories_songs:
-                    if filename == obj.get("tag") or track.get("name").split(".").upper()[0] == obj.get("tag"):
+                    if filename.upper() == obj.get("tag") or track.get("name").split(".").upper()[0] == obj.get("tag"):
                         #print("\nSong with a [: " + track.get("name"))
                         obj.get("songs").append(track)
                         continue
