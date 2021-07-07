@@ -185,8 +185,7 @@ def music2yaml(yaml_path, path):
                 ("[PL]", "Professor Layton"),
                 ("[SoJ]", "Spirit of Justice"),
                 ("[STAFF]", "STAFF"),
-                ("stop~", "STOP"),
-                ("", "Uncategorized")
+                ("stop~", "STOP")
             ])
     
     
@@ -199,6 +198,8 @@ def music2yaml(yaml_path, path):
 
         # Iterate through each category in our 'categories' list, then create a new
         # OrderedDict object that we'll later stock up with songs.
+        # We'll leave Uncategorized out, so we can make the object at the end, then append it to
+        # the end of tags_categories_songs for later file writing.
         for k,v in sorted(tags_categories.items()):
             tags_categories_songs.append(
                 OrderedDict([
@@ -206,9 +207,6 @@ def music2yaml(yaml_path, path):
                 ])
             )
         #print(tags_categories_songs)
-
-        # Steel: Okay, it builds the structure I want. Now, let's see if we can get into iterating through files,
-        # and see if they end up in the right categories based on tag.
 
         file_list = os.listdir(path)
         if new_only:
@@ -272,19 +270,18 @@ def music2yaml(yaml_path, path):
             except KeyboardInterrupt:
                 print("don't interrupt me I'm workin' :c -Steeld")
 
+    uncategorized_category = OrderedDict([("tag", ""), ("category", "Uncategorized"), ("songs", [])])
+
     if len(uncategorized_songs) != 0:
-        for obj in tags_categories_songs:
-            if obj.get("category") == "Uncategorized":
-                for song in uncategorized_songs:
-                    obj.get("songs").append(song)
-                    # Steel: Behold this ungodly abomination because I can't figure out
-                    # how to grab a freakin' OrderedDict object from a list, insert into it,
-                    # then put it back neatly. Worst librarian :(.
-                continue
+        for song in uncategorized_songs:
+            uncategorized_category.get("songs").append(song)
+            # Steel: Behold this ungodly abomination because I can't figure out
+            # how to grab a freakin' OrderedDict object from a list, insert into it,
+            # then put it back neatly. Worst librarian :(.
     else:
         print("No uncategorized songs.")
 
-    print(tags_categories_songs.get("songs").values())
+    print(uncategorized_category.get("songs").values())
 
     #print("List output: ")
     #print(list(tags_categories_songs))
