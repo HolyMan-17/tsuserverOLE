@@ -239,11 +239,16 @@ def music2yaml(yaml_path, path):
 
                 filename = track["name"].replace("] ", "]   ").split("  ")[0]
 
+                # Steel: Since filename isn't going to have anything if we don't actually /get/
+                # something with a square bracket in it, checking the track's name itself to see if it's ~stop.
+                # Since it gets its own pretty little category in the list.
                 if filename.count("[") == 0 and track.get("name").split(".")[0] != "~stop":
                     print("\nSong without a [: " + track.get("name"))
                     uncategorized_songs.append(track)
                     continue
 
+                # We're past the uncategorized ones, now we'll just start putting categorical songs
+                # in their place.
                 for obj in tags_categories_songs:
                     if filename == obj.get("tag") or track.get("name").split(".")[0] == obj.get("tag"):
                         print("\nSong with a [: " + track.get("name"))
@@ -287,6 +292,11 @@ def music2yaml(yaml_path, path):
     print("~stop songs")
     stop_cat = [cat for cat in tags_categories_songs if cat.get("category") == "~stop"]
     print(stop_cat)
+
+    print ("Raw songs outputs")
+    for obj in tags_categories_songs:
+        print("\n")
+        print(obj.items())
 
     print("\n\n\nUncategorized Songs")
     print(uncategorized_category.get("songs"))
