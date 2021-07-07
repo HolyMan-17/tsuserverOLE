@@ -291,6 +291,15 @@ def music2yaml(yaml_path, path):
     print("Values output: ")
     for obj in tags_categories_songs:
         print(obj.values())
+    
+    uncat_obj = None
+    for obj in tags_categories_songs:
+        if obj.get("category") == "Uncategorized":
+            uncat_obj = obj
+            continue
+    
+    print("\n" * 8)
+    print(uncat_obj.items())
 
     #print(tags_categories_songs.get("category" == "Uncategorized").get("songs"))
     # TO-DO: Figure out a way to get a particular category and insert stuff into its 'songs' object.
