@@ -242,7 +242,7 @@ def music2yaml(yaml_path, path):
                 # Steel: Since filename isn't going to have anything if we don't actually /get/
                 # something with a square bracket in it, checking the track's name itself to see if it's ~stop.
                 # Since it gets its own pretty little category in the list.
-                if filename.count("[") == 0 and track.get("name").split(".").lower()[0] != "~stop":
+                if filename.count("[") == 0 and track.get("name").split(".")[0].lower() != "~stop":
                     #print("\nSong without a [: " + track.get("name"))
                     uncategorized_songs.append(track)
                     continue
