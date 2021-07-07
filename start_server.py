@@ -188,7 +188,8 @@ def music2yaml(yaml_path, path):
                 ("stop~", "STOP"),
                 ("", "Uncategorized")
             ])
-
+    
+    
     # Steel: Now, we need to iterate through categories in music.yaml and see if they're there. If not, build them.
     # -We should really only do this if we're building a new music.yaml file, I figure it'll get out of order otherwise.
 
@@ -272,11 +273,19 @@ def music2yaml(yaml_path, path):
                 print("don't interrupt me I'm workin' :c -Steeld")
 
     if len(uncategorized_songs) != 0:
-        print(len(uncategorized_songs))
-        print(uncategorized_songs)
+        for obj in tags_categories_songs:
+            if obj.get("category") == "Uncategorized":
+                for song in uncategorized_songs:
+                    obj.("songs").append(song)
+                    # Steel: Behold this ungodly abomination because I can't figure out
+                    # how to grab a freakin' OrderedDict object from a list, insert into it,
+                    # then put it back neatly. Worst librarian :(.
+                continue
     else:
         print("No uncategorized songs.")
 
+    print(obj.get("songs").values())
+    
     #print("List output: ")
     #print(list(tags_categories_songs))
 
@@ -292,16 +301,7 @@ def music2yaml(yaml_path, path):
     #for obj in tags_categories_songs:
     #    print(obj.values())
     
-    uncat_obj = None
-    for obj in tags_categories_songs:
-        if obj.get("category") == "Uncategorized":
-            uncat_obj = obj
-            continue
-    
-    print("\n" * 8)
-    print(uncat_obj.items())
-
-    #print(tags_categories_songs.get("category" == "Uncategorized").get("songs"))
+        #print(tags_categories_songs.get("category" == "Uncategorized").get("songs"))
     # TO-DO: Figure out a way to get a particular category and insert stuff into its 'songs' object.
 
     #for obj in tags_categories_songs:
