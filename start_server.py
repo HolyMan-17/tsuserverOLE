@@ -276,7 +276,7 @@ def music2yaml(yaml_path, path):
         for obj in tags_categories_songs:
             if obj.get("category") == "Uncategorized":
                 for song in uncategorized_songs:
-                    obj.("songs").append(song)
+                    obj.get("songs").append(song)
                     # Steel: Behold this ungodly abomination because I can't figure out
                     # how to grab a freakin' OrderedDict object from a list, insert into it,
                     # then put it back neatly. Worst librarian :(.
