@@ -250,7 +250,7 @@ def music2yaml(yaml_path, path):
                 # We're past the uncategorized ones, now we'll just start putting categorical songs
                 # in their place.
                 for obj in tags_categories_songs:
-                    if filename.upper() == obj.get("tag") or track.get("name").split(".")[0].upper() == obj.get("tag"):
+                    if filename.upper() == obj.get("tag") or track.get("name").split(".")[0].upper() == obj.get("tag").upper():
                         #print("\nSong with a [: " + track.get("name"))
                         obj.get("songs").append(track)
                         continue
