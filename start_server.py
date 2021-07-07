@@ -281,7 +281,7 @@ def music2yaml(yaml_path, path):
     else:
         print("No uncategorized songs.")
 
-    print(uncategorized_category.get("songs").values())
+    print(uncategorized_category.get("songs"))
 
     #print("List output: ")
     #print(list(tags_categories_songs))
