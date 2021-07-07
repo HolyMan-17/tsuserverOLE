@@ -2,7 +2,6 @@
 
 ### Server related
 # Sensitive data
-config/
 storage/**/*.json
 storage/db.sqlite*
 logs/**/*.log

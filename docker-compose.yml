@@ -7,8 +7,9 @@ services:
             - 27016:27016
             - 50001:50001
         volumes:
-            - ./storage:/app/storage
-            - ./logs:/app/logs
-            - ./config:/app/config
+            - ./storage:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/OLEAO-ServerCC/storage
+            - ./logs:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/OLEAO-ServerCC/logs
+            - ./config:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/OLEAO-ServerCC/config
+            - ./base/sounds/music:/tsuserver3cc-musicautoscan/OLEAO-ServerCC/OLEAO-ServerCC/base/sounds/music
         restart: unless-stopped
 
