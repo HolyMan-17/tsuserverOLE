@@ -54,8 +54,8 @@ class Database:
     """
 
     def __init__(self):
-        new = not os.path.exists('storage/db.sqlite3')
-        
+        new = not os.path.exists(DB_FILE)
+
         self.db = sqlite3.connect(DB_FILE)
         self.db.execute('PRAGMA foreign_keys = ON')
         self.db.row_factory = sqlite3.Row
