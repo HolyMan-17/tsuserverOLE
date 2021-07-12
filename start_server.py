@@ -440,7 +440,7 @@ def character2yaml(yaml_path, path):
     # Plus, we only want to add new characters.
 
     file_list = os.listdir(path)
-    file_list = [f for f in file_list if f not in chars]
+    file_list = [f for f in file_list if f not in chars and "." not in f]
 
     #print("\nfile_list:")
     #print(file_list)
