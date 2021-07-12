@@ -454,7 +454,7 @@ def character2yaml(yaml_path, path):
             # Just build the characters list, really.
             
             config.append(file)
-            #print("Progress {progress}: " + file)
+            print("Progress {progress}: " + file)
 
         except KeyboardInterrupt:
             print()
@@ -467,8 +467,8 @@ def character2yaml(yaml_path, path):
 
     dump = ordered_dump(config, default_flow_style=False)
 
-    #print("dump:\n")
-    #print(dump)
+    print("dump:\n")
+    print(dump)
     # Aaand write it
     with open(yaml_path, "w") as yaml_file:
         yaml_file.write(dump)
@@ -489,28 +489,8 @@ def main():
     char_yaml_path = os.path.join(os.getcwd(),"config/characters.yaml")
     char_path = os.path.join(os.getcwd(),"characters")
 
-    listdir = os.listdir(os.getcwd())
-
-    #for f in listdir:
-        #print(f)
-    
-    #print("os.listdir(): " + os.listdir(os.getcwd())) - Causes an error, don't use this
-    #print("os.path.dirname: " + os.path.dirname(__file__))
-    #print("music_yaml_path: " + music_yaml_path)
-    #print("music_path: " + music_path)
-    #print("char_yaml_path: " + char_yaml_path)
-    #print("char_path: " + char_path)
-    #yaml_path = "/music.yaml"
-    #path = "/characters/"
-
-
-    #sys.exit(2)
-
     music2yaml(music_yaml_path, music_path)
     character2yaml(char_yaml_path, char_path)
-
-    #music2yaml(yaml_path, path)
-    #character2yaml(yaml_path, path)
 
     from server.tsuserver import TsuServerCC
     server = TsuServerCC()
