@@ -466,7 +466,7 @@ def character2yaml(yaml_path, path):
 
     # Now we just write everything to the file.
 
-    dump = ordered_dump(config, default_flow_style=False)
+    dump = ordered_dump(sorted(config), default_flow_style=False)
 
     print("dump:\n")
     print(dump)
