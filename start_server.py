@@ -245,7 +245,7 @@ def music2yaml(yaml_path, path):
         progress_max = len(file_list)
         uncategorized_songs = []
 
-        for file in progressBar(file_list, prefix = 'Progress:', suffix = 'Complete', length = len(file_list)):
+        for file in progressBar(file_list, prefix = 'Progress:', suffix = 'Complete', length = 50):
             progress += 1
 
             if file.split(".")[-1] not in ("mp3", "wav", "ogg", "opus"):
@@ -478,7 +478,7 @@ def character2yaml(yaml_path, path):
 
     progress = 0
     progress_max = len(file_list)
-    for file in progressBar(file_list, prefix = 'Progress:', suffix = 'Complete', length = len(file_list)):
+    for file in progressBar(file_list, prefix = 'Progress:', suffix = 'Complete', length = 50):
         progress += 1
         try:
             # Just build the characters list, really.
