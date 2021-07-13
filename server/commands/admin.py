@@ -727,7 +727,7 @@ def ooc_cmd_bans(client, _arg):
 	msg = 'Last 5 bans:\n'
 	bandate = None
 	for ban in database.recent_bans():
-		if ban.ban_date == None:
+		if ban.ban_date == None or ban.ban_date == "None":
 			bandate = "N/A"
 		else:
 			bandate = ban.ban_date
