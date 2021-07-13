@@ -104,6 +104,35 @@ def ordered_dump(data, stream=None, Dumper=NoAliasDumper, **kwds):
     OrderedDumper.add_representer(OrderedDict, _dict_representer)
     return yaml.dump(data, stream, OrderedDumper, **kwds)
 
+# Hey look, a really cool progress bar thingy :o. Stackoverflow is great, man. -Steel
+def progressBar(iterable, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
+    """
+    Call in a loop to create terminal progress bar
+    @params:
+        iterable    - Required  : iterable object (Iterable)
+        prefix      - Optional  : prefix string (Str)
+        suffix      - Optional  : suffix string (Str)
+        decimals    - Optional  : positive number of decimals in percent complete (Int)
+        length      - Optional  : character length of bar (Int)
+        fill        - Optional  : bar fill character (Str)
+        printEnd    - Optional  : end character (e.g. "\r", "\r\n") (Str)
+    """
+    total = len(iterable)
+    # Progress Bar Printing Function
+    def printProgressBar (iteration):
+        percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
+        filledLength = int(length * iteration // total)
+        bar = fill * filledLength + '-' * (length - filledLength)
+        print(f'\r{prefix} |{bar}| {percent}% {suffix}', end = printEnd)
+    # Initial Call
+    printProgressBar(0)
+    # Update Progress Bar
+    for i, item in enumerate(iterable):
+        yield item
+        printProgressBar(i + 1)
+    # Print New Line on Complete
+    print()
+
 def music2yaml(yaml_path, path):
 
     # This is literally just the main part of the music2yaml.py script pasted into main().
@@ -216,7 +245,7 @@ def music2yaml(yaml_path, path):
         progress_max = len(file_list)
         uncategorized_songs = []
 
-        for file in file_list:
+        for file in progressBar(file_list, prefix = 'Progress:', suffix = 'Complete', length = len(file_list)):
             progress += 1
 
             if file.split(".")[-1] not in ("mp3", "wav", "ogg", "opus"):
@@ -255,6 +284,7 @@ def music2yaml(yaml_path, path):
                         obj.get("songs").append(track)
                         continue
                 
+                #print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
                 # Songs might show up multiple times in the list.
                 # Unsure how to implement protection for this,
                 # so I've brought over the original way of doing it and commented it out.
@@ -448,14 +478,15 @@ def character2yaml(yaml_path, path):
 
     progress = 0
     progress_max = len(file_list)
-    for file in file_list:
+    for file in progressBar(file_list, prefix = 'Progress:', suffix = 'Complete', length = len(file_list)):
         progress += 1
         try:
             # Just build the characters list, really.
             
             if "." not in file:
                 config.append(file)
-                print("Progress {progress}: " + file)
+                #print(f"({progress}/{progress_max}) {file}" + " " * 15 + "\r", end="")
+                #print("Progress {progress}: " + file)
 
         except KeyboardInterrupt:
             print()
@@ -468,8 +499,8 @@ def character2yaml(yaml_path, path):
 
     dump = ordered_dump(sorted(config), default_flow_style=False)
 
-    print("dump:\n")
-    print(dump)
+    #print("dump:\n")
+    #print(dump)
     # Aaand write it
     with open(yaml_path, "w") as yaml_file:
         yaml_file.write(dump)
