@@ -731,7 +731,7 @@ def ooc_cmd_bans(client, _arg):
 			bandate = "N/A"
 		else:
 			bandate = ban.ban_date
-		time = arrow.get(bandate).humanize()
+		time = bandate
 		msg += f'{time}: {ban.banned_by_name} ({ban.banned_by}) issued ban ' \
 			   f'{ban.ban_id} (\'{ban.reason}\')\n'
 	client.send_ooc(msg)
