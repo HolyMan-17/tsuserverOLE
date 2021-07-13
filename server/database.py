@@ -267,6 +267,7 @@ class Database:
             self.ban_date = arrow.get(self.ban_date).datetime
 
             if self.unban_date is not None or self.unban_date is not "None":
+                print(self.unban_date)
                 self.unban_date = arrow.get(self.unban_date).datetime
             else:
                 self.unban_date = "N/A"
