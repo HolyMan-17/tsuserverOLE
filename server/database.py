@@ -266,11 +266,11 @@ class Database:
         def __post_init__(self):
             self.ban_date = arrow.get(self.ban_date).datetime
 
-            if self.unban_date:
+            if self.unban_date is None or self.unban_date == None:
                 print(self.unban_date)
-                self.unban_date = arrow.get(self.unban_date).datetime
-            else:
                 self.unban_date = "N/A"
+            else:
+                self.unban_date = arrow.get(self.unban_date).datetime
 
         @property
         def ipids(self):
