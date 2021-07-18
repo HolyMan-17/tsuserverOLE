@@ -323,7 +323,7 @@ class AOProtocol(asyncio.Protocol):
 		self.client.send_command('SM', *self.server.music_list_ao2)
 		area_list = []
 		for area in self.server.area_manager.areas:
-			area_list.append('[' + area.abbreviation + '] ' + area.name)
+			area_list.append(area.name)
 		self.client.send_command('FA', *area_list)
 
 	def net_cmd_rd(self, _):
