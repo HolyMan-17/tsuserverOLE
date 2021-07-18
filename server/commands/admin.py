@@ -53,19 +53,33 @@ def ooc_cmd_geoiprefresh(client, arg):
 		raise ArgumentError('You must be authorized to do that.')
 	client.server.load_ipranges()
 
+"""
+Command: /spy
+Usage: Spy on an area (act as if you were its CM),
+see IC and OOC messages in these rooms.
+Arguments: None, 'here', 'clear', area abbreviations
+Specifics: Leans on 'spying' list in client_manager, 'spies' list and
+send_owner_command in area_manager. 'send_owner_command' is called
+as part of both the IC and OOC message handlers in aoprotocol.py.
+"""
 def ooc_cmd_spy(client, arg):
+	# Check if the user's a mod.
 	if not client.is_mod:
 		raise ArgumentError('You must be authorized to do that.')
+	# No arguments (just /spy being used), tell me the users I'm
+	# spying on.
 	if len(arg) == 0:
 		msg = 'Spying on:'
 		for a in client.spying:
 			msg += f'\n[{a.abbreviation}]'
 		return client.send_ooc(msg)
+	# 'here' as argument, add me as a spy to the area I'm in.
 	elif arg == 'here':
 		if client not in client.area.spies:
 			client.area.spies.add(client)
 			client.spying.append(client.area)
 		return client.send_ooc('You are now spying on this area.')
+	# 'clear' as argument, clear out my spying list.
 	elif arg == 'clear':
 		spyl = []
 		for a in client.spying:
@@ -74,12 +88,20 @@ def ooc_cmd_spy(client, arg):
 			b.spies.remove(client)
 			client.spying.remove(b)
 		return client.send_ooc('All spying cleared.')
+	# Entered area name abbreviations as arguments.
 	else:
 		try:
+			# Try adding them to 'spyhere'.
 			spyhere = client.server.area_manager.get_area_by_abbreviation(arg)
 		except:
 			raise ArgumentError('Area not recognized.')
+		# Add me as a spy in the spyhere list.
+		# Add the spyhere list entries to my spying entry.
+
+		# 'spies' is in area_manager as part of 'send_owner_command'
 		spyhere.spies.add(client)
+
+		# 'spying' is in client_manager as a variable intializer.
 		client.spying.append(spyhere)
 		return send_ooc(f'You are now spying in {spyhere.name}.')
 
