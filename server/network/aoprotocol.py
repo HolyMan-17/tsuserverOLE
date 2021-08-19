@@ -829,9 +829,11 @@ class AOProtocol(asyncio.Protocol):
 
 			if playback:
 				print("Statement should still be 1: " + str(self.client.area.statement))
-				print("Statement ID: " + str(self.client.area.statement.id) + ", Statement Args:")
-				for a in self.client.area.statement.args:
-					print(a)
+				print("Statement ID: " + str(self.client.area.statement) + ", Statement Args:")
+				for a in self.client.area.recorded_messages:
+					if a.id == self.client.area.statement:
+						for b in a.args:
+							print(b)
 				last = len(self.client.area.recorded_messages) - 1
 				if not self.client.area.statement < 1 and not self.client.area.statement == last:
 					print("If statement is 1, we shouldn't be here!")
