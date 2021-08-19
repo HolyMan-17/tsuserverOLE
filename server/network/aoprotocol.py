@@ -825,6 +825,8 @@ class AOProtocol(asyncio.Protocol):
 
 			if playback:
 				last = len(self.client.area.recorded_messages) - 1
+				print(last)
+				print(self.client.area.statement)
 				if not self.client.area.statement < 1 and not self.client.area.statement == last:
 					statement.prepce()
 				self.client.area.send_command('MS', *statement.args)
