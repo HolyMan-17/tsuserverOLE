@@ -830,7 +830,7 @@ class AOProtocol(asyncio.Protocol):
 			if playback:
 				print("Statement should still be 1: " + str(self.client.area.statement))
 				last = len(self.client.area.recorded_messages) - 1
-				if not self.client.area.statement <= 1 and not self.client.area.statement == last:
+				if not self.client.area.statement < 1 and not self.client.area.statement == last:
 					print("If statement is 1, we shouldn't be here!")
 					statement.prepce()
 					self.client.area.send_command('MS', *statement.args)
