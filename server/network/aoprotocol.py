@@ -837,10 +837,12 @@ class AOProtocol(asyncio.Protocol):
 				last = len(self.client.area.recorded_messages) - 1
 				if not self.client.area.statement < 1 and not self.client.area.statement == last:
 				#	print("If statement is 1, we shouldn't be here!")
-					statement.prepce()
 					print("Printing arguments for actual 'statement' variable.")
+					int x = 0
 					for a in statement.args:
-						print("Type: " + str(type(a)) + ", Arg Contents: " + str(a))
+						x += 1
+						print("Arg " + str(x) + " Type: " + str(type(a)) + ", Contents: " + str(a))
+					statement.prepce()
 					self.client.area.send_command('MS', *statement.args)
 
 			if not msg == '///' or not self.client in self.client.area.owners or len(self.client.area.recorded_messages) == 0:
