@@ -838,7 +838,7 @@ class AOProtocol(asyncio.Protocol):
 				if not self.client.area.statement < 1 and not self.client.area.statement == last:
 				#	print("If statement is 1, we shouldn't be here!")
 					print("Printing arguments for actual 'statement' variable.")
-					int x = 0
+					x = 0
 					for a in statement.args:
 						x += 1
 						print("Arg " + str(x) + " Type: " + str(type(a)) + ", Contents: " + str(a))
