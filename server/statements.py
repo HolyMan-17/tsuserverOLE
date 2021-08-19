@@ -24,3 +24,6 @@ class Statement:
 		self.id = 0
 	def prepce(self):
 		self.args[14] = 1
+		# ...WHAT THE FUCK DOES THIS /DO?/ Why is it setting the 15th argument in the array!?
+		# What the fuck?
+		# -Steel
