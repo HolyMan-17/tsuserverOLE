@@ -840,7 +840,7 @@ class AOProtocol(asyncio.Protocol):
 					statement.prepce()
 					print("Printing arguments for actual 'statement' variable.")
 					for a in statement.args:
-						print("Type: " + type(a) + ", Arg Contents: " + str(a))
+						print("Type: " + str(type(a)) + ", Arg Contents: " + str(a))
 					self.client.area.send_command('MS', *statement.args)
 
 			if not msg == '///' or not self.client in self.client.area.owners or len(self.client.area.recorded_messages) == 0:
