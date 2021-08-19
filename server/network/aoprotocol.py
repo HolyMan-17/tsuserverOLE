@@ -833,7 +833,7 @@ class AOProtocol(asyncio.Protocol):
 				if not self.client.area.statement <= 1 and not self.client.area.statement == last:
 					print("If statement is 1, we shouldn't be here!")
 					statement.prepce()
-				self.client.area.send_command('MS', *statement.args)
+					self.client.area.send_command('MS', *statement.args)
 
 			if not msg == '///' or not self.client in self.client.area.owners or len(self.client.area.recorded_messages) == 0:
 				if not playback:
