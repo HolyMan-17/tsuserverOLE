@@ -825,7 +825,7 @@ class AOProtocol(asyncio.Protocol):
 
 			if playback:
 				last = len(self.client.area.recorded_messages) - 1
-				print("Last: " + last)
+				print("Last: " + str(last))
 				print("Statements: " + self.client.area.statement)
 				print("Actual Statement: " + self.client.area.recorded_messages)
 				if not self.client.area.statement < 1 and not self.client.area.statement == last:
