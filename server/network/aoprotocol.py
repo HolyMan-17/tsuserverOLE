@@ -800,13 +800,13 @@ class AOProtocol(asyncio.Protocol):
 						return
 			if msg == '<':
 				if len(self.client.area.recorded_messages) != 0 and not self.client.area.is_recording:
-					print("< before subtraction: " + str(self.client.area.statement))
+					#print("< before subtraction: " + str(self.client.area.statement))
 					self.client.area.statement += -1
-					print("< after subtraction: " + str(self.client.area.statement))
+					#print("< after subtraction: " + str(self.client.area.statement))
 					if self.client.area.statement < 1:
-						print("check to make sure we're at statement 0")
+					#	print("check to make sure we're at statement 0")
 						self.client.area.statement = 1
-						print("Statement should now be 1: " + str(self.client.area.statement))
+					#	print("Statement should now be 1: " + str(self.client.area.statement))
 						self.client.send_ooc('At first statement, no previous statement available.')
 						playback = True
 					else:
@@ -828,15 +828,15 @@ class AOProtocol(asyncio.Protocol):
 					self.client.area.broadcast_ooc(f'{self.client.char_name} repeated the current statement.')
 
 			if playback:
-				print("Statement should still be 1: " + str(self.client.area.statement))
-				print("Statement ID: " + str(self.client.area.statement) + ", Statement Args:")
-				for a in self.client.area.recorded_messages:
-					if a.id == self.client.area.statement:
-						for b in a.args:
-							print(b)
+				#print("Statement should still be 1: " + str(self.client.area.statement))
+				#print("Statement ID: " + str(self.client.area.statement) + ", Statement Args:")
+				#for a in self.client.area.recorded_messages:
+				#	if a.id == self.client.area.statement:
+				#		for b in a.args:
+				#			print(b)
 				last = len(self.client.area.recorded_messages) - 1
 				if not self.client.area.statement < 1 and not self.client.area.statement == last:
-					print("If statement is 1, we shouldn't be here!")
+				#	print("If statement is 1, we shouldn't be here!")
 					statement.prepce()
 					print("Printing arguments for actual 'statement' variable.")
 					for a in statement.args:
