@@ -808,6 +808,10 @@ class AOProtocol(asyncio.Protocol):
 						self.client.area.statement = 1
 					#	print("Statement should now be 1: " + str(self.client.area.statement))
 						self.client.send_ooc('At first statement, no previous statement available.')
+						for s in self.client.area.recorded_messages:
+							if s.id == self.client.area.statement:
+								statement = s
+								break
 						playback = True
 					else:
 						for s in self.client.area.recorded_messages:
