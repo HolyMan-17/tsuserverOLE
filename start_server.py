@@ -455,6 +455,13 @@ def character2yaml(yaml_path, path):
     if config is None:
         config = []
 
+    if config is not None:
+        return
+        # This is a really stupid breakline fix that I made in 30 seconds. IF we already have a config file,
+        # then don't write to it because it mucks up the sorting Holyman did.
+        # Really need to put in that auto-sorting based on game and category...
+        # Steel
+
     #print("\nconfig:")
     #print(config)
     # Extract character names from the YAML. I think this should do it.
