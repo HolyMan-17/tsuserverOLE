@@ -209,13 +209,13 @@ def music2yaml(yaml_path, path):
                 ("[GT]", "Ghost Trick"),
                 ("[JAZZ]", "Jazz"),
                 ("[LBMR]", "LBMR"),
-                ("[PLvsAA]", "Professor Layton vs Phoenix Wright")
+                ("[PLvsAA]", "Professor Layton vs Phoenix Wright"),
                 ("[PIANO]", "Piano"),
                 ("[PL]", "Professor Layton"),
                 ("[SoJ]", "Spirit of Justice"),
                 ("[STAFF]", "STAFF"),
                 ("~stop", "STOP")
-            ])
+             ])
     
     
     # Steel: Now, we need to iterate through categories in music.yaml and see if they're there. If not, build them.
