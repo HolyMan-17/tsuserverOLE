@@ -215,7 +215,7 @@ def music2yaml(yaml_path, path):
                 ("[SoJ]", "Spirit of Justice"),
                 ("[STAFF]", "STAFF"),
                 ("~stop", "STOP")
-             ])
+            ])
     
     
     # Steel: Now, we need to iterate through categories in music.yaml and see if they're there. If not, build them.
