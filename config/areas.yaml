@@ -3,7 +3,7 @@
   bglock: true
   evidence_mod: Mods
   locking_allowed: false
-  iniswap_allowed: false
+  iniswap_allowed: true
   shouts_allowed: false
   showname_changes_allowed: true
 - area: User Hub
