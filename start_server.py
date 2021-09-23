@@ -208,7 +208,7 @@ def music2yaml(yaml_path, path):
                 ("[DD]", "Dual Destinies"),
                 ("[GT]", "Ghost Trick"),
                 ("[JAZZ]", "Jazz"),
-                ("[LBMR]", "LBMR"),
+                ("[LBMR]", "Layton Brothers Mystery Room"),
                 ("[PLvsAA]", "Professor Layton vs Phoenix Wright"),
                 ("[PIANO]", "Piano"),
                 ("[PL]", "Professor Layton"),
