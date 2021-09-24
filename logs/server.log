@@ -6033,3 +6033,1925 @@ Trucy: wait I can just check DC I'm dumb
 [2021-09-24 04:02:14,840 UTC] [LOB] /Disciple/XYZ (21): off i go
 [2021-09-24 04:02:20,833 UTC] [LOB] Disciple/XYZ (21): event area.leave (None)
 [2021-09-24 04:02:42,417 UTC] [LOB] MayaSOJ/HolyMan (18): event area.leave (None)
+[2021-09-24 04:14:46,881 UTC] start (None onto None): None
+[2021-09-24 04:15:01,183 UTC] IPID for 186.148.194.240: 18
+[2021-09-24 04:15:01,617 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-24 04:15:01,618 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-24 04:15:10,886 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-24 04:15:26,199 UTC] login (18 onto None): {'profile': 'HolyMan'}
+[2021-09-24 04:16:29,846 UTC] IPID for 128.84.127.135: 21
+[2021-09-24 04:16:30,184 UTC] Associated 21 with b727dac9-0507-4be8-b22c-afbd6de33d51
+[2021-09-24 04:16:30,185 UTC] 21 (HDID: b727dac9-0507-4be8-b22c-afbd6de33d51) connected.
+[2021-09-24 04:16:33,906 UTC] [LOB] Disciple/ (21): event char.change ({"from": null, "to": "Disciple"})
+[2021-09-24 04:16:37,201 UTC] login (21 onto None): {'profile': 'Red'}
+[2021-09-24 04:16:42,909 UTC] [LOB] /Disciple/XYZ (21): i'm still a moderator
+[2021-09-24 04:17:05,984 UTC] [LOB] /Disciple/XYZ (21): logging out
+[2021-09-24 04:17:13,774 UTC] [LOB] Disciple/XYZ (21): event area.leave (None)
+[2021-09-24 04:17:48,724 UTC] [LOB] /Phoenix/HolyMan (18): Dumbass
+[2021-09-24 04:17:53,392 UTC] [LOB] /Phoenix/HolyMan (18): It always says moderator
+[2021-09-24 04:20:43,126 UTC] [LOB] Phoenix/HolyMan (18): event area.leave (None)
+[2021-09-24 12:36:13,502 UTC] IPID for 81.104.2.26: 16
+[2021-09-24 12:36:13,782 UTC] Associated 16 with eeb874c7-c294-4f41-a0e1-a207068e12b0
+[2021-09-24 12:36:13,784 UTC] 16 (HDID: eeb874c7-c294-4f41-a0e1-a207068e12b0) connected.
+[2021-09-24 12:36:57,184 UTC] IPID for 81.104.2.26: 16
+[2021-09-24 12:36:57,466 UTC] Associated 16 with eeb874c7-c294-4f41-a0e1-a207068e12b0
+[2021-09-24 12:36:57,467 UTC] 16 (HDID: eeb874c7-c294-4f41-a0e1-a207068e12b0) connected.
+[2021-09-24 12:37:13,695 UTC] IPID for 81.104.2.26: 16
+[2021-09-24 12:37:13,972 UTC] Associated 16 with eeb874c7-c294-4f41-a0e1-a207068e12b0
+[2021-09-24 12:37:13,973 UTC] 16 (HDID: eeb874c7-c294-4f41-a0e1-a207068e12b0) connected.
+[2021-09-24 12:37:56,288 UTC] [LOB] Menimemo/ (16): event char.change ({"from": null, "to": "Menimemo"})
+[2021-09-24 12:38:26,074 UTC] [LOB] /Menimemo/ (16): gay
+[2021-09-24 12:38:40,293 UTC] [LOB] Menimemo/ (16): event area.leave (None)
+[2021-09-24 12:38:40,328 UTC] IPID for 81.104.2.26: 16
+[2021-09-24 12:38:40,605 UTC] Associated 16 with eeb874c7-c294-4f41-a0e1-a207068e12b0
+[2021-09-24 12:38:40,606 UTC] 16 (HDID: eeb874c7-c294-4f41-a0e1-a207068e12b0) connected.
+[2021-09-24 12:39:34,197 UTC] [LOB] TrucySOJ/ (16): event char.change ({"from": null, "to": "TrucySOJ"})
+[2021-09-24 12:40:45,317 UTC] [LOB] TrucySOJ/ (16): event area.leave (None)
+[2021-09-24 12:58:34,479 UTC] IPID for 77.54.208.95: 2
+[2021-09-24 12:58:34,774 UTC] Associated 2 with 72687003-f0de-4434-9eaa-d686afdaa9ba
+[2021-09-24 12:58:34,775 UTC] 2 (HDID: 72687003-f0de-4434-9eaa-d686afdaa9ba) connected.
+[2021-09-24 12:58:51,133 UTC] [LOB] Phoenix/ (2): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-24 12:58:56,142 UTC] [LOB] Phoenix/ (2): event area.leave (None)
+[2021-09-24 13:06:30,135 UTC] IPID for 77.54.208.95: 2
+[2021-09-24 13:06:30,428 UTC] Associated 2 with 72687003-f0de-4434-9eaa-d686afdaa9ba
+[2021-09-24 13:06:30,429 UTC] 2 (HDID: 72687003-f0de-4434-9eaa-d686afdaa9ba) connected.
+[2021-09-24 13:06:35,108 UTC] [LOB] Phoenix/ (2): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-24 13:14:38,303 UTC] [LOB] Phoenix/ (2): event music ([STAFF] The Combine Harvester.opus)
+[2021-09-24 13:14:54,202 UTC] [LOB] Phoenix/ (2): event music ([STAFF] Secret Surprise.opus)
+[2021-09-24 13:15:38,415 UTC] [LOB] Phoenix/ (2): event music ([STAFF] ~ Moonview Highway.opus)
+[2021-09-24 13:15:39,695 UTC] [LOB] Phoenix/ (2): event music ([STAFF] ~ Diabolus Ex Machina.opus)
+[2021-09-24 13:15:45,711 UTC] [LOB] Phoenix/ (2): event music ([STAFF] ~ Doopliss Battle Paper Mario TTYD.opus)
+[2021-09-24 13:16:20,906 UTC] [LOB] Phoenix/ (2): event music ([STAFF] The Grand Finale - M&L Bowser's Inside Story.opus)
+[2021-09-24 13:16:38,126 UTC] [LOB] Phoenix/ (2): event music ([STAFF] Germany - Neo Turf Masters.opus)
+[2021-09-24 13:18:01,996 UTC] [LOB] Phoenix/ (2): event music ([STAFF]  Partners - The game is afoot! (Arrangement) - The Great Ace Attorney Chronicles.opus)
+[2021-09-24 13:18:15,290 UTC] [LOB] Phoenix/ (2): event music ([STAFF] Soul Blade OST Bravely Folk Song.opus)
+[2021-09-24 13:20:07,028 UTC] [LOB] Phoenix/ (2): event music ([STAFF] ~ Roller Mobster.opus)
+[2021-09-24 13:20:13,954 UTC] [LOB] Phoenix/ (2): event music ([STAFF] ~ Moonview Highway.opus)
+[2021-09-24 13:20:16,264 UTC] [LOB] Phoenix/ (2): event music ([STAFF]  Partners - The game is afoot! (Arrangement) - The Great Ace Attorney Chronicles.opus)
+[2021-09-24 13:21:48,484 UTC] IPID for 94.27.196.208: 22
+[2021-09-24 13:21:48,791 UTC] Associated 22 with 0e44faaf-f021-4f12-af50-937275a40747
+[2021-09-24 13:21:48,792 UTC] 22 (HDID: 0e44faaf-f021-4f12-af50-937275a40747) connected.
+[2021-09-24 13:22:30,471 UTC] [LOB] Ema/ (22): event char.change ({"from": null, "to": "Ema"})
+[2021-09-24 13:22:34,469 UTC] [LOB] /Phoenix/ (2): Which one is that
+[2021-09-24 13:22:41,895 UTC] [LOB] /Ema/ (22): Your mom!
+[2021-09-24 13:22:51,341 UTC] [LOB] Phoenix/ (2): event music ([STAFF] Secret Surprise.opus)
+[2021-09-24 13:23:04,910 UTC] [LOB] /Phoenix/ (2): This server is so awesome
+[2021-09-24 13:23:16,989 UTC] [LOB] /Ema/ (22): Woah I bet the staff are so awesome and hot
+[2021-09-24 13:23:24,326 UTC] [LOB] /Phoenix/ (2): So true!!!!
+[2021-09-24 13:23:28,984 UTC] [LOB] /Phoenix/ (2): Anyway is everything working good
+[2021-09-24 13:23:34,261 UTC] [LOB] /Ema/ (22): I think so
+[2021-09-24 13:23:49,757 UTC] [LOB] Payne Train/ (22): event char.change ({"from": "Ema", "to": "Payne Train"})
+[2021-09-24 13:23:54,389 UTC] [LOB] Ema/ (22): event char.change ({"from": "Payne Train", "to": "Ema"})
+[2021-09-24 13:23:57,561 UTC] [LOB] /Phoenix/ (2): I should have taken the opportunity to change the client language to not Portuguese...
+[2021-09-24 13:24:13,645 UTC] [LOB] /Ema/ (22): Is it in Portuguese
+[2021-09-24 13:24:21,489 UTC] [LOB] /Phoenix/ (2): I think so
+[2021-09-24 13:24:30,980 UTC] [LOB] /Ema/ (22): I mean it's in English for me
+[2021-09-24 13:24:36,897 UTC] [LOB] /Phoenix/ (2): Wanna see an awesome thing I added without no one knowing?
+[2021-09-24 13:24:40,956 UTC] [LOB] Phoenix/ (2): event evidence.add (None)
+[2021-09-24 13:24:41,540 UTC] [LOB] /Ema/ (22): Yes
+[2021-09-24 13:24:45,233 UTC] login (2 onto None): {'profile': 'Pina'}
+[2021-09-24 13:24:46,265 UTC] [LOB] Phoenix/Pina (2): event evidence.add (None)
+[2021-09-24 13:25:13,160 UTC] [LOB] Phoenix/Pina (2): event evidence.edit (None)
+[2021-09-24 13:25:31,980 UTC] [LOB] /Ema/ (22): Archibald???
+[2021-09-24 13:25:43,685 UTC] [LOB] /Phoenix/Pina (2): no its steve minecraft and undertale papsnas!!!
+[2021-09-24 13:25:44,573 UTC] [LOB] Ema/ (22): event music ([STAFF] Germany - Neo Turf Masters.opus)
+[2021-09-24 13:25:55,539 UTC] [LOB] /Ema/ (22): Passagnas
+[2021-09-24 13:25:57,548 UTC] [LOB] /Phoenix/Pina (2): I'm just going to leave that there
+[2021-09-24 13:26:26,372 UTC] [LOB] /Phoenix/Pina (2): Germany - Neo Turf Masters
+[2021-09-24 13:26:37,371 UTC] [LOB] /Ema/ (22): Germany - Neo Turf Masters
+[2021-09-24 13:26:45,504 UTC] [LOB] /Phoenix/Pina (2): Germany - Neo Turf Masters
+[2021-09-24 13:27:15,074 UTC] [LOB] /Ema/ (22): a
+[2021-09-24 13:27:16,735 UTC] [LOB] /Phoenix/Pina (2): This song is far better than it has the right to be
+[2021-09-24 13:27:40,001 UTC] [LOB] /Ema/ (22): It's just chilling
+[2021-09-24 13:28:00,697 UTC] [LOB] /Phoenix/Pina (2): It is that's true
+[2021-09-24 13:28:05,753 UTC] [LOB] /Ema/ (22): Ok I think everything is good?
+[2021-09-24 13:28:12,828 UTC] [LOB] /Phoenix/Pina (2): Adam approved
+[2021-09-24 13:28:23,600 UTC] [LOB] /Phoenix/Pina (2): Are you going to be available today for the special opening of the server?
+[2021-09-24 13:28:34,910 UTC] [LOB] /Phoenix/Pina (2): Fruit and I have prepared a case just for today 
+[2021-09-24 13:28:38,082 UTC] [LOB] /Ema/ (22): Uhhhh depends on the hour
+[2021-09-24 13:29:10,368 UTC] [LOB] /Ema/ (22): Is it a short case?
+[2021-09-24 13:29:15,118 UTC] [LOB] /Phoenix/Pina (2): Uh
+[2021-09-24 13:29:16,555 UTC] [LOB] /Phoenix/Pina (2): Yeah
+[2021-09-24 13:29:24,768 UTC] [LOB] /Ema/ (22): Then maybe yeah
+[2021-09-24 13:29:24,856 UTC] [LOB] Phoenix/Pina (2): event music ([STAFF] The Combine Harvester.opus)
+[2021-09-24 13:29:39,501 UTC] [LOB] /Phoenix/Pina (2): oo ah oo ah
+[2021-09-24 13:29:52,288 UTC] [LOB] /Ema/ (22): kinky boots
+[2021-09-24 13:30:00,706 UTC] [LOB] /Phoenix/Pina (2): But awesome
+[2021-09-24 13:30:05,413 UTC] [LOB] /Phoenix/Pina (2): Kinky boots but awesome
+[2021-09-24 13:30:19,504 UTC] [LOB] /Ema/ (22): But it doesn't tell us that Britons are gay
+[2021-09-24 13:30:31,011 UTC] [LOB] /Phoenix/Pina (2): It talks about tractor sex or something that's way better
+[2021-09-24 13:30:41,286 UTC] [LOB] /Phoenix/Pina (2): Also
+[2021-09-24 13:30:50,248 UTC] [LOB] /Phoenix/Pina (2): Britons are the guys from Northern france no?
+[2021-09-24 13:30:59,368 UTC] [LOB] /Ema/ (22): Those are Bretons
+[2021-09-24 13:31:02,908 UTC] [LOB] /Phoenix/Pina (2): Oh yeah
+[2021-09-24 13:31:17,237 UTC] [LOB] /Phoenix/Pina (2): Motherfuckers too similiar
+[2021-09-24 13:31:19,415 UTC] [LOB] /Ema/ (22): Haven't made a single line of progress on the Breton case
+[2021-09-24 13:31:26,143 UTC] [LOB] /Ema/ (22): Awful writer's block
+[2021-09-24 13:31:36,392 UTC] [LOB] /Phoenix/Pina (2): I think there's a universal writer's block going on
+[2021-09-24 13:31:51,418 UTC] [LOB] Phoenix/Pina (2): event music ([STAFF] The Grand Finale - M&L Bowser's Inside Story.opus)
+[2021-09-24 13:32:03,436 UTC] [LOB] /Phoenix/Pina (2): I added all my songs with an intent to use them in casing
+[2021-09-24 13:32:27,005 UTC] [LOB] /Phoenix/Pina (2): Well not all of them
+[2021-09-24 13:32:32,208 UTC] [LOB] /Ema/ (22): Same
+[2021-09-24 13:32:33,308 UTC] [LOB] Ema/ (22): event music ([STAFF] Soul Blade OST Bravely Folk Song.opus)
+[2021-09-24 13:32:33,963 UTC] [LOB] /Phoenix/Pina (2): But two of them
+[2021-09-24 13:32:42,856 UTC] [LOB] /Phoenix/Pina (2): I added three because I fuckin' can
+[2021-09-24 13:32:58,022 UTC] [LOB] /Ema/ (22): What the fuck despotism?
+[2021-09-24 13:33:06,337 UTC] [LOB] /Phoenix/Pina (2): No!
+[2021-09-24 13:33:16,224 UTC] [LOB] /Phoenix/Pina (2): We can add as many as we want really
+[2021-09-24 13:34:09,525 UTC] [LOB] /Ema/ (22): I mean
+[2021-09-24 13:34:12,956 UTC] [LOB] /Ema/ (22): Fair
+[2021-09-24 13:35:03,723 UTC] [LOB] /Ema/ (22): Ok small note
+[2021-09-24 13:35:07,092 UTC] [LOB] /Phoenix/Pina (2): ?
+[2021-09-24 13:35:11,245 UTC] [LOB] /Ema/ (22): We could really write a better MOTD
+[2021-09-24 13:35:20,200 UTC] [LOB] /Phoenix/Pina (2): I have no idea of what that is
+[2021-09-24 13:35:40,060 UTC] [LOB] /Ema/ (22): The message that shows up in OOC when you enter the server
+[2021-09-24 13:35:46,420 UTC] [LOB] /Phoenix/Pina (2): O
+[2021-09-24 13:35:47,469 UTC] [LOB] /Phoenix/Pina (2): Oh yeah
+[2021-09-24 13:35:49,060 UTC] [LOB] /Ema/ (22): Right now it's just "Welcome to Official Law Empire!"
+[2021-09-24 13:35:52,588 UTC] [LOB] /Phoenix/Pina (2): No yeah we're workingo n that
+[2021-09-24 13:35:59,658 UTC] [LOB] /Phoenix/Pina (2): I mean if you have any suggestions pop off
+[2021-09-24 13:36:18,712 UTC] [LOB] Phoenix/Pina (2): event music ([STAFF] ~ Tatsuro Yamashita ~ Sparkle.opus)
+[2021-09-24 13:36:31,779 UTC] [LOB] /Ema/ (22): "If you're looking for MMO casing, I recommend the door"
+[2021-09-24 13:36:44,251 UTC] [LOB] /Phoenix/Pina (2): I think we should just
+[2021-09-24 13:36:49,219 UTC] [LOB] /Phoenix/Pina (2): Not mention MMO on the server
+[2021-09-24 13:36:53,695 UTC] [LOB] /Phoenix/Pina (2): We don't want that to be our legacy
+[2021-09-24 13:37:05,242 UTC] [LOB] /Ema/ (22): True
+[2021-09-24 13:37:21,218 UTC] [LOB] /Ema/ (22): But we also don't want it to infest us like it did with Van
+[2021-09-24 13:37:34,164 UTC] [LOB] /Phoenix/Pina (2): It fuckin' won't
+[2021-09-24 13:37:45,244 UTC] [LOB] /Phoenix/Pina (2): It didn't infest CC or KFO so I don't think it will infest us
+[2021-09-24 13:38:08,074 UTC] [LOB] /Ema/ (22): Thank God
+[2021-09-24 13:39:07,023 UTC] [LOB] /Phoenix/Pina (2): Anyway, server works very pog
+[2021-09-24 13:39:12,381 UTC] [LOB] /Phoenix/Pina (2): A new era begins
+[2021-09-24 13:39:21,680 UTC] [LOB] /Phoenix/Pina (2): Also brbr
+[2021-09-24 13:40:11,177 UTC] [LOB] Ema/Adam (22): event chat.announce.need (a horse)
+[2021-09-24 13:45:45,474 UTC] [LOB] /Phoenix/Pina (2): back
+[2021-09-24 13:46:02,052 UTC] [LOB] /Ema/Adam (22): he back
+[2021-09-24 13:46:03,587 UTC] [LOB] /Ema/Adam (22): wb
+[2021-09-24 13:48:26,733 UTC] [LOB] Ema/Adam (22): event music ([STAFF] The Combine Harvester.opus)
+[2021-09-24 13:48:31,193 UTC] [LOB] /Ema/Adam (22): comb ine
+[2021-09-24 13:48:31,960 UTC] [LOB] /Phoenix/Pina (2): So true
+[2021-09-24 13:49:26,513 UTC] [LOB] /Ema/Adam (22): Anyway how are you today Pina bro?
+[2021-09-24 13:50:39,555 UTC] [LOB] /Phoenix/Pina (2): I am doing bro
+[2021-09-24 13:50:43,187 UTC] [LOB] /Phoenix/Pina (2): what
+[2021-09-24 13:50:48,074 UTC] [LOB] /Phoenix/Pina (2): I am doing good, bro
+[2021-09-24 13:51:09,663 UTC] [LOB] /Ema/Adam (22): Same, I skipped school today
+[2021-09-24 13:51:17,412 UTC] [LOB] /Phoenix/Pina (2): Yo
+[2021-09-24 13:51:18,160 UTC] [LOB] /Phoenix/Pina (2): Why
+[2021-09-24 13:51:25,935 UTC] [LOB] /Ema/Adam (22): I felt sick in the morning
+[2021-09-24 13:51:37,190 UTC] [LOB] /Ema/Adam (22): Was not pleasent
+[2021-09-24 13:51:57,892 UTC] [LOB] /Phoenix/Pina (2): Doesn't sound all too pleasant no
+[2021-09-24 13:52:30,245 UTC] [LOB] /Phoenix/Pina (2): Man
+[2021-09-24 13:52:36,612 UTC] [LOB] /Phoenix/Pina (2): That reminds me school is near approaching
+[2021-09-24 13:52:39,349 UTC] [LOB] /Phoenix/Pina (2): Very not cool
+[2021-09-24 13:52:54,102 UTC] [LOB] /Ema/Adam (22): What the fuck have you not started school yet?
+[2021-09-24 13:53:23,324 UTC] [LOB] /Phoenix/Pina (2): No
+[2021-09-24 13:53:32,036 UTC] [LOB] /Phoenix/Pina (2): I start in October because funny univesrity
+[2021-09-24 13:53:38,198 UTC] [LOB] /Ema/Adam (22): Oh
+[2021-09-24 13:53:44,237 UTC] [LOB] /Ema/Adam (22): This makes sense I think
+[2021-09-24 13:53:54,599 UTC] [LOB] /Phoenix/Pina (2): It
+[2021-09-24 13:53:55,865 UTC] [LOB] /Phoenix/Pina (2): Might?
+[2021-09-24 13:53:57,975 UTC] [LOB] /Phoenix/Pina (2): I don't know
+[2021-09-24 13:54:38,963 UTC] [LOB] /Phoenix/Pina (2): Song is so disgusting I love it
+[2021-09-24 13:54:49,180 UTC] [LOB] /Ema/Adam (22): Comb ine harvester
+[2021-09-24 13:55:09,497 UTC] [LOB] Phoenix/Pina (2): event music ([PL] The Last Specter's Theme ~ PLLS.opus)
+[2021-09-24 13:55:44,036 UTC] [LOB] /Ema/Adam (22): That is not a combine harvester
+[2021-09-24 13:55:54,170 UTC] [LOB] /Phoenix/Pina (2): If you think about it hard enough, it is
+[2021-09-24 13:57:33,986 UTC] [LOB] /Ema/Adam (22): No
+[2021-09-24 13:58:14,573 UTC] [LOB] /Phoenix/Pina (2): If you don't think about it hard enough, then.
+[2021-09-24 13:58:35,809 UTC] [LOB] /Ema/Adam (22): Thinkg about deez nuts hahaha
+[2021-09-24 13:59:07,343 UTC] [LOB] /Phoenix/Pina (2): Ok
+[2021-09-24 13:59:12,870 UTC] [LOB] /Phoenix/Pina (2): Woa those are some cool peanuts
+[2021-09-24 13:59:19,109 UTC] [LOB] /Phoenix/Pina (2): And are those acorns?
+[2021-09-24 13:59:33,850 UTC] [LOB] /Ema/Adam (22): Pina those are chessnuts what are you on about
+[2021-09-24 13:59:47,376 UTC] [LOB] /Phoenix/Pina (2): Well they look like acorns!
+[2021-09-24 14:00:59,151 UTC] [LOB] /Ema/Adam (22): Dam
+[2021-09-24 14:01:33,432 UTC] [LOB] /Phoenix/Pina (2): Man
+[2021-09-24 14:01:36,625 UTC] [LOB] /Phoenix/Pina (2): You ever just
+[2021-09-24 14:01:39,044 UTC] [LOB] /Phoenix/Pina (2): Y'know?
+[2021-09-24 14:01:47,958 UTC] [LOB] /Ema/Adam (22): pee?
+[2021-09-24 14:01:57,598 UTC] [LOB] /Phoenix/Pina (2): How did you know I was writting about pee
+[2021-09-24 14:02:12,897 UTC] [LOB] /Ema/Adam (22): I am a mind reader
+[2021-09-24 14:02:24,016 UTC] [LOB] /Ema/Adam (22): Like right now
+[2021-09-24 14:02:28,488 UTC] [LOB] /Phoenix/Pina (2): What number am I thinking of then
+[2021-09-24 14:02:30,582 UTC] [LOB] /Ema/Adam (22): Light is thinking about dicks
+[2021-09-24 14:02:35,759 UTC] [LOB] /Phoenix/Pina (2): No that's true
+[2021-09-24 14:02:38,030 UTC] [LOB] /Ema/Adam (22): e
+[2021-09-24 14:02:42,803 UTC] [LOB] /Phoenix/Pina (2): e is not a number
+[2021-09-24 14:02:48,334 UTC] [LOB] /Ema/Adam (22): Yes it is
+[2021-09-24 14:02:52,468 UTC] [LOB] Phoenix/Pina (2): event music ([Jazz] Furio Tigre ~ Swingin' Tiger [T&T].opus)
+[2021-09-24 14:02:57,321 UTC] [LOB] /Phoenix/Pina (2): Well I wasn't thinking of it
+[2021-09-24 14:03:13,766 UTC] [LOB] /Ema/Adam (22): Liar liar reichstag fire
+[2021-09-24 14:03:28,879 UTC] [LOB] /Phoenix/Pina (2): You can't just talk about the reichstag fire like that
+[2021-09-24 14:03:57,525 UTC] [LOB] /Ema/Adam (22): I can
+[2021-09-24 14:04:00,117 UTC] [LOB] /Ema/Adam (22): Watch this
+[2021-09-24 14:04:22,726 UTC] [LOB] /Ema/Adam (22): *puts on arabic music*
+[2021-09-24 14:04:39,846 UTC] [LOB] /Phoenix/Pina (2): NOOOOOOOOOOOO
+[2021-09-24 14:05:16,164 UTC] [LOB] Peter Griffin/Ema/Adam (22): Yes it is I your dad
+[2021-09-24 14:06:00,115 UTC] [LOB] /Phoenix/Pina (2): You guys are taking this joke too far
+[2021-09-24 14:06:19,523 UTC] [LOB] /Ema/Adam (22): Yes because it's funny
+[2021-09-24 14:08:19,328 UTC] [LOB] /Phoenix/Pina (2): Ok I'm done with this shit
+[2021-09-24 14:08:25,741 UTC] [LOB] /Phoenix/Pina (2): Now I can concentrate on speaking
+[2021-09-24 14:08:34,443 UTC] [LOB] /Phoenix/Pina (2): So Adam how was your time in the land of trans people
+[2021-09-24 14:08:45,868 UTC] [LOB] Phoenix/Pina (2): event bg (AJcourt)
+[2021-09-24 14:08:48,952 UTC] [LOB] /Ema/Adam (22): It was very wacky bro
+[2021-09-24 14:08:50,869 UTC] [LOB] /Phoenix/Pina (2): AJcourt
+[2021-09-24 14:08:52,922 UTC] [LOB] /Phoenix/Pina (2): Because I can
+[2021-09-24 14:08:55,963 UTC] [LOB] /Phoenix/Pina (2): Wacky how
+[2021-09-24 14:09:01,211 UTC] [LOB] Phoenix/Pina (2): event music ([STAFF] ~ Doopliss Battle Paper Mario TTYD.opus)
+[2021-09-24 14:09:01,361 UTC] [LOB] /Ema/Adam (22): Like we broke into and orphanage 
+[2021-09-24 14:09:07,289 UTC] [LOB] /Phoenix/Pina (2): w
+[2021-09-24 14:09:08,363 UTC] [LOB] /Phoenix/Pina (2): what
+[2021-09-24 14:09:18,465 UTC] [LOB] /Ema/Adam (22): We stayed in an orphanage on wednesday
+[2021-09-24 14:09:28,064 UTC] [LOB] /Ema/Adam (22): But they locked us out when we went for a walk
+[2021-09-24 14:09:34,509 UTC] [LOB] /Phoenix/Pina (2): .
+[2021-09-24 14:09:35,497 UTC] [LOB] /Ema/Adam (22): So we climbed in through the window
+[2021-09-24 14:09:47,342 UTC] [LOB] /Phoenix/Pina (2): And then killed all the children?
+[2021-09-24 14:09:54,160 UTC] [LOB] /Ema/Adam (22): Yes
+[2021-09-24 14:09:55,586 UTC] [LOB] /Phoenix/Pina (2): Also what why did you stay at an orphanage
+[2021-09-24 14:10:10,712 UTC] [LOB] /Ema/Adam (22): Idk 
+[2021-09-24 14:10:18,576 UTC] [LOB] /Ema/Adam (22): They were the ones who took us in so
+[2021-09-24 14:10:31,354 UTC] [LOB] /Phoenix/Pina (2): Was this like a school thing or did you just go with the lads
+[2021-09-24 14:10:38,735 UTC] [LOB] /Ema/Adam (22): Also my friend stole a chair, cutlery and a toilet paper
+[2021-09-24 14:10:44,983 UTC] [LOB] /Ema/Adam (22): School
+[2021-09-24 14:10:45,736 UTC] [LOB] /Phoenix/Pina (2): Fuckin'
+[2021-09-24 14:10:53,093 UTC] [LOB] /Phoenix/Pina (2): The guy from Les Miserables
+[2021-09-24 14:11:07,406 UTC] [LOB] /Phoenix/Pina (2): Jean Valjea
+[2021-09-24 14:11:08,529 UTC] [LOB] /Ema/Adam (22): He tried to steal a mirror
+[2021-09-24 14:11:10,692 UTC] [LOB] /Phoenix/Pina (2): I think
+[2021-09-24 14:11:11,444 UTC] [LOB] /Phoenix/Pina (2): Why
+[2021-09-24 14:11:12,935 UTC] [LOB] /Ema/Adam (22): But it didn't fit
+[2021-09-24 14:11:16,070 UTC] [LOB] /Ema/Adam (22): Because
+[2021-09-24 14:11:19,446 UTC] [LOB] /Phoenix/Pina (2): My guy really stole from the orphanage??
+[2021-09-24 14:11:22,230 UTC] [LOB] /Ema/Adam (22): His parents wanted souvenirs
+[2021-09-24 14:11:26,871 UTC] [LOB] /Ema/Adam (22): Not from the orphanage
+[2021-09-24 14:11:31,176 UTC] [LOB] /Ema/Adam (22): From the other places
+[2021-09-24 14:11:38,614 UTC] [LOB] /Phoenix/Pina (2): Ok I was getting worried
+[2021-09-24 14:11:49,838 UTC] [LOB] /Ema/Adam (22): First place had shit and blood in the beds
+[2021-09-24 14:11:54,278 UTC] [LOB] /Ema/Adam (22): And ass hair on the door
+[2021-09-24 14:12:00,070 UTC] [LOB] /Ema/Adam (22): Was a nice place
+[2021-09-24 14:12:01,335 UTC] [LOB] /Phoenix/Pina (2): Adam
+[2021-09-24 14:12:05,390 UTC] [LOB] /Phoenix/Pina (2): Adam.
+[2021-09-24 14:12:07,630 UTC] [LOB] /Ema/Adam (22): Me
+[2021-09-24 14:12:10,110 UTC] [LOB] /Ema/Adam (22): Me.
+[2021-09-24 14:12:11,598 UTC] [LOB] /Phoenix/Pina (2): How do you know it's ass hair?
+[2021-09-24 14:12:25,110 UTC] [LOB] /Ema/Adam (22): My friends called it ass hair not me
+[2021-09-24 14:12:33,200 UTC] [LOB] /Phoenix/Pina (2): They're experts
+[2021-09-24 14:12:44,558 UTC] [LOB] /Phoenix/Pina (2): Also why were you all dressed like jews what was up with that
+[2021-09-24 14:12:52,949 UTC] [LOB] /Ema/Adam (22): I bought a hat
+[2021-09-24 14:13:16,214 UTC] [LOB] /Ema/Adam (22): And I looked like a jew + I have a german last name
+[2021-09-24 14:13:21,789 UTC] [LOB] /Ema/Adam (22): So we just went with jew jokes
+[2021-09-24 14:13:29,068 UTC] [LOB] /Phoenix/Pina (2): That makes sense
+[2021-09-24 14:13:36,825 UTC] [LOB] Phoenix/Pina (2): event music ([STAFF] ~ Front Porch.opus)
+[2021-09-24 14:13:48,342 UTC] [LOB] /Ema/Adam (22): And we had an orbántard as our tour guide first night
+[2021-09-24 14:13:58,956 UTC] [LOB] /Ema/Adam (22): Dude was such an ass I wanted to punch him
+[2021-09-24 14:14:10,975 UTC] [LOB] /Phoenix/Pina (2): I like how you used the Ema boxing stance emote
+[2021-09-24 14:14:16,605 UTC] [LOB] /Phoenix/Pina (2): No yeah that sounds like it sucks
+[2021-09-24 14:14:33,861 UTC] [LOB] /Phoenix/Pina (2): Also just a bit out of topic
+[2021-09-24 14:14:42,761 UTC] [LOB] /Phoenix/Pina (2): Can you check how big the OLE base is?
+[2021-09-24 14:14:51,357 UTC] [LOB] /Ema/Adam (22): Sure
+[2021-09-24 14:15:12,172 UTC] [LOB] /Ema/Adam (22): 7.14 Gigs
+[2021-09-24 14:15:17,069 UTC] [LOB] /Phoenix/Pina (2): Holy shit
+[2021-09-24 14:15:22,227 UTC] [LOB] /Phoenix/Pina (2): We're like the smallest files?
+[2021-09-24 14:15:56,148 UTC] [LOB] /Ema/Adam (22): based
+[2021-09-24 14:16:27,297 UTC] [LOB] /Phoenix/Pina (2): But also 
+[2021-09-24 14:16:37,563 UTC] [LOB] /Phoenix/Pina (2): We are missing half the GT soundtrack dunno what's up wit hthat
+[2021-09-24 14:17:57,252 UTC] [LOB] /Ema/Adam (22): Is that bad?
+[2021-09-24 14:18:26,495 UTC] [LOB] /Phoenix/Pina (2): No but it's just odd
+[2021-09-24 14:27:29,894 UTC] [LOB] /Phoenix/Pina (2): This is all very excitin', isn't it?
+[2021-09-24 14:27:39,531 UTC] [LOB] /Ema/Adam (22): Ayup yup
+[2021-09-24 14:27:52,561 UTC] [LOB] /Ema/Adam (22): Almost as fun as committing tax fraud
+[2021-09-24 14:27:55,018 UTC] [LOB] /Phoenix/Pina (2): To think we'd have our own server, we've really come a long long way
+[2021-09-24 14:28:09,295 UTC] [LOB] /Phoenix/Pina (2): Well nothing's as fun as evading the tyrant hand of the government
+[2021-09-24 14:28:33,025 UTC] [LOB] /Ema/Adam (22): True true
+[2021-09-24 14:28:35,649 UTC] [LOB] /Ema/Adam (22): And yes
+[2021-09-24 14:28:42,289 UTC] [LOB] /Ema/Adam (22): OLE did come a long way
+[2021-09-24 14:28:51,593 UTC] [LOB] /Ema/Adam (22): From WAA to it's own server
+[2021-09-24 14:28:55,779 UTC] [LOB] /Phoenix/Pina (2): From Lag's idiotic hands, to this...
+[2021-09-24 14:29:01,588 UTC] [LOB] /Phoenix/Pina (2): What a beautiful way it haas come
+[2021-09-24 14:29:45,257 UTC] [LOB] /Ema/Adam (22): *Insert TNO russian reunification superevent right here*
+[2021-09-24 14:30:17,035 UTC] [LOB] /Ema/Adam (22): Actually this gave me an idea
+[2021-09-24 14:34:03,878 UTC] [LOB] /Phoenix/Pina (2): Foreboding!
+[2021-09-24 14:38:24,328 UTC] [LOB] /Phoenix/Pina (2): Gonna brbr
+[2021-09-24 14:38:28,962 UTC] [LOB] /Ema/Adam (22): kk
+[2021-09-24 14:40:55,596 UTC] [LOB] /Phoenix/Pina (2): I've decided I am going to bake
+[2021-09-24 14:40:59,711 UTC] [LOB] /Phoenix/Pina (2): So i'll brbrbr for a long time!
+[2021-09-24 14:41:44,048 UTC] [LOB] /Ema/Adam (22): This is fair
+[2021-09-24 14:48:50,915 UTC] [LOB] Ema/Adam (22): event music (~stop.opus)
+[2021-09-24 14:56:36,778 UTC] start (None onto None): None
+[2021-09-24 14:56:47,995 UTC] IPID for 94.27.196.208: 22
+[2021-09-24 14:56:48,293 UTC] Associated 22 with 0e44faaf-f021-4f12-af50-937275a40747
+[2021-09-24 14:56:48,294 UTC] 22 (HDID: 0e44faaf-f021-4f12-af50-937275a40747) connected.
+[2021-09-24 14:57:07,003 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 14:57:07,009 UTC] Associated 23 with ms2-prober
+[2021-09-24 14:57:07,011 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 14:57:13,084 UTC] IPID for 94.27.196.208: 22
+[2021-09-24 14:57:13,166 UTC] IPID for 94.27.196.208: 22
+[2021-09-24 14:57:13,466 UTC] Associated 22 with 0e44faaf-f021-4f12-af50-937275a40747
+[2021-09-24 14:57:13,467 UTC] 22 (HDID: 0e44faaf-f021-4f12-af50-937275a40747) connected.
+[2021-09-24 14:57:23,685 UTC] [LOB] Trucy Pro/ (22): event char.change ({"from": null, "to": "Trucy Pro"})
+[2021-09-24 14:57:52,461 UTC] IPID for 81.104.2.26: 16
+[2021-09-24 14:57:52,741 UTC] Associated 16 with eeb874c7-c294-4f41-a0e1-a207068e12b0
+[2021-09-24 14:57:52,742 UTC] 16 (HDID: eeb874c7-c294-4f41-a0e1-a207068e12b0) connected.
+[2021-09-24 14:57:52,963 UTC] [LOB] Trucy Pro/Adam (22): event area.leave (None)
+[2021-09-24 14:58:00,822 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 14:58:00,822 UTC] Associated 23 with ms2-prober
+[2021-09-24 14:58:00,823 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 14:58:01,209 UTC] IPID for 186.148.194.240: 18
+[2021-09-24 14:58:01,659 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-24 14:58:01,660 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-24 14:58:11,782 UTC] [LOB] Byrne/ (16): event char.change ({"from": null, "to": "Byrne"})
+[2021-09-24 14:58:35,918 UTC] IPID for 94.27.196.208: 22
+[2021-09-24 14:58:36,221 UTC] Associated 22 with 0e44faaf-f021-4f12-af50-937275a40747
+[2021-09-24 14:58:36,222 UTC] 22 (HDID: 0e44faaf-f021-4f12-af50-937275a40747) connected.
+[2021-09-24 14:58:41,926 UTC] [LOB] Byrne/ (16): event area.leave (None)
+[2021-09-24 14:58:41,975 UTC] IPID for 81.104.2.26: 16
+[2021-09-24 14:58:42,255 UTC] Associated 16 with eeb874c7-c294-4f41-a0e1-a207068e12b0
+[2021-09-24 14:58:42,256 UTC] 16 (HDID: eeb874c7-c294-4f41-a0e1-a207068e12b0) connected.
+[2021-09-24 14:58:47,588 UTC] IPID for 77.54.208.95: 2
+[2021-09-24 14:58:47,883 UTC] Associated 2 with 72687003-f0de-4434-9eaa-d686afdaa9ba
+[2021-09-24 14:58:47,883 UTC] 2 (HDID: 72687003-f0de-4434-9eaa-d686afdaa9ba) connected.
+[2021-09-24 14:58:50,456 UTC] IPID for 81.104.2.26: 16
+[2021-09-24 14:58:50,735 UTC] Associated 16 with eeb874c7-c294-4f41-a0e1-a207068e12b0
+[2021-09-24 14:58:50,736 UTC] 16 (HDID: eeb874c7-c294-4f41-a0e1-a207068e12b0) connected.
+[2021-09-24 14:59:01,517 UTC] [LOB] Byrne/ (16): event char.change ({"from": null, "to": "Byrne"})
+[2021-09-24 14:59:14,432 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 14:59:14,434 UTC] Associated 23 with ms2-prober
+[2021-09-24 14:59:14,435 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 14:59:45,660 UTC] [LOB] Byrne/Fruitbat (16): event area.leave (None)
+[2021-09-24 14:59:45,695 UTC] IPID for 81.104.2.26: 16
+[2021-09-24 14:59:45,974 UTC] Associated 16 with eeb874c7-c294-4f41-a0e1-a207068e12b0
+[2021-09-24 14:59:45,975 UTC] 16 (HDID: eeb874c7-c294-4f41-a0e1-a207068e12b0) connected.
+[2021-09-24 14:59:48,577 UTC] [LOB] Trucy Pro/ (22): event char.change ({"from": null, "to": "Trucy Pro"})
+[2021-09-24 14:59:52,345 UTC] [LOB] Byrne/ (16): event char.change ({"from": null, "to": "Byrne"})
+[2021-09-24 14:59:53,914 UTC] [LOB] /Trucy Pro/ (22): a
+[2021-09-24 15:00:02,511 UTC] IPID for 77.54.208.95: 2
+[2021-09-24 15:00:02,806 UTC] Associated 2 with 72687003-f0de-4434-9eaa-d686afdaa9ba
+[2021-09-24 15:00:02,807 UTC] 2 (HDID: 72687003-f0de-4434-9eaa-d686afdaa9ba) connected.
+[2021-09-24 15:00:12,785 UTC] [LOB] PhoenixAAI/Fruitbat (16): event char.change ({"from": "Byrne", "to": "PhoenixAAI"})
+[2021-09-24 15:00:18,538 UTC] [LOB] Snow/Fruitbat (16): event char.change ({"from": "PhoenixAAI", "to": "Snow"})
+[2021-09-24 15:00:21,684 UTC] [LOB] /Snow/Fruitbat (16): Woman sighted
+[2021-09-24 15:00:26,271 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:00:26,272 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:00:26,273 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:00:44,641 UTC] [LOB] /Trucy Pro/Adam (22): I do women, yes
+[2021-09-24 15:00:57,099 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-24 15:01:10,603 UTC] [LOB] /Phoenix/ (18): What.
+[2021-09-24 15:01:17,595 UTC] [LOB] /Phoenix/ (18): Ok the MOTD looks amazing
+[2021-09-24 15:01:36,113 UTC] [LOB] /Trucy Pro/Adam (22): It's very nice yes
+[2021-09-24 15:01:40,305 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:01:40,306 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:01:40,307 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:01:47,918 UTC] [LOB] /Phoenix/ (18): Ok sooo, I think we're ready to go
+[2021-09-24 15:02:31,453 UTC] [LOB] /Snow/Fruitbat (16): Damn did we really do it
+[2021-09-24 15:02:49,982 UTC] [LOB] /Trucy Pro/Adam (22): I think we did
+[2021-09-24 15:02:54,111 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:02:54,112 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:02:54,113 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:03:52,955 UTC] [LOB] Miles/ (2): event char.change ({"from": null, "to": "Miles"})
+[2021-09-24 15:03:58,190 UTC] [LOB] /Miles/ (2): Gamers
+[2021-09-24 15:04:00,403 UTC] [LOB] /Miles/ (2): Unite!!!
+[2021-09-24 15:04:07,732 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:04:07,733 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:04:07,734 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:04:12,514 UTC] [LOB] Miles/ (2): event area.leave (None)
+[2021-09-24 15:04:12,958 UTC] [LOB] /Trucy Pro/Adam (22): Ok
+[2021-09-24 15:04:26,243 UTC] IPID for 77.54.208.95: 2
+[2021-09-24 15:04:26,537 UTC] Associated 2 with 72687003-f0de-4434-9eaa-d686afdaa9ba
+[2021-09-24 15:04:26,538 UTC] 2 (HDID: 72687003-f0de-4434-9eaa-d686afdaa9ba) connected.
+[2021-09-24 15:04:32,069 UTC] [LOB] Miles/ (2): event char.change ({"from": null, "to": "Miles"})
+[2021-09-24 15:04:36,218 UTC] login (2 onto None): {'profile': 'Pina'}
+[2021-09-24 15:04:50,723 UTC] [LOB] /Miles/Pina (2): Hi guys welcome to my new minecraft playthrough
+[2021-09-24 15:05:21,956 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:05:21,957 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:05:21,958 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:05:33,239 UTC] [LOB] /Phoenix/ (18): Damn.......
+[2021-09-24 15:05:39,622 UTC] [LOB] Pina/Miles/Pina (2): Ok motherfucker!!
+[2021-09-24 15:05:47,772 UTC] [LOB] /Trucy Pro/Adam (22): https://cdn.discordapp.com/attachments/743097220240506962/890640552901615698/WELCOME_TO_MY_MINE_MINECRAFT_PARODI_OF_WELCOME_TO_MY_HOUSE.mp3
+[2021-09-24 15:05:56,446 UTC] [LOB] Pina/Miles/Pina (2): I fucking hate you
+[2021-09-24 15:05:56,711 UTC] [LOB] Snow/Fruitbat (16): event music ([STAFF] Germany - Neo Turf Masters.opus)
+[2021-09-24 15:06:01,836 UTC] [LOB] /Phoenix/ (18): Ok I will set up the channels for suggestion and troubleshooting and do a quick announcement about them
+[2021-09-24 15:06:14,044 UTC] [LOB] Pina/Miles/Pina (2): I'll do the ma<tchmaking one
+[2021-09-24 15:06:23,764 UTC] [LOB] /Trucy Pro/Adam (22): I'll do your mom
+[2021-09-24 15:06:35,583 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:06:35,585 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:06:35,585 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:06:36,040 UTC] [LOB] /Snow/Fruitbat (16): Ten Thousand Hearts United As One
+[2021-09-24 15:06:39,438 UTC] [LOB] /Snow/Fruitbat (16): Doin Ya Mom
+[2021-09-24 15:06:55,455 UTC] IPID for 38.73.227.197: 24
+[2021-09-24 15:06:55,545 UTC] Associated 24 with 109b69a5046fd404cb6c216a37b042cc
+[2021-09-24 15:06:55,548 UTC] 24 (HDID: 109b69a5046fd404cb6c216a37b042cc) connected.
+[2021-09-24 15:07:01,951 UTC] IPID for 38.73.227.197: 24
+[2021-09-24 15:07:02,064 UTC] Associated 24 with 9cd1d059f9a5f4872484b8555305ad46
+[2021-09-24 15:07:02,069 UTC] 24 (HDID: 9cd1d059f9a5f4872484b8555305ad46) connected.
+[2021-09-24 15:07:11,411 UTC] [LOB] Trucy Pro/Adam (22): event music ([STAFF] Secret Surprise.opus)
+[2021-09-24 15:07:19,752 UTC] [LOB] Pina/Miles/Pina (2): It's beautiful
+[2021-09-24 15:07:21,128 UTC] [LOB] /Snow/Fruitbat (16): I love it so much
+[2021-09-24 15:07:22,075 UTC] [LOB] Rumba/ (24): event char.change ({"from": null, "to": "Rumba"})
+[2021-09-24 15:07:23,723 UTC] [LOB] Pina/Miles/Pina (2): Same
+[2021-09-24 15:07:49,523 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:07:49,524 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:07:49,525 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:07:57,868 UTC] [LOB] /Trucy Pro/Adam (22): This and the Eminem Stronger than You
+[2021-09-24 15:08:33,744 UTC] [LOB] /Phoenix/ (18): Ok time to make the github log (The record of our pain) public
+[2021-09-24 15:09:03,358 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:09:03,359 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:09:03,359 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:09:11,041 UTC] [LOB] Pina/Miles/Pina (2): Holy
+[2021-09-24 15:09:25,874 UTC] [LOB] Pina/Miles/Pina (2): Can you like approve the request for Analysis to come in on web or some shit
+[2021-09-24 15:09:31,077 UTC] [LOB] Pina/Miles/Pina (2): I have no idea of how that shit works
+[2021-09-24 15:09:37,042 UTC] [LOB] /Snow/Fruitbat (16): Doin ya mom
+[2021-09-24 15:09:42,785 UTC] [LOB] /Trucy Pro/Adam (22): Doin ya mom
+[2021-09-24 15:09:49,790 UTC] [LOB] /Snow/Fruitbat (16): Oh this is much better I copy pasted my own CCBig
+[2021-09-24 15:10:15,911 UTC] login (18 onto None): {'profile': 'HolyMan'}
+[2021-09-24 15:10:17,426 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:10:17,427 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:10:17,428 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:10:30,576 UTC] [LOB] Pina/Miles/Pina (2): Wao is that web rumba!!
+[2021-09-24 15:10:53,302 UTC] [LOB] /Snow/Fruitbat (16): Our first potential debtor
+[2021-09-24 15:11:24,414 UTC] [LOB] Miles/Pina (2): event music ([STAFF] ~ Front Porch.opus)
+[2021-09-24 15:11:31,331 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:11:31,332 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:11:31,333 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:11:31,827 UTC] [LOB] Pina/Miles/Pina (2): We listened to that like
+[2021-09-24 15:11:33,926 UTC] [LOB] Pina/Miles/Pina (2): 5 times
+[2021-09-24 15:11:44,464 UTC] [LOB] /Trucy Pro/Adam (22): Can't get enough
+[2021-09-24 15:11:45,834 UTC] [LOB] /Snow/Fruitbat (16): Doin Ya Mom grindset
+[2021-09-24 15:12:01,263 UTC] [LOB] /Trucy Pro/Adam (22): Sigma Fruitbat
+[2021-09-24 15:12:25,651 UTC] [LOB] Pina/Miles/Pina (2): Holy please
+[2021-09-24 15:12:30,896 UTC] [LOB] /Snow/Fruitbat (16): I tell you a sigma track
+[2021-09-24 15:12:38,081 UTC] [LOB] /Trucy Pro/Adam (22): Fruit no
+[2021-09-24 15:12:39,054 UTC] [LOB] /Snow/Fruitbat (16): This one's for you analysis
+[2021-09-24 15:12:40,665 UTC] [LOB] Snow/Fruitbat (16): event music ([STAFF] The Combine Harvester.opus)
+[2021-09-24 15:12:42,870 UTC] [LOB] Pina/Miles/Pina (2): I would accept this man in the server but I have no clue how this is the most frustrating thing
+[2021-09-24 15:12:45,741 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:12:45,742 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:12:45,742 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:12:55,135 UTC] [LOB] /Phoenix/HolyMan (18): Ok motherfuckers, to accept Analysis
+[2021-09-24 15:13:03,543 UTC] login (16 onto None): {'profile': 'Fruitbat'}
+[2021-09-24 15:13:08,252 UTC] [LOB] /Phoenix/HolyMan (18): Please just login and look it up in tehg ithub doucmentation of CC
+[2021-09-24 15:13:53,707 UTC] Exception while running a command
+Traceback (most recent call last):
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/network/aoprotocol.py", line 928, in net_cmd_ct
+    getattr(commands, called_function)(self.client, arg)
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/commands/admin.py", line 216, in ooc_cmd_permit
+    if len(c.hdid) != 32:
+UnboundLocalError: local variable 'c' referenced before assignment
+[2021-09-24 15:13:58,896 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:13:58,898 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:13:58,899 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:14:23,340 UTC] [LOB] Pina/Miles/Pina (2): No, still no clue
+[2021-09-24 15:14:43,026 UTC] IPID for 98.10.84.123: 25
+[2021-09-24 15:14:43,395 UTC] Associated 25 with fa4e2dd5-5fe9-4031-b175-c3d1c782e72a
+[2021-09-24 15:14:43,399 UTC] 25 (HDID: fa4e2dd5-5fe9-4031-b175-c3d1c782e72a) connected.
+[2021-09-24 15:14:44,292 UTC] [LOB] /Snow/Fruitbat (16): My only guess is /permit I hope this doesn't give him superadmin perms
+[2021-09-24 15:14:57,832 UTC] [LOB] /Trucy Pro/Adam (22): That would be hilarious tho
+[2021-09-24 15:15:06,907 UTC] [LOB] Pina/Miles/Pina (2): Well yes I figured that too, but permit what
+[2021-09-24 15:15:12,646 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:15:12,646 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:15:12,647 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:15:18,785 UTC] Exception while running a command
+Traceback (most recent call last):
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/network/aoprotocol.py", line 928, in net_cmd_ct
+    getattr(commands, called_function)(self.client, arg)
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/commands/admin.py", line 216, in ooc_cmd_permit
+    if len(c.hdid) != 32:
+UnboundLocalError: local variable 'c' referenced before assignment
+[2021-09-24 15:15:19,669 UTC] [LOB] /Trucy Pro/Adam (22): I assume his ID?
+[2021-09-24 15:15:28,085 UTC] [LOB] Pina/Miles/Pina (2): Oh
+[2021-09-24 15:15:29,780 UTC] [LOB] Pina/Miles/Pina (2): I think I did it
+[2021-09-24 15:15:30,365 UTC] [LOB] Rola/ (25): event char.change ({"from": null, "to": "Rola"})
+[2021-09-24 15:15:32,820 UTC] [LOB] /Snow/Fruitbat (16): Let's see if this works lmao
+[2021-09-24 15:15:40,086 UTC] [LOB] Pina/Miles/Pina (2): I think I did it?
+[2021-09-24 15:16:04,354 UTC] [LOB] Clammy/Rola/ (25): Congrats on the server everyone!
+[2021-09-24 15:16:12,237 UTC] [LOB] Pina/Miles/Pina (2): yo!!!
+[2021-09-24 15:16:15,295 UTC] [LOB] Pina/Miles/Pina (2): The clammy fo' today
+[2021-09-24 15:16:16,679 UTC] [LOB] /Phoenix/HolyMan (18): Amazing
+[2021-09-24 15:16:20,255 UTC] [LOB] Pina/Miles/Pina (2): Hi Clammy
+[2021-09-24 15:16:26,448 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:16:26,449 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:16:26,450 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:16:36,188 UTC] [LOB] /Trucy Pro/Adam (22): Da Clammy
+[2021-09-24 15:16:47,420 UTC] [LOB] Miles/Pina (2): event music ([STAFF] ~ Moonview Highway.opus)
+[2021-09-24 15:16:52,545 UTC] [LOB] Rumba/Analysis (24): event ooc (gaming)
+[2021-09-24 15:16:54,482 UTC] [LOB] Analysis/Rumba/Analysis (24): YOOOOOO OLE WEB LET'S FUCKING GO!
+[2021-09-24 15:16:59,117 UTC] [LOB] Pina/Miles/Pina (2): OLE WEB YOOOO
+[2021-09-24 15:17:03,520 UTC] [LOB] Pina/Miles/Pina (2): Do you have all the files and shit?=
+[2021-09-24 15:17:05,907 UTC] [LOB] Pina/Miles/Pina (2): =
+[2021-09-24 15:17:06,624 UTC] [LOB] Analysis/Rumba/Analysis (24): Also half of the files here do not work.
+[2021-09-24 15:17:11,831 UTC] [LOB] Pina/Miles/Pina (2): Ok that answers that
+[2021-09-24 15:17:16,680 UTC] [LOB] Analysis/Rumba/Analysis (24): No BG, and a lot of the characters are outright broken lmao.
+[2021-09-24 15:17:18,407 UTC] IPID for 92.184.124.141: 26
+[2021-09-24 15:17:18,459 UTC] Associated 26 with 3f01824818be750f3b1d8a9ad2169e07
+[2021-09-24 15:17:18,461 UTC] 26 (HDID: 3f01824818be750f3b1d8a9ad2169e07) connected.
+[2021-09-24 15:17:20,355 UTC] [LOB] Adam/Trucy Pro/Adam (22): Web AO
+[2021-09-24 15:17:22,850 UTC] [LOB] Clammy/Rola/ (25): Tragique
+[2021-09-24 15:17:23,744 UTC] [LOB] Adam/Trucy Pro/Adam (22): Bottom text
+[2021-09-24 15:17:24,595 UTC] [LOB] Analysis/Rumba/Analysis (24): WebAO
+[2021-09-24 15:17:25,344 UTC] [LOB] Pina/Miles/Pina (2): Guess next think we'll do is work on web compatibility
+[2021-09-24 15:17:36,529 UTC] [LOB] Analysis/Rumba/Analysis (24): Don't know if you guys will even be able to fix it, but I wish you luck.
+[2021-09-24 15:17:40,184 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:17:40,185 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:17:40,187 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:17:40,625 UTC] IPID for 188.27.128.215: 27
+[2021-09-24 15:17:40,915 UTC] Associated 27 with daea9949-a3ef-402b-9970-d7ed5ca3afa0
+[2021-09-24 15:17:40,919 UTC] 27 (HDID: daea9949-a3ef-402b-9970-d7ed5ca3afa0) connected.
+[2021-09-24 15:17:42,628 UTC] [LOB] /Snow/Fruitbat (16): WebAO is a pissy bitch
+[2021-09-24 15:17:45,131 UTC] [LOB] Pina/Miles/Pina (2): I fucking haate AO
+[2021-09-24 15:17:48,424 UTC] [LOB] Analysis/Rumba/Analysis (24): Do you guys intend to overhaul when Chronicles is ripped? 
+[2021-09-24 15:17:55,601 UTC] [LOB] Analysis/Rumba/Analysis (24): Fully, I mean.
+[2021-09-24 15:18:01,580 UTC] [LOB] Pina/Miles/Pina (2): Our plan with HD characters is one of two:
+[2021-09-24 15:18:04,647 UTC] [LOB] /Phoenix/HolyMan (18): Yeah, we need to work on that. I also wanted to delete that stupid fucking shit of the WebAO permissions but to be honest, I just remembered about Web today.
+[2021-09-24 15:18:17,872 UTC] [LOB] Pina/Miles/Pina (2): Either have an HD pack with incomplete case, or when it's complete completely change it to the updated ones
+[2021-09-24 15:18:23,405 UTC] [LOB] Pina/Miles/Pina (2): cast*
+[2021-09-24 15:18:24,211 UTC] IPID for 96.44.123.46: 28
+[2021-09-24 15:18:24,395 UTC] [LOB] Analysis/Rumba/Analysis (24): Good thing that I exist. 
+[2021-09-24 15:18:25,315 UTC] Associated 28 with 5341f4cf-f86e-4edd-8571-adba4328086a
+[2021-09-24 15:18:25,318 UTC] 28 (HDID: 5341f4cf-f86e-4edd-8571-adba4328086a) connected.
+[2021-09-24 15:18:32,373 UTC] [LOB] Clammy/Rola/ (25): Are they even close to finishing the rips for Chronicles?
+[2021-09-24 15:18:36,049 UTC] [LOB] Clammy/Rola/ (25): I doubt it, right?
+[2021-09-24 15:18:37,743 UTC] IPID for 92.184.124.141: 26
+[2021-09-24 15:18:37,788 UTC] [LOB] Pina/Miles/Pina (2): Not at all
+[2021-09-24 15:18:37,818 UTC] Associated 26 with 3f01824818be750f3b1d8a9ad2169e07
+[2021-09-24 15:18:37,819 UTC] 26 (HDID: 3f01824818be750f3b1d8a9ad2169e07) connected.
+[2021-09-24 15:18:39,666 UTC] [LOB] /Phoenix/HolyMan (18): Yeah, i remembered because of you. 
+[2021-09-24 15:18:41,571 UTC] IPID for 92.184.124.141: 26
+[2021-09-24 15:18:41,636 UTC] Associated 26 with 6d222b130c3762b659fcdeeb245c75c7
+[2021-09-24 15:18:41,639 UTC] 26 (HDID: 6d222b130c3762b659fcdeeb245c75c7) connected.
+[2021-09-24 15:18:42,559 UTC] [LOB] Analysis/Rumba/Analysis (24): Also yeah I can imagine HD-only characters- even for web- would be QUITE appealing, wouldn't it? 
+[2021-09-24 15:18:55,121 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:18:55,121 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:18:55,122 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:18:56,893 UTC] [LOB] Pina/Miles/Pina (2): Yeah, that is rather true
+[2021-09-24 15:19:00,118 UTC] [LOB] Analysis/Rumba/Analysis (24): It'd be so fucking gorgeous. Finally, order. 
+[2021-09-24 15:19:04,372 UTC] [LOB] /Snow/Fruitbat (16): They're still struggling to get intact models out of the Chronicles release man
+[2021-09-24 15:19:09,754 UTC] [LOB] Pina/Miles/Pina (2): I hate having it like CC does
+[2021-09-24 15:19:13,049 UTC] [LOB] /Snow/Fruitbat (16): They can "extract" them but they're full of holes and shit
+[2021-09-24 15:19:20,296 UTC] [LOB] Pina/Miles/Pina (2): Where fucking Ryu looks crisp and Barok looks like a shaved potato
+[2021-09-24 15:19:30,503 UTC] [LOB] Analysis/Rumba/Analysis (24): Pina I sympathize
+[2021-09-24 15:19:32,643 UTC] [LOB] /Snow/Fruitbat (16): Very specific Ryu rip too
+[2021-09-24 15:19:34,095 UTC] IPID for 51.37.182.109: 29
+[2021-09-24 15:19:34,114 UTC] Associated 29 with 71c022078412950b189b71c2409c1583
+[2021-09-24 15:19:34,116 UTC] 29 (HDID: 71c022078412950b189b71c2409c1583) connected.
+[2021-09-24 15:19:37,017 UTC] [LOB] /Snow/Fruitbat (16): Without the sword or badge
+[2021-09-24 15:19:39,107 UTC] [LOB] Analysis/Rumba/Analysis (24): I want all the files to be of a similar quality.
+[2021-09-24 15:19:46,122 UTC] [LOB] Pina/Miles/Pina (2): Same here
+[2021-09-24 15:19:49,830 UTC] [LOB] Analysis/Rumba/Analysis (24): I'm not a ripper so all I can do is 
+[2021-09-24 15:19:53,011 UTC] [LOB] Analysis/Rumba/Analysis (24): Pray.
+[2021-09-24 15:19:56,010 UTC] [LOB] Pina/Miles/Pina (2): Amen
+[2021-09-24 15:20:03,631 UTC] [LOB] Analysis/Rumba/Analysis (24): AMEN!
+[2021-09-24 15:20:04,202 UTC] [LOB] Phoenix/HolyMan (18): event area.leave (None)
+[2021-09-24 15:20:04,204 UTC] [MOJ] Phoenix/HolyMan (18): event area.join (None)
+[2021-09-24 15:20:08,639 UTC] [MOJ] Phoenix/HolyMan (18): event area.leave (None)
+[2021-09-24 15:20:08,642 UTC] [LOB] Phoenix/HolyMan (18): event area.join (None)
+[2021-09-24 15:20:09,035 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:20:09,036 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:20:09,037 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:20:11,506 UTC] [LOB] Analysis/Rumba/Analysis (24): Also these Balthazar sprites are legitimately neat.
+[2021-09-24 15:20:14,757 UTC] [LOB] Pina/Miles/Pina (2): Anyway point is the server is released which is awesome
+[2021-09-24 15:20:18,409 UTC] [LOB] /Snow/Fruitbat (16): It would be easier if ripping chronicles characters wasn't a fuckin stick up your ass even before the port, nyehehe, right lois??
+[2021-09-24 15:20:26,199 UTC] [LOB] Pina/Miles/Pina (2): They are but his emotes with Gotts suck ass
+[2021-09-24 15:20:28,362 UTC] [LOB] MayaSOJ/HolyMan (18): event char.change ({"from": "Phoenix", "to": "MayaSOJ"})
+[2021-09-24 15:20:37,471 UTC] [LOB] Snow/Fruitbat (16): event area.leave (None)
+[2021-09-24 15:20:37,473 UTC] [MOJ] Snow/Fruitbat (16): event area.join (None)
+[2021-09-24 15:20:37,522 UTC] [LOB] Analysis/Rumba/Analysis (24): Indeed. But I'll get little use out of it until web compat is assured, so I'll probably stick to CC for a while.
+[2021-09-24 15:20:38,596 UTC] [MOJ] Snow/Fruitbat (16): event area.leave (None)
+[2021-09-24 15:20:38,599 UTC] [LOB] Snow/Fruitbat (16): event area.join (None)
+[2021-09-24 15:20:44,384 UTC] [LOB] Clammy/Rola/ (25): Too bad its impossible to make a case with him that doesn't specifically involve air balloons
+[2021-09-24 15:20:49,314 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Facts but now I believe we need to inform about how fucked WebAO is
+[2021-09-24 15:20:53,854 UTC] [LOB] Analysis/Rumba/Analysis (24): Anyway, gotta dip. 
+[2021-09-24 15:20:59,636 UTC] [LOB] Analysis/Rumba/Analysis (24): Still in school lmao.
+[2021-09-24 15:21:01,587 UTC] [LOB] Analysis/Rumba/Analysis (24): Cya.
+[2021-09-24 15:21:02,249 UTC] [LOB] Pina/Miles/Pina (2): Thank you for coming
+[2021-09-24 15:21:07,045 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Seeya seeya
+[2021-09-24 15:21:08,716 UTC] [LOB] Analysis/Rumba/Analysis (24): Thank you for inviting me inside.
+[2021-09-24 15:21:10,895 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Thanks for coming bro.
+[2021-09-24 15:21:12,500 UTC] [LOB] Pina/Miles/Pina (2): I learnt how to actually permit web users so you can bug me 
+[2021-09-24 15:21:15,887 UTC] [LOB] Adam/Trucy Pro/Adam (22): Cya bro
+[2021-09-24 15:21:16,847 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): I feel for the plight of all WebAO users
+[2021-09-24 15:21:19,421 UTC] [LOB] Rumba/Analysis (24): event area.leave (None)
+[2021-09-24 15:21:22,817 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:21:22,818 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:21:22,819 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:21:24,814 UTC] [LOB] Miles/Pina (2): event music ([STAFF] Secret Surprise.opus)
+[2021-09-24 15:21:25,896 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Is it /permit [IPID]?
+[2021-09-24 15:21:27,796 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Is it /permit [IPID]?
+[2021-09-24 15:21:31,149 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Doin ya mom!
+[2021-09-24 15:21:32,221 UTC] [LOB] Pina/Miles/Pina (2): It's /permid ID
+[2021-09-24 15:21:34,831 UTC] [LOB] Adam/Trucy Pro/Adam (22): Doin ya mom!
+[2021-09-24 15:21:39,400 UTC] [LOB] Pina/Miles/Pina (2): The one in the brackets
+[2021-09-24 15:21:40,893 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Oh that makes sense.
+[2021-09-24 15:21:44,887 UTC] [LOB] Pina/Miles/Pina (2): Not in parenthesis
+[2021-09-24 15:21:48,690 UTC] [LOB] Miles/Pina (2): event evidence.add (None)
+[2021-09-24 15:21:59,640 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Brackets are a kind of parenthesis Pina what
+[2021-09-24 15:22:05,339 UTC] [LOB] Miles/Pina (2): event evidence.edit (None)
+[2021-09-24 15:22:11,243 UTC] [LOB] Clammy/Rola/ (25): Oh yeah I know you said "later today" in the announcement but how much later in the day do you plan on hosting the opening day case?
+[2021-09-24 15:22:21,934 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): When I get the fuckin testimony written is when
+[2021-09-24 15:22:27,473 UTC] [LOB] Clammy/Rola/ (25):  ' 
+[2021-09-24 15:22:30,586 UTC] [LOB] Clammy/Rola/ (25): Fair enough.
+[2021-09-24 15:22:32,625 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Anyway I'm gonna have breakfast guys, make sure to ping me if anything comes up and I'll see if I can fix it.
+[2021-09-24 15:22:37,982 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:22:37,983 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:22:37,984 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:22:38,148 UTC] [LOB] Pina/Miles/Pina (2): I intend on appealing to the Americans, so at around 10 p.m GMT
+[2021-09-24 15:22:42,503 UTC] [LOB] Adam/Trucy Pro/Adam (22): @HolyMan I need to pee
+[2021-09-24 15:22:50,843 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): I live on a lifestyle of pure speed, it'll get done
+[2021-09-24 15:22:54,060 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Pee your pants
+[2021-09-24 15:22:55,187 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 15:22:56,437 UTC] [LOB] Pina/Miles/Pina (2): Ok now I shall demonstrate why I shouldn't have been in charge of the files
+[2021-09-24 15:23:12,439 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): He did it.
+[2021-09-24 15:23:16,352 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): The madman did it.
+[2021-09-24 15:23:19,618 UTC] [LOB] Pina/Miles/Pina (2): mincrab steve and sands underbale
+[2021-09-24 15:23:29,018 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): I  saw it on the commits but it was a secret. 
+[2021-09-24 15:23:36,510 UTC] [LOB] Adam/Trucy Pro/Adam (22): It's really funny
+[2021-09-24 15:23:36,884 UTC] [LOB] Snow/Fruitbat (16): event music ([STAFF] Germany - Neo Turf Masters.opus)
+[2021-09-24 15:23:38,064 UTC] [LOB] Pina/Miles/Pina (2): And now there's absolutely nothing you can do about it
+[2021-09-24 15:23:46,386 UTC] [LOB] MayaSOJ/HolyMan (18): event area.leave (None)
+[2021-09-24 15:23:52,332 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:23:52,333 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:23:52,334 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:23:59,129 UTC] [LOB] Rola/ (25): event area.leave (None)
+[2021-09-24 15:24:07,197 UTC] [LOB] Pina/Miles/Pina (2): Anyway I shall now fill this evidence tab with hands
+[2021-09-24 15:24:11,236 UTC] [LOB] Miles/Pina (2): event evidence.add (None)
+[2021-09-24 15:24:18,510 UTC] [LOB] Adam/Trucy Pro/Adam (22): Pina no
+[2021-09-24 15:24:24,634 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): We've just built a second basement for him to fuck around in
+[2021-09-24 15:24:33,487 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): It's over. My career is fucked.
+[2021-09-24 15:25:05,791 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:25:05,793 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:25:05,794 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:25:12,792 UTC] [LOB] Miles/Pina (2): event evidence.edit (None)
+[2021-09-24 15:25:25,950 UTC] [LOB] Pina/Miles/Pina (2): Also yes
+[2021-09-24 15:25:32,498 UTC] [LOB] Pina/Miles/Pina (2): I shall make this my second basement
+[2021-09-24 15:25:35,282 UTC] [LOB] Pina/Miles/Pina (2): And it shall be beautiful
+[2021-09-24 15:25:40,989 UTC] [LOB] Miles/Pina (2): event evidence.add (None)
+[2021-09-24 15:25:43,044 UTC] [LOB] Adam/Trucy Pro/Adam (22): But without the slurs
+[2021-09-24 15:25:45,747 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Balls
+[2021-09-24 15:25:46,286 UTC] [LOB] Snow/Fruitbat (16): event music ([DGS] Premonition ~ Omen.opus)
+[2021-09-24 15:26:20,264 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:26:20,266 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:26:20,267 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:26:21,508 UTC] [LOB] Miles/Pina (2): event evidence.edit (None)
+[2021-09-24 15:26:26,862 UTC] [LOB] Pina/Miles/Pina (2): Balls
+[2021-09-24 15:26:29,900 UTC] [LOB] Snow/Fruitbat (16): event music ([DGS] Premonition ~ Omen.opus)
+[2021-09-24 15:26:33,012 UTC] [LOB] Adam/Trucy Pro/Adam (22): My penis!
+[2021-09-24 15:26:33,792 UTC] [LOB] Pina/Miles/Pina (2): HAHA
+[2021-09-24 15:26:33,890 UTC] [LOB] Snow/Fruitbat (16): event music ([DGS] Premonition ~ Pressed.opus)
+[2021-09-24 15:27:03,972 UTC] [LOB] Snow/Fruitbat (16): event music ([DGS] Steamship Alaclair.opus)
+[2021-09-24 15:27:05,949 UTC] IPID for 72.210.70.163: 31
+[2021-09-24 15:27:06,482 UTC] Associated 31 with 3794788a-23fa-4da8-8613-35d7c679369b
+[2021-09-24 15:27:06,485 UTC] 31 (HDID: 3794788a-23fa-4da8-8613-35d7c679369b) connected.
+[2021-09-24 15:27:33,122 UTC] [LOB] EdgeworthSOJ/ (31): event char.change ({"from": null, "to": "EdgeworthSOJ"})
+[2021-09-24 15:27:33,990 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:27:33,991 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:27:33,992 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:27:52,030 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): hm
+[2021-09-24 15:28:06,275 UTC] [LOB] Pina/Miles/Pina (2): Distant
+[2021-09-24 15:28:07,921 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Far away
+[2021-09-24 15:28:10,222 UTC] [LOB] Pina/Miles/Pina (2): Why are you so far away
+[2021-09-24 15:28:12,697 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): yo
+[2021-09-24 15:28:13,531 UTC] [LOB] Pina/Miles/Pina (2): Fuck you stole my joke
+[2021-09-24 15:28:15,563 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): bruh
+[2021-09-24 15:28:17,268 UTC] [LOB] Miles/Pina (2): event evidence.add (None)
+[2021-09-24 15:28:22,100 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Stoled!
+[2021-09-24 15:28:44,731 UTC] [LOB] Miles/Pina (2): event evidence.edit (None)
+[2021-09-24 15:28:45,777 UTC] [LOB] Miles/Pina (2): event evidence.add (None)
+[2021-09-24 15:28:47,856 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:28:47,857 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:28:47,859 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:29:36,127 UTC] [LOB] Pina/Miles/Pina (2): You are stoling 
+[2021-09-24 15:29:53,284 UTC] [LOB] Pina/Miles/Pina (2): I'm getting way too concentrated on making these fingers evidence
+[2021-09-24 15:29:58,240 UTC] [LOB] Pina/Miles/Pina (2): But it's important I need them here
+[2021-09-24 15:30:03,419 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:30:03,420 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:30:03,421 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:30:03,445 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): lol
+[2021-09-24 15:30:06,560 UTC] [LOB] Snow/Fruitbat (16): event music ([STAFF] ~ Tatsuro Yamashita ~ Sparkle.opus)
+[2021-09-24 15:30:29,948 UTC] [LOB] Miles/Pina (2): event evidence.edit (None)
+[2021-09-24 15:30:35,585 UTC] [LOB] Pina/Miles/Pina (2): Ok I'll do more later
+[2021-09-24 15:30:40,045 UTC] [LOB] Pina/Miles/Pina (2): Anywaya, hi Distant, how goes you?
+[2021-09-24 15:30:48,901 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): im alr
+[2021-09-24 15:30:51,751 UTC] [LOB] Gossip/Fruitbat (16): event char.change ({"from": "Snow", "to": "Gossip"})
+[2021-09-24 15:30:59,669 UTC] [LOB] Pina/Miles/Pina (2): I don't think I've actually 
+[2021-09-24 15:31:07,141 UTC] [LOB] Snow/Fruitbat (16): event char.change ({"from": "Gossip", "to": "Snow"})
+[2021-09-24 15:31:07,409 UTC] [LOB] Pina/Miles/Pina (2): Talked with you on an AO client all that much?
+[2021-09-24 15:31:09,417 UTC] IPID for 31.215.86.53: 32
+[2021-09-24 15:31:09,546 UTC] Associated 32 with 4e7c2bcb37f2478bca0577ba08158800
+[2021-09-24 15:31:09,549 UTC] 32 (HDID: 4e7c2bcb37f2478bca0577ba08158800) connected.
+[2021-09-24 15:31:17,190 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:31:17,191 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:31:17,192 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:31:23,073 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): lol
+[2021-09-24 15:31:23,618 UTC] IPID for 31.215.86.53: 32
+[2021-09-24 15:31:23,748 UTC] Associated 32 with 4e7c2bcb37f2478bca0577ba08158800
+[2021-09-24 15:31:23,749 UTC] 32 (HDID: 4e7c2bcb37f2478bca0577ba08158800) connected.
+[2021-09-24 15:31:29,058 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): not much to my mmemory
+[2021-09-24 15:31:30,341 UTC] [LOB] Phoenix/ (32): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-24 15:31:32,647 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 15:31:52,815 UTC] [LOB] Phoenix/ (32): event area.leave (None)
+[2021-09-24 15:31:56,730 UTC] [LOB] Pina/Miles/Pina (2): Crazy bro
+[2021-09-24 15:31:57,847 UTC] [LOB] Pina/Miles/Pina (2): Crazy
+[2021-09-24 15:32:12,256 UTC] [LOB] Pina/Miles/Pina (2): Casing in here will be real this night, hope people come, it's gonna be funny
+[2021-09-24 15:32:22,439 UTC] [LOB] Snow/Fruitbat (16): event modcall (mods help it's fruit i can't find my shoes)
+[2021-09-24 15:32:23,399 UTC] [LOB] Adam/Trucy Pro/Adam (22): I came
+[2021-09-24 15:32:25,331 UTC] [LOB] Pina/Miles/Pina (2): We picked a very special case that should be in the hearts of all AO casers
+[2021-09-24 15:32:31,700 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:32:31,701 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:32:31,701 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:32:36,264 UTC] [LOB] Adam/Trucy Pro/Adam (22): TA Mistake
+[2021-09-24 15:32:37,527 UTC] [LOB] Miles/Pina (2): event modcall (fruit shut the fuck up )
+[2021-09-24 15:32:40,655 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Oh man I no longer have to be afraid of modcall
+[2021-09-24 15:32:50,052 UTC] [LOB] Pina/Miles/Pina (2): You are the modcall...
+[2021-09-24 15:32:51,785 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): So funny
+[2021-09-24 15:33:36,604 UTC] [LOB] Snow/Fruitbat (16): event modcall (:()
+[2021-09-24 15:33:42,690 UTC] [LOB] Pina/Miles/Pina (2): Fruit please stop
+[2021-09-24 15:33:44,434 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:33:44,435 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:33:44,436 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:33:46,506 UTC] [LOB] Pina/Miles/Pina (2): This sound is so annoying
+[2021-09-24 15:33:48,141 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): I love it though
+[2021-09-24 15:33:52,974 UTC] [LOB] Pina/Miles/Pina (2): Oh man
+[2021-09-24 15:33:55,427 UTC] [LOB] Pina/Miles/Pina (2): Same but man
+[2021-09-24 15:34:04,019 UTC] [LOB] EdgeworthSOJ/Distant (31): event modcall (le test moment)
+[2021-09-24 15:34:05,782 UTC] [LOB] Judge/Pina (2): event char.change ({"from": "Miles", "to": "Judge"})
+[2021-09-24 15:34:10,343 UTC] [LOB] JudgeSOJ/Pina (2): event char.change ({"from": "Judge", "to": "JudgeSOJ"})
+[2021-09-24 15:34:13,077 UTC] [LOB] Pina/JudgeSOJ/Pina (2): I am now 3d
+[2021-09-24 15:34:16,687 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): hi distant hi
+[2021-09-24 15:34:18,911 UTC] [LOB] Pina/JudgeSOJ/Pina (2): Holy shit bussin!!!
+[2021-09-24 15:34:19,866 UTC] [LOB] HoboTrucy/Adam (22): event char.change ({"from": "Trucy Pro", "to": "HoboTrucy"})
+[2021-09-24 15:34:27,492 UTC] IPID for 185.234.140.192: 33
+[2021-09-24 15:34:27,509 UTC] Associated 33 with 6d222b130c3762b659fcdeeb245c75c7
+[2021-09-24 15:34:27,511 UTC] 33 (HDID: 6d222b130c3762b659fcdeeb245c75c7) connected.
+[2021-09-24 15:34:30,620 UTC] [LOB] Adam/HoboTrucy/Adam (22): Gun
+[2021-09-24 15:34:35,214 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Oh I hate it
+[2021-09-24 15:34:36,453 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): What is that
+[2021-09-24 15:34:41,480 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): trucy with gun
+[2021-09-24 15:34:53,858 UTC] [LOB] Pina/JudgeSOJ/Pina (2): Trucy with a motherfucking gun
+[2021-09-24 15:34:58,072 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:34:58,073 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:34:58,073 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:34:59,061 UTC] [LOB] Adam/HoboTrucy/Adam (22): Hobo
+[2021-09-24 15:35:17,320 UTC] IPID for 78.85.48.213: 34
+[2021-09-24 15:35:17,398 UTC] Associated 34 with 0952e4d353d39be30bbfb407b8e3b7ab
+[2021-09-24 15:35:17,401 UTC] 34 (HDID: 0952e4d353d39be30bbfb407b8e3b7ab) connected.
+[2021-09-24 15:36:02,491 UTC] [LOB] Snow/Fruitbat (16): event disemvowel (None)
+[2021-09-24 15:36:07,729 UTC] [LOB] Pina/JudgeSOJ/Pina (2): Do the moustache emote
+[2021-09-24 15:36:10,096 UTC] [LOB] Pina/JudgeSOJ/Pina (2): That one's funny
+[2021-09-24 15:36:12,018 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:36:12,019 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:36:12,019 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:36:12,921 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Hey adam how are you today
+[2021-09-24 15:36:14,766 UTC] [LOB] Pina/JudgeSOJ/Pina (2): Because I do not get why it exists
+[2021-09-24 15:36:20,716 UTC] [LOB] Adam/HoboTrucy/Adam (22):  'm vry fn thnk y
+[2021-09-24 15:36:25,706 UTC] [LOB] Adam/HoboTrucy/Adam (22): Wht th fkc
+[2021-09-24 15:36:26,724 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Fuckin trolled
+[2021-09-24 15:36:37,180 UTC] [LOB] Adam/HoboTrucy/Adam (22): Fck y
+[2021-09-24 15:36:40,853 UTC] [LOB] Adam/HoboTrucy/Adam (22): n
+[2021-09-24 15:36:42,690 UTC] [LOB] Snow/Fruitbat (16): event undisemvowel (None)
+[2021-09-24 15:36:43,762 UTC] [LOB] Adam/HoboTrucy/Adam (22): HELP
+[2021-09-24 15:36:48,596 UTC] [LOB] Adam/HoboTrucy/Adam (22): Oh fuck thang god
+[2021-09-24 15:36:51,427 UTC] [LOB] Adam/HoboTrucy/Adam (22): k
+[2021-09-24 15:36:52,815 UTC] [LOB] Pina/JudgeSOJ/Pina (2): frog
+[2021-09-24 15:37:08,939 UTC] [LOB] Pina/JudgeSOJ/Pina (2): Oh that's atrocious
+[2021-09-24 15:37:23,141 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 15:37:28,045 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:37:28,046 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:37:28,047 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:37:28,594 UTC] [LOB] Adam/HoboTrucy/Adam (22): Haha
+[2021-09-24 15:37:32,643 UTC] [LOB] Pina/JudgeSOJ/Pina (2): Phoenix with a moustache
+[2021-09-24 15:37:34,658 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Ooogh
+[2021-09-24 15:37:43,479 UTC] [LOB] PhoenixSOJSD/Pina (2): event char.change ({"from": "JudgeSOJ", "to": "PhoenixSOJSD"})
+[2021-09-24 15:37:49,938 UTC] [LOB] Payne Train/Adam (22): event char.change ({"from": "HoboTrucy", "to": "Payne Train"})
+[2021-09-24 15:38:05,778 UTC] [LOB] PhoenixSOJSD/Pina (2): event music ([STAFF] The Grand Finale - M&L Bowser's Inside Story.opus)
+[2021-09-24 15:38:18,518 UTC] IPID for 84.115.216.114: 35
+[2021-09-24 15:38:18,816 UTC] Associated 35 with c3809872-cfb6-4c1b-a5c1-c34900e6e3c4
+[2021-09-24 15:38:18,820 UTC] 35 (HDID: c3809872-cfb6-4c1b-a5c1-c34900e6e3c4) connected.
+[2021-09-24 15:38:26,436 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Can't wait to use this as a pursuit
+[2021-09-24 15:38:28,772 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): And it being awesome
+[2021-09-24 15:38:40,880 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:38:40,882 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:38:40,883 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:38:42,471 UTC] [LOB] Maria/ (35): event char.change ({"from": null, "to": "Maria"})
+[2021-09-24 15:38:51,854 UTC] [LOB] Munzur/Maria/ (35): damn
+[2021-09-24 15:38:53,387 UTC] [LOB] Munzur/Maria/ (35): Maria
+[2021-09-24 15:38:57,817 UTC] [LOB] Adam/Payne Train/Adam (22): Can't wait to use this for epic moments
+[2021-09-24 15:38:59,399 UTC] [LOB] Payne Train/Adam (22): event music ([STAFF] Soul Blade OST Bravely Folk Song.opus)
+[2021-09-24 15:39:02,047 UTC] [LOB] Lana/Distant (31): event char.change ({"from": "EdgeworthSOJ", "to": "Lana"})
+[2021-09-24 15:39:08,875 UTC] [LOB] TrucySOJ/Distant (31): event char.change ({"from": "Lana", "to": "TrucySOJ"})
+[2021-09-24 15:39:10,045 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): You can use that for a prosecutor theme to be honest
+[2021-09-24 15:39:17,693 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Also woa is that the Munzur irl
+[2021-09-24 15:39:23,112 UTC] IPID for 86.40.13.150: 36
+[2021-09-24 15:39:23,159 UTC] Associated 36 with 745b5a742bc93e179feacd0f7e868d25
+[2021-09-24 15:39:23,161 UTC] 36 (HDID: 745b5a742bc93e179feacd0f7e868d25) connected.
+[2021-09-24 15:39:26,551 UTC] [LOB] Munzur/Maria/ (35): Perhaps.
+[2021-09-24 15:39:32,072 UTC] IPID for 86.40.13.150: 36
+[2021-09-24 15:39:32,124 UTC] Associated 36 with 745b5a742bc93e179feacd0f7e868d25
+[2021-09-24 15:39:32,125 UTC] 36 (HDID: 745b5a742bc93e179feacd0f7e868d25) connected.
+[2021-09-24 15:39:32,969 UTC] [LOB] Adam/Payne Train/Adam (22): Yes I found it in some AAO case as a pros theme and stole it lol
+[2021-09-24 15:39:35,644 UTC] [LOB] PhoenixPLvsPW/ (36): event char.change ({"from": null, "to": "PhoenixPLvsPW"})
+[2021-09-24 15:39:39,852 UTC] [LOB] PhoenixPLvsPW/ (36): event area.leave (None)
+[2021-09-24 15:39:54,220 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Oh that makes sense
+[2021-09-24 15:39:54,372 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:39:54,373 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:39:54,373 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:39:56,168 UTC] [LOB] Adam/Payne Train/Adam (22): What's this emote
+[2021-09-24 15:40:00,588 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): It's awesome
+[2021-09-24 15:40:01,873 UTC] [LOB] Adam/Payne Train/Adam (22): Oh
+[2021-09-24 15:40:02,448 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Fucking OWNED
+[2021-09-24 15:40:05,405 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): It's the awesome emote
+[2021-09-24 15:40:20,112 UTC] [LOB] Adam/Payne Train/Adam (22): ded
+[2021-09-24 15:40:21,155 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Do we not have the sfx
+[2021-09-24 15:40:26,902 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): That has a loud train noise normally
+[2021-09-24 15:40:34,279 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Very sad that we don't have it truly sad
+[2021-09-24 15:40:37,224 UTC] [LOB] Munzur/Maria/ (35): Jesus I sure hate Animated shouts
+[2021-09-24 15:40:40,199 UTC] [LOB] Mysterious Stranger/Adam (22): event char.change ({"from": "Payne Train", "to": "Mysterious Stranger"})
+[2021-09-24 15:40:42,705 UTC] [LOB] Munzur/Maria/ (35): Anyhow
+[2021-09-24 15:40:44,395 UTC] [LOB] Distant/TrucySOJ/Distant (31): lol
+[2021-09-24 15:40:48,479 UTC] [LOB] Munzur/Maria/ (35): congrats on launching your server
+[2021-09-24 15:40:58,998 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Thank you thank you
+[2021-09-24 15:41:02,356 UTC] [LOB] Munzur/Maria/ (35): also
+[2021-09-24 15:41:05,717 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I just hope people are as thrilled as us
+[2021-09-24 15:41:08,971 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:41:08,972 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:41:08,973 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:41:10,583 UTC] [LOB] Munzur/Maria/ (35): there is a maria HD if you want
+[2021-09-24 15:41:14,401 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Not yet
+[2021-09-24 15:41:17,952 UTC] [LOB] Munzur/Maria/ (35): stol- I mean uh borrowed from
+[2021-09-24 15:41:19,801 UTC] [LOB] Munzur/Maria/ (35): TNC
+[2021-09-24 15:41:20,368 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I mean
+[2021-09-24 15:41:22,311 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Send it our waya
+[2021-09-24 15:41:25,055 UTC] [LOB] Munzur/Maria/ (35): and shes way smaller
+[2021-09-24 15:41:30,055 UTC] [LOB] Munzur/Maria/ (35): sure will do
+[2021-09-24 15:41:31,778 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): We're going to make HD "DLC" packs, per se
+[2021-09-24 15:41:47,828 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): We don't want to add the content yet directly to the server, as it's not all uniform
+[2021-09-24 15:41:56,246 UTC] [LOB] Munzur/Maria/ (35): Makes sense.
+[2021-09-24 15:42:05,833 UTC] [LOB] PhoenixSOJSD/Pina (2): event music ([STAFF]  Partners - The game is afoot! (Arrangement) - The Great Ace Attorney Chronicles.opus)
+[2021-09-24 15:42:17,071 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Why is this on STAFF what
+[2021-09-24 15:42:21,399 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Well who cares
+[2021-09-24 15:42:21,518 UTC] IPID for 90.211.194.148: 37
+[2021-09-24 15:42:21,561 UTC] Associated 37 with 1d33879f3a3e0555f6cdd7c4d08a056d
+[2021-09-24 15:42:21,564 UTC] 37 (HDID: 1d33879f3a3e0555f6cdd7c4d08a056d) connected.
+[2021-09-24 15:42:22,996 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:42:22,997 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:42:22,998 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:42:24,534 UTC] [LOB] Adam/Mysterious Stranger/Adam (22): Red...
+[2021-09-24 15:42:25,624 UTC] [LOB] Munzur/Maria/ (35): damn
+[2021-09-24 15:42:29,447 UTC] [LOB] Munzur/Maria/ (35): staff do add good songs
+[2021-09-24 15:42:32,997 UTC] IPID for 90.211.194.148: 37
+[2021-09-24 15:42:33,041 UTC] Associated 37 with 1d33879f3a3e0555f6cdd7c4d08a056d
+[2021-09-24 15:42:33,042 UTC] 37 (HDID: 1d33879f3a3e0555f6cdd7c4d08a056d) connected.
+[2021-09-24 15:42:33,941 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): True...
+[2021-09-24 15:42:40,731 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): We should practice Content Spartanism, only have Phoenix Edgeworth the Judge and Gumshoe
+[2021-09-24 15:42:45,894 UTC] [LOB] Adam/Mysterious Stranger/Adam (22): Like this one
+[2021-09-24 15:42:46,924 UTC] [LOB] Mysterious Stranger/Adam (22): event music ([STAFF] Secret Surprise.opus)
+[2021-09-24 15:42:47,755 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): 90 KB download
+[2021-09-24 15:42:51,144 UTC] IPID for 96.240.155.214: 38
+[2021-09-24 15:42:51,222 UTC] Associated 38 with 8ea815f722d261536c7ec83aadc926b2
+[2021-09-24 15:42:51,224 UTC] 38 (HDID: 8ea815f722d261536c7ec83aadc926b2) connected.
+[2021-09-24 15:42:52,532 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Doin ya mom!
+[2021-09-24 15:42:59,349 UTC] [LOB] Adam/Mysterious Stranger/Adam (22): Doin ya mom!
+[2021-09-24 15:43:03,254 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Gumshoe in 5 different colours
+[2021-09-24 15:43:19,027 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Just so you can distinguish between witnesses
+[2021-09-24 15:43:37,214 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:43:37,215 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:43:37,216 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:43:40,464 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Distant wit da missingno!!!1
+[2021-09-24 15:43:51,591 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 15:43:51,955 UTC] [LOB] Distant/TrucySOJ/Distant (31): lool
+[2021-09-24 15:43:54,074 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Green Gumshoe, White Gumshow, Brown Gumshoe, Black Gumshoe, Pied-Noir Gumshoe
+[2021-09-24 15:44:06,954 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Pied-Noir Gumshoe is smoking a cigarette
+[2021-09-24 15:44:08,498 UTC] [LOB] EdgeworthSOJ/Distant (31): event char.change ({"from": "TrucySOJ", "to": "EdgeworthSOJ"})
+[2021-09-24 15:44:12,249 UTC] IPID for 79.160.193.78: 39
+[2021-09-24 15:44:12,290 UTC] Associated 39 with d9b88f24c28c63a60eaff5779bb42e2a
+[2021-09-24 15:44:12,292 UTC] 39 (HDID: d9b88f24c28c63a60eaff5779bb42e2a) connected.
+[2021-09-24 15:44:28,208 UTC] [LOB] Ema/Adam (22): event char.change ({"from": "Mysterious Stranger", "to": "Ema"})
+[2021-09-24 15:44:39,640 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Doin' your mum
+[2021-09-24 15:44:45,973 UTC] [LOB] Adam/Ema/Adam (22): He do be doin my mom
+[2021-09-24 15:44:50,227 UTC] [LOB] Adam/Ema/Adam (22): This is trueú
+[2021-09-24 15:44:51,465 UTC] [LOB] Munzur/Maria/ (35): Sorry to dissapoint, but I did your mom first.
+[2021-09-24 15:44:52,372 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:44:52,373 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:44:52,374 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:44:58,527 UTC] [LOB] Snow/Fruitbat (16): event play (https://cdn.discordapp.com/attachments/888491014250201130/888491130881179658/Rank_9__Million_Gunman__Steel_Diamondback.opus)
+[2021-09-24 15:45:02,724 UTC] [LOB] Adam/Ema/Adam (22): Broo
+[2021-09-24 15:45:03,241 UTC] IPID for 87.116.173.126: 40
+[2021-09-24 15:45:03,533 UTC] Associated 40 with dbadfcd1-20fd-4c30-a3d1-7b57b29071f7
+[2021-09-24 15:45:03,535 UTC] 40 (HDID: dbadfcd1-20fd-4c30-a3d1-7b57b29071f7) connected.
+[2021-09-24 15:45:12,021 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Million Gunman hell yeah brudda
+[2021-09-24 15:45:15,833 UTC] IPID for 87.116.173.126: 40
+[2021-09-24 15:45:15,883 UTC] IPID for 87.116.173.126: 40
+[2021-09-24 15:45:16,174 UTC] Associated 40 with dbadfcd1-20fd-4c30-a3d1-7b57b29071f7
+[2021-09-24 15:45:16,175 UTC] 40 (HDID: dbadfcd1-20fd-4c30-a3d1-7b57b29071f7) connected.
+[2021-09-24 15:45:26,720 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Actually
+[2021-09-24 15:45:29,194 UTC] [LOB] Munzur/Maria/ (35): >Doopliss Battle Paper Mario
+[2021-09-24 15:45:29,894 UTC] [LOB] Blaise/ (40): event char.change ({"from": null, "to": "Blaise"})
+[2021-09-24 15:45:31,063 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Can anyone not hear the song?
+[2021-09-24 15:45:32,942 UTC] [LOB] Munzur/Maria/ (35): based
+[2021-09-24 15:45:33,767 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): True
+[2021-09-24 15:45:35,828 UTC] [LOB] Munzur/Maria/ (35): who added this
+[2021-09-24 15:45:38,109 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Holy
+[2021-09-24 15:45:47,514 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): If you'd caught me with the Staff Music question a few weeks earlier I'd have picked Steel Diamondback
+[2021-09-24 15:45:52,407 UTC] [LOB] Munzur/Maria/ (35): good taste
+[2021-09-24 15:45:57,125 UTC] [LOB] Delinard/Blaise/ (40): Oh damn it's so weird when you are used to 1080p theme
+[2021-09-24 15:46:03,185 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): You could have added Million Gunman yesterday bro
+[2021-09-24 15:46:05,074 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:46:05,075 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:46:05,075 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:46:06,517 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): O
+[2021-09-24 15:46:14,462 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): 1080p is on the themes if you want to use that
+[2021-09-24 15:46:18,700 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Don't wanna go ham with it
+[2021-09-24 15:46:21,430 UTC] [LOB] Munzur/Maria/ (35): 1080p gay
+[2021-09-24 15:46:23,860 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Also are you guys using the OLEAJ theme
+[2021-09-24 15:46:27,773 UTC] [LOB] Munzur/Maria/ (35): no
+[2021-09-24 15:46:33,103 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Dang!!!!!
+[2021-09-24 15:46:34,114 UTC] [LOB] Munzur/Maria/ (35): ccbig forever
+[2021-09-24 15:46:44,720 UTC] [LOB] Delinard/Blaise/ (40): OLEAJ was enabled for me by default, it's nice but im too used to 1080p
+[2021-09-24 15:46:51,537 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Yeah, it's the default theme
+[2021-09-24 15:46:54,334 UTC] [LOB] Adam/Ema/Adam (22): CC big more like big poo haha
+[2021-09-24 15:47:07,442 UTC] IPID for 72.210.70.163: 31
+[2021-09-24 15:47:07,804 UTC] Associated 31 with 3c37c0b9090ed2a3de54bc46a193e1ab
+[2021-09-24 15:47:07,810 UTC] 31 (HDID: 3c37c0b9090ed2a3de54bc46a193e1ab) connected.
+[2021-09-24 15:47:12,088 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): No longer locked by the shackles of Kaiser
+[2021-09-24 15:47:18,777 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:47:18,778 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:47:18,779 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:47:19,443 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): I can't lie I've become indoctrinated to CC Big I copied mine over from CC so it would be the same
+[2021-09-24 15:47:32,615 UTC] [LOB] Munzur/Maria/ (35): i mean
+[2021-09-24 15:47:33,245 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): That's fair but you're just weird on several counts
+[2021-09-24 15:47:36,381 UTC] [LOB] Munzur/Maria/ (35): it is the same
+[2021-09-24 15:47:39,841 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I was expecting that from you
+[2021-09-24 15:47:44,865 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): True true
+[2021-09-24 15:47:45,586 UTC] [LOB] Munzur/Maria/ (35): the font looks very off though
+[2021-09-24 15:47:49,870 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Maybe I'll customise it a bit
+[2021-09-24 15:48:01,019 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): In which theme, Munzur?
+[2021-09-24 15:48:03,330 UTC] IPID for 186.148.194.240: 18
+[2021-09-24 15:48:03,778 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-24 15:48:03,779 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-24 15:48:03,813 UTC] [LOB] Munzur/Maria/ (35): call it ccbig 2.0
+[2021-09-24 15:48:05,794 UTC] [LOB] Munzur/Maria/ (35): CCBig
+[2021-09-24 15:48:07,352 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): O
+[2021-09-24 15:48:08,814 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I c
+[2021-09-24 15:48:13,022 UTC] [LOB] Munzur/Maria/ (35): the font looks really ugly
+[2021-09-24 15:48:15,846 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): bbc
+[2021-09-24 15:48:17,756 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): In OLEAJ you have the actual fonts from AJHD
+[2021-09-24 15:48:20,697 UTC] [LOB] Munzur/Maria/ (35): no idea why
+[2021-09-24 15:48:25,051 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): That myself and me missus got for the theme
+[2021-09-24 15:48:27,938 UTC] [LOB] Munzur/Maria/ (35): ew a non ccbig theme
+[2021-09-24 15:48:28,715 UTC] [LOB] MayaSOJ/ (18): event char.change ({"from": null, "to": "MayaSOJ"})
+[2021-09-24 15:48:29,506 UTC] [LOB] Munzur/Maria/ (35): ew
+[2021-09-24 15:48:32,864 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:48:32,865 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:48:32,866 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:48:34,356 UTC] [LOB] AthenaSOJ/Delinard (40): event char.change ({"from": "Blaise", "to": "AthenaSOJ"})
+[2021-09-24 15:48:37,940 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): It has the same fucking porportions!
+[2021-09-24 15:48:45,814 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): me with no 1080p screen
+[2021-09-24 15:48:48,577 UTC] [LOB] Munzur/Maria/ (35): oh lemme try then
+[2021-09-24 15:49:03,630 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Well I mean to each their own I just like the theme
+[2021-09-24 15:49:07,050 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Imagine having a screen with decent resolution
+[2021-09-24 15:49:07,542 UTC] [LOB] Colias/Delinard (40): event char.change ({"from": "AthenaSOJ", "to": "Colias"})
+[2021-09-24 15:49:10,009 UTC] [LOB] Munzur/Maria/ (35): ill be real with u chief
+[2021-09-24 15:49:14,977 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): cant be me
+[2021-09-24 15:49:16,653 UTC] [LOB] Munzur/Maria/ (35): some of this looks terrible to my eye
+[2021-09-24 15:49:22,576 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Fair nuff dawg
+[2021-09-24 15:49:23,795 UTC] [LOB] Adam/Ema/Adam (22): What life in Benezuela does to a man
+[2021-09-24 15:49:26,600 UTC] [LOB] Snow/Fruitbat (16): event music ([STAFF] ~ Subuta 1.opus)
+[2021-09-24 15:49:41,966 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): how did you even afford ao
+[2021-09-24 15:49:46,783 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:49:46,784 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:49:46,784 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:49:50,901 UTC] [LOB] Munzur/Maria/ (35): with difficulty perhaps
+[2021-09-24 15:49:52,809 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I'm an AO shareholder
+[2021-09-24 15:50:00,363 UTC] [LOB] Delinard/Colias/Delinard (40): Is AA1-3 music the old quality or HD?
+[2021-09-24 15:50:02,950 UTC] [LOB] Munzur/Maria/ (35): you bought stocks from sD?
+[2021-09-24 15:50:06,557 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): [Message only available for Attorney Online®  shareholders
+[2021-09-24 15:50:16,321 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): I obviously robbed someone
+[2021-09-24 15:50:18,257 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I didn't copy paste it right dang!!!!!!!!
+[2021-09-24 15:50:26,492 UTC] [LOB] Munzur/Maria/ (35): Ruined comedy
+[2021-09-24 15:50:27,781 UTC] [LOB] Colias/Delinard (40): event area.leave (None)
+[2021-09-24 15:50:27,783 UTC] [CR1] Colias/Delinard (40): event area.join (None)
+[2021-09-24 15:50:28,904 UTC] [LOB] Munzur/Maria/ (35): bad owner
+[2021-09-24 15:50:29,553 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): }}}[Message only available for Attorney Online®  shareholders]
+[2021-09-24 15:50:30,062 UTC] [CR1] Colias/Delinard (40): event music ([AA] Trial.opus)
+[2021-09-24 15:50:31,732 UTC] [CR1] Colias/Delinard (40): event area.leave (None)
+[2021-09-24 15:50:31,735 UTC] [LOB] Colias/Delinard (40): event area.join (None)
+[2021-09-24 15:50:32,759 UTC] [LOB] Munzur/Maria/ (35): ew
+[2021-09-24 15:50:34,027 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): D:
+[2021-09-24 15:50:36,192 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): lol
+[2021-09-24 15:50:37,298 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18):  Also I believe it'd be the old quality.
+[2021-09-24 15:50:40,769 UTC] [LOB] Munzur/Maria/ (35): worst owner ever
+[2021-09-24 15:50:42,580 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): sands
+[2021-09-24 15:50:43,526 UTC] [LOB] Delinard/Colias/Delinard (40): Ye the music is old quality i tested it
+[2021-09-24 15:50:50,678 UTC] [LOB] Munzur/Maria/ (35): what the hell
+[2021-09-24 15:50:58,706 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): sands....
+[2021-09-24 15:51:01,067 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Don't ever let Pina take care of the files.
+[2021-09-24 15:51:01,300 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:51:01,301 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:51:01,302 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:51:04,844 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): 5.8gb so far
+[2021-09-24 15:51:08,833 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): That was my mistake.
+[2021-09-24 15:51:10,162 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Well I thought it was funny!
+[2021-09-24 15:51:14,920 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Well it is
+[2021-09-24 15:51:23,723 UTC] [LOB] Munzur/Maria/ (35): okay will remember that when i download an update holy
+[2021-09-24 15:51:28,640 UTC] [LOB] Munzur/Maria/ (35): thank you
+[2021-09-24 15:51:29,463 UTC] [LOB] Delinard/Colias/Delinard (40): It's 7.2 GB for me
+[2021-09-24 15:51:31,103 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): time to get like my 7th ao client going
+[2021-09-24 15:51:37,101 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): What are the other 6
+[2021-09-24 15:51:40,521 UTC] [LOB] PhoenixSOJSD/Pina (2): event evidence.add (None)
+[2021-09-24 15:51:52,956 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): In the future I could collate the audio from the PC Trilogy so it's more up-to-date
+[2021-09-24 15:51:56,940 UTC] [LOB] Munzur/Maria/ (35): but really, no more dangit or sona characters is nice
+[2021-09-24 15:52:08,639 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): vanilla, kfo, cc, brazil, tnc, vls, mos and now ole
+[2021-09-24 15:52:12,152 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): We hate those shits 
+[2021-09-24 15:52:13,724 UTC] [LOB] Delinard/Colias/Delinard (40): I mean i can also collect you all the HD music, i know a good site that hosts it
+[2021-09-24 15:52:15,221 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:52:15,222 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:52:15,223 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:52:17,632 UTC] [LOB] Munzur/Maria/ (35): too bad the Zero Escape characters got cut too though
+[2021-09-24 15:52:19,105 UTC] [LOB] PhoenixSOJSD/Pina (2): event evidence.edit (None)
+[2021-09-24 15:52:30,682 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Nah I've got a rip of the game files
+[2021-09-24 15:52:40,019 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): good thing client and customs go brr
+[2021-09-24 15:52:42,344 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Straight WAV's, best a' gear
+[2021-09-24 15:52:50,030 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): True he is true
+[2021-09-24 15:53:00,825 UTC] [LOB] Munzur/Maria/ (35): i like Zero Escape and like
+[2021-09-24 15:53:08,613 UTC] [LOB] Munzur/Maria/ (35): its community isnt nearly as bad as dangitronpas
+[2021-09-24 15:53:19,840 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Well we wanted to staya close to the AA stuff
+[2021-09-24 15:53:26,423 UTC] [LOB] Munzur/Maria/ (35): fair fair
+[2021-09-24 15:53:30,114 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:53:30,115 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:53:30,115 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:53:37,400 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Fruit is the music man for us, he ripped the funny DGS music
+[2021-09-24 15:53:40,468 UTC] [LOB] Delinard/Colias/Delinard (40): /testimony_start lol
+[2021-09-24 15:53:44,460 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): .
+[2021-09-24 15:53:45,353 UTC] [LOB] Delinard/Colias/Delinard (40): /testify lol
+[2021-09-24 15:53:56,970 UTC] login (18 onto None): {'profile': 'HolyMan'}
+[2021-09-24 15:53:58,589 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): We're using CC's method for testimony recording
+[2021-09-24 15:54:02,543 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): //
+[2021-09-24 15:54:04,490 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Way too used to it (also just better)
+[2021-09-24 15:54:07,024 UTC] [LOB] Munzur/Maria/ (35): //sus
+[2021-09-24 15:54:07,992 UTC] [LOB] Adam/Ema/Adam (22): //Penis
+[2021-09-24 15:54:11,624 UTC] [LOB] MayaSOJ/HolyMan (18): event cm.add (self-added)
+[2021-09-24 15:54:12,149 UTC] [LOB] Snow/Fruitbat (16): event cm.add (self-added)
+[2021-09-24 15:54:12,949 UTC] [LOB] Adam/Ema/Adam (22): +sex
+[2021-09-24 15:54:13,718 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I'm so glad all of you are awesome
+[2021-09-24 15:54:16,069 UTC] [LOB] Adam/Ema/Adam (22): /end
+[2021-09-24 15:54:16,692 UTC] [LOB] Delinard/Colias/Delinard (40): Yes, they use something like + to add statements, it's weird
+[2021-09-24 15:54:17,105 UTC] IPID for 91.196.10.147: 41
+[2021-09-24 15:54:17,404 UTC] Associated 41 with a1375c4f-92f0-4429-8e99-4fefed3c7c4b
+[2021-09-24 15:54:17,407 UTC] 41 (HDID: a1375c4f-92f0-4429-8e99-4fefed3c7c4b) connected.
+[2021-09-24 15:54:20,246 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): // --Fuck You--
+[2021-09-24 15:54:21,820 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): // ~~Adam likes cock
+[2021-09-24 15:54:23,608 UTC] [LOB] Munzur/Maria/ (35): me and awesome? thankx
+[2021-09-24 15:54:25,236 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): NOOOO
+[2021-09-24 15:54:26,079 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): +balls
+[2021-09-24 15:54:28,075 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): smh
+[2021-09-24 15:54:30,620 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Fruit did it first
+[2021-09-24 15:54:32,321 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): +your mum
+[2021-09-24 15:54:34,513 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): +cucked
+[2021-09-24 15:54:34,810 UTC] [LOB] PhoenixAAI/ (41): event char.change ({"from": null, "to": "PhoenixAAI"})
+[2021-09-24 15:54:35,653 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): /end
+[2021-09-24 15:54:44,226 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:54:44,227 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:54:44,228 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:54:45,502 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Guys 8 users in the main area literally more active than vanilla
+[2021-09-24 15:54:50,060 UTC] [LOB] Delinard/Colias/Delinard (40): \
+[2021-09-24 15:54:51,042 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): smh mod pers
+[2021-09-24 15:54:53,591 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): powers*
+[2021-09-24 15:54:54,331 UTC] [LOB] Munzur/Maria/ (35): well
+[2021-09-24 15:54:54,721 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): +e
+[2021-09-24 15:55:01,476 UTC] [LOB] Munzur/Maria/ (35): vanilla did kinda just gimp themselves
+[2021-09-24 15:55:04,963 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Oh damn I can abuse my powers now! Hahahah!
+[2021-09-24 15:55:09,132 UTC] [LOB] Adam/Ema/Adam (22): Pina can you give me CM for a funny
+[2021-09-24 15:55:13,646 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): "Hi I'm init i shall now ban half of vanilla"
+[2021-09-24 15:55:18,826 UTC] [LOB] Munzur/Maria/ (35): LMAO
+[2021-09-24 15:55:20,642 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): time to commit erp ban speedrun any<percent>
+[2021-09-24 15:55:22,315 UTC] [LOB] Snow/Fruitbat (16): event cm.add (None)
+[2021-09-24 15:55:23,454 UTC] [LOB] Munzur/Maria/ (35): Exactly lol
+[2021-09-24 15:55:24,416 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): No serious server very serious no jokes allowed
+[2021-09-24 15:55:27,361 UTC] [LOB] Delinard/Colias/Delinard (40): Can you send message to OOC using IC command? Some server had that i forgot which one
+[2021-09-24 15:55:27,852 UTC] [LOB] Ema/Adam (22): event play (https://cdn.discordapp.com/attachments/743097220240506962/890640552901615698/WELCOME_TO_MY_MINE_MINECRAFT_PARODI_OF_WELCOME_TO_MY_HOUSE.mp3)
+[2021-09-24 15:55:33,771 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Holy shit Adam
+[2021-09-24 15:55:36,186 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I hate you so much
+[2021-09-24 15:55:41,875 UTC] [LOB] Adam/Ema/Adam (22): Welcome 
+[2021-09-24 15:55:42,654 UTC] [LOB] Munzur/Maria/ (35): Yes you can
+[2021-09-24 15:55:43,627 UTC] [LOB] Adam/Ema/Adam (22): To
+[2021-09-24 15:55:44,682 UTC] [LOB] PhoenixSOJSD/Pina (2): event ooc (case???????)
+[2021-09-24 15:55:44,914 UTC] [LOB] Adam/Ema/Adam (22): My
+[2021-09-24 15:55:46,259 UTC] [LOB] Adam/Ema/Adam (22): Mine
+[2021-09-24 15:55:49,084 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): What is your obsession with this Adam
+[2021-09-24 15:55:51,127 UTC] [LOB] PhoenixSOJSD/Pina (2): event chat.announce.need (bitches for a case)
+[2021-09-24 15:55:51,958 UTC] [LOB] Munzur/Maria/ (35): Just do double (( and ))
+[2021-09-24 15:55:54,562 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): We'll add an ERP Room and anyone who ever enters there gets insta-banned.
+[2021-09-24 15:55:57,384 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:55:57,386 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:55:57,387 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:55:59,150 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): What is your obsession with this Adam
+[2021-09-24 15:56:01,850 UTC] [LOB] Adam/Ema/Adam (22): I played it once and I found it funny
+[2021-09-24 15:56:04,439 UTC] [LOB] Delinard/Colias/Delinard (40): holy sht it works
+[2021-09-24 15:56:05,774 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): //e
+[2021-09-24 15:56:06,469 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Not banned just kicked
+[2021-09-24 15:56:08,311 UTC] [LOB] Maria/Munzur (35): event chat.announce.need (pina to hold his hand)
+[2021-09-24 15:56:09,419 UTC] [LOB] Adam/Ema/Adam (22): WELCOME TO MY MINE
+[2021-09-24 15:56:12,363 UTC] [LOB] Munzur/Maria/Munzur (35): heh
+[2021-09-24 15:56:14,350 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Fuck you Adama
+[2021-09-24 15:56:17,112 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18):  I hate you so much Adam
+[2021-09-24 15:56:18,935 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): YOUR MOTHER!!
+[2021-09-24 15:56:20,003 UTC] [LOB] PhoenixSOJSD/Pina (2): event music ([STAFF] Secret Surprise.opus)
+[2021-09-24 15:56:26,417 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): doin ya mom!
+[2021-09-24 15:56:27,906 UTC] [LOB] Adam/Ema/Adam (22): Not my mom again
+[2021-09-24 15:56:31,202 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): doin ya mom!
+[2021-09-24 15:56:51,032 UTC] [LOB] MayaSOJ/HolyMan (18): event chat.global (Guys I need a defense attorney for TA Blue)
+[2021-09-24 15:56:53,002 UTC] IPID for 189.54.212.236: 42
+[2021-09-24 15:56:53,281 UTC] Associated 42 with f5ef0ce7ac4d9c97261e8c58abcd0927
+[2021-09-24 15:56:53,284 UTC] 42 (HDID: f5ef0ce7ac4d9c97261e8c58abcd0927) connected.
+[2021-09-24 15:56:54,056 UTC] [LOB] Ema/Adam (22): event chat.announce.need (ya mom I need to do her)
+[2021-09-24 15:56:54,082 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I can predict listening to this song way more than desired
+[2021-09-24 15:57:02,194 UTC] [LOB] Maria/Munzur (35): event chat.global (No)
+[2021-09-24 15:57:11,296 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:57:11,297 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:57:11,298 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:57:12,197 UTC] [LOB] PhoenixSOJSD/Pina (2): event chat.global (guys please this prosecutor says he won TA blue twisce we need ad fecence)
+[2021-09-24 15:57:20,229 UTC] [LOB] Snow/Fruitbat (16): event chat.global-mod (Doin Ya Mom!)
+[2021-09-24 15:57:25,948 UTC] [LOB] Munzur/Maria/Munzur (35): wow i muted my other client to listen to this song
+[2021-09-24 15:57:29,063 UTC] [LOB] Munzur/Maria/Munzur (35): wow
+[2021-09-24 15:57:32,413 UTC] [LOB] PhoenixSOJSD/Pina (2): event modcall (doin' ya mom)
+[2021-09-24 15:57:36,898 UTC] [LOB] Adam/Ema/Adam (22): Doin ya mom!
+[2021-09-24 15:57:41,352 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): So glad we all enjoy this song
+[2021-09-24 15:57:45,472 UTC] [LOB] Munzur/Maria/Munzur (35): stoooop doing my mom
+[2021-09-24 15:58:00,056 UTC] [LOB] Munzur/Maria/Munzur (35): oh wait i cant do /gm
+[2021-09-24 15:58:01,522 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Me when my done gets done..........
+[2021-09-24 15:58:04,257 UTC] [LOB] Munzur/Maria/Munzur (35): sadge!
+[2021-09-24 15:58:05,289 UTC] [LOB] PhoenixSOJSD/Pina (2): event chat.announce (balls)
+[2021-09-24 15:58:13,929 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Oh that's precious
+[2021-09-24 15:58:27,168 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:58:27,169 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:58:27,170 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:58:30,706 UTC] [LOB] MayaSOJ/HolyMan (18): event ooc (yay)
+[2021-09-24 15:58:32,044 UTC] [LOB] Maria/Munzur (35): event music ([STAFF] ~ Doopliss Battle Paper Mario TTYD.opus)
+[2021-09-24 15:58:33,396 UTC] [LOB] MayaSOJ/HolyMan (18): event ooc (!!)
+[2021-09-24 15:58:41,016 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Bells churning
+[2021-09-24 15:58:42,882 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): I love this song
+[2021-09-24 15:58:53,939 UTC] [LOB] Munzur/Maria/Munzur (35): me too man
+[2021-09-24 15:58:54,822 UTC] [LOB] Munzur/Maria/Munzur (35): me too
+[2021-09-24 15:58:55,886 UTC] [LOB] HoboTrucy/ (41): event char.change ({"from": "PhoenixAAI", "to": "HoboTrucy"})
+[2021-09-24 15:59:03,347 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): I was tempted to add Brobot yesterday
+[2021-09-24 15:59:16,489 UTC] [LOB] Delinard/Colias/Delinard (40): Can you create hubs? I don't use them myself anyway
+[2021-09-24 15:59:22,850 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): UserHubs, aye
+[2021-09-24 15:59:25,847 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Just in the UserHub yeah
+[2021-09-24 15:59:40,372 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 15:59:40,373 UTC] Associated 23 with ms2-prober
+[2021-09-24 15:59:40,374 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 15:59:51,536 UTC] [LOB] Munzur/Maria/Munzur (35): ew
+[2021-09-24 15:59:53,771 UTC] [LOB] Munzur/Maria/Munzur (35): User Hubs
+[2021-09-24 16:00:03,951 UTC] [LOB] Adam/Ema/Adam (22): That's where we do ERP!
+[2021-09-24 16:00:07,109 UTC] IPID for 128.84.127.135: 21
+[2021-09-24 16:00:07,479 UTC] Associated 21 with b727dac9-0507-4be8-b22c-afbd6de33d51
+[2021-09-24 16:00:07,480 UTC] 21 (HDID: b727dac9-0507-4be8-b22c-afbd6de33d51) connected.
+[2021-09-24 16:00:09,421 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): *sex*
+[2021-09-24 16:00:10,312 UTC] [LOB] Munzur/Maria/Munzur (35): wait i thought
+[2021-09-24 16:00:11,543 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Carry on the torch and create GL5 sit there myself all day every day
+[2021-09-24 16:00:15,303 UTC] [LOB] Adam/Ema/Adam (22): *sex*
+[2021-09-24 16:00:18,872 UTC] [LOB] Munzur/Maria/Munzur (35): i thought it was in "Ministry of Justice"
+[2021-09-24 16:00:20,449 UTC] [LOB] Disciple/ (21): event char.change ({"from": null, "to": "Disciple"})
+[2021-09-24 16:00:22,707 UTC] [LOB] Munzur/Maria/Munzur (35): man
+[2021-09-24 16:00:25,823 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): No that's the BDSM room
+[2021-09-24 16:00:27,468 UTC] login (21 onto None): {'profile': 'Red'}
+[2021-09-24 16:00:27,677 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): lol
+[2021-09-24 16:00:28,530 UTC] [LOB] Disciple/XYZ (21): event cm.add (self-added)
+[2021-09-24 16:00:31,679 UTC] [LOB] Munzur/Maria/Munzur (35): woah
+[2021-09-24 16:00:36,019 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Yes we have way more interesting things theree!!
+[2021-09-24 16:00:39,166 UTC] [LOB] /Disciple/XYZ (21): your god is here
+[2021-09-24 16:00:39,687 UTC] IPID for 213.134.178.83: 43
+[2021-09-24 16:00:39,979 UTC] Associated 43 with c98afeb2-44cd-466c-974a-abb6070cf878
+[2021-09-24 16:00:39,982 UTC] 43 (HDID: c98afeb2-44cd-466c-974a-abb6070cf878) connected.
+[2021-09-24 16:00:42,160 UTC] [LOB] Munzur/Maria/Munzur (35): who
+[2021-09-24 16:00:43,122 UTC] [LOB] Adam/Ema/Adam (22): Oh that's where we're doin
+[2021-09-24 16:00:45,602 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Ok Red
+[2021-09-24 16:00:46,161 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Literally already was here
+[2021-09-24 16:00:48,016 UTC] [LOB] Adam/Ema/Adam (22):  ya mom
+[2021-09-24 16:00:48,934 UTC] [LOB] Ema/Adam (22): event music ([STAFF] Secret Surprise.opus)
+[2021-09-24 16:00:50,118 UTC] [LOB] /Disciple/XYZ (21): im just kiddingbonk
+[2021-09-24 16:00:53,608 UTC] IPID for 213.134.178.83: 43
+[2021-09-24 16:00:53,902 UTC] Associated 43 with c98afeb2-44cd-466c-974a-abb6070cf878
+[2021-09-24 16:00:53,903 UTC] 43 (HDID: c98afeb2-44cd-466c-974a-abb6070cf878) connected.
+[2021-09-24 16:00:54,039 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): ello barok
+[2021-09-24 16:00:54,605 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:00:54,606 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:00:54,607 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:00:56,737 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): disciple*
+[2021-09-24 16:01:03,089 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): HAHAHAHAAHAH THIS SONG 
+[2021-09-24 16:01:05,954 UTC] [LOB] /Disciple/XYZ (21): ah distant hello
+[2021-09-24 16:01:12,598 UTC] [LOB] /Disciple/XYZ (21): it's good we got da activity
+[2021-09-24 16:01:16,031 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Oh God this is going to be the sin.mp3 of our server
+[2021-09-24 16:01:19,139 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Anyway I'm going to go bake fuckin' cookies now
+[2021-09-24 16:01:24,789 UTC] [LOB] /Disciple/XYZ (21): i'm downloading the new files
+[2021-09-24 16:01:26,808 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): DUDE WE DIDN'T ADD SIN
+[2021-09-24 16:01:28,616 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): NOOOOOOOOOOOOOOOOOOOO
+[2021-09-24 16:01:29,133 UTC] IPID for 99.15.83.104: 44
+[2021-09-24 16:01:30,034 UTC] Associated 44 with 127cada3-2693-4db1-84b9-fb2003da9cd4
+[2021-09-24 16:01:30,036 UTC] 44 (HDID: 127cada3-2693-4db1-84b9-fb2003da9cd4) connected.
+[2021-09-24 16:01:30,227 UTC] [LOB] Munzur/Maria/Munzur (35): can i bake some cookies too
+[2021-09-24 16:01:32,049 UTC] [LOB] Delinard/Colias/Delinard (40): I already downloaded them
+[2021-09-24 16:01:33,843 UTC] [LOB] /Disciple/XYZ (21): LMAO pina just do it on the patch
+[2021-09-24 16:01:36,464 UTC] [LOB] Munzur/Maria/Munzur (35): together :flushed:
+[2021-09-24 16:01:39,516 UTC] [LOB] /Disciple/XYZ (21): oh i'm just using the test release
+[2021-09-24 16:01:41,826 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Munzur do you want to bake cookies with me omg...
+[2021-09-24 16:01:45,315 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): smh wprked on the server but doestn have the fils already smh
+[2021-09-24 16:01:48,597 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): oh 
+[2021-09-24 16:01:49,726 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Red it appears we are doin ya mom
+[2021-09-24 16:01:52,909 UTC] [LOB] Munzur/Maria/Munzur (35):  y.....yes sure}.........
+[2021-09-24 16:01:58,334 UTC] [LOB] XYZ/Disciple/XYZ (21): i will ban you.
+[2021-09-24 16:01:59,631 UTC] [LOB] Adam/Ema/Adam (22):  Doin ya mom!
+[2021-09-24 16:01:59,984 UTC] [LOB] Susato/ (44): event char.change ({"from": null, "to": "Susato"})
+[2021-09-24 16:02:00,522 UTC] [LOB] Delinard/Colias/Delinard (40): I don't see any issues with first release
+[2021-09-24 16:02:03,159 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): lol trolled!!!!! fuck you munzur lol!!!!!!!!!!!
+[2021-09-24 16:02:06,823 UTC] [LOB] Munzur/Maria/Munzur (35): do it no balls-
+[2021-09-24 16:02:08,319 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:02:08,320 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:02:08,320 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:02:09,804 UTC] [LOB] Munzur/Maria/Munzur (35): NOOOOOOOOOO
+[2021-09-24 16:02:11,925 UTC] [LOB] Ema/Adam (22): event chat.announce.need (doin ya mom!)
+[2021-09-24 16:02:15,527 UTC] [LOB] XYZ/Disciple/XYZ (21): let's see, munzar is id---
+[2021-09-24 16:02:17,209 UTC] [LOB] XYZ/Disciple/XYZ (21): jk
+[2021-09-24 16:02:20,289 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Anyway I'm going to be right back r
+[2021-09-24 16:02:24,325 UTC] [LOB] XYZ/Disciple/XYZ (21): okay bye
+[2021-09-24 16:02:26,499 UTC] [LOB] Munzur/Maria/Munzur (35): oh i already know my own ipid
+[2021-09-24 16:02:32,325 UTC] [LOB] XYZ/Disciple/XYZ (21): do you
+[2021-09-24 16:02:35,314 UTC] [LOB] Munzur/Maria/Munzur (35): starts with 4
+[2021-09-24 16:02:36,291 UTC] [LOB] Susato/ (44): event area.leave (None)
+[2021-09-24 16:02:36,390 UTC] [LOB] Adam/Ema/Adam (22): 69696969
+[2021-09-24 16:02:42,246 UTC] [LOB] Adam/Ema/Adam (22): I am very funny
+[2021-09-24 16:02:43,642 UTC] [LOB] XYZ/Disciple/XYZ (21): no it doesnt, munzar
+[2021-09-24 16:02:44,538 UTC] IPID for 119.56.104.88: 45
+[2021-09-24 16:02:44,749 UTC] Associated 45 with 70422d0cc753bac91b05248d9d963103
+[2021-09-24 16:02:44,752 UTC] 45 (HDID: 70422d0cc753bac91b05248d9d963103) connected.
+[2021-09-24 16:02:45,715 UTC] [LOB] Delinard/Colias/Delinard (40): For some reason i have mcgilded in iniswap, whoever released this forgot to remove him
+[2021-09-24 16:02:47,070 UTC] [LOB] McGilded/ (43): event char.change ({"from": null, "to": "McGilded"})
+[2021-09-24 16:02:49,967 UTC] [LOB] Munzur/Maria/Munzur (35): ends with 4 too funnily eno-
+[2021-09-24 16:02:51,866 UTC] [LOB] Munzur/Maria/Munzur (35): huh
+[2021-09-24 16:02:52,974 UTC] [LOB] XYZ/Disciple/XYZ (21): my ipid changed four times testing also so
+[2021-09-24 16:02:55,718 UTC] [LOB] XYZ/Disciple/XYZ (21): also no it's not
+[2021-09-24 16:02:56,937 UTC] [LOB] Munzur/Maria/Munzur (35): sadge
+[2021-09-24 16:02:57,544 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): This is a Pina moment
+[2021-09-24 16:02:59,182 UTC] [LOB] XYZ/Disciple/XYZ (21): you're maira, munzar right
+[2021-09-24 16:03:02,047 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 16:03:02,781 UTC] [LOB] XYZ/Disciple/XYZ (21): *maria
+[2021-09-24 16:03:03,522 UTC] [LOB] Munzur/Maria/Munzur (35): its like that on another server
+[2021-09-24 16:03:05,649 UTC] [LOB] Munzur/Maria/Munzur (35): yeah
+[2021-09-24 16:03:07,827 UTC] [LOB] XYZ/Disciple/XYZ (21): nope
+[2021-09-24 16:03:09,351 UTC] [LOB] XYZ/Disciple/XYZ (21): ipid is 
+[2021-09-24 16:03:10,104 UTC] [LOB] Bread/McGilded/ (43): Contratz on making a new server. 
+[2021-09-24 16:03:12,388 UTC] [LOB] Munzur/Maria/Munzur (35): my beloved maria
+[2021-09-24 16:03:13,657 UTC] [LOB] XYZ/Disciple/XYZ (21): unique to a server so
+[2021-09-24 16:03:17,453 UTC] [LOB] Adam/Ema/Adam (22): Thank you thank you
+[2021-09-24 16:03:19,623 UTC] [LOB] Munzur/Maria/Munzur (35): oh cool
+[2021-09-24 16:03:20,448 UTC] [LOB] XYZ/Disciple/XYZ (21): thanks, bread
+[2021-09-24 16:03:21,430 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:03:21,430 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:03:21,431 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:03:21,434 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Oh, thanks Bread
+[2021-09-24 16:03:23,228 UTC] [LOB] Munzur/Maria/Munzur (35): didnt know that
+[2021-09-24 16:03:32,750 UTC] [LOB] XYZ/Disciple/XYZ (21): yeah
+[2021-09-24 16:03:34,960 UTC] [LOB] Bread/McGilded/ (43): Now I have excuse to move from CC to this place. Pog
+[2021-09-24 16:03:38,242 UTC] [LOB] XYZ/Disciple/XYZ (21): based
+[2021-09-24 16:03:41,043 UTC] [LOB] XYZ/Disciple/XYZ (21): OLE >>>>>>>>>>>>>>> 
+[2021-09-24 16:03:42,502 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Amazing
+[2021-09-24 16:03:50,162 UTC] IPID for 46.11.195.70: 46
+[2021-09-24 16:03:50,481 UTC] Associated 46 with 46897858-0a7e-4553-ac90-44c141305b4c
+[2021-09-24 16:03:50,484 UTC] 46 (HDID: 46897858-0a7e-4553-ac90-44c141305b4c) connected.
+[2021-09-24 16:04:00,995 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Remember to drop any suggestions you want in the server's discord guys
+[2021-09-24 16:04:08,668 UTC] [LOB] XYZ/Disciple/XYZ (21): oh yes
+[2021-09-24 16:04:24,429 UTC] [LOB] XYZ/Disciple/XYZ (21): but yeah please spread the word
+[2021-09-24 16:04:24,948 UTC] [LOB] Payne Train/ (46): event char.change ({"from": null, "to": "Payne Train"})
+[2021-09-24 16:04:26,604 UTC] [LOB] Munzur/Maria/Munzur (35): what if i want
+[2021-09-24 16:04:28,571 UTC] [LOB] Munzur/Maria/Munzur (35): fortnit e
+[2021-09-24 16:04:32,739 UTC] [LOB] XYZ/Disciple/XYZ (21): we are alive fr now and will save ao singlehandedly
+[2021-09-24 16:04:36,460 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Well I'll ignore your suggestion then
+[2021-09-24 16:04:37,333 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:04:37,334 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:04:37,334 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:04:39,190 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Anyway now that we're all here let's spread our pirated music
+[2021-09-24 16:04:41,999 UTC] [LOB] HoboTrucy/ (41): event area.leave (None)
+[2021-09-24 16:04:45,998 UTC] [LOB] Delinard/Colias/Delinard (40): Copyright
+[2021-09-24 16:04:51,842 UTC] [LOB] Bread/McGilded/ (43): Well, for certain, you could put an approved HD chars from DGS. Such as Barok HD or Gina. Unless they're here, then nvm. 
+[2021-09-24 16:04:55,031 UTC] IPID for 91.196.10.147: 41
+[2021-09-24 16:04:55,328 UTC] Associated 41 with a1375c4f-92f0-4429-8e99-4fefed3c7c4b
+[2021-09-24 16:04:55,329 UTC] 41 (HDID: a1375c4f-92f0-4429-8e99-4fefed3c7c4b) connected.
+[2021-09-24 16:04:59,505 UTC] [LOB] XYZ/Disciple/XYZ (21): not yet
+[2021-09-24 16:05:00,452 UTC] [LOB] Munzur/Maria/Munzur (35): you guys can also do /play too
+[2021-09-24 16:05:02,671 UTC] [LOB] Bread/McGilded/ (43): But CC long time ago stopped updating.
+[2021-09-24 16:05:05,446 UTC] [LOB] XYZ/Disciple/XYZ (21): we're gonna make an hd pack, bread
+[2021-09-24 16:05:08,261 UTC] [LOB] XYZ/Disciple/XYZ (21): i announced itbut
+[2021-09-24 16:05:09,641 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): I'll go first I forgot what this is but I think it's copyrighted music
+[2021-09-24 16:05:15,999 UTC] [LOB] Snow/Fruitbat (16): event play (https://cdn.discordapp.com/attachments/888491014250201130/888496613033644052/videoplayback_13.opus)
+[2021-09-24 16:05:18,074 UTC] [LOB] XYZ/Disciple/XYZ (21): we're gonna do an hd char release so people can choose to dl em or not
+[2021-09-24 16:05:23,867 UTC] [LOB] Rei/ (41): event char.change ({"from": null, "to": "Rei"})
+[2021-09-24 16:05:27,960 UTC] [LOB] Munzur/Maria/Munzur (35): i mean, theres work being done on new content bread
+[2021-09-24 16:05:35,172 UTC] [LOB] XYZ/Disciple/XYZ (21): we have barok chronicles so
+[2021-09-24 16:05:40,411 UTC] [LOB] Munzur/Maria/Munzur (35): ripping isnt really easy however
+[2021-09-24 16:05:50,288 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): 3D Ripping is a nightmare
+[2021-09-24 16:05:51,593 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:05:51,594 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:05:51,594 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:05:55,906 UTC] [LOB] Munzur/Maria/Munzur (35): yeah
+[2021-09-24 16:05:57,759 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): All there's to say about it
+[2021-09-24 16:05:59,967 UTC] [LOB] Delinard/Colias/Delinard (40):     
+[2021-09-24 16:06:00,954 UTC] [LOB] Munzur/Maria/Munzur (35): i've seen so on TRR
+[2021-09-24 16:06:07,935 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Ripping TGAA characters (pain)
+[2021-09-24 16:06:12,792 UTC] IPID for 201.94.209.228: 47
+[2021-09-24 16:06:12,840 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Sans and Minecraft Steve...
+[2021-09-24 16:06:13,014 UTC] Associated 47 with d507bfd504c54d1c01cabcfb26c09f38
+[2021-09-24 16:06:13,017 UTC] 47 (HDID: d507bfd504c54d1c01cabcfb26c09f38) connected.
+[2021-09-24 16:06:18,015 UTC] [LOB] Munzur/Maria/Munzur (35): but hey
+[2021-09-24 16:06:23,318 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): hand
+[2021-09-24 16:06:24,626 UTC] [LOB] P Gaming/Payne Train/ (46): hello yes is this the based department? i'd like to make a report
+[2021-09-24 16:06:30,624 UTC] [LOB] Bread/McGilded/ (43): Also, which theme will increase the resolution of the launcher to full HD? 
+[2021-09-24 16:06:34,517 UTC] [LOB] Munzur/Maria/Munzur (35): what what
+[2021-09-24 16:06:35,929 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): pain train
+[2021-09-24 16:06:40,490 UTC] [LOB] XYZ/Disciple/XYZ (21): mm yes
+[2021-09-24 16:06:41,530 UTC] [LOB] XYZ/Disciple/XYZ (21): pain
+[2021-09-24 16:06:44,900 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Hello P Gaming, welcome to da server
+[2021-09-24 16:06:47,272 UTC] [LOB] Munzur/Maria/Munzur (35): at least their pain makes us have HD 3d characters
+[2021-09-24 16:06:50,407 UTC] [LOB] Munzur/Maria/Munzur (35): so
+[2021-09-24 16:06:51,258 UTC] [LOB] P Gaming/Payne Train/ (46): Payne Gaming
+[2021-09-24 16:06:52,274 UTC] [LOB] Munzur/Maria/Munzur (35): :)
+[2021-09-24 16:06:56,792 UTC] [LOB] Bread/McGilded/ (43): Gaming!!!!
+[2021-09-24 16:07:01,170 UTC] [LOB] P Gaming/Payne Train/ (46): Gaming
+[2021-09-24 16:07:05,356 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:07:05,357 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:07:05,358 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:07:06,411 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): what the fuck opayne gamin??!"?"?"?"?
+[2021-09-24 16:07:11,086 UTC] [LOB] Munzur/Maria/Munzur (35): why does klavier keep on talking
+[2021-09-24 16:07:17,180 UTC] [LOB] Munzur/Maria/Munzur (35): its weird
+[2021-09-24 16:07:19,805 UTC] [LOB] XYZ/Disciple/XYZ (21): missingno
+[2021-09-24 16:07:24,852 UTC] [LOB] XYZ/Disciple/XYZ (21): can only have one 
+[2021-09-24 16:07:27,434 UTC] [LOB] XYZ/Disciple/XYZ (21): doesn't have a/b
+[2021-09-24 16:07:32,839 UTC] [LOB] Betty Pro Famme/HolyMan (18): event char.change ({"from": "MayaSOJ", "to": "Betty Pro Famme"})
+[2021-09-24 16:07:34,150 UTC] [LOB] Munzur/Maria/Munzur (35): what
+[2021-09-24 16:07:39,313 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): I'm now Betty
+[2021-09-24 16:07:40,394 UTC] [LOB] P Gaming/Payne Train/ (46): anyway i'm getting the files, i'm on vanilla rn
+[2021-09-24 16:07:43,441 UTC] [LOB] Munzur/Maria/Munzur (35): i understood nothing
+[2021-09-24 16:07:45,295 UTC] [LOB] XYZ/Disciple/XYZ (21): kk
+[2021-09-24 16:07:46,544 UTC] IPID for 82.217.130.172: 48
+[2021-09-24 16:07:46,706 UTC] Associated 48 with 074d789296132e60d1676864f1e6bd26
+[2021-09-24 16:07:46,709 UTC] 48 (HDID: 074d789296132e60d1676864f1e6bd26) connected.
+[2021-09-24 16:07:46,744 UTC] IPID for 82.217.130.172: 48
+[2021-09-24 16:07:46,846 UTC] Associated 48 with 074d789296132e60d1676864f1e6bd26
+[2021-09-24 16:07:46,847 UTC] 48 (HDID: 074d789296132e60d1676864f1e6bd26) connected.
+[2021-09-24 16:07:50,698 UTC] [LOB] Bread/McGilded/ (43): Alright, found it
+[2021-09-24 16:07:58,637 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): Payne Gaming, you made Betty Pro and Payne3D, right?
+[2021-09-24 16:08:02,723 UTC] [LOB] Bread/McGilded/ (43): Yes.
+[2021-09-24 16:08:03,738 UTC] [LOB] P Gaming/Payne Train/ (46): yes
+[2021-09-24 16:08:06,124 UTC] [LOB] XYZ/Disciple/XYZ (21): yo that's awesome
+[2021-09-24 16:08:09,536 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Very based might I add
+[2021-09-24 16:08:11,174 UTC] [LOB] Munzur/Maria/Munzur (35): pretty good stuff ngl
+[2021-09-24 16:08:11,460 UTC] IPID for 95.28.203.255: 49
+[2021-09-24 16:08:11,550 UTC] Associated 49 with cd998badd2a9b8cfd755cbff63a459d8
+[2021-09-24 16:08:11,552 UTC] 49 (HDID: cd998badd2a9b8cfd755cbff63a459d8) connected.
+[2021-09-24 16:08:12,798 UTC] [LOB] XYZ/Disciple/XYZ (21): congrats on making it into server files
+[2021-09-24 16:08:15,541 UTC] [LOB] Bread/McGilded/ (43): But one question has to be asked. 
+[2021-09-24 16:08:17,933 UTC] [LOB] XYZ/Disciple/XYZ (21): they were good
+[2021-09-24 16:08:19,206 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:08:19,207 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:08:19,207 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:08:21,978 UTC] [LOB] P Gaming/Payne Train/ (46): i also make pony cases so the based level goes down sadly
+[2021-09-24 16:08:26,035 UTC] [LOB] Bread/McGilded/ (43): What about this god damned Rayfa?!
+[2021-09-24 16:08:30,902 UTC] [LOB] XYZ/Disciple/XYZ (21): what
+[2021-09-24 16:08:31,590 UTC] [LOB] Munzur/Maria/Munzur (35): who
+[2021-09-24 16:08:34,781 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): Well someone submitted it in your server, and we got your files. Congrats.
+[2021-09-24 16:08:38,912 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): Also what's wrong with Rayfa-
+[2021-09-24 16:08:42,682 UTC] [LOB] P Gaming/Payne Train/ (46): wait oh shit fr?
+[2021-09-24 16:08:45,433 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): Yeah
+[2021-09-24 16:08:46,590 UTC] [LOB] XYZ/Disciple/XYZ (21): anyway i have to go to a meeting, so i'll cya later
+[2021-09-24 16:08:50,481 UTC] [LOB] XYZ/Disciple/XYZ (21): also yeah holy's using betty pro rn
+[2021-09-24 16:08:52,731 UTC] [LOB] Munzur/Maria/Munzur (35): byeonara
+[2021-09-24 16:08:53,513 UTC] [LOB] Bread/McGilded/ (43): Payne promised me to make Rayfa HD in def pos.
+[2021-09-24 16:08:57,852 UTC] [LOB] Betty/ (46): event char.change ({"from": "Payne Train", "to": "Betty"})
+[2021-09-24 16:08:58,224 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): Oh
+[2021-09-24 16:09:12,967 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): The problem is probably that Rayfa is liquid cyanide right into your eye
+[2021-09-24 16:09:13,379 UTC] [LOB] Payne3D/ (46): event char.change ({"from": "Betty", "to": "Payne3D"})
+[2021-09-24 16:09:18,869 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): But I can't know to say
+[2021-09-24 16:09:20,394 UTC] [LOB] P Gaming/Payne3D/ (46): holy pog"?????
+[2021-09-24 16:09:22,361 UTC] [LOB] The Typewriter/Delinard (40): event char.change ({"from": "Colias", "to": "The Typewriter"})
+[2021-09-24 16:09:22,560 UTC] [LOB] Bread/McGilded/ (43): There is no problem.
+[2021-09-24 16:09:26,282 UTC] [LOB] Bread/McGilded/ (43): Payne is just lazy bitch.
+[2021-09-24 16:09:29,223 UTC] [LOB] Ema/Adam (22): event play (https://cdn.discordapp.com/attachments/743097220240506962/890640552901615698/WELCOME_TO_MY_MINE_MINECRAFT_PARODI_OF_WELCOME_TO_MY_HOUSE.mp3)
+[2021-09-24 16:09:29,768 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): Payne3D moment
+[2021-09-24 16:09:33,309 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:09:33,310 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:09:33,311 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:09:35,846 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): oh for fuck's sake adam
+[2021-09-24 16:09:38,828 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 16:09:42,601 UTC] [LOB] Bread/McGilded/ (43): CC>>>>>>>>OLE
+[2021-09-24 16:09:43,915 UTC] [LOB] Munzur/Maria/Munzur (35): bread just make it yourself lmao
+[2021-09-24 16:09:46,111 UTC] [LOB] Adam/Ema/Adam (22): Damn
+[2021-09-24 16:09:57,686 UTC] [LOB] Delinard/The Typewriter/Delinard (40): Brazil
+[2021-09-24 16:09:59,339 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): WHAT THE FUCK
+[2021-09-24 16:10:00,814 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): HAHAHHAHAHA
+[2021-09-24 16:10:02,137 UTC] [LOB] Munzur/Maria/Munzur (35): what is that
+[2021-09-24 16:10:08,782 UTC] [LOB] Bread/McGilded/ (43): I have no words.
+[2021-09-24 16:10:10,106 UTC] [LOB] Delinard/The Typewriter/Delinard (40): It's narrator taken from the Brazil server
+[2021-09-24 16:10:11,122 UTC] [LOB] Snow/Fruitbat (16): event music (Ace Attorney Investigations 2)
+[2021-09-24 16:10:13,677 UTC] [LOB] Munzur/Maria/Munzur (35): the fuck is this vanilla esque content
+[2021-09-24 16:10:14,376 UTC] [LOB] Ema/Adam (22): event char.change ({"from": null, "to": "Ema"})
+[2021-09-24 16:10:16,155 UTC] [LOB] Snow/Fruitbat (16): event music ([STAFF] Germany - Neo Turf Masters.opus)
+[2021-09-24 16:10:16,206 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): Oh yeah
+[2021-09-24 16:10:22,813 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): Shit we need to delete
+[2021-09-24 16:10:28,874 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): Awful
+[2021-09-24 16:10:29,734 UTC] [LOB] Munzur/Maria/Munzur (35): Delete Vanilla?
+[2021-09-24 16:10:30,974 UTC] [LOB] Munzur/Maria/Munzur (35): Nah.
+[2021-09-24 16:10:31,727 UTC] [LOB] Adam/Ema/Adam (22): Salvar?
+[2021-09-24 16:10:35,385 UTC] [LOB] Munzur/Maria/Munzur (35): Restore it to its old self.
+[2021-09-24 16:10:42,816 UTC] [LOB] Bread/McGilded/ (43): Oi, Payne.
+[2021-09-24 16:10:48,840 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:10:48,841 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:10:48,842 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:10:49,986 UTC] [LOB] P Gaming/Payne3D/ (46): Still downloading
+[2021-09-24 16:10:51,777 UTC] [LOB] Bread/McGilded/ (43): Trix is hosting, so we better move on.
+[2021-09-24 16:10:54,970 UTC] [LOB] P Gaming/Payne3D/ (46): ah okay
+[2021-09-24 16:10:57,357 UTC] [LOB] Rei/ (41): event area.leave (None)
+[2021-09-24 16:11:04,329 UTC] [LOB] Bread/McGilded/ (43): Take care folks.
+[2021-09-24 16:11:09,534 UTC] [LOB] Munzur/Maria/Munzur (35): Bye
+[2021-09-24 16:11:13,150 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Seeya seeya, thanks for comin by
+[2021-09-24 16:11:23,680 UTC] [LOB] Bread/McGilded/ (43): Don't worry. I believe, I will come in more offen.
+[2021-09-24 16:11:27,684 UTC] [LOB] Bread/McGilded/ (43): Now, if you excuse me...
+[2021-09-24 16:11:30,631 UTC] [LOB] Bread/McGilded/ (43): ~~ yeet
+[2021-09-24 16:11:32,650 UTC] [LOB] McGilded/ (43): event area.leave (None)
+[2021-09-24 16:11:34,752 UTC] [LOB] Adam/Ema/Adam (22): Bye!
+[2021-09-24 16:11:44,565 UTC] [LOB] Barok/Delinard (40): event char.change ({"from": "The Typewriter", "to": "Barok"})
+[2021-09-24 16:11:54,252 UTC] [LOB] Delinard/Barok/Delinard (40): What's y'all opinion on localized voice lines?
+[2021-09-24 16:12:01,062 UTC] [LOB] Delinard/Barok/Delinard (40): for TGAA
+[2021-09-24 16:12:02,228 UTC] [LOB] HolyMan/Betty Pro Famme/HolyMan (18): I like them a lot
+[2021-09-24 16:12:05,477 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:12:05,478 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:12:05,479 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:12:05,501 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): im weeb, prefer japanese. english alr
+[2021-09-24 16:12:07,520 UTC] [LOB] Phoenix/HolyMan (18): event char.change ({"from": "Betty Pro Famme", "to": "Phoenix"})
+[2021-09-24 16:12:07,855 UTC] [LOB] Munzur/Maria/Munzur (35): they're mostly well done
+[2021-09-24 16:12:13,778 UTC] [LOB] Munzur/Maria/Munzur (35): cant complain
+[2021-09-24 16:12:21,605 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): I haven't heard most of them but they're good
+[2021-09-24 16:12:27,687 UTC] [LOB] Munzur/Maria/Munzur (35): except for Ryunosuke's "Objection"
+[2021-09-24 16:12:29,481 UTC] IPID for 81.0.40.139: 50
+[2021-09-24 16:12:29,511 UTC] Associated 50 with 8f6ac9091be84c93d991185341ac981e
+[2021-09-24 16:12:29,513 UTC] 50 (HDID: 8f6ac9091be84c93d991185341ac981e) connected.
+[2021-09-24 16:12:30,707 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Dubbing tends to grate on the ears a bit but so far not much of that
+[2021-09-24 16:12:32,938 UTC] [LOB] Payne3D/ (46): event area.leave (None)
+[2021-09-24 16:12:36,877 UTC] [LOB] Munzur/Maria/Munzur (35): his "yes" is stronger than that
+[2021-09-24 16:12:39,122 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): No totally agreed there that's a weedy objection
+[2021-09-24 16:12:42,471 UTC] [LOB] XYZ/Disciple/XYZ (21): agreed, but i prefer japanese dgs better cuz it's what i first played it on
+[2021-09-24 16:12:47,046 UTC] [LOB] Delinard/Barok/Delinard (40): I liked everyone except for 2 witnesses in TGAA2, and gregson's HOLD IT was a bit weird, everything else was great
+[2021-09-24 16:12:52,647 UTC] [LOB] Munzur/Maria/Munzur (35): ew weebs
+[2021-09-24 16:12:53,456 UTC] [LOB] XYZ/Disciple/XYZ (21): also yeah, the jp igiari is better
+[2021-09-24 16:12:55,793 UTC] [LOB] Munzur/Maria/Munzur (35): weeeeeeeebs
+[2021-09-24 16:13:10,933 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): I wonder if you guys can still hear Phoenix's cringy brazillian shouts
+[2021-09-24 16:13:17,686 UTC] [LOB] PhoenixAAI/Delinard (40): event char.change ({"from": "Barok", "to": "PhoenixAAI"})
+[2021-09-24 16:13:21,017 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:13:21,018 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:13:21,018 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:13:21,364 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40):    
+[2021-09-24 16:13:23,810 UTC] [LOB] Munzur/Maria/Munzur (35): cant say i do
+[2021-09-24 16:13:25,669 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Oh nvm, we disabled shouts here 
+[2021-09-24 16:13:27,973 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): brazil
+[2021-09-24 16:13:29,142 UTC] [LOB] Munzur/Maria/Munzur (35): since my volume is vvery low
+[2021-09-24 16:13:30,554 UTC] IPID for 24.54.218.41: 51
+[2021-09-24 16:13:31,202 UTC] Associated 51 with f1e740a1-38dd-4725-9f24-e60690942a7f
+[2021-09-24 16:13:31,206 UTC] 51 (HDID: f1e740a1-38dd-4725-9f24-e60690942a7f) connected.
+[2021-09-24 16:13:31,572 UTC] [LOB] Adam/Ema/Adam (22):  Sex
+[2021-09-24 16:13:32,166 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): yeah shouts don't work here
+[2021-09-24 16:13:34,314 UTC] [LOB] Munzur/Maria/Munzur (35): Sex 2
+[2021-09-24 16:13:37,222 UTC] [LOB] Adam/Ema/Adam (22): No shouts :(
+[2021-09-24 16:13:38,212 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): also AAI phoenix
+[2021-09-24 16:13:46,852 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): whent he shouts are disabled in lobby
+[2021-09-24 16:13:49,475 UTC] [LOB] Munzur/Maria/Munzur (35): /allowshouts if staff isnt gay
+[2021-09-24 16:13:51,444 UTC] [LOB] Snow/Fruitbat (16): event music ([AAI] Investigation (Crime Scene).opus)
+[2021-09-24 16:13:51,564 UTC] [LOB] Adam/Ema/Adam (22): he do be AAI ing
+[2021-09-24 16:14:01,920 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): I mean,  I doubt we get many mongoloid spammers
+[2021-09-24 16:14:04,979 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): ............
+[2021-09-24 16:14:08,921 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Here thinking.
+[2021-09-24 16:14:12,097 UTC] [LOB] Munzur/Maria/Munzur (35): Unless you open to WebAO.
+[2021-09-24 16:14:14,838 UTC] [LOB] Snow/Fruitbat (16): event cm.remove (None)
+[2021-09-24 16:14:15,536 UTC] [LOB] Munzur/Maria/Munzur (35): Completely.
+[2021-09-24 16:14:30,340 UTC] IPID for 207.157.11.58: 52
+[2021-09-24 16:14:30,446 UTC] Associated 52 with 37a2028ad04a1bcbd7b30e72b887ade9
+[2021-09-24 16:14:30,449 UTC] 52 (HDID: 37a2028ad04a1bcbd7b30e72b887ade9) connected.
+[2021-09-24 16:14:33,029 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): The WebAO support has a long way to go methinks anyway
+[2021-09-24 16:14:36,581 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:14:36,582 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:14:36,582 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:14:41,173 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): oof
+[2021-09-24 16:14:42,882 UTC] [LOB] Ema/Adam (22): event ooc (https://cdn.discordapp.com/attachments/743097220240506962/890640552901615698/WELCOME_TO_MY_MINE_MINECRAFT_PARODI_OF_WELCOME_TO_MY_HOUSE.mp3)
+[2021-09-24 16:14:43,226 UTC] [LOB] Munzur/Maria/Munzur (35): nvm its only /shouts
+[2021-09-24 16:14:55,819 UTC] IPID for 14.231.155.244: 53
+[2021-09-24 16:14:56,187 UTC] Associated 53 with ccb00f0bc4d3ec375d15c3038139fdb5
+[2021-09-24 16:14:56,190 UTC] 53 (HDID: ccb00f0bc4d3ec375d15c3038139fdb5) connected.
+[2021-09-24 16:15:10,840 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): Ooooh a CM can disable shouts, cool
+[2021-09-24 16:15:13,115 UTC] [LOB] Munzur/Maria/Munzur (35): if staff isnt gay they'll do it
+[2021-09-24 16:15:16,914 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 16:15:23,991 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): It's not even a staff thing, it's CM
+[2021-09-24 16:15:28,590 UTC] [LOB] Munzur/Maria/Munzur (35): shhhhhhhhhh
+[2021-09-24 16:15:33,693 UTC] [LOB] Munzur/Maria/Munzur (35): dont mention that
+[2021-09-24 16:15:35,526 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Just allowed them
+[2021-09-24 16:15:45,865 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): can cm do the funny area kick
+[2021-09-24 16:15:52,834 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:15:52,835 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:15:52,836 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:15:54,630 UTC] IPID for 207.157.11.58: 52
+[2021-09-24 16:15:54,744 UTC] Associated 52 with 37a2028ad04a1bcbd7b30e72b887ade9
+[2021-09-24 16:15:54,745 UTC] 52 (HDID: 37a2028ad04a1bcbd7b30e72b887ade9) connected.
+[2021-09-24 16:15:54,879 UTC] IPID for 207.157.11.58: 52
+[2021-09-24 16:15:55,014 UTC] Associated 52 with 37a2028ad04a1bcbd7b30e72b887ade9
+[2021-09-24 16:15:55,015 UTC] 52 (HDID: 37a2028ad04a1bcbd7b30e72b887ade9) connected.
+[2021-09-24 16:15:57,378 UTC] [LOB] Munzur/Maria/Munzur (35): oh my god that still has the background music
+[2021-09-24 16:16:01,051 UTC] [LOB] Munzur/Maria/Munzur (35): yes they can
+[2021-09-24 16:16:05,593 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): b a s  e d
+[2021-09-24 16:16:06,918 UTC] [LOB] Munzur/Maria/Munzur (35): /area_kick
+[2021-09-24 16:16:09,873 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): b a s e d
+[2021-09-24 16:16:10,563 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): it's /areakick
+[2021-09-24 16:16:14,559 UTC] [LOB] Munzur/Maria/Munzur (35): or that
+[2021-09-24 16:16:15,666 UTC] [LOB] Munzur/Maria/Munzur (35): man
+[2021-09-24 16:16:21,767 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): So guys, after the three headaches I got yesterday
+[2021-09-24 16:16:24,944 UTC] [LOB] Munzur/Maria/Munzur (35): i have never used those commands
+[2021-09-24 16:16:25,121 UTC] [LOB] Ema/Adam (22): event music ([STAFF] Soul Blade OST Bravely Folk Song.opus)
+[2021-09-24 16:16:28,591 UTC] [LOB] Munzur/Maria/Munzur (35): its just /kick for me
+[2021-09-24 16:16:34,436 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): I'm here to tell you that AO Code is the worst thing to have ever been conceived by a man
+[2021-09-24 16:16:40,882 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): Doesn't that kick them from the server? lol
+[2021-09-24 16:16:45,768 UTC] [LOB] Munzur/Maria/Munzur (35): It does.
+[2021-09-24 16:16:59,083 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): Sounds like somebody should have used the unity engine
+[2021-09-24 16:17:02,194 UTC] [LOB] Adam/Ema/Adam (22): What, Holy? Don't you like looking at Vanilla's code?
+[2021-09-24 16:17:02,838 UTC] [LOB] Disciple/XYZ (21): event area.leave (None)
+[2021-09-24 16:17:06,047 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): lmao
+[2021-09-24 16:17:08,167 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:17:08,168 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:17:08,169 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:17:08,370 UTC] [LOB] Munzur/Maria/Munzur (35): if you do /kick with like
+[2021-09-24 16:17:11,183 UTC] [LOB] Munzur/Maria/Munzur (35): the maria players ID
+[2021-09-24 16:17:13,503 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Neither Vanilla code nor CC's code
+[2021-09-24 16:17:16,028 UTC] [LOB] Munzur/Maria/Munzur (35): im sure itll be funny
+[2021-09-24 16:17:24,267 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): They're both poorly documented and look like spaghetti
+[2021-09-24 16:17:27,268 UTC] [LOB] Munzur/Maria/Munzur (35): AO coding in general is a hack.
+[2021-09-24 16:17:36,243 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): if else if else if else if else if else
+[2021-09-24 16:17:39,545 UTC] [LOB] Munzur/Maria/Munzur (35): nah
+[2021-09-24 16:17:40,299 UTC] [LOB] Adam/Ema/Adam (22): Only Fanat can code properly
+[2021-09-24 16:17:42,963 UTC] [LOB] Munzur/Maria/Munzur (35): its not THAT bad yet
+[2021-09-24 16:17:46,337 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): ik lol
+[2021-09-24 16:17:47,613 UTC] [LOB] Munzur/Maria/Munzur (35): yet being the keyword
+[2021-09-24 16:17:58,935 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): I mean there are a lot of 
+[2021-09-24 16:18:00,718 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): nested ifs
+[2021-09-24 16:18:06,460 UTC] [LOB] Delinard/PhoenixAAI/Delinard (40): you should ask yandere dev to improve it
+[2021-09-24 16:18:13,856 UTC] [LOB] Adam/Ema/Adam (22): You may laugh
+[2021-09-24 16:18:15,279 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): ao devs seceretly yanderedev?!?!
+[2021-09-24 16:18:18,002 UTC] [LOB] Munzur/Maria/Munzur (35): we call those nescerrary sacrifices
+[2021-09-24 16:18:20,378 UTC] [LOB] Adam/Ema/Adam (22): But he said he finished the 10 rivals
+[2021-09-24 16:18:24,984 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:18:24,985 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:18:24,986 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:18:25,577 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): We need to optimize it not to make AO run at 10 fps
+[2021-09-24 16:18:29,234 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): cap lol
+[2021-09-24 16:18:30,205 UTC] [LOB] Munzur/Maria/Munzur (35): yeah sure he did
+[2021-09-24 16:18:35,041 UTC] [LOB] Adam/Ema/Adam (22): (he didn't)
+[2021-09-24 16:18:41,797 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): How old is that mf btw
+[2021-09-24 16:18:48,289 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): like 30 or asum?
+[2021-09-24 16:18:49,706 UTC] [LOB] Munzur/Maria/Munzur (35): 30'ish?
+[2021-09-24 16:18:55,548 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Holy shit.
+[2021-09-24 16:18:56,568 UTC] [LOB] Munzur/Maria/Munzur (35): Hey Hey Holy
+[2021-09-24 16:19:00,199 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Hmm?
+[2021-09-24 16:19:02,054 UTC] [LOB] Munzur/Maria/Munzur (35): may i be cm for a momento
+[2021-09-24 16:19:10,158 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): What for 
+[2021-09-24 16:19:12,778 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Tell me the truth
+[2021-09-24 16:19:14,167 UTC] [LOB] Munzur/Maria/Munzur (35): /play
+[2021-09-24 16:19:18,153 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Ok!!!
+[2021-09-24 16:19:18,922 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): to play hentai
+[2021-09-24 16:19:21,047 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): nothing else
+[2021-09-24 16:19:22,401 UTC] [LOB] Mysterious Stranger/Delinard (40): event char.change ({"from": "PhoenixAAI", "to": "Mysterious Stranger"})
+[2021-09-24 16:19:34,173 UTC] [LOB] Phoenix/HolyMan (18): event cm.add (None)
+[2021-09-24 16:19:36,297 UTC] [LOB] Munzur/Maria/Munzur (35): oh shit you discovered my true plan
+[2021-09-24 16:19:38,929 UTC] [LOB] Munzur/Maria/Munzur (35): i mean uh
+[2021-09-24 16:19:39,562 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:19:39,562 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:19:39,563 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:19:42,162 UTC] [LOB] Maria/Munzur (35): event play (https://cdn.discordapp.com/attachments/889215813523996732/889504989121220618/Queen_but_I_hope_its_looped_properly.mp3)
+[2021-09-24 16:19:46,897 UTC] [LOB] Narrator/Delinard (40): event char.change ({"from": "Mysterious Stranger", "to": "Narrator"})
+[2021-09-24 16:19:48,644 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): i actually do have hentai mp3
+[2021-09-24 16:19:52,674 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): wasnt joking
+[2021-09-24 16:19:56,316 UTC] [LOB] Munzur/Maria/Munzur (35): Holy, Get The Banana.
+[2021-09-24 16:20:09,676 UTC] [LOB] Maria/Munzur (35): event cm.remove (None)
+[2021-09-24 16:20:09,938 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Can someone /play banana phone
+[2021-09-24 16:20:12,335 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): I love that song
+[2021-09-24 16:20:18,583 UTC] [LOB] Adam/Ema/Adam (22): Give me a moment
+[2021-09-24 16:20:19,806 UTC] [LOB] Munzur/Maria/Munzur (35): already uncm'd myself
+[2021-09-24 16:20:22,905 UTC] [LOB] Munzur/Maria/Munzur (35): too bad sucker
+[2021-09-24 16:20:24,379 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): K
+[2021-09-24 16:20:29,004 UTC] [LOB] HoboTrucy/Delinard (40): event char.change ({"from": "Narrator", "to": "HoboTrucy"})
+[2021-09-24 16:20:35,600 UTC] [LOB] Delinard/HoboTrucy/Delinard (40): Oh no, there is cursed trucy here
+[2021-09-24 16:20:49,968 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): I have asked on multiple occaisions for that to be dumped
+[2021-09-24 16:20:53,207 UTC] [LOB] Munzur/Maria/Munzur (35): that really is cursed
+[2021-09-24 16:20:54,778 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): HAHAHAHAHAHAHAHA
+[2021-09-24 16:20:55,990 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:20:55,991 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:20:55,992 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:21:06,276 UTC] [LOB] Godot/Delinard (40): event char.change ({"from": "HoboTrucy", "to": "Godot"})
+[2021-09-24 16:21:11,601 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): Pina likes cursed things
+[2021-09-24 16:21:16,449 UTC] [LOB] HolyMan/Phoenix/HolyMan (18): And he thought it was funny
+[2021-09-24 16:21:20,952 UTC] [LOB] Buddy/Delinard (40): event char.change ({"from": "Godot", "to": "Buddy"})
+[2021-09-24 16:21:25,415 UTC] [LOB] HoboTrucy/HolyMan (18): event char.change ({"from": "Phoenix", "to": "HoboTrucy"})
+[2021-09-24 16:21:36,593 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): This is so horrible
+[2021-09-24 16:21:44,070 UTC] [LOB] Munzur/Maria/Munzur (35): agreed
+[2021-09-24 16:21:44,854 UTC] [LOB] Adam/Ema/Adam (22): Ok Holy CM me real quick
+[2021-09-24 16:21:46,377 UTC] IPID for 139.47.115.75: 54
+[2021-09-24 16:21:46,670 UTC] Associated 54 with f6252020
+[2021-09-24 16:21:46,673 UTC] 54 (HDID: f6252020) connected.
+[2021-09-24 16:21:52,101 UTC] [LOB] Adam/Ema/Adam (22): I have the banana phone
+[2021-09-24 16:21:52,177 UTC] [LOB] HoboTrucy/HolyMan (18): event cm.add (None)
+[2021-09-24 16:21:54,096 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): cursed trucy?
+[2021-09-24 16:21:57,428 UTC] [LOB] Ema/Adam (22): event play (https://cdn.discordapp.com/attachments/743097220240506962/890996378262728814/Raffi_-_Banana_Phone_lyrics.mp3)
+[2021-09-24 16:22:07,770 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): I can't hear jackshit
+[2021-09-24 16:22:10,979 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:22:10,979 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:22:10,980 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:22:23,012 UTC] [LOB] Ema/Adam (22): event play (https://cdn.discordapp.com/attachments/743097220240506962/890996378262728814/Raffi_-_Banana_Phone_lyrics.mp3)
+[2021-09-24 16:22:28,389 UTC] [LOB] Adam/Ema/Adam (22): What the fuck
+[2021-09-24 16:22:39,085 UTC] [LOB] Adam/Ema/Adam (22): I try /play no work???
+[2021-09-24 16:22:42,370 UTC] [LOB] Munzur/Maria/Munzur (35): is it perhaps a wrong format?
+[2021-09-24 16:22:51,068 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): It's streaming but it does not work for some reason
+[2021-09-24 16:22:54,958 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): It's because he's too cringe!
+[2021-09-24 16:22:55,965 UTC] [LOB] Snow/Fruitbat (16): event music ([PLvsAA] Pursuit ~ Spell-breaker ~ PLvsPW.opus)
+[2021-09-24 16:23:04,579 UTC] [LOB] Munzur/Maria/Munzur (35): did you change its formate by renaming the file?
+[2021-09-24 16:23:08,595 UTC] [LOB] Munzur/Maria/Munzur (35): format even
+[2021-09-24 16:23:09,147 UTC] [LOB] Ema/Adam (22): event play (https://cdn.discordapp.com/attachments/743097220240506962/890640552901615698/WELCOME_TO_MY_MINE_MINECRAFT_PARODI_OF_WELCOME_TO_MY_HOUSE.mp3)
+[2021-09-24 16:23:17,838 UTC] [LOB] Snow/Fruitbat (16): event cm.remove (None)
+[2021-09-24 16:23:19,383 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 16:23:19,396 UTC] [LOB] Adam/Ema/Adam (22): This works
+[2021-09-24 16:23:20,709 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): STOP
+[2021-09-24 16:23:21,542 UTC] IPID for 87.116.173.126: 40
+[2021-09-24 16:23:21,843 UTC] Associated 40 with dbadfcd1-20fd-4c30-a3d1-7b57b29071f7
+[2021-09-24 16:23:21,844 UTC] 40 (HDID: dbadfcd1-20fd-4c30-a3d1-7b57b29071f7) connected.
+[2021-09-24 16:23:21,919 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Fucking rodent
+[2021-09-24 16:23:22,729 UTC] [LOB] Snow/Fruitbat (16): event music (Ace Attorney Investigations 2)
+[2021-09-24 16:23:24,414 UTC] IPID for 87.116.173.126: 40
+[2021-09-24 16:23:24,708 UTC] Associated 40 with dbadfcd1-20fd-4c30-a3d1-7b57b29071f7
+[2021-09-24 16:23:24,709 UTC] 40 (HDID: dbadfcd1-20fd-4c30-a3d1-7b57b29071f7) connected.
+[2021-09-24 16:23:24,994 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:23:24,995 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:23:24,996 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:23:33,054 UTC] [LOB] Munzur/Maria/Munzur (35): rat, if you may
+[2021-09-24 16:23:59,773 UTC] [LOB] Snow/Fruitbat (16): event music ([DGS] Melancholy of the Great Detective.opus)
+[2021-09-24 16:24:11,837 UTC] [LOB] Herlock/Delinard (40): event char.change ({"from": "Buddy", "to": "Herlock"})
+[2021-09-24 16:24:11,890 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Frog Lucy
+[2021-09-24 16:24:14,091 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Trucy*
+[2021-09-24 16:24:17,003 UTC] [LOB] Munzur/Maria/Munzur (35): froge
+[2021-09-24 16:24:23,385 UTC] [LOB] Delinard/Herlock/Delinard (40): He is actually called herlock hahahhaa
+[2021-09-24 16:24:24,675 UTC] [LOB] The Typewriter/Adam (22): event char.change ({"from": "Ema", "to": "The Typewriter"})
+[2021-09-24 16:24:37,285 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): what
+[2021-09-24 16:24:39,312 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:24:39,313 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:24:39,314 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:24:42,619 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): portuges jejeje
+[2021-09-24 16:24:45,647 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): thats in 
+[2021-09-24 16:24:46,349 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): yes
+[2021-09-24 16:24:47,143 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): S A L V A R 
+[2021-09-24 16:24:55,723 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Um episodio inédito
+[2021-09-24 16:24:58,609 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): foi adicionado
+[2021-09-24 16:25:09,844 UTC] [LOB] Snow/Fruitbat (16): event music ([DGS] London.opus)
+[2021-09-24 16:25:21,719 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Hmm, oh and 
+[2021-09-24 16:25:41,750 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): We made sure to change DGS characters' names to the official ones. Might've missed two or three
+[2021-09-24 16:25:44,475 UTC] [LOB] Grosky/Adam (22): event char.change ({"from": "The Typewriter", "to": "Grosky"})
+[2021-09-24 16:25:53,633 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Didn't change it in the music though, ratio'd
+[2021-09-24 16:25:53,899 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:25:53,900 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:25:53,901 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:25:56,914 UTC] [LOB] Adam/Grosky/Adam (22): Grosky Gaming
+[2021-09-24 16:25:59,147 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): o
+[2021-09-24 16:26:00,616 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): true
+[2021-09-24 16:26:03,387 UTC] [LOB] Snow/Fruitbat (16): event music ([DGS2] Heita Mamemomi ~ Reporter Mamemomi’s Justice.opus)
+[2021-09-24 16:26:09,874 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): True G's never forget....
+[2021-09-24 16:26:13,803 UTC] [LOB] Menimemo/Adam (22): event char.change ({"from": "Grosky", "to": "Menimemo"})
+[2021-09-24 16:26:20,883 UTC] [LOB] Adam/Menimemo/Adam (22): My man
+[2021-09-24 16:26:23,659 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Fruit but they're like 600 music files.............
+[2021-09-24 16:26:27,236 UTC] [LOB] Delinard/Herlock/Delinard (40): Oh ur using TGAA Chars? il see if they are all localized
+[2021-09-24 16:26:39,596 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Aye
+[2021-09-24 16:26:42,462 UTC] [LOB] Seishirou/Delinard (40): event char.change ({"from": "Herlock", "to": "Seishirou"})
+[2021-09-24 16:26:54,084 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Make sure to report it if we missed any y'know the drill
+[2021-09-24 16:27:04,886 UTC] [LOB] Shiv/Delinard (40): event char.change ({"from": "Seishirou", "to": "Shiv"})
+[2021-09-24 16:27:09,993 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:27:09,994 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:27:09,994 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:27:55,736 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): gamers
+[2021-09-24 16:28:07,905 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): He's come back from baking cookies
+[2021-09-24 16:28:13,408 UTC] [LOB] Snow/Fruitbat (16): event music ([AAI] Calisto Yew - Let Me Laugh at the Cool.opus)
+[2021-09-24 16:28:19,240 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): The cookie dough is in the fridge
+[2021-09-24 16:28:23,702 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Love this theme yo
+[2021-09-24 16:28:25,729 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:28:25,730 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:28:25,732 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:28:47,232 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Might go and like
+[2021-09-24 16:28:50,818 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): stream now for a bit
+[2021-09-24 16:28:51,208 UTC] [LOB] Oscar/Delinard (40): event char.change ({"from": "Shiv", "to": "Oscar"})
+[2021-09-24 16:28:52,260 UTC] [LOB] Munzur/Maria/Munzur (35): oh shit pina is back
+[2021-09-24 16:28:54,526 UTC] [LOB] Munzur/Maria/Munzur (35): :flushed:
+[2021-09-24 16:29:07,771 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Woa it's Munzur guys look it's munzur
+[2021-09-24 16:29:18,615 UTC] [LOB] Munzur/Maria/Munzur (35): yes its me
+[2021-09-24 16:29:20,501 UTC] [LOB] Munzur/Maria/Munzur (35): munzur from
+[2021-09-24 16:29:21,948 UTC] [LOB] Munzur/Maria/Munzur (35): uh
+[2021-09-24 16:29:29,114 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): From Munzur plays
+[2021-09-24 16:29:30,886 UTC] [LOB] Munzur/Maria/Munzur (35): Case cafe
+[2021-09-24 16:29:40,429 UTC] [LOB] Munzur/Maria/Munzur (35): that works too
+[2021-09-24 16:29:41,793 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:29:41,795 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:29:41,796 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:29:47,002 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Very cool
+[2021-09-24 16:30:00,178 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): My plan is gonna be
+[2021-09-24 16:30:08,944 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Stream on twitch.tv, right
+[2021-09-24 16:30:11,572 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Have dinner
+[2021-09-24 16:30:14,749 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Then host the case here
+[2021-09-24 16:30:29,158 UTC] [LOB] Adam/Menimemo/Adam (22): And do your mom
+[2021-09-24 16:30:31,961 UTC] [LOB] Menimemo/Adam (22): event music ([STAFF] Secret Surprise.opus)
+[2021-09-24 16:30:40,357 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Adam please you're overusing it!!!!!
+[2021-09-24 16:30:42,800 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Starting to grate on the nerves............
+[2021-09-24 16:30:47,929 UTC] [LOB] Menimemo/Adam (22): event music (Ace Attorney Investigations 2)
+[2021-09-24 16:30:56,391 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:30:56,392 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:30:56,393 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:30:58,758 UTC] [LOB] Adam/Menimemo/Adam (22): Ok ok I thought it was funny
+[2021-09-24 16:31:06,993 UTC] [LOB] Parker/Delinard (40): event char.change ({"from": "Oscar", "to": "Parker"})
+[2021-09-24 16:31:10,957 UTC] [LOB] Snow/Fruitbat (16): event music ([AJ] Drew Studio.opus)
+[2021-09-24 16:31:13,088 UTC] [LOB] Altamont/Delinard (40): event char.change ({"from": "Parker", "to": "Altamont"})
+[2021-09-24 16:31:15,188 UTC] [LOB] Shiv/Delinard (40): event char.change ({"from": "Altamont", "to": "Shiv"})
+[2021-09-24 16:31:16,463 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Very good
+[2021-09-24 16:31:16,633 UTC] [LOB] Richard/Delinard (40): event char.change ({"from": "Shiv", "to": "Richard"})
+[2021-09-24 16:31:18,117 UTC] [LOB] Vilen/Delinard (40): event char.change ({"from": "Richard", "to": "Vilen"})
+[2021-09-24 16:31:19,959 UTC] [LOB] Burley/Delinard (40): event char.change ({"from": "Vilen", "to": "Burley"})
+[2021-09-24 16:31:22,558 UTC] [LOB] Bongo/Delinard (40): event char.change ({"from": "Burley", "to": "Bongo"})
+[2021-09-24 16:31:24,750 UTC] [LOB] Anna/Delinard (40): event char.change ({"from": "Bongo", "to": "Anna"})
+[2021-09-24 16:31:25,601 UTC] [LOB] Pina/PhoenixSOJSD/Pina (2): Anyway I'll brb once again for gamer time
+[2021-09-24 16:31:26,422 UTC] [LOB] Abigail/Delinard (40): event char.change ({"from": "Anna", "to": "Abigail"})
+[2021-09-24 16:31:28,484 UTC] [LOB] Hemlock/Delinard (40): event char.change ({"from": "Abigail", "to": "Hemlock"})
+[2021-09-24 16:31:33,179 UTC] [LOB] Courtney/Delinard (40): event char.change ({"from": "Hemlock", "to": "Courtney"})
+[2021-09-24 16:31:35,386 UTC] [LOB] Rayfa/Delinard (40): event char.change ({"from": "Courtney", "to": "Rayfa"})
+[2021-09-24 16:31:37,426 UTC] [LOB] JudgeKhura'in/Delinard (40): event char.change ({"from": "Rayfa", "to": "JudgeKhura'in"})
+[2021-09-24 16:31:39,237 UTC] [LOB] Stronghart/Delinard (40): event char.change ({"from": "JudgeKhura'in", "to": "Stronghart"})
+[2021-09-24 16:31:41,149 UTC] [LOB] Seishirou/Delinard (40): event char.change ({"from": "Stronghart", "to": "Seishirou"})
+[2021-09-24 16:31:43,013 UTC] [LOB] JudgeDGS-JAP/Delinard (40): event char.change ({"from": "Seishirou", "to": "JudgeDGS-JAP"})
+[2021-09-24 16:31:47,967 UTC] [LOB] Tobias/Delinard (40): event char.change ({"from": "JudgeDGS-JAP", "to": "Tobias"})
+[2021-09-24 16:31:49,774 UTC] [LOB] Grossberg/Delinard (40): event char.change ({"from": "Tobias", "to": "Grossberg"})
+[2021-09-24 16:31:52,917 UTC] [LOB] Raymond/Delinard (40): event char.change ({"from": "Grossberg", "to": "Raymond"})
+[2021-09-24 16:31:54,171 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:31:54,445 UTC] [LOB] Ryuunosuke/Delinard (40): event char.change ({"from": "Raymond", "to": "Ryuunosuke"})
+[2021-09-24 16:31:57,647 UTC] [LOB] RyuunosukeBadgeless/Delinard (40): event char.change ({"from": "Ryuunosuke", "to": "RyuunosukeBadgeless"})
+[2021-09-24 16:31:59,493 UTC] [LOB] Asougi/Delinard (40): event char.change ({"from": "RyuunosukeBadgeless", "to": "Asougi"})
+[2021-09-24 16:32:01,099 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:32:01,204 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:32:01,207 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:32:01,317 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:32:01,421 UTC] [LOB] Ryuutarou/Delinard (40): event char.change ({"from": "Asougi", "to": "Ryuutarou"})
+[2021-09-24 16:32:01,432 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:32:01,434 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:32:04,256 UTC] [LOB] Payne3D/Delinard (40): event char.change ({"from": "Ryuutarou", "to": "Payne3D"})
+[2021-09-24 16:32:04,598 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 16:32:06,222 UTC] [LOB] Auchi/Delinard (40): event char.change ({"from": "Payne3D", "to": "Auchi"})
+[2021-09-24 16:32:10,120 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:32:10,120 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:32:10,121 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:32:12,850 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:32:12,954 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:32:12,955 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:32:27,248 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:32:27,351 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:32:27,352 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:33:24,322 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:33:24,324 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:33:24,324 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:33:32,705 UTC] [LOB] Susato/Delinard (40): event char.change ({"from": "Auchi", "to": "Susato"})
+[2021-09-24 16:33:46,041 UTC] [LOB] Tahrust/Delinard (40): event char.change ({"from": "Susato", "to": "Tahrust"})
+[2021-09-24 16:33:48,436 UTC] [LOB] PhoenixSOJSD/Pina (2): event area.leave (None)
+[2021-09-24 16:33:51,305 UTC] [LOB] Daley/Delinard (40): event char.change ({"from": "Tahrust", "to": "Daley"})
+[2021-09-24 16:33:55,124 UTC] [LOB] Adron/Delinard (40): event char.change ({"from": "Daley", "to": "Adron"})
+[2021-09-24 16:33:59,499 UTC] [LOB] Drebber/Delinard (40): event char.change ({"from": "Adron", "to": "Drebber"})
+[2021-09-24 16:34:05,042 UTC] [LOB] BailiffDGS/Delinard (40): event char.change ({"from": "Drebber", "to": "BailiffDGS"})
+[2021-09-24 16:34:06,441 UTC] IPID for 176.33.66.240: 56
+[2021-09-24 16:34:06,498 UTC] Associated 56 with ea619ea810bf8e5e5c7e1946688ccf55
+[2021-09-24 16:34:06,500 UTC] 56 (HDID: ea619ea810bf8e5e5c7e1946688ccf55) connected.
+[2021-09-24 16:34:09,829 UTC] [LOB] Gossip/Delinard (40): event char.change ({"from": "BailiffDGS", "to": "Gossip"})
+[2021-09-24 16:34:21,832 UTC] [LOB] Sithe/Delinard (40): event char.change ({"from": "Gossip", "to": "Sithe"})
+[2021-09-24 16:34:25,808 UTC] IPID for 12.5.23.246: 57
+[2021-09-24 16:34:25,931 UTC] [LOB] Nosa/Delinard (40): event char.change ({"from": "Sithe", "to": "Nosa"})
+[2021-09-24 16:34:29,389 UTC] IPID for 12.5.23.246: 57
+[2021-09-24 16:34:29,584 UTC] Associated 57 with 2bdef8600c33cc8774db02c9af62e480
+[2021-09-24 16:34:29,587 UTC] 57 (HDID: 2bdef8600c33cc8774db02c9af62e480) connected.
+[2021-09-24 16:34:29,683 UTC] [LOB] Nosa/Delinard (40): event area.leave (None)
+[2021-09-24 16:34:29,686 UTC] [UHUB] Nosa/Delinard (40): event area.join (None)
+[2021-09-24 16:34:31,065 UTC] [UHUB] Delinard/Nosa/Delinard (40):   
+[2021-09-24 16:34:33,007 UTC] [UHUB] Delinard/Nosa/Delinard (40):     
+[2021-09-24 16:34:34,498 UTC] [LOB] Manfred/ (57): event char.change ({"from": null, "to": "Manfred"})
+[2021-09-24 16:34:37,314 UTC] [UHUB] Ema/Delinard (40): event char.change ({"from": "Nosa", "to": "Ema"})
+[2021-09-24 16:34:38,934 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:34:38,935 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:34:38,936 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:34:40,802 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:34:40,907 UTC] Associated 55 with 35858a4a895199e81cd27edaeb991e4d
+[2021-09-24 16:34:40,910 UTC] 55 (HDID: 35858a4a895199e81cd27edaeb991e4d) connected.
+[2021-09-24 16:34:42,415 UTC] [LOB] Manfred/ (57): event area.leave (None)
+[2021-09-24 16:34:44,202 UTC] [UHUB] Delinard/Ema/Delinard (40):   
+[2021-09-24 16:34:45,575 UTC] [UHUB] Delinard/Ema/Delinard (40):    
+[2021-09-24 16:34:51,016 UTC] [UHUB] Delinard/Ema/Delinard (40):     
+[2021-09-24 16:34:51,602 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:34:51,705 UTC] Associated 55 with 35858a4a895199e81cd27edaeb991e4d
+[2021-09-24 16:34:51,706 UTC] 55 (HDID: 35858a4a895199e81cd27edaeb991e4d) connected.
+[2021-09-24 16:34:53,939 UTC] [UHUB] Delinard/Ema/Delinard (40):   
+[2021-09-24 16:34:54,911 UTC] [UHUB] Delinard/Ema/Delinard (40):    
+[2021-09-24 16:34:55,313 UTC] [UHUB] Delinard/Ema/Delinard (40):   
+[2021-09-24 16:34:56,376 UTC] [UHUB] Delinard/Ema/Delinard (40):   
+[2021-09-24 16:34:57,687 UTC] IPID for 87.221.130.176: 58
+[2021-09-24 16:34:57,742 UTC] Associated 58 with 0719dcb8ed1ac684ad563fe3a8bfec53
+[2021-09-24 16:34:57,745 UTC] 58 (HDID: 0719dcb8ed1ac684ad563fe3a8bfec53) connected.
+[2021-09-24 16:34:59,648 UTC] [UHUB] Ema/Delinard (40): event area.leave (None)
+[2021-09-24 16:34:59,651 UTC] [LOB] Ema/Delinard (40): event area.join (None)
+[2021-09-24 16:35:21,004 UTC] [LOB] Smiles/Delinard (40): event char.change ({"from": "Ema", "to": "Smiles"})
+[2021-09-24 16:35:30,541 UTC] [LOB] Darklaw/Delinard (40): event char.change ({"from": "Smiles", "to": "Darklaw"})
+[2021-09-24 16:35:36,244 UTC] [LOB] Cabanela/Delinard (40): event char.change ({"from": "Darklaw", "to": "Cabanela"})
+[2021-09-24 16:35:42,420 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Ok, it's time to start working on b ugs 
+[2021-09-24 16:35:48,544 UTC] [LOB] Nikolina/Delinard (40): event char.change ({"from": "Cabanela", "to": "Nikolina"})
+[2021-09-24 16:35:54,565 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:35:54,566 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:35:54,566 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:35:54,623 UTC] [LOB] Fruitbat/Snow/Fruitbat (16): Bugfix, code man
+[2021-09-24 16:36:01,065 UTC] [LOB] Strongenov/Delinard (40): event char.change ({"from": "Nikolina", "to": "Strongenov"})
+[2021-09-24 16:36:06,515 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:36:06,619 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:36:06,620 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:36:22,450 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:36:22,555 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:36:22,556 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:36:41,966 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:36:42,070 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:36:42,071 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:36:42,186 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:36:42,312 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:36:42,314 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:36:42,418 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:36:42,521 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:36:42,522 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:36:50,710 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:36:50,814 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:36:50,815 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:36:55,134 UTC] IPID for 204.9.150.206: 55
+[2021-09-24 16:36:55,238 UTC] Associated 55 with 377709e1682268febedc5a1193c779cf
+[2021-09-24 16:36:55,239 UTC] 55 (HDID: 377709e1682268febedc5a1193c779cf) connected.
+[2021-09-24 16:37:09,542 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:37:09,542 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:37:09,543 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:38:28,040 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:38:28,041 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:38:28,042 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:38:55,781 UTC] [LOB] Menimemo/Adam (22): event area.leave (None)
+[2021-09-24 16:39:42,693 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:39:42,694 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:39:42,695 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:40:36,861 UTC] [LOB] Patrick/Delinard (40): event char.change ({"from": "Strongenov", "to": "Patrick"})
+[2021-09-24 16:41:00,476 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:41:00,478 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:41:00,479 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:41:12,758 UTC] [LOB] William/Delinard (40): event char.change ({"from": "Patrick", "to": "William"})
+[2021-09-24 16:41:22,886 UTC] [LOB] WillP AAI/Delinard (40): event char.change ({"from": "William", "to": "WillP AAI"})
+[2021-09-24 16:42:17,923 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:42:17,924 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:42:17,925 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:42:29,147 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Ok, server restart incoming.
+[2021-09-24 16:42:35,937 UTC] [LOB] Patricia/Delinard (40): event char.change ({"from": "WillP AAI", "to": "Patricia"})
+[2021-09-24 16:42:36,723 UTC] [LOB] Munzur/Maria/Munzur (35): nnooooooooooo
+[2021-09-24 16:42:42,760 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Well, after Delinard finishes 
+[2021-09-24 16:42:44,913 UTC] [LOB] Munzur/Maria/Munzur (35): not a restart..........
+[2021-09-24 16:42:58,086 UTC] [LOB] Delinard/Patricia/Delinard (40): Found another one
+[2021-09-24 16:43:04,021 UTC] [LOB] Delinard/Patricia/Delinard (40): Rola is using fan translated name
+[2021-09-24 16:43:21,578 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Yeah, Rola and Pat were added very close to release 
+[2021-09-24 16:43:21,880 UTC] IPID for 219.100.37.241: 30
+[2021-09-24 16:43:32,376 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:43:32,377 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:43:32,378 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:43:32,795 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): I think I have their updated names somewhere
+[2021-09-24 16:44:02,874 UTC] [LOB] Patrick/Delinard (40): event char.change ({"from": "Patricia", "to": "Patrick"})
+[2021-09-24 16:44:43,013 UTC] [LOB] Joan/Delinard (40): event char.change ({"from": "Patrick", "to": "Joan"})
+[2021-09-24 16:44:44,322 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): ole so good it froze while unzipping
+[2021-09-24 16:44:47,115 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): lol
+[2021-09-24 16:44:48,790 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:44:48,790 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:44:48,791 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:44:54,555 UTC] [LOB] Garan/Delinard (40): event char.change ({"from": "Joan", "to": "Garan"})
+[2021-09-24 16:44:59,534 UTC] [LOB] Payne Train/Delinard (40): event char.change ({"from": "Garan", "to": "Payne Train"})
+[2021-09-24 16:45:10,301 UTC] [LOB] Menimemo/Delinard (40): event char.change ({"from": "Payne Train", "to": "Menimemo"})
+[2021-09-24 16:45:24,324 UTC] [LOB] Ringo/Delinard (40): event char.change ({"from": "Menimemo", "to": "Ringo"})
+[2021-09-24 16:45:24,447 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): LMAO
+[2021-09-24 16:45:36,451 UTC] [LOB] Delinard/Ringo/Delinard (40): Ping
+[2021-09-24 16:45:42,663 UTC] [LOB] Delinard/Ringo/Delinard (40): well im finished, i can just test anything i want later
+[2021-09-24 16:45:55,848 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): ok, I'm gonna take down the server rq
+[2021-09-24 16:46:01,865 UTC] [LOB] Munzur/Maria/Munzur (35): noooooooo
+[2021-09-24 16:46:05,133 UTC] [LOB] Munzur/Maria/Munzur (35): :(((((((((((
+[2021-09-24 16:46:06,395 UTC] [LOB] Distant/EdgeworthSOJ/Distant (31): kk
+[2021-09-24 16:46:06,698 UTC] IPID for 104.131.93.82: 23
+[2021-09-24 16:46:06,699 UTC] Associated 23 with ms2-prober
+[2021-09-24 16:46:06,700 UTC] 23 (HDID: ms2-prober) connected.
+[2021-09-24 16:46:10,371 UTC] IPID for 95.147.115.179: 59
+[2021-09-24 16:46:10,387 UTC] Associated 59 with 8cff15509695166c34bf8d7cf78f056b
+[2021-09-24 16:46:10,389 UTC] 59 (HDID: 8cff15509695166c34bf8d7cf78f056b) connected.
+[2021-09-24 16:46:10,410 UTC] IPID for 95.147.115.179: 59
+[2021-09-24 16:46:10,425 UTC] Associated 59 with 8cff15509695166c34bf8d7cf78f056b
+[2021-09-24 16:46:10,426 UTC] 59 (HDID: 8cff15509695166c34bf8d7cf78f056b) connected.
+[2021-09-24 16:46:11,252 UTC] [LOB] Munzur/Maria/Munzur (35): if you take server down ur gay
+[2021-09-24 16:46:22,054 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): I have to upload a fix smh 
+[2021-09-24 16:46:38,817 UTC] [LOB] HolyMan/HoboTrucy/HolyMan (18): Anyway, see ya on the other side
+[2021-09-24 16:46:46,655 UTC] [LOB] Snow/Fruitbat (16): event area.leave (None)
