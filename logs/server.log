@@ -5864,3 +5864,27 @@ Trucy: wait I can just check DC I'm dumb
 [2021-09-24 00:45:55,976 UTC] [LOB] MayaSOJ/HolyMan (18): event area.leave (None)
 [2021-09-24 00:45:56,826 UTC] [LOB] /Phoenix/Pina (2): k
 [2021-09-24 00:49:52,738 UTC] [LOB] Phoenix/Pina (2): event area.leave (None)
+[2021-09-24 02:15:17,900 UTC] start (None onto None): None
+[2021-09-24 02:16:28,694 UTC] IPID for 186.148.194.240: 18
+[2021-09-24 02:16:29,113 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-24 02:16:29,115 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-24 02:16:55,668 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-24 02:17:34,420 UTC] login (18 onto None): {'profile': 'default'}
+[2021-09-24 02:31:12,849 UTC] [LOB] Ema/HolyMan (18): event char.change ({"from": "Phoenix", "to": "Ema"})
+[2021-09-24 02:35:57,976 UTC] [LOB] /Ema/HolyMan (18): Hmm.
+[2021-09-24 02:41:44,576 UTC] [LOB] Ema/HolyMan (18): event area.leave (None)
+[2021-09-24 03:03:10,598 UTC] start (None onto None): None
+[2021-09-24 03:03:57,006 UTC] IPID for 186.148.194.240: 18
+[2021-09-24 03:03:57,992 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-24 03:03:57,993 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-24 03:04:08,644 UTC] [LOB] ApolloSOJ/ (18): event char.change ({"from": null, "to": "ApolloSOJ"})
+[2021-09-24 03:04:17,446 UTC] login.invalid (18 onto None): None
+[2021-09-24 03:05:26,487 UTC] login.invalid (18 onto None): None
+[2021-09-24 03:05:37,045 UTC] [LOB] ApolloSOJ/HolyMan (18): event area.leave (None)
+[2021-09-24 03:09:36,857 UTC] start (None onto None): None
+[2021-09-24 03:09:49,715 UTC] IPID for 186.148.194.240: 18
+[2021-09-24 03:09:50,148 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-24 03:09:50,150 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-24 03:09:57,336 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-24 03:10:07,979 UTC] login (18 onto None): {'profile': 'HolyMan'}
+[2021-09-24 03:10:25,793 UTC] [LOB] Phoenix/HolyMan (18): event area.leave (None)
