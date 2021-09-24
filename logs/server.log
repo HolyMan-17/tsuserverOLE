@@ -5888,3 +5888,10 @@ Trucy: wait I can just check DC I'm dumb
 [2021-09-24 03:09:57,336 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
 [2021-09-24 03:10:07,979 UTC] login (18 onto None): {'profile': 'HolyMan'}
 [2021-09-24 03:10:25,793 UTC] [LOB] Phoenix/HolyMan (18): event area.leave (None)
+[2021-09-24 03:17:37,044 UTC] start (None onto None): None
+[2021-09-24 03:17:46,925 UTC] IPID for 186.148.194.240: 18
+[2021-09-24 03:17:47,351 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-24 03:17:47,352 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-24 03:17:57,128 UTC] [LOB] Ema/ (18): event char.change ({"from": null, "to": "Ema"})
+[2021-09-24 03:18:37,030 UTC] login (18 onto None): {'profile': 'default'}
+[2021-09-24 03:19:23,494 UTC] [LOB] Ema/HolyMan (18): event area.leave (None)
