@@ -5895,3 +5895,141 @@ Trucy: wait I can just check DC I'm dumb
 [2021-09-24 03:17:57,128 UTC] [LOB] Ema/ (18): event char.change ({"from": null, "to": "Ema"})
 [2021-09-24 03:18:37,030 UTC] login (18 onto None): {'profile': 'default'}
 [2021-09-24 03:19:23,494 UTC] [LOB] Ema/HolyMan (18): event area.leave (None)
+[2021-09-24 03:48:54,437 UTC] start (None onto None): None
+[2021-09-24 03:49:15,453 UTC] IPID for 128.84.127.135: 21
+[2021-09-24 03:49:15,788 UTC] Associated 21 with b727dac9-0507-4be8-b22c-afbd6de33d51
+[2021-09-24 03:49:15,790 UTC] 21 (HDID: b727dac9-0507-4be8-b22c-afbd6de33d51) connected.
+[2021-09-24 03:49:32,241 UTC] IPID for 186.148.194.240: 18
+[2021-09-24 03:49:32,658 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-24 03:49:32,659 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-24 03:49:43,188 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-24 03:49:46,299 UTC] [LOB] MayaSOJ/ (18): event char.change ({"from": "Phoenix", "to": "MayaSOJ"})
+[2021-09-24 03:49:48,592 UTC] [LOB] Phoenix/ (21): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-24 03:49:54,930 UTC] login.invalid (21 onto None): None
+[2021-09-24 03:49:55,237 UTC] [LOB] HolyMan/MayaSOJ/ (18): women
+[2021-09-24 03:49:56,854 UTC] [LOB] /Phoenix/XYZ (21): no work
+[2021-09-24 03:49:58,233 UTC] [LOB] /Phoenix/XYZ (21): i tried login
+[2021-09-24 03:50:02,866 UTC] login.invalid (21 onto None): None
+[2021-09-24 03:50:03,663 UTC] login (18 onto None): {'profile': 'default'}
+[2021-09-24 03:50:14,094 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Well, it does work for me without password now
+[2021-09-24 03:50:18,736 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): So my theory is correct
+[2021-09-24 03:50:23,269 UTC] login (21 onto None): {'profile': 'default'}
+[2021-09-24 03:50:27,018 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): You just need to log in with password once
+[2021-09-24 03:50:29,939 UTC] [LOB] /Phoenix/XYZ (21): A) yeah i'm still stuck as mod
+[2021-09-24 03:50:38,495 UTC] [LOB] /Phoenix/XYZ (21): B) i'm ipid 21 now
+[2021-09-24 03:50:45,697 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Epic
+[2021-09-24 03:50:46,661 UTC] [LOB] /Phoenix/XYZ (21): idk why
+[2021-09-24 03:50:57,207 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Kinda shit that
+[2021-09-24 03:51:01,737 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): this doesn't look for HDIDs
+[2021-09-24 03:51:03,602 UTC] [LOB] /Phoenix/XYZ (21): like seriously tf
+[2021-09-24 03:51:09,354 UTC] [LOB] /Phoenix/XYZ (21): lemme double check my hdid but
+[2021-09-24 03:51:11,747 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Or it mainly looks for IPIDs
+[2021-09-24 03:52:10,911 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Your HDID is fine
+[2021-09-24 03:52:13,959 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): I just checked
+[2021-09-24 03:52:19,943 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): With the logs and the yaml
+[2021-09-24 03:52:34,669 UTC] [LOB] /Phoenix/XYZ (21): okay
+[2021-09-24 03:52:40,767 UTC] [LOB] /Phoenix/XYZ (21): yeah idk why
+[2021-09-24 03:52:44,235 UTC] [LOB] /Phoenix/XYZ (21): im ipid 21 now
+[2021-09-24 03:52:46,016 UTC] [LOB] /Phoenix/XYZ (21): and you're 18
+[2021-09-24 03:52:49,300 UTC] [LOB] /Phoenix/XYZ (21): idk what u were before
+[2021-09-24 03:52:56,092 UTC] [LOB] /Phoenix/XYZ (21): but i legit have 3 ipids now
+[2021-09-24 03:53:02,026 UTC] [LOB] /Phoenix/XYZ (21): no, four actually
+[2021-09-24 03:53:12,490 UTC] [LOB] /Phoenix/XYZ (21): i mean to be fair
+[2021-09-24 03:53:16,703 UTC] [LOB] /Phoenix/XYZ (21): maybe my router outside my room did that
+[2021-09-24 03:53:19,456 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): So, now that you've logged in with the password, the client has created a profile and you won't need to sign in with password next time you log in with that IPID
+[2021-09-24 03:53:27,439 UTC] [LOB] /Phoenix/XYZ (21): idk, but lemme try iet yeah
+[2021-09-24 03:53:29,655 UTC] [LOB] /Phoenix/XYZ (21): brb
+[2021-09-24 03:53:34,314 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Though the downside is that it just registers you as a mod 
+[2021-09-24 03:53:39,053 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Hmm.
+[2021-09-24 03:53:39,984 UTC] [LOB] Phoenix/XYZ (21): event area.leave (None)
+[2021-09-24 03:53:40,067 UTC] IPID for 128.84.127.135: 21
+[2021-09-24 03:53:40,408 UTC] Associated 21 with b727dac9-0507-4be8-b22c-afbd6de33d51
+[2021-09-24 03:53:40,409 UTC] 21 (HDID: b727dac9-0507-4be8-b22c-afbd6de33d51) connected.
+[2021-09-24 03:53:45,216 UTC] [LOB] Disciple/ (21): event char.change ({"from": null, "to": "Disciple"})
+[2021-09-24 03:53:45,480 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Anyway yes check
+[2021-09-24 03:53:47,963 UTC] [LOB] /Disciple/ (21): back
+[2021-09-24 03:53:50,967 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): We need a stable IPID for you
+[2021-09-24 03:53:52,118 UTC] login (21 onto None): {'profile': 'default'}
+[2021-09-24 03:53:54,799 UTC] [LOB] /Disciple/XYZ (21): based
+[2021-09-24 03:53:55,991 UTC] [LOB] /Disciple/XYZ (21): it worked
+[2021-09-24 03:53:59,134 UTC] [LOB] /Disciple/XYZ (21): make me admin now mf
+[2021-09-24 03:54:16,174 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Keep calm and suck my cock!!!
+[2021-09-24 03:54:18,522 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Ok ok
+[2021-09-24 03:54:26,519 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Hmm Red
+[2021-09-24 03:54:32,279 UTC] [LOB] /Disciple/XYZ (21): ?
+[2021-09-24 03:54:42,371 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Do you think this is the actual IPID of your room?
+[2021-09-24 03:54:46,668 UTC] [LOB] /Disciple/XYZ (21): i honestly dk
+[2021-09-24 03:54:48,857 UTC] [LOB] /Disciple/XYZ (21): i was in my room last night
+[2021-09-24 03:54:53,111 UTC] [LOB] /Disciple/XYZ (21): and it was 20
+[2021-09-24 03:54:54,256 UTC] [LOB] /Disciple/XYZ (21): now it's 21
+[2021-09-24 03:54:56,767 UTC] [LOB] /Disciple/XYZ (21): lemme check smth
+[2021-09-24 03:55:00,809 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Kk
+[2021-09-24 03:55:11,042 UTC] [LOB] /Disciple/XYZ (21): okay this is weird
+[2021-09-24 03:55:25,276 UTC] [LOB] /Disciple/XYZ (21): last night's was ***.**.124.13, tonight is ***.**.127.135
+[2021-09-24 03:55:29,180 UTC] [LOB] /Disciple/XYZ (21): and the stars are the same
+[2021-09-24 03:55:36,990 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Oh so your IP changes
+[2021-09-24 03:55:38,685 UTC] [LOB] /Disciple/XYZ (21): it's weird
+[2021-09-24 03:55:39,605 UTC] [LOB] /Disciple/XYZ (21): yeah
+[2021-09-24 03:55:40,432 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): What the fuck
+[2021-09-24 03:55:41,874 UTC] [LOB] /Disciple/XYZ (21): idk why
+[2021-09-24 03:55:45,834 UTC] [LOB] /Disciple/XYZ (21): it's the same router 
+[2021-09-24 03:55:50,743 UTC] [LOB] /Disciple/XYZ (21): oh and
+[2021-09-24 03:55:53,158 UTC] [LOB] /Disciple/XYZ (21): ipid 19 is mine too
+[2021-09-24 03:55:57,014 UTC] [LOB] /Disciple/XYZ (21): it's ***.**.127.243
+[2021-09-24 03:56:20,963 UTC] [LOB] /Disciple/XYZ (21): oh holy
+[2021-09-24 03:56:21,993 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Maybe it's something in the router's config? I mean to be honest, I hate touching routers config because I'm scared of fucking up so
+[2021-09-24 03:56:28,713 UTC] [LOB] /Disciple/XYZ (21): slight proble with our disciple files
+[2021-09-24 03:56:31,605 UTC] [LOB] /Disciple/XYZ (21): it's missing half the emotes
+[2021-09-24 03:56:42,177 UTC] [LOB] /Disciple/XYZ (21): can you replace the AG one with the one from cc
+[2021-09-24 03:56:45,221 UTC] [LOB] /Disciple/XYZ (21): idk why the emotes are missing
+[2021-09-24 03:56:47,547 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Well this is hysterical because
+[2021-09-24 03:57:05,505 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Pina by this point must've already uploaded a full build for the release.
+[2021-09-24 03:57:15,220 UTC] [LOB] /Disciple/XYZ (21): bruh
+[2021-09-24 03:57:32,495 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): We can just include it in the next version we'll make prolly very soon
+[2021-09-24 03:57:37,631 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): As soon as we get feedback and all that
+[2021-09-24 03:57:41,520 UTC] [LOB] /Disciple/XYZ (21): okay yeah we need a patch anyway
+[2021-09-24 03:57:45,493 UTC] [LOB] /Disciple/XYZ (21): and we need to make the hd char pack
+[2021-09-24 03:57:54,968 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Yes, yes.There's still work to be done
+[2021-09-24 03:58:15,790 UTC] [LOB] /Disciple/XYZ (21): anyway
+[2021-09-24 03:58:23,467 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Anyway, Imma your IPID from today in the moderation.yaml and hopefully your router stops being stupid
+[2021-09-24 03:58:29,734 UTC] [LOB] /Disciple/XYZ (21): so yeah make me and steel admin, and i think that'll be good
+[2021-09-24 03:58:33,420 UTC] [LOB] /Disciple/XYZ (21): yeah that too oh also
+[2021-09-24 03:58:38,114 UTC] [LOB] /Disciple/XYZ (21): did pina add the variation for partners
+[2021-09-24 03:58:43,664 UTC] [LOB] /Disciple/XYZ (21): also where is the new client files? i need to dl it
+[2021-09-24 03:58:47,381 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Aye, aye
+[2021-09-24 03:58:54,308 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Also Pina prolly fell asleep so uh
+[2021-09-24 03:59:01,625 UTC] [LOB] /Disciple/XYZ (21): dam, storage full
+[2021-09-24 03:59:03,090 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): We're most likely getting them tomorrow.
+[2021-09-24 03:59:16,390 UTC] [LOB] /Disciple/XYZ (21): i thought i told him
+[2021-09-24 03:59:19,035 UTC] [LOB] /Disciple/XYZ (21): TO USE THE OLE GMAIL
+[2021-09-24 03:59:29,067 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): The OLE Gmail is what we call
+[2021-09-24 03:59:41,277 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): full so he just created a new email rather than freeing up storage
+[2021-09-24 03:59:47,417 UTC] [LOB] /Disciple/XYZ (21): what's the email
+[2021-09-24 03:59:48,894 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): <num>Funny
+[2021-09-24 03:59:58,010 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Just God and Pina knos
+[2021-09-24 03:59:59,626 UTC] [LOB] /Disciple/XYZ (21): it'd be nice if we had access....................
+[2021-09-24 04:00:03,726 UTC] [LOB] /Disciple/XYZ (21): oh
+[2021-09-24 04:00:04,666 UTC] [LOB] /Disciple/XYZ (21): rip
+[2021-09-24 04:00:13,651 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Eh, don't worry. We can talk about it tomorrow
+[2021-09-24 04:00:16,566 UTC] [LOB] /Disciple/XYZ (21): yeah
+[2021-09-24 04:00:17,979 UTC] [LOB] /Disciple/XYZ (21): imma do work
+[2021-09-24 04:00:20,333 UTC] [LOB] /Disciple/XYZ (21): wait
+[2021-09-24 04:00:20,908 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): To be fair, it was fairly late for him anyway
+[2021-09-24 04:00:23,770 UTC] [LOB] /Disciple/XYZ (21): BRUH ITS MIDNIGHT
+[2021-09-24 04:00:36,455 UTC] [LOB] /Disciple/XYZ (21): me when midnight
+[2021-09-24 04:00:38,204 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): I've been working on this the whole day
+[2021-09-24 04:00:48,264 UTC] [LOB] /Disciple/XYZ (21): ye
+[2021-09-24 04:00:50,127 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Really, my mind is just completely focused on
+[2021-09-24 04:00:53,315 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): this
+[2021-09-24 04:00:55,197 UTC] [LOB] /Disciple/XYZ (21): good work bro
+[2021-09-24 04:00:59,549 UTC] [LOB] /Disciple/XYZ (21): good deidcation
+[2021-09-24 04:01:29,909 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): Anyway, Imma make you admin and uh
+[2021-09-24 04:01:44,839 UTC] [LOB] HolyMan/MayaSOJ/HolyMan (18): See if I'm able to write some documentation 
+[2021-09-24 04:01:57,606 UTC] [LOB] MayaSOJ/HolyMan (18): event ooc (4)
+[2021-09-24 04:01:58,229 UTC] [LOB] /Disciple/XYZ (21): kk bro
+[2021-09-24 04:02:04,982 UTC] [LOB] /Disciple/XYZ (21): that's good practice
+[2021-09-24 04:02:07,149 UTC] [LOB] /Disciple/XYZ (21): ill be on disc
+[2021-09-24 04:02:11,249 UTC] [LOB] /Disciple/XYZ (21): and spying on the mmo folks
+[2021-09-24 04:02:14,840 UTC] [LOB] /Disciple/XYZ (21): off i go
+[2021-09-24 04:02:20,833 UTC] [LOB] Disciple/XYZ (21): event area.leave (None)
+[2021-09-24 04:02:42,417 UTC] [LOB] MayaSOJ/HolyMan (18): event area.leave (None)
