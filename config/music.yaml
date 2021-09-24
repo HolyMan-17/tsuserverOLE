@@ -1337,6 +1337,4 @@
   songs:
   - name: ~stop.opus
     length: 1.0065
-- tag: ''
-  category: Uncategorized
-  songs: []
+
