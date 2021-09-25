@@ -6,3 +6,4 @@ characters/
 #SQL database
 
 *.sqlite3
+storage/
