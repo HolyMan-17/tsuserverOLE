@@ -1,1 +1,8 @@
+#Characters and music files
+
 base/
+characters/
+
+#SQL database
+
+*.sqlite3
