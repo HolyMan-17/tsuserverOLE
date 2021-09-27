@@ -216,10 +216,8 @@ def ooc_cmd_permit(client, arg):
 				c = client.server.client_manager.get_targets\
 					(client, TargetType.ID, id, False)[0]
 			except:
-				c = client.server.client_manager.get_targets\
-					(client, TargetType.ID, id, False)[0]
 				client.send_ooc(f'{id} does not look like a valid ID.')
-			if len(c.hdid) != 32:
+			if len(client.hdid) != 32:
 				raise ArgumentError('That does not seem to be a webAO client.')
 			permfile = 'config/webaoperms.yaml'
 			new = not os.path.exists(permfile)
