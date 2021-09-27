@@ -103,7 +103,7 @@ def ooc_cmd_spy(client, arg):
 
 		# 'spying' is in client_manager as a variable intializer.
 		client.spying.append(spyhere)
-		return send_ooc(f'You are now spying in {spyhere.name}.')
+		return client.send_ooc(f'You are now spying in {spyhere.name}.')
 
 def ooc_cmd_allowmusic(client, arg):
 	if client not in client.area.owners and not client.is_mod:
@@ -170,7 +170,8 @@ def ooc_cmd_serverpoll(client, arg):
 			nay.append(hdid)
 			client.send_ooc('You voted nay on the server poll.')
 	else:
-		raise ArgumentError('Vote either "yay" or"nay". Check the server poll by using no argument.')
+		raise ArgumentError\
+			('Vote either "yay" or"nay". Check the server poll by using no argument.')
 
 def ooc_cmd_clearserverpoll(client, arg):
 	if not client.is_mod:
@@ -192,8 +193,10 @@ def ooc_cmd_ghost(client, arg):
 		client.ghost = True
 		client.send_ooc('You are now a ghost.')
 """
-A fun command Steel made to try out his knowledge of how AO's admin.py file works.
-Syntax should be /derp, if 'ooc_cmd_' is to be interpreted as such, like the rest of these commands.
+A fun command Steel made to try out his knowledge of how 
+	AO's admin.py file works.
+Syntax should be /derp, if 'ooc_cmd_' is to be interpreted as such, 
+	like the rest of these commands.
 It should check if you're an admin, then if you are, post an OOC message.
 """
 def ooc_cmd_derp(client, arg):
@@ -210,7 +213,9 @@ def ooc_cmd_permit(client, arg):
 		for id in arg:
 			try:
 				id = int(id)
-				c = client.server.client_manager.get_targets(client, TargetType.ID, id, False)[0]
+				c = client.server.client_manager.get_targets\
+					(client, TargetType.ID, id, False)[0]
+				client.send_ooc(f'{c}')
 			except:
 				client.send_ooc(f'{id} does not look like a valid ID.')
 			if len(c.hdid) != 32:
@@ -627,8 +632,13 @@ def ooc_cmd_login(client, arg):
 	except ClientError:
 		database.log_misc('login.invalid', client)
 		raise
-	client.send_ooc('Logged in as a moderator.')
-	database.log_misc('login', client, data={'profile': login_name})
+    
+	if client.is_admin:
+		client.send_ooc('Logged in as administrator')
+		database.log_misc('login', client, data={'profile': login_name})
+	elif client.is_mod:
+		client.send_ooc('Logged in as a moderator.')
+		database.log_misc('login', client, data={'profile': login_name})
 
 @mod_only()
 def ooc_cmd_refresh(client, arg):
