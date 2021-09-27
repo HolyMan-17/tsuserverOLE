@@ -27,3 +27,6 @@ class Statement:
 		# ...WHAT THE FUCK DOES THIS /DO?/ Why is it setting the 15th argument in the array!?
 		# What the fuck?
 		# -Steel
+		
+		# This was written by an AO Dev, just God and them know.
+		# -Holy
