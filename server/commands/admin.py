@@ -634,12 +634,8 @@ def ooc_cmd_login(client, arg):
 		database.log_misc('login.invalid', client)
 		raise
     
-	if client.is_admin:
-		client.send_ooc('Logged in as administrator.')
-		database.log_misc('login', client, data={'profile': login_name})
-	elif client.is_mod:
-		client.send_ooc('Logged in as a moderator.')
-		database.log_misc('login', client, data={'profile': login_name})
+	client.send_ooc('Logged in as a moderator.')
+	database.log_misc('login', client, data={'profile': login_name})
 
 @mod_only()
 def ooc_cmd_refresh(client, arg):
