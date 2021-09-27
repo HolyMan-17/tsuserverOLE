@@ -46128,3 +46128,195 @@ NameError: name 'send_ooc' is not defined
 [2021-09-27 02:38:21,266 UTC] IPID for 173.66.64.219: 677
 [2021-09-27 02:38:21,356 UTC] Associated 677 with d3e4e6814cc41bf80588f192f7ff25ed
 [2021-09-27 02:38:21,358 UTC] 677 (HDID: d3e4e6814cc41bf80588f192f7ff25ed) connected.
+[2021-09-27 02:43:37,632 UTC] IPID for 75.73.36.58: 299
+[2021-09-27 02:43:37,802 UTC] Associated 299 with e2cb71777736462d8ed06a056d848286
+[2021-09-27 02:43:37,803 UTC] 299 (HDID: e2cb71777736462d8ed06a056d848286) connected.
+[2021-09-27 02:43:37,964 UTC] IPID for 75.73.36.58: 299
+[2021-09-27 02:43:38,230 UTC] Associated 299 with e2cb71777736462d8ed06a056d848286
+[2021-09-27 02:43:38,231 UTC] 299 (HDID: e2cb71777736462d8ed06a056d848286) connected.
+[2021-09-27 02:44:55,763 UTC] IPID for 14.231.155.244: 53
+[2021-09-27 02:44:56,091 UTC] Associated 53 with ada97b894b6ac66ec3879aa801eaf56a
+[2021-09-27 02:44:56,094 UTC] 53 (HDID: ada97b894b6ac66ec3879aa801eaf56a) connected.
+[2021-09-27 02:44:56,424 UTC] IPID for 14.231.155.244: 53
+[2021-09-27 02:44:56,752 UTC] Associated 53 with ada97b894b6ac66ec3879aa801eaf56a
+[2021-09-27 02:44:56,753 UTC] 53 (HDID: ada97b894b6ac66ec3879aa801eaf56a) connected.
+[2021-09-27 02:44:57,105 UTC] IPID for 14.231.155.244: 53
+[2021-09-27 02:44:57,453 UTC] Associated 53 with ada97b894b6ac66ec3879aa801eaf56a
+[2021-09-27 02:44:57,454 UTC] 53 (HDID: ada97b894b6ac66ec3879aa801eaf56a) connected.
+[2021-09-27 02:46:04,156 UTC] IPID for 174.94.113.179: 678
+[2021-09-27 02:46:04,257 UTC] Associated 678 with 2f85df7488d0c6cd932b43a3df58b256
+[2021-09-27 02:46:04,259 UTC] 678 (HDID: 2f85df7488d0c6cd932b43a3df58b256) connected.
+[2021-09-27 02:48:32,199 UTC] IPID for 68.54.140.4: 274
+[2021-09-27 02:48:32,311 UTC] Associated 274 with bd7bb7df373201ef1be2aeb1f82da6d1
+[2021-09-27 02:48:32,313 UTC] 274 (HDID: bd7bb7df373201ef1be2aeb1f82da6d1) connected.
+[2021-09-27 02:48:32,429 UTC] IPID for 68.54.140.4: 274
+[2021-09-27 02:48:32,547 UTC] Associated 274 with bd7bb7df373201ef1be2aeb1f82da6d1
+[2021-09-27 02:48:32,547 UTC] 274 (HDID: bd7bb7df373201ef1be2aeb1f82da6d1) connected.
+[2021-09-27 02:48:50,588 UTC] IPID for 24.155.39.5: 544
+[2021-09-27 02:48:51,369 UTC] Associated 544 with 44fbb9535400df361ea98585c4988652
+[2021-09-27 02:48:51,371 UTC] 544 (HDID: 44fbb9535400df361ea98585c4988652) connected.
+[2021-09-27 02:48:52,821 UTC] IPID for 24.155.39.5: 544
+[2021-09-27 02:48:53,490 UTC] Associated 544 with 44fbb9535400df361ea98585c4988652
+[2021-09-27 02:48:53,491 UTC] 544 (HDID: 44fbb9535400df361ea98585c4988652) connected.
+[2021-09-27 02:48:54,386 UTC] IPID for 24.155.39.5: 544
+[2021-09-27 02:48:54,996 UTC] Associated 544 with 44fbb9535400df361ea98585c4988652
+[2021-09-27 02:48:54,997 UTC] 544 (HDID: 44fbb9535400df361ea98585c4988652) connected.
+[2021-09-27 02:48:55,590 UTC] IPID for 24.155.39.5: 544
+[2021-09-27 02:48:55,953 UTC] Associated 544 with 44fbb9535400df361ea98585c4988652
+[2021-09-27 02:48:55,954 UTC] 544 (HDID: 44fbb9535400df361ea98585c4988652) connected.
+[2021-09-27 02:48:56,651 UTC] IPID for 24.155.39.5: 544
+[2021-09-27 02:51:01,687 UTC] Exception while running a command
+Traceback (most recent call last):
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/network/aoprotocol.py", line 928, in net_cmd_ct
+    getattr(commands, called_function)(self.client, arg)
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/commands/admin.py", line 106, in ooc_cmd_spy
+    return send_ooc(f'You are now spying in {spyhere.name}.')
+NameError: name 'send_ooc' is not defined
+[2021-09-27 02:52:15,821 UTC] IPID for 180.190.124.4: 679
+[2021-09-27 02:52:16,061 UTC] Associated 679 with 300c9f5e8c56daa10b18b3b85ad9e4dc
+[2021-09-27 02:52:16,065 UTC] 679 (HDID: 300c9f5e8c56daa10b18b3b85ad9e4dc) connected.
+[2021-09-27 02:52:16,302 UTC] IPID for 180.190.124.4: 679
+[2021-09-27 02:52:16,541 UTC] Associated 679 with 300c9f5e8c56daa10b18b3b85ad9e4dc
+[2021-09-27 02:52:16,543 UTC] 679 (HDID: 300c9f5e8c56daa10b18b3b85ad9e4dc) connected.
+[2021-09-27 02:56:21,878 UTC] Exception while running a command
+Traceback (most recent call last):
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/network/aoprotocol.py", line 928, in net_cmd_ct
+    getattr(commands, called_function)(self.client, arg)
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/commands/admin.py", line 216, in ooc_cmd_permit
+    if len(c.hdid) != 32:
+UnboundLocalError: local variable 'c' referenced before assignment
+[2021-09-27 03:04:24,065 UTC] IPID for 72.95.145.186: 680
+[2021-09-27 03:04:24,409 UTC] Associated 680 with c87b73b1-fe2d-4974-8a0c-a48a3cb8a540
+[2021-09-27 03:04:24,416 UTC] 680 (HDID: c87b73b1-fe2d-4974-8a0c-a48a3cb8a540) connected.
+[2021-09-27 03:10:06,598 UTC] IPID for 174.234.128.244: 681
+[2021-09-27 03:10:06,737 UTC] Associated 681 with 8ccefebece96ecb6cf4483b530d0c7b9
+[2021-09-27 03:10:06,745 UTC] 681 (HDID: 8ccefebece96ecb6cf4483b530d0c7b9) connected.
+[2021-09-27 03:12:13,612 UTC] IPID for 180.222.23.224: 307
+[2021-09-27 03:12:13,923 UTC] Associated 307 with 3c4e3de6c1026c1b99d405a517e571e4
+[2021-09-27 03:12:13,925 UTC] 307 (HDID: 3c4e3de6c1026c1b99d405a517e571e4) connected.
+[2021-09-27 03:12:16,931 UTC] [LOB] Phoenix/ (307): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-27 03:12:20,819 UTC] [LOB] Phoenix/ (307): event area.leave (None)
+[2021-09-27 03:13:11,935 UTC] IPID for 70.177.223.70: 135
+[2021-09-27 03:13:12,029 UTC] Associated 135 with 113371c61feb86c98d0f415156540511
+[2021-09-27 03:13:12,030 UTC] 135 (HDID: 113371c61feb86c98d0f415156540511) connected.
+[2021-09-27 03:14:57,429 UTC] IPID for 50.243.115.49: 566
+[2021-09-27 03:14:57,803 UTC] Associated 566 with 6f1e9e70-3cfd-446d-87f2-df0af61e0f28
+[2021-09-27 03:14:57,807 UTC] 566 (HDID: 6f1e9e70-3cfd-446d-87f2-df0af61e0f28) connected.
+[2021-09-27 03:15:09,051 UTC] IPID for 50.243.115.49: 566
+[2021-09-27 03:15:09,429 UTC] Associated 566 with 6f1e9e70-3cfd-446d-87f2-df0af61e0f28
+[2021-09-27 03:15:09,430 UTC] 566 (HDID: 6f1e9e70-3cfd-446d-87f2-df0af61e0f28) connected.
+[2021-09-27 03:15:10,315 UTC] IPID for 50.243.115.49: 566
+[2021-09-27 03:15:10,432 UTC] IPID for 50.243.115.49: 566
+[2021-09-27 03:15:10,801 UTC] Associated 566 with 6f1e9e70-3cfd-446d-87f2-df0af61e0f28
+[2021-09-27 03:15:10,803 UTC] 566 (HDID: 6f1e9e70-3cfd-446d-87f2-df0af61e0f28) connected.
+[2021-09-27 03:15:13,437 UTC] [MOJ] Phoenix/HolyMan (18): event chat.announce (Server restarts for maintenance incoming)
+[2021-09-27 03:15:37,362 UTC] [LOB] HoboPhoenix/ (566): event char.change ({"from": null, "to": "HoboPhoenix"})
+[2021-09-27 03:33:38,012 UTC] start (None onto None): None
+[2021-09-27 03:33:46,477 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:33:46,934 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-27 03:33:46,936 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-27 03:34:15,704 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-27 03:34:23,086 UTC] [LOB] Phoenix/ (18): event area.leave (None)
+[2021-09-27 03:34:23,088 UTC] [MOJ] Phoenix/ (18): event area.join (None)
+[2021-09-27 03:34:44,579 UTC] login (18 onto None): {'profile': 'HolyMan'}
+[2021-09-27 03:37:52,798 UTC] IPID for 24.197.137.255: 682
+[2021-09-27 03:37:52,969 UTC] Associated 682 with f6616d1634a06f72d1aa959dfdf49cde
+[2021-09-27 03:37:52,973 UTC] 682 (HDID: f6616d1634a06f72d1aa959dfdf49cde) connected.
+[2021-09-27 03:37:53,299 UTC] IPID for 24.197.137.255: 682
+[2021-09-27 03:37:53,614 UTC] Associated 682 with f6616d1634a06f72d1aa959dfdf49cde
+[2021-09-27 03:37:53,615 UTC] 682 (HDID: f6616d1634a06f72d1aa959dfdf49cde) connected.
+[2021-09-27 03:37:53,744 UTC] IPID for 24.197.137.255: 682
+[2021-09-27 03:37:53,993 UTC] Associated 682 with f6616d1634a06f72d1aa959dfdf49cde
+[2021-09-27 03:37:53,994 UTC] 682 (HDID: f6616d1634a06f72d1aa959dfdf49cde) connected.
+[2021-09-27 03:39:59,553 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:41:32,825 UTC] IPID for 75.64.116.148: 131
+[2021-09-27 03:41:32,965 UTC] Associated 131 with 3c2cd2a0442bbe019d092ed17615abc0
+[2021-09-27 03:41:32,969 UTC] 131 (HDID: 3c2cd2a0442bbe019d092ed17615abc0) connected.
+[2021-09-27 03:43:53,363 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:44:10,858 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:46:19,974 UTC] IPID for 128.84.127.135: 21
+[2021-09-27 03:46:20,059 UTC] Associated 21 with 2375425785bbf8ddf397c6af79a6712c
+[2021-09-27 03:46:20,063 UTC] 21 (HDID: 2375425785bbf8ddf397c6af79a6712c) connected.
+[2021-09-27 03:46:20,154 UTC] IPID for 128.84.127.135: 21
+[2021-09-27 03:46:20,827 UTC] IPID for 128.84.127.135: 21
+[2021-09-27 03:46:20,917 UTC] Associated 21 with cbbd1452d20153ee27901f5a2a51183b
+[2021-09-27 03:46:20,921 UTC] 21 (HDID: cbbd1452d20153ee27901f5a2a51183b) connected.
+[2021-09-27 03:46:27,963 UTC] [LOB] ApolloSOJ/ (21): event char.change ({"from": null, "to": "ApolloSOJ"})
+[2021-09-27 03:46:29,364 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:46:45,178 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:01,682 UTC] IPID for 128.84.127.135: 21
+[2021-09-27 03:48:02,041 UTC] Associated 21 with b727dac9-0507-4be8-b22c-afbd6de33d51
+[2021-09-27 03:48:02,042 UTC] 21 (HDID: b727dac9-0507-4be8-b22c-afbd6de33d51) connected.
+[2021-09-27 03:48:34,198 UTC] [LOB] ApolloSOJ/ (21): event area.leave (None)
+[2021-09-27 03:48:39,498 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:42,309 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:43,081 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:43,733 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:45,081 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:45,834 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:46,670 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:46,880 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:52,856 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:54,123 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:55,374 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:56,002 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:48:56,744 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 03:49:05,613 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 04:02:45,604 UTC] start (None onto None): None
+[2021-09-27 04:02:51,716 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 04:02:52,185 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-27 04:02:52,187 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-27 04:03:16,258 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-27 04:03:24,426 UTC] login (18 onto None): {'profile': 'HolyMan'}
+[2021-09-27 04:03:26,548 UTC] [LOB] Phoenix/HolyMan (18): event area.leave (None)
+[2021-09-27 04:03:26,551 UTC] [MOJ] Phoenix/HolyMan (18): event area.join (None)
+[2021-09-27 04:03:34,099 UTC] Exception while running a command
+Traceback (most recent call last):
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/commands/admin.py", line 217, in ooc_cmd_permit
+    (client, TargetType.ID, id, False)[0]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/network/aoprotocol.py", line 928, in net_cmd_ct
+    getattr(commands, called_function)(self.client, arg)
+  File "/tsuserver3cc/OLEAO-ServerCC/OLEAO-ServerCC/server/commands/admin.py", line 220, in ooc_cmd_permit
+    (client, TargetType.ID, id, False)[0]
+IndexError: list index out of range
+[2021-09-27 04:07:12,695 UTC] start (None onto None): None
+[2021-09-27 04:07:16,761 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 04:07:17,259 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-27 04:07:17,261 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-27 04:07:25,805 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-27 04:07:33,193 UTC] login (18 onto None): {'profile': 'HolyMan'}
+[2021-09-27 04:07:34,413 UTC] [LOB] Phoenix/HolyMan (18): event area.leave (None)
+[2021-09-27 04:07:34,415 UTC] [MOJ] Phoenix/HolyMan (18): event area.join (None)
+[2021-09-27 04:10:37,106 UTC] IPID for 14.231.155.244: 53
+[2021-09-27 04:10:37,447 UTC] Associated 53 with 28a44f1c0829c7a7f07a9eb957334534
+[2021-09-27 04:10:37,452 UTC] 53 (HDID: 28a44f1c0829c7a7f07a9eb957334534) connected.
+[2021-09-27 04:13:04,776 UTC] IPID for 81.152.135.201: 683
+[2021-09-27 04:13:04,796 UTC] Associated 683 with 515bb467f046f22248b6b5f6fae03e8f
+[2021-09-27 04:13:04,799 UTC] 683 (HDID: 515bb467f046f22248b6b5f6fae03e8f) connected.
+[2021-09-27 04:13:57,349 UTC] IPID for 81.152.135.201: 683
+[2021-09-27 04:13:57,376 UTC] Associated 683 with 515bb467f046f22248b6b5f6fae03e8f
+[2021-09-27 04:13:57,377 UTC] 683 (HDID: 515bb467f046f22248b6b5f6fae03e8f) connected.
+[2021-09-27 04:28:59,129 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 04:28:59,638 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-27 04:28:59,639 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-27 04:29:07,532 UTC] [LOB] PhoenixPLvsPW/ (18): event char.change ({"from": null, "to": "PhoenixPLvsPW"})
+[2021-09-27 04:29:17,857 UTC] [LOB] PhoenixPLvsPW/ (18): event modcall (me an idiot modcalling)
+[2021-09-27 04:31:17,446 UTC] [LOB] PhoenixPLvsPW/ (18): event area.leave (None)
+[2021-09-27 04:43:57,662 UTC] login.invalid (18 onto None): None
+[2021-09-27 04:54:10,994 UTC] refresh (18 onto None): None
+[2021-09-27 04:54:20,506 UTC] [MOJ] Phoenix/HolyMan (18): event area.leave (None)
+[2021-09-27 04:54:20,892 UTC] IPID for 186.148.194.240: 18
+[2021-09-27 04:54:21,328 UTC] Associated 18 with b0f6d445-e4a1-4419-b3d0-2e903dc717eb
+[2021-09-27 04:54:21,330 UTC] 18 (HDID: b0f6d445-e4a1-4419-b3d0-2e903dc717eb) connected.
+[2021-09-27 04:54:28,629 UTC] [LOB] Phoenix/ (18): event char.change ({"from": null, "to": "Phoenix"})
+[2021-09-27 04:54:38,322 UTC] login (18 onto None): {'profile': 'HolyMan'}
+[2021-09-27 04:54:56,027 UTC] [LOB] Phoenix/HolyMan (18): event area.leave (None)
+[2021-09-27 04:54:56,029 UTC] [MOJ] Phoenix/HolyMan (18): event area.join (None)
+[2021-09-27 05:00:36,040 UTC] unmod.modpass (18 onto None): None
+[2021-09-27 05:00:36,954 UTC] refresh (18 onto None): None
+[2021-09-27 05:01:33,702 UTC] login (18 onto None): {'profile': 'default'}
