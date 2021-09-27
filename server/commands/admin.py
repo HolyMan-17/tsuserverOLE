@@ -201,7 +201,7 @@ It should check if you're an admin, then if you are, post an OOC message.
 """
 def ooc_cmd_derp(client, arg):
 	if not client.is_admin:
-		raise ClientError('You aren''t an admin.')
+		raise ClientError('You aren\'t an admin.')
 	client.send_ooc('I am Steel and I speak for the admin.py file.')
 
 def ooc_cmd_permit(client, arg):
@@ -215,8 +215,9 @@ def ooc_cmd_permit(client, arg):
 				id = int(id)
 				c = client.server.client_manager.get_targets\
 					(client, TargetType.ID, id, False)[0]
-				client.send_ooc(f'{c}')
 			except:
+				c = client.server.client_manager.get_targets\
+					(client, TargetType.ID, id, False)[0]
 				client.send_ooc(f'{id} does not look like a valid ID.')
 			if len(c.hdid) != 32:
 				raise ArgumentError('That does not seem to be a webAO client.')
@@ -251,10 +252,12 @@ def ooc_cmd_addmod(client, arg):
 	if len(arg) == 0:
 		raise ArgumentError('This command requires arguments.')
 	if len(args) < 2:
-		raise ArgumentError('This command requires ID and a set name as arguments.')
+		raise ArgumentError\
+			('This command requires ID and a set name as arguments.')
 	try:
 		id = int(args[0])
-		c = client.server.client_manager.get_targets(client, TargetType.ID, id, False)[0]
+		c = client.server.client_manager.get_targets\
+			(client, TargetType.ID, id, False)[0]
 		modfile = 'config/moderation.yaml'
 	except:
 		client.send_ooc(f'{id} does not look like a valid ID.')
@@ -634,7 +637,7 @@ def ooc_cmd_login(client, arg):
 		raise
     
 	if client.is_admin:
-		client.send_ooc('Logged in as administrator')
+		client.send_ooc('Logged in as administrator.')
 		database.log_misc('login', client, data={'profile': login_name})
 	elif client.is_mod:
 		client.send_ooc('Logged in as a moderator.')
