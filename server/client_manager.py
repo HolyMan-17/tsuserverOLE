@@ -710,6 +710,17 @@ class ClientManager:
 			return info
 			
 		def send_server_bgs(self):
+			"""
+			Sends a list of the backgrounds available in the server.
+			
+			Checks if the backgrounds.yaml exists. If so, parses
+			the yaml and returns a list. 
+
+			This class method does NOT take any parameters and
+			it's intended to be used as a helper for the function
+			send_ooc_bgslist in area.py.
+
+			"""
 			if os.path.exists('config/backgrounds.yaml'):
 				with open('config/backgrounds.yaml') as b:
 					bgs = yaml.load(b, Loader = yaml.FullLoader)

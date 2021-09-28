@@ -630,6 +630,26 @@ def ooc_cmd_bidisconnect(client, arg):
 				client.send_ooc('Area disconnected!')
 
 def ooc_cmd_bgslist(client, arg):
+	"""
+	Sends a list of the backgrounds available over 
+	OOC.
+
+	Calls send_server_bgs to create a list off
+	the backgrounds.yaml file.
+
+	Sends an OOC message in-client with every 
+	background in the server.
+
+	Usage: /bgslist 
+
+	Parameters:
+
+	client = An instance of the class Client
+	arg = The name of the OOC Command: bgslist.
+
+	Preconditions: None.
+
+	"""
 	bgslist = client.send_server_bgs()
 	client.send_ooc('Backgrounds list:\n'+'\n'.join(bgslist))
 	
