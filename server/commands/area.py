@@ -628,6 +628,10 @@ def ooc_cmd_bidisconnect(client, arg):
 					area.connections.remove(client.area)
 				client.send_ooc('Area disconnected!')
 
+def ooc_cmd_bgslist(client):
+	bgslist = client.send_server_bgs()
+	client.send_ooc(print('Backgrounds list:\n'+'\n'.join(bgslist)))
+	
 def ooc_cmd_getarea(client, arg):
 	"""
 	Show information about the current area.

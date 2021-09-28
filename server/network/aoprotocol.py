@@ -59,7 +59,8 @@ class AOProtocol(asyncio.Protocol):
 
 	def dezalgo(self, input):
 		"""
-		Turns any string into a de-zalgo'd version, with a tolerance to allow for normal diacritic use.
+		Turns any string into a de-zalgo'd version,
+		with a tolerance to allow for normal diacritic use.
 	
 	
 	

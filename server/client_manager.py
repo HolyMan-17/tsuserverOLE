@@ -24,6 +24,8 @@ import time
 import random
 from heapq import heappop, heappush
 
+from yaml.loader import FullLoader
+
 from server import database
 from server.timer import Timer
 from server.constants import TargetType
@@ -707,7 +709,12 @@ class ClientManager:
 							info += f' ({c.showname})'
 			return info
 			
-
+		def send_server_bgs(self):
+			if os.path.exists('config/backgrounds.yaml'):
+				with open('config/backgrounds.yaml') as b:
+					bgs = yaml.load(b, Loader = yaml.FullLoader)
+					return bgs
+						
 		def send_area_info(self, area, all, hubs=False, multiclients=False):
 			"""
 			Send information over OOC about a specific area.
