@@ -631,7 +631,7 @@ def ooc_cmd_bidisconnect(client, arg):
 
 def ooc_cmd_bgslist(client, arg):
 	bgslist = client.send_server_bgs()
-	client.send_ooc(print('Backgrounds list:\n'+'\n'.join(bgslist)))
+	client.send_ooc('Backgrounds list:\n'+'\n'.join(bgslist))
 	
 def ooc_cmd_getarea(client, arg):
 	"""
