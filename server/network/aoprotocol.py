@@ -337,8 +337,8 @@ class AOProtocol(asyncio.Protocol):
 		self.client.send_motd()
 		self.client.send_poll()
 		if len(self.client.hdid) == 32:
-			if self.client.ipid in self.server.webperms:
-				self.client.permission = True
+			#if self.client.ipid in self.server.webperms:
+			self.client.permission = True
 		else:
 			self.client.permission = True
 
