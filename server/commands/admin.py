@@ -611,21 +611,28 @@ def ooc_cmd_unmute(client, arg):
 
 def ooc_cmd_login(client, arg):
 	"""
-	Login as a moderator.
-	Usage: /login <password>
-	
-	if len(arg) == 0:
-		raise ArgumentError('You must specify the password.')
-	login_name = None
-	try:
-		login_name = client.auth_mod(arg)
-	except ClientError:
-		database.log_misc('login.invalid', client)
-		raise
-	if client.area.evidence_mod == 'HiddenCM':
-		client.area.broadcast_evidence_list()
-	client.send_ooc('Logged in as a moderator.')
-	database.log_misc('login', client, data={'profile': login_name})
+	Logs the user in as a moderator.
+
+    Calls auth_mod to check whether or not the user's login attempt is 
+    valid. 
+
+	Should return a message in-client confirming login and 
+	log profile in the server's internal log. 
+
+    Will throw an error and log it if not and send an OOC message in-client
+    stating that the user's login attempt was invalid. 
+
+    Usage: /login <password> (The user might not require using a mod pass
+    if their profile already exists in the moderation.yaml)
+
+    Parameters:
+    client = An instance of the class Client. 
+    arg = The mod pass used in order to log in.
+
+    Precondition: arg is a valid mod pass. 
+    Otherwise, throws login_invalid error. 
+
+
 	"""
 	login_name = None
 	try:
@@ -636,6 +643,25 @@ def ooc_cmd_login(client, arg):
     
 	client.send_ooc('Logged in as a moderator.')
 	database.log_misc('login', client, data={'profile': login_name})
+
+    # I don't know what this is supposed to be and why it was
+	# in the docstring, but I'll leave it here in case it bears
+	# any unexpected relevance.
+	# - HolyMan
+
+	# if len(arg) == 0:
+	#	raise ArgumentError('You must specify the password.')
+	# login_name = None
+	# try:
+	#	login_name = client.auth_mod(arg)
+	# except ClientError:
+	#	database.log_misc('login.invalid', client)
+	#	raise
+	# if client.area.evidence_mod == 'HiddenCM':
+	#	client.area.broadcast_evidence_list()
+	# client.send_ooc('Logged in as a moderator.')
+	# database.log_misc('login', client, data={'profile': login_name})
+
 
 @mod_only()
 def ooc_cmd_refresh(client, arg):
