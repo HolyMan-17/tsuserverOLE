@@ -13,6 +13,7 @@ __all__ = [
 	'ooc_cmd_status',
 	'ooc_cmd_area',
 	'ooc_cmd_getarea',
+	'ooc_cmd_bgslist',
 	'ooc_cmd_ga',
 	'ooc_cmd_getareas',
 	'ooc_cmd_gas',
