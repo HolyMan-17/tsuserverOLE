@@ -528,18 +528,80 @@
 - tag: '[GT]'
   category: Ghost Trick
   songs:
-  - name: '[GT] Victory!.opus'
-    length: 169.071
-  - name: '[GT] Ghosts and Logic.opus'
-    length: 157.080792
-  - name: '[GT] 4 Minutes Before Death (Allegro).opus'
-    length: 103.059563
-  - name: '[GT] Countdown.opus'
-    length: 41.071
-  - name: '[GT] 4 Minutes Before Death (Moderato).opus'
-    length: 127.066104
+  - name: '[GT] CHASE.opus'
+    length: 125.593188
+  - name: '[GT] The Last Desperate Struggle.opus'
+    length: 108.433188
+  - name: '[GT] The Imprisoned.opus'
+    length: 158.926521
+  - name: '[GT] Cabanela ~ A Lanky Man In Lovely White.opus'
+    length: 141.286521
+  - name: '[GT] Jowd ~ A Captive of Fate.opus'
+    length: 206.726521
+  - name: '[GT] Lynne ~ A Targeted Redhead.opus'
+    length: 160.673188
+  - name: '[GT] Epilogue ~The End of the ''Night''.opus'
+    length: 356.673188
+  - name: '[GT] REINCARNATION.opus'
+    length: 139.953188
+  - name: '[GT] Towards Nothingness....opus'
+    length: 141.606521
+  - name: '[GT] Fate Changed.opus'
+    length: 74.393188
+  - name: '[GT] DEADLINE.opus'
+    length: 121.739854
+  - name: '[GT] Informing About the Parting.opus'
+    length: 160.513188
+  - name: '[GT] 4 Minutes Before Death ~ VARIATION.opus'
+    length: 103.219854
+  - name: '[GT] Beauty and Dandy.opus'
+    length: 140.059854
+  - name: '[GT] Elegy for the Torn-off Gentleman.opus'
+    length: 170.873188
+  - name: '[GT] TRAUMA.opus'
+    length: 140.446521
+  - name: '[GT] AWAKENING.opus'
+    length: 162.779854
+  - name: '[GT] Dead Afterimage.opus'
+    length: 176.126521
+  - name: '[GT] A Dashing Enigma.opus'
+    length: 180.566521
+  - name: '[GT] PROVIDENCE.opus'
+    length: 160.846521
+  - name: '[GT] COMPLICATION.opus'
+    length: 118.833188
+  - name: '[GT] Chained Past.opus'
+    length: 166.113188
+  - name: '[GT] DARKNESS.opus'
+    length: 177.833188
+  - name: '[GT] SUSPICION.opus'
+    length: 169.113188
+  - name: '[GT] GHOST TRICK.opus'
+    length: 161.059854
+  - name: '[GT] Ray ~ A Ray of Light.opus'
+    length: 125.859854
+  - name: '[GT] Missile ~ A Courageous Little Animal.opus'
+    length: 118.286521
+  - name: '[GT] Prologue ~ The Beginning of the ''Night''.opus'
+    length: 167.126521
+  - name: '[GT] COUNT DOWN.opus'
+    length: 64.753188
+  - name: '[GT] Chicken Paradise.opus'
+    length: 122.233188
+  - name: '[GT] Fate Changed ~ VARIATION.opus'
+    length: 70.886521
+  - name: '[GT] Intermission ~The Deepening of the ''Night''.opus'
+    length: 98.579854
+  - name: '[GT] Madam ~ An Enveloping Smell of Roses.opus'
+    length: 132.419854
+  - name: '[GT] JINGLE.opus'
+    length: 9.366521
+  - name: '[GT] 4 Minutes Before Death.opus'
+    length: 124.913188
   - name: '[GT] The World of the Dead.opus'
-    length: 62.073458
+    length: 95.113188
+  - name: '[GT] Welcome to the Salon.opus'
+    length: 129.059854
 - tag: '[JAZZ]'
   category: Jazz
   songs:
@@ -1337,4 +1399,6 @@
   songs:
   - name: ~stop.opus
     length: 1.0065
-
+- tag: ''
+  category: Uncategorized
+  songs: []
