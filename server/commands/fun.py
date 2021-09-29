@@ -15,8 +15,21 @@ __all__ = [
 	'ooc_cmd_knock',
 	'ooc_cmd_tutturu',
 	'ooc_cmd_gimp',
-	'ooc_cmd_unshake'
+	'ooc_cmd_unshake',
+	'ooc_cmd_dailyjoke'
 ]
+
+def ooc_cmd_dailyjoke(client, arg):
+	"""
+	i accidentally closed the code on my dick when I was trying to code it
+
+	Isplays-day the oke-jay of the ay-day
+
+	Usage: /dailyjoke
+	"""
+	if len(arg) > 0:
+		raise ArgumentError('This command takes no arguments!')
+	client.send_ooc('penis')
 
 def ooc_cmd_tutturu(client, arg):
 	if not client.is_mod:
