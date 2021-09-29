@@ -776,10 +776,8 @@ def ooc_cmd_invite(client, arg):
 		c = client.server.client_manager.get_targets(client, TargetType.ID,
 													 int(arg), False)[0]
 		client.area.invite_list[c.id] = None
-		client.send_ooc('{} is invited to your area.'.format(
-			c.char_name))
-		c.send_ooc(
-			f'You were invited and given access to {client.area.name}.')
+		client.send_ooc('{} is invited to your area.'.format(c.char_name))
+		c.send_ooc(f'You were invited and given access to {client.area.name}.')
 		database.log_room('invite', client, client.area, target=c)
 	except:
 		raise ClientError('You must specify a target. Use /invite <id>')
@@ -842,7 +840,8 @@ def ooc_cmd_uninviteall(client, arg):
 def ooc_cmd_iclock(client, arg):
 	if len(arg) > 0:
 		raise ArgumentError('This command takes no arguments.')
-	if client.area.is_locked != client.area.Locked.FREE and client.area.is_locked != client.area.Locked.LOCKED:
+	if (client.area.is_locked != client.area.Locked.FREE 
+		and client.area.is_locked != client.area.Locked.LOCKED):
 		return ooc_cmd_uninviteall(client, arg)
 	if client not in client.area.owners and not client.is_mod:
 		raise ClientError('You are not a CM.')
@@ -863,12 +862,21 @@ def ooc_cmd_areakick(client, arg):
 	"""
 	if client not in client.area.owners and not client.is_mod:
 		raise ClientError('You must be a CM.')
-	elif client.area.is_locked == client.area.Locked.FREE and not client.is_mod:
+	elif (
+		client.area.is_locked == 
+		client.area.Locked.FREE 
+		and not client.is_mod
+		):
 		raise ClientError('Area isn\'t locked.')
 	elif not arg:
-		raise ClientError('You must specify a target. Use /areakick <id> [destination #]')
+		raise ClientError(
+			('You must specify a target. Use /areakick <id> [destination #]')
+			)
 	elif arg[0] == '*':
-		targets = [c for c in client.area.clients if c != client and c != client.area.owners]
+		targets = (
+			[c for c in client.area.clients 
+			if c != client and c != client.area.owners]
+			)
 	else:
 		targets = None
 		arg = arg.split()
@@ -876,7 +884,8 @@ def ooc_cmd_areakick(client, arg):
 			raise ClientError('You must be a mod to kick people to a specific area.')
 	if targets is None:
 		try:
-			targets = client.server.client_manager.get_targets(client, TargetType.ID, int(arg[0]), False)
+			targets = client.server.client_manager.get_targets\
+				(client, TargetType.ID, int(arg[0]), False)
 			for c in targets:
 				if len(arg) == 1:
 					area = client.server.area_manager.get_area_by_id(int(0))
@@ -894,7 +903,8 @@ def ooc_cmd_areakick(client, arg):
 				c.change_area(area)
 				c.send_ooc(
 					f"You were kicked from the area to area {output}.")
-				database.log_room('area_kick', client, client.area, target=c, message=output)
+				database.log_room\
+					('area_kick', client, client.area, target=c, message=output)
 				if client.area.is_locked != client.area.Locked.FREE:
 					client.area.invite_list.pop(c.id)
 		except AreaError:
@@ -919,7 +929,8 @@ def ooc_cmd_areakick(client, arg):
 				c.change_area(area)
 				c.send_ooc(
 					f"You were kicked from the area to area {output}.")
-				database.log_room('area_kick', client, client.area, target=c, message=output)
+				database.log_room\
+					('area_kick', client, client.area, target=c, message=output)
 				if client.area.is_locked != client.area.Locked.FREE:
 					client.area.invite_list.pop(c.id)
 		except AreaError:

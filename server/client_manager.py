@@ -639,7 +639,11 @@ class ClientManager:
 				area.Locked.LOCKED: '[LOCKED]'
 			}
 
-			if self not in area.owners and self not in area.clients and not self.is_mod and area.hidden == True:
+			if (
+			self not in area.owners 
+			and self not in area.clients and not 
+			self.is_mod and area.hidden == True
+			  ):
 				info += f'[{area.abbreviation}]: [Hidden][{area.status}]{lock[area.is_locked]}'
 				info += '\r\n'
 				info += 'This area\'s playercount is hidden.'
@@ -704,7 +708,12 @@ class ClientManager:
 						info += f'[{c.id}] {c.char_name}'
 					if self.is_mod:
 						info += f' ({c.ipid}): {c.name}'
-					if self in area.owners or self in area.clients or self.is_mod or area == self.server.area_manager.default_area():
+					if (
+					self in area.owners or self 
+					in area.clients or 
+					self.is_mod or area == 
+					self.server.area_manager.default_area()
+					  ):
 						if c.showname != '':
 							info += f' ({c.showname})'
 			return info
@@ -716,7 +725,7 @@ class ClientManager:
 			Checks if the backgrounds.yaml exists. If so, parses
 			the yaml and returns a list. 
 
-			This class method does NOT take any parameters and
+			This class method does NOT take any arguments and
 			it's intended to be used as a helper for the function
 			send_ooc_bgslist in area.py.
 
