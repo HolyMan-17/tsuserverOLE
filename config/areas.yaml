@@ -1,5 +1,5 @@
 - area: Lobby
-  background: DGSCourtroomJapaneseAnim
+  background: AJCourt
   bglock: true
   evidence_mod: Mods
   locking_allowed: false
@@ -7,7 +7,7 @@
   shouts_allowed: false
   showname_changes_allowed: true
 - area: User Hub
-  background: DGSCourtroomEnglishAnim
+  background: DGSEnglishCourt
   abbreviation: UHUB
   bglock: true
   evidence_mod: Mods
@@ -18,7 +18,7 @@
   is_hub: true
   hubtype: user
 - area: Courtroom 1
-  background: AACourtHD
+  background: AACourt
   bglock: false
   evidence_mod: CM
   locking_allowed: true
@@ -26,7 +26,7 @@
   shouts_allowed: true
   showname_changes_allowed: true
 - area: Courtroom 2
-  background: AJCourtHD
+  background: AJCourt
   bglock: false
   evidence_mod: CM
   locking_allowed: true
@@ -34,7 +34,7 @@
   shouts_allowed: true
   showname_changes_allowed: true
 - area: Courtroom 3
-  background: AJCourtHD
+  background: AJCourt
   bglock: false
   evidence_mod: CM
   locking_allowed: true
@@ -42,7 +42,7 @@
   shouts_allowed: true
   showname_changes_allowed: true
 - area: Courtroom 4
-  background: DDCourtroomHD
+  background: DDCourt
   bglock: false
   evidence_mod: CM
   locking_allowed: true
@@ -50,7 +50,7 @@
   shouts_allowed: true
   showname_changes_allowed: true
 - area: Courtroom 5
-  background: DGSCourtroomEnglishAnim
+  background: DGSEnglishCourt
   bglock: false
   evidence_mod: CM
   locking_allowed: true
