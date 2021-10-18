@@ -1,21 +1,25 @@
-# tsuserverCC, an Attorney Online server.
-#
-# Copyright (C) 2020 Kaiser <kaiserkaisie@gmail.com>
-#
-# Derivative of tsuserver3, an Attorney Online server. Copyright (C) 2016 argoneus <argoneuscze@gmail.com>
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU Affero General Public License as
-# published by the Free Software Foundation, either version 3 of the
-# License, or (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU Affero General Public License for more details.
-#
-# You should have received a copy of the GNU Affero General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
+tsuserverOLE, an Attorney Online server.
+
+Copyright (C) 2021 HolyMan <holyman20040202@gmail.com>
+
+Derivative of tsuserver3 and tsuserverCC, an Attorney Online server. Copyright (C) 2016 argoneus <argoneuscze@gmail.com>
+Copyright (C) 2016 argoneus <argoneuscze@gmail.com>
+Copyright (C) 2020 Kaiser <kaiserkaisie@gmail.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+ 
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+ 
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+"""
 
 import sys
 import os
@@ -37,10 +41,12 @@ from server.area_manager import AreaManager
 from server.client_manager import ClientManager
 from server.musiclist_manager import MusicListManager
 from server.hub_manager import HubManager
+from server.discordbot import Bridgebot
 from server.emotes import Emotes
 from server.exceptions import ClientError,ServerError
 from server.network.aoprotocol import AOProtocol
 from server.network.aoprotocol_ws import new_websocket_client
+from server.constants import remove_URL, dezalgo
 from server.network.masterserverclient import MasterServerClient
 import server.logger
 
@@ -593,6 +599,19 @@ class TsuServerCC:
 				except:
 					return
 		self.send_all_cmd_pred('ARUP', *args, pred=lambda x: x.area == area and not x in x.area.hub.owners)
+	
+	#def send_discord_chat(self, name, message, hub_id=0, area_id=0):
+
+		#area = self.hub_manager.get_hub_by_id(hub_id).get_area_by_id(area_id)
+		#cid = self.get_char_id_by_name(self.config['bridgebot']['character'])
+		#message = dezalgo(message)
+		#message = message.replace('}', '\\}').replace('{', '\\{').replace('`', '\\`').replace('|', '\\|').replace('~', '\\~').replace('º', '\\º').replace('№', '\\№').replace('√', '\\√').replace('\\s', '').replace('\\f', '')
+		#message = message.replace('#', '<num>').replace('&', '<and>').replace('%', '<percent>').replace('$', '<dollar>')
+		#message = self.config['bridgebot']['prefix'] + message
+		#if len(name) > 14:
+		#	name = name[:14].rstrip() + '.'
+        #area.send_ic(None, '1', 0, self.config['bridgebot']['character'], self.config['bridgebot']['emote'], message, self.config['bridgebot']['pos'], "", 0, cid, 0, 0, [0], 0, 0, 0, name, -1, "", "", 0, 0, 0, 0, "0", 0, "", "", "", 0, "")
+
 
 	def refresh(self):
 		"""

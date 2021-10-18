@@ -6,3 +6,4 @@ geoip2
 requests
 ffmpeg
 ffprobe
+nextcord

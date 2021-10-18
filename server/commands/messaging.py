@@ -29,7 +29,7 @@ __all__ = [
 
 def ooc_cmd_call(client, arg):
 	if len(arg) == 0:
-		if len(client.calling) > 0 and self.incall:
+		if len(client.calling) > 0 and client.incall:
 			msg = 'You are calling with:'
 			for c in client.calling:
 				msg += f'\n[{c.id}] {c.name}'
