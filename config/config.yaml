@@ -1,0 +1,118 @@
+# BE VERY CAREFUL ABOUT MODIFYING THIS FILE!
+# YAML has a very nitpicky syntax, and even something as simple as an extra
+# space can cause your server to fail to start.
+# Check your config here: http://www.yamllint.com/
+
+# Name of the server in OOC chat. It should be set to something that cannot
+# be used by other players.
+hostname: <dollar>H
+
+# Max number of player slots to be made. The player limit is not actually
+# enforced, but bad things are supposed to happen if this is exceeded.
+playerlimit: 100
+
+# Port to listen on. You should forward this port on your router.
+port: 27016
+
+# Whether or not this server can only be accessed by the local machine it is
+# being hosted on.
+local: false
+
+# Moderator password.
+# A more complex mod password configuration:
+#
+# modpass:
+#   mod1:
+#     password: foo
+#   mod2:
+#     password: bar
+#
+# You can add, remove, or change passwords for individual users.
+# When they are changed using /refresh, the affected users' mod statuses are
+# revoked.
+modpass: 
+
+# Sent to joining players.
+motd: "Welcome to your new and flashy server!"
+
+# Whether or not the server is open to webAO connections.
+# The websocket port must be different from the main server port
+# and must also be forwarded.
+use_websockets: true
+websocket_port: 50001
+# WebAO Asset URL for hosting files. Leave blank to use vanilla
+asset_url: http://ip-address/base/
+
+# Whether or not the server should be advertised on the server list.
+use_masterserver: false 
+masterserver_ip: master.aceattorneyonline.com
+masterserver_port: 27016
+
+# How the server should be listed on the server list.
+masterserver_name: Official Law Empire
+masterserver_description: Welcome to my new and flashy server!
+
+
+# Timeout for dead connections (in seconds).
+# To prevent issues, this value should be greater than 60.
+timeout: 250
+
+# Enables additional logging.
+debug: false
+
+music_change_floodguard:
+  times_per_interval: 3
+  interval_length: 20
+  mute_length: 180
+
+wtce_floodguard:
+  times_per_interval: 5
+  interval_length: 10
+  mute_length: 1000
+
+# How many subscripts zalgo is stripped by; 3 is recommended as not to hurt special language diacritics
+zalgo_tolerance: 3
+
+# How many simultaneous connections an IP address can make to the server. (Default: 16)
+multiclient_limit: 16
+
+# Maximum number of characters can a message contain
+max_chars: 256
+
+# Whether or not Discord webhooks are enabled, and if they are, the webhook URL to use.
+# If webhooks_enabled is set to false, no webhooks will function regardless of whether they are enabled or not.
+webhooks_enabled: false
+webhook_url: example.com
+
+# Settings for the modcall webhook. Leaving a setting blank will use its default behavior.
+modcall_webhook:
+  enabled: true
+  username: Modcall # the username the webhook will use
+  avatar_url: # url of a custom avatar image, leave blank to use the avatar the webhook was set up with
+  ping_on_no_mods: false # whether or not to ping mods if a modcall is received while no moderators are online
+  mod_role_id: # the role ID of the role you want pinged. leave blank to use @here instead
+
+kick_webhook:
+  enabled: true
+  username: Kick
+  avatar_url:
+
+ban_webhook: # fires on both regular and HDID bans
+  enabled: true
+  username: Ban
+  avatar_url:
+
+unban_webhook:
+  enabled: true
+  username: Unban
+  avatar_url:
+  
+warn_webhook:
+  enabled: true
+  username: Warn
+  avatar_url:
+
+unwarn_webhook:
+  enabled: true
+  username: Unwarn
+  avatar_url:
