@@ -59,16 +59,21 @@ def ooc_cmd_digitalroot(client, arg):
 	num = (num - 1) % 9 + 1
 	client.send_ooc(f'The digital root of {arg} is {num}.')
 
-def ooc_cmd_zelkie(client,arg):
-	"""Funny Humorous your mother joke command that gives you funny humerous your mother joke.
-	Parameters:
-	client = An instance of the class Client
-	arg= The name of the OOC Command: zelkie
+def ooc_cmd_zelkie(client, arg):
+	"""
+	Funny Humorous your mother joke command that gives you 
+	funny humerous your mother joke.
 
-	Preconditions= Shouldn't need any???
+	Parameters:
+
+	client = An instance of the class Client
+	arg = The name of the OOC Command: zelkie
+
+	Preconditions: Shouldn't need any???
 
 	"""
 	client.send_ooc("Funni humorous your mother joke why would u even know this command exists go away or ill throw tacos at u ")
+
 @mod_only()
 def ooc_cmd_disemvowel(client, arg):
 	"""
