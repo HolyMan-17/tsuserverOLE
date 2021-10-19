@@ -1,8 +1,8 @@
-# tsuserverCC
+# tsuserverOLE
 
-A Python-based server for Attorney Online, forked from [AttorneyOnline/tsuserver3](https://github.com/AttorneyOnline/tsuserver3)
+A Python-based server for Attorney Online, forked from [RealKaiser/tsuserverCC](https://github.com/RealKaiser/tsuserverCC)
 
-Requires Python 3.7+ and PyYAML.
+Requires Python 3.8+ and PyYAML.
 
 ### Changes/additions from tsuserver3
 * Testimony recording/playback system,
@@ -91,6 +91,8 @@ Requires Python 3.7+ and PyYAML.
     - Positions: Any (provided the background has it, otherwise will default to 'wit')
 * **bg** "background" 
     - Changes the current background, if not an official background, server will look for it in background/custom
+* **bgslist**
+    - Returns a list of all the backgrounds available in the server.
 * **currentbg**
     - Gives user the name of the area's current background.
 * **roll** "max" 
@@ -394,6 +396,6 @@ Requires Python 3.7+ and PyYAML.
 
 ## License
 
-This server is licensed under the AGPLv3 license. In short, if you use a modified version of tsuserverCC, you *must* distribute its source licensed under the AGPLv3 as well, and notify your users where the modified source may be found. The main difference between the AGPL and the GPL is that for the AGPL, network use counts as distribution. If you do not accept these terms, you should use [serverD](https://github.com/Attorney-Online-Engineering-Task-Force/serverD), which uses GPL rather than AGPL.
+This server is licensed under the AGPLv3 license. In short, if you use a modified version of tsuserverOLE, you *must* distribute its source licensed under the AGPLv3 as well, and notify your users where the modified source may be found. The main difference between the AGPL and the GPL is that for the AGPL, network use counts as distribution. If you do not accept these terms, you should use [serverD](https://github.com/Attorney-Online-Engineering-Task-Force/serverD), which uses GPL rather than AGPL.
 
 See the [LICENSE](LICENSE.md) file for more information.
