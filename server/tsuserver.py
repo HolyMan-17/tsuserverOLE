@@ -1,11 +1,9 @@
 """
-tsuserverOLE, an Attorney Online server.
-
-Copyright (C) 2021 HolyMan <holyman20040202@gmail.com>
-
-Derivative of tsuserver3 and tsuserverCC, an Attorney Online server. Copyright (C) 2016 argoneus <argoneuscze@gmail.com>
-Copyright (C) 2016 argoneus <argoneuscze@gmail.com>
+tsuserverCC, an Attorney Online server.
 Copyright (C) 2020 Kaiser <kaiserkaisie@gmail.com>
+
+Derivative of tsuserver3, an Attorney Online server. 
+Copyright (C) 2016 argoneus <argoneuscze@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
