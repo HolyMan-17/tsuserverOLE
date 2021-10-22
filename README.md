@@ -2,7 +2,7 @@
 
 A Python-based server for Attorney Online, forked from [RealKaiser/tsuserverCC](https://github.com/RealKaiser/tsuserverCC)
 
-Requires Python 3.8+ and PyYAML.
+Requires Python 3.7+ and PyYAML.
 
 ### Changes/additions from tsuserver3
 * Testimony recording/playback system,
