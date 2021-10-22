@@ -63,20 +63,6 @@ def check_deps():
             print('Couldn\'t install it for you, because you don\'t have pip, '
                 'or another error occurred.')
     
-    #try:
-        #import nextcord
-    #except ModuleNotFoundError:
-        #print('Installing dependencies for you...')
-        #try:
-            #subprocess.check_call([
-                #sys.executable, '-m', 'pip', 'install', '--user', '-r',
-                #'requirements.txt'
-                #])
-            #print('If an import error occurs after the installation, try '
-                    #'restarting the server.')
-        #except subprocess.CalledProcessError:
-            #print('Couldn\'t install it for you, because you don\'t have pip, '
-                #'or another error occurred.')
 
 
 # So this seems to be where the whole server kicks off. If we want the YAML builder to

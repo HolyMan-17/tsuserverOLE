@@ -598,19 +598,6 @@ class TsuServerCC:
 					return
 		self.send_all_cmd_pred('ARUP', *args, pred=lambda x: x.area == area and not x in x.area.hub.owners)
 	
-	#def send_discord_chat(self, name, message, hub_id=0, area_id=0):
-
-		#area = self.hub_manager.get_hub_by_id(hub_id).get_area_by_id(area_id)
-		#cid = self.get_char_id_by_name(self.config['bridgebot']['character'])
-		#message = dezalgo(message)
-		#message = message.replace('}', '\\}').replace('{', '\\{').replace('`', '\\`').replace('|', '\\|').replace('~', '\\~').replace('º', '\\º').replace('№', '\\№').replace('√', '\\√').replace('\\s', '').replace('\\f', '')
-		#message = message.replace('#', '<num>').replace('&', '<and>').replace('%', '<percent>').replace('$', '<dollar>')
-		#message = self.config['bridgebot']['prefix'] + message
-		#if len(name) > 14:
-		#	name = name[:14].rstrip() + '.'
-        #area.send_ic(None, '1', 0, self.config['bridgebot']['character'], self.config['bridgebot']['emote'], message, self.config['bridgebot']['pos'], "", 0, cid, 0, 0, [0], 0, 0, 0, name, -1, "", "", 0, 0, 0, 0, "0", 0, "", "", "", 0, "")
-
-
 	def refresh(self):
 		"""
 		Refresh as many parts of the server as possible:
