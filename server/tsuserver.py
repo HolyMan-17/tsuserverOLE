@@ -39,7 +39,6 @@ from server.area_manager import AreaManager
 from server.client_manager import ClientManager
 from server.musiclist_manager import MusicListManager
 from server.hub_manager import HubManager
-from server.discordbot import Bridgebot
 from server.emotes import Emotes
 from server.exceptions import ClientError,ServerError
 from server.network.aoprotocol import AOProtocol
