@@ -243,7 +243,7 @@ class AOProtocol(asyncio.Protocol):
 								 'deskmod', 'evidence', 'modcall_reason', 
 								 'cccc_ic_support', 'arup', 'casing_alerts', 
 								 'looping_sfx', 'additive', 'effects',
-								 'prezoom' 'y_offset', 'expanded_desk_mods')
+								 'prezoom', 'y_offset', 'expanded_desk_mods')
 		# Send Asset packet if asset_url is defined
 		if self.server.config['asset_url'] != '':
     			self.client.send_command('ASS', self.server.config['asset_url'])
