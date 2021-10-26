@@ -40,10 +40,14 @@ from server.statements import Statement
 from server.exceptions import ClientError, AreaError, ArgumentError, ServerError
 from server.fantacrypt import fanta_decrypt
 from .. import commands
+from packets import features_fl
 
 
 class AOProtocol(asyncio.Protocol):
 	"""The main class that deals with the AO protocol."""
+
+	#Feature flags
+	flpacket = features_fl()
 
 	class ArgType(Enum):
 		"""Represents the data type of an argument for a network command."""
@@ -234,17 +238,20 @@ class AOProtocol(asyncio.Protocol):
 								 self.server.config['playerlimit'])
 
 	def net_cmd_id(self, args):
-		"""Client version and PV
+		"""
+		Client version and PV.
+
+		Sends the FL packet that consists of a list of
+		features supported by the server.
+
+		Also sends ASSET packet for WebAO content 
+		if asset_url in config.yaml is defined. 
 		
 		ID#<pv:int>#<software:string>#<version:string>#%
 		"""
-		self.client.send_command('FL', 'yellowtext', 'customobjections', 
-								 'flipping', 'fastloading', 'noencryption',
-								 'deskmod', 'evidence', 'modcall_reason', 
-								 'cccc_ic_support', 'arup', 'casing_alerts', 
-								 'looping_sfx', 'additive', 'effects',
-								 'prezoom', 'y_offset', 'expanded_desk_mods')
-		# Send Asset packet if asset_url is defined
+	
+		self.client.send_command(*AOProtocol.flpacket)
+
 		if self.server.config['asset_url'] != '':
     			self.client.send_command('ASS', self.server.config['asset_url'])
 
@@ -886,10 +893,8 @@ class AOProtocol(asyncio.Protocol):
 		if not self.client.permission:
 			self.client.send_ooc('You need permission to use a web client, please ask staff.')
 			return
-
 		if not self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR):
 			return
-			
 		if self.client.name != args[0] and self.client.fake_name != args[0]:
 			if self.client.is_valid_name(args[0]):
 				self.client.name = args[0]
@@ -906,7 +911,6 @@ class AOProtocol(asyncio.Protocol):
 			self.client.send_ooc(
 				'Your OOC name is too long! Limit it to 30 characters.')
 			return
-			
 		for c in self.client.name:
 			if unicodedata.category(c) == 'Cf':
 				self.client.send_ooc(
