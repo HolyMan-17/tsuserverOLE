@@ -886,8 +886,10 @@ class AOProtocol(asyncio.Protocol):
 		if not self.client.permission:
 			self.client.send_ooc('You need permission to use a web client, please ask staff.')
 			return
+
 		if not self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR):
 			return
+			
 		if self.client.name != args[0] and self.client.fake_name != args[0]:
 			if self.client.is_valid_name(args[0]):
 				self.client.name = args[0]
@@ -904,6 +906,7 @@ class AOProtocol(asyncio.Protocol):
 			self.client.send_ooc(
 				'Your OOC name is too long! Limit it to 30 characters.')
 			return
+			
 		for c in self.client.name:
 			if unicodedata.category(c) == 'Cf':
 				self.client.send_ooc(
