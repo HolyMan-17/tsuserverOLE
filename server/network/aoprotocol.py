@@ -875,9 +875,14 @@ class AOProtocol(asyncio.Protocol):
 		"""
 		if not self.client.is_checked:
 			return
+
 		if self.client.is_ooc_muted:  # Checks to see if the client has been muted by a mod
 			self.client.send_ooc('You are muted by a moderator.')
+			
+		if self.client.char_id == -1:  #Checks if the user is a spectator
+			self.client.send_ooc("Spectators can't use OOC chat.")
 			return
+
 		if not self.client.permission:
 			self.client.send_ooc('You need permission to use a web client, please ask staff.')
 			return
@@ -889,10 +894,12 @@ class AOProtocol(asyncio.Protocol):
 				self.client.fake_name = args[0]
 			else:
 				self.client.fake_name = args[0]
+
 		if self.client.name == '':
 			self.client.send_ooc(
 				'You must insert a name with at least one letter')
 			return
+
 		if len(self.client.name) > 30:
 			self.client.send_ooc(
 				'Your OOC name is too long! Limit it to 30 characters.')
@@ -902,28 +909,34 @@ class AOProtocol(asyncio.Protocol):
 				self.client.send_ooc(
 					'You cannot use format characters in your name!')
 				return
+
 		if self.client.name.startswith(self.server.config['hostname']) or self.client.name.startswith('<dollar>G') or self.client.name.startswith('<dollar>M'):
 			self.client.send_ooc('That name is reserved!')
 			return
+
 		if args[1].startswith(' /'):
 			self.client.send_ooc(
 				'Your message was not sent for safety reasons: you left a space before that slash.'
 			)
 			return
+
 		if args[1].startswith('.'):
 			self.client.send_ooc(
 				'Your message was not sent for safety reasons: you left a dot before that message.'
 			)
 			return
+
 		if len(args[1]) > 300:
 			self.client.send_ooc(
 				'That message is too long!.'
 			)
 			return
+
 		if not args[1].startswith('/') and self.client.ooc_delay != None:
 			if self.client.ooc_delay > time.perf_counter():
 				self.client.send_ooc('You are trying to send messages too fast!')
 				return
+
 		if args[1].startswith('/'):
 			spl = args[1][1:].split(' ', 1)
 			cmd = spl[0].lower()
