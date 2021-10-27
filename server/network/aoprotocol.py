@@ -30,8 +30,6 @@ import logging
 logger_debug = logging.getLogger('debug')
 logger = logging.getLogger('events')
 
-from enum import Enum
-
 import arrow
 from time import localtime, strftime
 
@@ -40,7 +38,8 @@ from server.statements import Statement
 from server.exceptions import ClientError, AreaError, ArgumentError, ServerError
 from server.fantacrypt import fanta_decrypt
 from .. import commands
-from packets import features_fl
+from server.network.packets import features_fl
+from server.network.validator_parameters import *
 
 
 class AOProtocol(asyncio.Protocol):
@@ -48,13 +47,16 @@ class AOProtocol(asyncio.Protocol):
 
 	#Feature flags
 	flpacket = features_fl()
+	#Sets of parameters for IC message validators:
+	msgpre260 = validator_pre260()
+	msg130 = validator_130()
+	msg135 = validator_135()
+	msg140 = validator_140()
+	msg270 = validator_270()
+	msg290 = validator_290()
 
-	class ArgType(Enum):
-		"""Represents the data type of an argument for a network command."""
-		STR = 1,
-		STR_OR_EMPTY = 2,
-		INT = 3,
-		INT_OR_STR = 3
+
+
 
 	def __init__(self, server):
 		super().__init__()
@@ -189,9 +191,9 @@ class AOProtocol(asyncio.Protocol):
 		if len(args) != len(types):
 			return False
 		for i, arg in enumerate(args):
-			if len(arg) == 0 and types[i] != self.ArgType.STR_OR_EMPTY:
+			if len(arg) == 0 and types[i] != ArgType.STR_OR_EMPTY:
 				return False
-			if types[i] == self.ArgType.INT:
+			if types[i] == ArgType.INT:
 				try:
 					args[i] = int(arg)
 				except ValueError:
@@ -206,7 +208,7 @@ class AOProtocol(asyncio.Protocol):
 		:param args: a list containing all the arguments
 
 		"""
-		if not self.validate_net_cmd(args, self.ArgType.STR, needs_auth=False):
+		if not self.validate_net_cmd(args, ArgType.STR, needs_auth=False):
 			return
 		hdid = self.client.hdid = args[0]
 		ipid = self.client.ipid
@@ -288,7 +290,7 @@ class AOProtocol(asyncio.Protocol):
 		
 		AN#<page:int>#%
 		"""
-		if not self.validate_net_cmd(args, self.ArgType.INT, needs_auth=False):
+		if not self.validate_net_cmd(args, ArgType.INT, needs_auth=False):
 			return
 		if len(self.server.char_pages_ao1) > args[0] >= 0:
 			self.client.send_command('CI',
@@ -312,7 +314,7 @@ class AOProtocol(asyncio.Protocol):
 		AM#<page:int>#%
 
 		"""
-		if not self.validate_net_cmd(args, self.ArgType.INT, needs_auth=False):
+		if not self.validate_net_cmd(args, ArgType.INT, needs_auth=False):
 			return
 		if len(self.server.music_pages_ao1) > args[0] >= 0:
 			self.client.send_command('EM',
@@ -366,9 +368,9 @@ class AOProtocol(asyncio.Protocol):
 
 		"""
 		if not self.validate_net_cmd(args,
-									 self.ArgType.INT,
-									 self.ArgType.INT,
-									 self.ArgType.STR,
+									 ArgType.INT,
+									 ArgType.INT,
+									 ArgType.STR,
 									 needs_auth=False):
 			return
 		elif not self.client.is_checked:
@@ -433,23 +435,12 @@ class AOProtocol(asyncio.Protocol):
 		-Break off into net_cmd_validate_pre26, calling validate_net_cmd with appropriate parameters
 		Looks like it runs the IC message from the client through the validator, then returns 
 		"""
-		if self.validate_net_cmd(args, self.ArgType.STR, # msg_type
-								 self.ArgType.STR_OR_EMPTY, self.ArgType.STR, # pre, folder
-								 self.ArgType.STR, self.ArgType.STR, # anim, text
-								 self.ArgType.STR, self.ArgType.STR, # pos, sfx
-								 self.ArgType.INT, self.ArgType.INT, # anim_type, cid
-								 self.ArgType.INT, self.ArgType.INT_OR_STR, # sfx_delay, button
-								 self.ArgType.INT, self.ArgType.INT, # evidence, flip
-								 self.ArgType.INT, self.ArgType.INT): # ding, color
+		if self.validate_net_cmd(args, *AOProtocol.msgpre260): 
 			# Pre-2.6 validation monstrosity.
 			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color = args
 
 		#-Break off into net_cmd_validate_130, calling validate_net_cmd with appropriate parameters
-		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
-								   self.ArgType.STR,
-								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT_OR_STR, self.ArgType.INT,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT, self.ArgType.STR_OR_EMPTY):
+		elif self.validate_net_cmd(args, *AOProtocol.msg130):
 			# 1.3.0 validation monstrosity.
 			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname = args
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
@@ -457,12 +448,7 @@ class AOProtocol(asyncio.Protocol):
 				return
 		
 		#-Break off into net_cmd_validate_135, calling validate_net_cmd with appropriate parameters
-		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
-								   self.ArgType.STR,
-								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT_OR_STR, self.ArgType.INT,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT, self.ArgType.STR_OR_EMPTY,
-								   self.ArgType.INT, self.ArgType.INT):
+		elif self.validate_net_cmd(args, *AOProtocol.msg135):
 			# 1.3.5 validation monstrosity.
 			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, offset_pair = args
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
@@ -470,25 +456,14 @@ class AOProtocol(asyncio.Protocol):
 				return
 		
 		#-Break off into net_cmd_validate_140, calling validate_net_cmd with appropriate parameters
-		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
-								   self.ArgType.STR,
-								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT_OR_STR, self.ArgType.INT,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT, self.ArgType.STR_OR_EMPTY,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT):
+		elif self.validate_net_cmd(args, *AOProtocol.msg140):
 			# 1.4.0 validation monstrosity.
 			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, offset_pair, nonint_pre = args
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
 		#-Break off into net_cmd_validate_27, calling validate_net_cmd with appropriate parameters
-		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR,
-								   self.ArgType.STR,
-								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT, self.ArgType.INT,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT, self.ArgType.STR_OR_EMPTY,
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT, self.ArgType.STR,
-								   self.ArgType.INT, self.ArgType.STR, self.ArgType.STR, self.ArgType.STR):
+		elif self.validate_net_cmd(args, *AOProtocol.msg270):
 			# 2.7.0 validation monstrosity
 			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, offset_pair, nonint_pre, looping_sfx, screenshake, frame_screenshake, frame_realization, frame_sfx = args
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
@@ -496,14 +471,7 @@ class AOProtocol(asyncio.Protocol):
 				return
 		#-Break off into net_cmd_validate_29, calling validate_net_cmd with appropriate parameters.
 		#I think this is the latest set of validations... God, what a mess.
-		elif self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR_OR_EMPTY, self.ArgType.STR, #msg_type, pre, folder
-								   self.ArgType.STR, #anim
-								   self.ArgType.STR, self.ArgType.STR, self.ArgType.STR, self.ArgType.INT, #text, pos, sfx, anim_type
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT_OR_STR, self.ArgType.INT, #cid, sfx_delay, button, evidence
-								   self.ArgType.INT, self.ArgType.INT, self.ArgType.INT, self.ArgType.STR_OR_EMPTY, #flip, ding, color, showname
-								   self.ArgType.STR, self.ArgType.STR, self.ArgType.INT, self.ArgType.STR, #charid_pair, offset_pair
-								   self.ArgType.INT, self.ArgType.STR, self.ArgType.STR, self.ArgType.STR,
-								   self.ArgType.INT, self.ArgType.STR):
+		elif self.validate_net_cmd(args, *AOProtocol.msg290):
 			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, offset_pair, nonint_pre, looping_sfx, screenshake, frame_screenshake, frame_realization, frame_sfx, additive, effect = args
 			pair_args = charid_pair.split("^")
 			charid_pair = int(pair_args[0])
@@ -893,7 +861,7 @@ class AOProtocol(asyncio.Protocol):
 		if not self.client.permission:
 			self.client.send_ooc('You need permission to use a web client, please ask staff.')
 			return
-		if not self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.STR):
+		if not self.validate_net_cmd(args, ArgType.STR, ArgType.STR):
 			return
 		if self.client.name != args[0] and self.client.fake_name != args[0]:
 			if self.client.is_valid_name(args[0]):
@@ -1016,10 +984,10 @@ class AOProtocol(asyncio.Protocol):
 					if not self.client.area.allowmusic and self.client not in self.client.area.owners:
 						self.client.send_ooc('The CM has disallowed music changes, ask them to change the music.')
 						return
-					if not self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.INT):
-						if not self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.INT, self.ArgType.STR_OR_EMPTY):
-							if not self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.INT, self.ArgType.STR_OR_EMPTY, self.ArgType.INT):
-								if not self.validate_net_cmd(args, self.ArgType.STR, self.ArgType.INT, self.ArgType.STR_OR_EMPTY, self.ArgType.INT, self.ArgType.INT):
+					if not self.validate_net_cmd(args, ArgType.STR, ArgType.INT):
+						if not self.validate_net_cmd(args, ArgType.STR, ArgType.INT, ArgType.STR_OR_EMPTY):
+							if not self.validate_net_cmd(args, ArgType.STR, ArgType.INT, ArgType.STR_OR_EMPTY, ArgType.INT):
+								if not self.validate_net_cmd(args, ArgType.STR, ArgType.INT, ArgType.STR_OR_EMPTY, ArgType.INT, ArgType.INT):
 									return
 					if args[1] != self.client.char_id:
 						return
@@ -1114,8 +1082,8 @@ class AOProtocol(asyncio.Protocol):
 			)
 			return
 		if not self.validate_net_cmd(
-				args, self.ArgType.STR) and not self.validate_net_cmd(
-					args, self.ArgType.STR, self.ArgType.INT):
+				args, ArgType.STR) and not self.validate_net_cmd(
+					args, ArgType.STR, ArgType.INT):
 			return
 		if args[0] == 'testimony1':
 			sign = 'WT'
@@ -1218,7 +1186,7 @@ class AOProtocol(asyncio.Protocol):
 				"You are not on the area's invite list, and thus, you cannot change the Confidence bars!"
 			)
 			return
-		if not self.validate_net_cmd(args, self.ArgType.INT, self.ArgType.INT):
+		if not self.validate_net_cmd(args, ArgType.INT, ArgType.INT):
 			return
 		try:
 			self.client.area.change_hp(args[0], args[1])
