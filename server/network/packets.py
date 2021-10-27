@@ -33,5 +33,6 @@ def features_fl():
 				'deskmod', 'evidence', 'modcall_reason', 
 				'cccc_ic_support', 'arup', 'casing_alerts', 
 				'looping_sfx', 'additive', 'effects',
-				'prezoom', 'y_offset', 'expanded_desk_mods']
+				'prezoom', 'y_offset', 'expanded_desk_mods',
+                'auth_packet']
     return features
