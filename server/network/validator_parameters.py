@@ -1,9 +1,9 @@
 """
-tsuserverCC, an Attorney Online server.
-Copyright (C) 2020 Kaiser <kaiserkaisie@gmail.com>
+tsuserverOLE, an Attorney Online server.
+Copyright (C) 2021 KillerSteel <killermagnum5@gmail.com
 
-Derivative of tsuserver3, an Attorney Online server. 
-Copyright (C) 2016 argoneus <argoneuscze@gmail.com>
+Derivative of tsuserverCC, an Attorney Online server.
+Copyright (C) 2020 Kaiser <kaiserkaisie@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -28,8 +28,25 @@ class ArgType(Enum):
 		INT = 3,
 		INT_OR_STR = 3
 
+# These are the different sets of paramemeters needed for messages validation.
+# Each function returns a set of parameters needed by  each version of the client.
+
 def validator_pre260():
-    parameters =   [ArgType.STR, 
+    """
+    Absurdly big chunk of validation parameters for pre2.6 clients. 
+    
+    These contain the msg_type, pre, folder, anim, text,
+    pos, sfx, emote_mod, cid, sfx_delay, button, evidence,
+    flip, ding, color. 
+
+    This function is used in aoprotocol.py to assign 
+    these parameters as class variables.
+
+    Parameters: None
+    Preconditions: None
+    
+    """
+    parameters =   [ArgType.STR,                        
                     ArgType.STR_OR_EMPTY, ArgType.STR, 
 			        ArgType.STR, ArgType.STR, 
 		            ArgType.STR, ArgType.STR, 
@@ -40,6 +57,19 @@ def validator_pre260():
     return parameters
 
 def validator_130():
+    """
+    Absurdly big chunk of validation parameters for 1.3 clients. 
+    
+    These contain the msg_type, pre, folder, anim, text, pos, 
+    sfx, anim_type, cid, sfx_delay, button, evidence, flip, 
+    ding, color, showname.
+
+    This function is used in aoprotocol.py to assign 
+    these parameters as class variables.
+
+    Parameters: None
+    Preconditions: None
+    """
     
     parameters =   [ArgType.STR, 
                     ArgType.STR_OR_EMPTY, ArgType.STR,
@@ -53,6 +83,20 @@ def validator_130():
     return parameters
 
 def validator_135():
+    """
+    Absurdly big chunk of validation parameters for 1.35 clients. 
+    
+    These contain the msg_type, pre, folder, anim, text, pos, sfx, anim_type, 
+    cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, 
+    offset_pair.
+
+    This function is used in aoprotocol.py to assign 
+    these parameters as class variables.
+
+    Parameters: None
+    Preconditions: None
+    """
+    
     
     parameters =   [ArgType.STR,
                     ArgType.STR_OR_EMPTY,ArgType.STR,
@@ -66,6 +110,21 @@ def validator_135():
     return parameters
 
 def validator_140():
+    """
+    Absurdly big chunk of validation parameters for 1.4 clients. 
+    
+    These contain the msg_type, pre, folder, anim, text, 
+    pos, sfx, anim_type, cid, sfx_delay, button, evidence, 
+    flip, ding, color, showname, charid_pair, offset_pair, 
+    nonint_pre.
+
+    This function is used in aoprotocol.py to assign 
+    these parameters as class variables.
+
+    Parameters: None
+    Preconditions: None
+    """
+
     parameters =   [ArgType.STR,
                     ArgType.STR_OR_EMPTY,ArgType.STR,
 				    ArgType.STR,
@@ -79,6 +138,21 @@ def validator_140():
     return parameters 
 
 def validator_270():
+    """
+    Absurdly big chunk of validation parameters for 2.7 clients (RIP LMAO).
+    
+    These contain the msg_type, pre, folder, anim, text, pos, sfx, anim_type, 
+    cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, 
+    offset_pair, nonint_pre, looping_sfx, screenshake, frame_screenshake, 
+    frame_realization, frame_sfx.
+
+    This function is used in aoprotocol.py to assign 
+    these parameters as class variables.
+
+    Parameters: None
+    Preconditions: None
+    """ 
+
     parameters =   [ArgType.STR, ArgType.STR_OR_EMPTY, 
                     ArgType.STR,ArgType.STR,
 					ArgType.STR, ArgType.STR, 
@@ -94,6 +168,23 @@ def validator_270():
     return parameters
 
 def validator_290():
+    """
+    Absurdly big chunk of validation parameters for 2.9 clients. 
+    
+    These contain the msg_type, pre, folder, anim, text, 
+    pos, sfx, anim_type, cid, sfx_delay, button, evidence, 
+    flip, ding, color, showname, charid_pair, offset_pair, 
+    nonint_pre, looping_sfx, screenshake, frame_screenshake, 
+    frame_realization, frame_sfx, additive, effect.
+
+    This function is used in aoprotocol.py to assign 
+    these parameters as class variables. 
+
+    Parameters: None
+    Precondition: None
+
+    """
+
     parameters =       [ArgType.STR, ArgType.STR_OR_EMPTY, 
                         ArgType.STR, ArgType.STR, 
 						ArgType.STR, ArgType.STR, 

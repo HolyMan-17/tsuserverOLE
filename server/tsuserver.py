@@ -1,9 +1,9 @@
 """
-tsuserverCC, an Attorney Online server.
-Copyright (C) 2020 Kaiser <kaiserkaisie@gmail.com>
+tsuserverOLE, an Attorney Online server.
+Copyright (C) 2021 KillerSteel <killermagnum5@gmail.com
 
-Derivative of tsuserver3, an Attorney Online server. 
-Copyright (C) 2016 argoneus <argoneuscze@gmail.com>
+Derivative of tsuserverCC, an Attorney Online server.
+Copyright (C) 2020 Kaiser <kaiserkaisie@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -630,6 +630,7 @@ class TsuServerCC:
 						client.mod_profile_name = None
 						database.log_misc('unmod.modpass', client)
 						client.send_ooc('Your moderator credentials have been revoked.')
+						client.send_command('AUTH', '-1')
 			if isinstance(self.config['modpass'], str):
 				self.config['modpass'] = {'default': {'password': self.config['modpass']}}
 			if isinstance(cfg_yaml['modpass'], str):
@@ -646,6 +647,7 @@ class TsuServerCC:
 						database.log_misc('unmod.modpass', client)
 						client.send_ooc(
 							'Your moderator credentials have been revoked.')
+						client.send_command('AUTH', '-1')
 			self.config['modpass'] = cfg_yaml['modpass']
 
 		self.load_characters()
