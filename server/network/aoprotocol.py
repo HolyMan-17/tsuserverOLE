@@ -437,12 +437,16 @@ class AOProtocol(asyncio.Protocol):
 		"""
 		if self.validate_net_cmd(args, *AOProtocol.msgpre260): 
 			# Pre-2.6 validation monstrosity.
-			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color = args
+			(msg_type, pre, folder, anim, text, pos, sfx, 
+			anim_type, cid, sfx_delay, button, evidence, flip, 
+			ding, color) = args
 
 		#-Break off into net_cmd_validate_130, calling validate_net_cmd with appropriate parameters
 		elif self.validate_net_cmd(args, *AOProtocol.msg130):
 			# 1.3.0 validation monstrosity.
-			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname = args
+			(msg_type, pre, folder, anim, text, pos, sfx, 
+			anim_type, cid, sfx_delay, button, evidence, flip, 
+			ding, color, showname) = args
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
@@ -450,7 +454,9 @@ class AOProtocol(asyncio.Protocol):
 		#-Break off into net_cmd_validate_135, calling validate_net_cmd with appropriate parameters
 		elif self.validate_net_cmd(args, *AOProtocol.msg135):
 			# 1.3.5 validation monstrosity.
-			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, offset_pair = args
+			(msg_type, pre, folder, anim, text, pos, sfx, 
+			anim_type, cid, sfx_delay, button, evidence, flip, 
+			ding, color, showname, charid_pair, offset_pair) = args
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
@@ -465,14 +471,21 @@ class AOProtocol(asyncio.Protocol):
 		#-Break off into net_cmd_validate_27, calling validate_net_cmd with appropriate parameters
 		elif self.validate_net_cmd(args, *AOProtocol.msg270):
 			# 2.7.0 validation monstrosity
-			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, offset_pair, nonint_pre, looping_sfx, screenshake, frame_screenshake, frame_realization, frame_sfx = args
+			(msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, 
+			sfx_delay, button, evidence, flip, ding, color, showname, 
+			charid_pair, offset_pair, nonint_pre, looping_sfx, screenshake, 
+			frame_screenshake, frame_realization, frame_sfx) = args
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
 		#-Break off into net_cmd_validate_29, calling validate_net_cmd with appropriate parameters.
 		#I think this is the latest set of validations... God, what a mess.
 		elif self.validate_net_cmd(args, *AOProtocol.msg290):
-			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, offset_pair, nonint_pre, looping_sfx, screenshake, frame_screenshake, frame_realization, frame_sfx, additive, effect = args
+			(msg_type, pre, folder, anim, text, pos, sfx, 
+			anim_type, cid, sfx_delay, button, evidence, flip, 
+			ding, color, showname, charid_pair, offset_pair, 
+			nonint_pre, looping_sfx, screenshake, frame_screenshake, 
+			frame_realization, frame_sfx, additive, effect) = args
 			pair_args = charid_pair.split("^")
 			charid_pair = int(pair_args[0])
 			if (len(pair_args) > 1):

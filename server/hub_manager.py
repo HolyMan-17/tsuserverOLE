@@ -103,9 +103,17 @@ class HubManager:
 		
 	def savehub(self, client, arg):
 		hubname = f'storage/hub/{arg}.yaml'
-		new = not os.path.exists(hubname)
+  		hubpath = 'storage/hub'
+  		new = not os.path.exists(hubname)
+  		newhub = not os.path.exists(hubpath)
+
+		if newhub:
+			os.mkdir(hubpath)
+		
 		if not new:
 			os.remove(hubname)
+  
+		
 		hub = []
 		hub.append({'area': client.area.name, 'background': client.area.background, 'doc': client.area.doc, 'musiclist': client.area.cmusic_listname, 'reachable_areas': client.area.connections, 'hub': 'true'})
 		for area in client.area.subareas:
