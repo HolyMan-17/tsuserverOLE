@@ -638,10 +638,12 @@ def ooc_cmd_login(client, arg):
 	try:
 		login_name = client.auth_mod(arg)
 	except ClientError:
+		client.send_command('AUTH', '0')
 		database.log_misc('login.invalid', client)
 		raise
     
 	client.send_ooc('Logged in as a moderator.')
+	client.send_command('AUTH', '1')
 	database.log_misc('login', client, data={'profile': login_name})
 
     # I don't know what this is supposed to be and why it was
@@ -731,7 +733,8 @@ def ooc_cmd_unmod(client, arg):
 	client.mod_profile_name = None
 	if client.area.evidence_mod == 'HiddenCM':
 		client.area.broadcast_evidence_list()
-	client.send_ooc('you\'re not a mod now')
+	client.send_ooc('You\'re not a mod anymore.')
+	client.send_command('AUTH', '-1')
 
 
 @mod_only()
