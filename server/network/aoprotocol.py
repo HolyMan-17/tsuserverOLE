@@ -464,7 +464,9 @@ class AOProtocol(asyncio.Protocol):
 		#-Break off into net_cmd_validate_140, calling validate_net_cmd with appropriate parameters
 		elif self.validate_net_cmd(args, *AOProtocol.msg140):
 			# 1.4.0 validation monstrosity.
-			msg_type, pre, folder, anim, text, pos, sfx, anim_type, cid, sfx_delay, button, evidence, flip, ding, color, showname, charid_pair, offset_pair, nonint_pre = args
+			(msg_type, pre, folder, anim, text, pos, sfx, anim_type,
+			cid, sfx_delay, button, evidence, flip, ding, color,
+			showname, charid_pair, offset_pair, nonint_pre) = args
 			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
 				self.client.send_host_message("Showname changes are forbidden in this area!")
 				return
