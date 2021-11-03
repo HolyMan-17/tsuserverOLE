@@ -67,9 +67,16 @@ class MusicListManager:
 
 	def storelist(self, client, arg):
 		listname = f'storage/musiclist/{arg}.yaml'
+		path = 'storage/musiclist'
 		new = not os.path.exists(listname)
+		newpath = not os.path.exists(path)
+
+		if newpath:
+			os.mkdir(path)
+
 		if not new:
 			os.remove(listname)
+
 		with open(listname, 'w', encoding='utf-8') as list:
 			yaml.dump(client.area.cmusic_list, list)
 		client.send_ooc(f'Music list {arg} stored!')
