@@ -62,7 +62,7 @@ Specifics: Leans on 'spying' list in client_manager, 'spies' list and
 send_owner_command in area_manager. 'send_owner_command' is called
 as part of both the IC and OOC message handlers in aoprotocol.py.
 """
-def ooc_cmd_spy(client, arg):
+def ooc_cmd_spy(client, arg: str) -> None:
 	# Check if the user's a mod.
 	if not client.is_mod:
 		raise ArgumentError('You must be authorized to do that.')
@@ -204,7 +204,7 @@ def ooc_cmd_derp(client, arg):
 		raise ClientError('You aren\'t an admin.')
 	client.send_ooc('I am Steel and I speak for the admin.py file.')
 
-def ooc_cmd_permit(client, arg):
+def ooc_cmd_permit(client, arg: str) -> None: 
 	if not client.is_mod:
 		raise ClientError('You are not authorized.')
 	else:
@@ -240,7 +240,7 @@ def ooc_cmd_permit(client, arg):
 				yaml.dump(perms, dump)
 			client.server.webperms = perms
 
-def ooc_cmd_addmod(client, arg):
+def ooc_cmd_addmod(client, arg: str) -> None: 
 	"""
 	Registers target as a moderator, allowing them to login.
 	"""
@@ -276,7 +276,7 @@ def ooc_cmd_addmod(client, arg):
 		yaml.dump(mods, dump)
 	
 			
-def ooc_cmd_removemod(client, arg):
+def ooc_cmd_removemod(client, arg: str) -> None:
 	if not client.is_admin:
 		raise ClientError('You are not authorized.')
 	if len(arg) == 0:
@@ -325,7 +325,7 @@ def ooc_cmd_help(client, arg):
 
 
 @mod_only()
-def ooc_cmd_kick(client, arg):
+def ooc_cmd_kick(client, arg: str) -> None:
 	"""
 	Kick a player.
 	Usage: /kick <ipid|*|**> [reason]
@@ -373,7 +373,7 @@ def ooc_cmd_kick(client, arg):
 			f'No targets with the IPID {ipid} were found.')
 
 
-def ooc_cmd_ban(client, arg):
+def ooc_cmd_ban(client, arg: str) -> None:
 	"""
 	Ban a user. If a ban ID is specified instead of a reason,
 	then the IPID is added to an existing ban record.
@@ -384,7 +384,7 @@ def ooc_cmd_ban(client, arg):
 	kickban(client, arg, False)
 
 
-def ooc_cmd_banhdid(client, arg):
+def ooc_cmd_banhdid(client, arg: str) -> None:
 	"""
 	Ban both a user's HDID and IPID.
 	DANGER: Banning webAO users by HDID has unintended consequences.
@@ -463,7 +463,7 @@ def kickban(client, arg, ban_hdid):
 
 
 @mod_only()
-def ooc_cmd_unban(client, arg):
+def ooc_cmd_unban(client, arg: str) -> None:
 	"""
 	Unban a list of users.
 	Usage: /unban <ban_id...>
@@ -483,7 +483,7 @@ def ooc_cmd_unban(client, arg):
 		database.log_misc('unban', client, data={'id': ban_id})
 
 @mod_only()
-def ooc_cmd_warn(client, arg):
+def ooc_cmd_warn(client, arg: str) -> None:
 	"""
 	Warn the given user.
 	Usage: /warn <ipid> [reason]
@@ -525,7 +525,7 @@ def ooc_cmd_warn(client, arg):
 			f'No targets with the IPID {ipid} were found.')
 
 @mod_only()
-def ooc_cmd_unwarn(client, arg):
+def ooc_cmd_unwarn(client, arg: str) -> None:
 	"""
 	Remove a list of warn entries from the database.
 	Usage: /unwarn <warn_id ...>
@@ -609,7 +609,7 @@ def ooc_cmd_unmute(client, arg):
 				f'{raw_ipid} does not look like a valid IPID.')
 
 
-def ooc_cmd_login(client, arg):
+def ooc_cmd_login(client, arg: str) -> None:
 	"""
 	Logs the user in as a moderator.
 
@@ -758,7 +758,7 @@ def ooc_cmd_oocmute(client, arg):
 
 
 @mod_only()
-def ooc_cmd_oocunmute(client, arg):
+def ooc_cmd_oocunmute(client, arg: str) -> None:
 	"""
 	Allow an OOC-muted user to talk out-of-character.
 	Usage: /ooc_unmute <ooc-name>
@@ -777,7 +777,7 @@ def ooc_cmd_oocunmute(client, arg):
 		len(targets)))
 
 @mod_only()
-def ooc_cmd_bans(client, _arg):
+def ooc_cmd_bans(client, _arg: str) -> None:
 	"""
 	Get the 5 most recent bans.
 	Usage: /bans
@@ -795,7 +795,7 @@ def ooc_cmd_bans(client, _arg):
 	client.send_ooc(msg)
 
 @mod_only()
-def ooc_cmd_baninfo(client, arg):
+def ooc_cmd_baninfo(client, arg: str) -> None:
 	"""
 	Get information about a ban.
 	Usage: /baninfo <id> ['ban_id'|'ipid'|'hdid']
@@ -831,7 +831,7 @@ def ooc_cmd_baninfo(client, arg):
 			msg += 'Unban date: N/A'
 		client.send_ooc(msg)
 		
-def ooc_cmd_warns(client, arg):
+def ooc_cmd_warns(client, arg: str) -> None:
 	"""
 	Get the warns for a given IPID. Returns the last 5 by default.
 	Use with no arguments to view warns for your own IPID (must not be logged in)
@@ -890,7 +890,7 @@ def ooc_cmd_warns(client, arg):
 		
 	
 @mod_only()
-def ooc_cmd_warnsby(client, arg):
+def ooc_cmd_warnsby(client, arg: str) -> None:
 	"""
 	Get a list of warns issued by the given IPID. Returns the last 5 by default.
 	In the interest of streamlining, "me" resolves to the IPID of the user.
@@ -940,7 +940,7 @@ def ooc_cmd_warnsby(client, arg):
 		client.send_ooc(msg)
 		
 @mod_only()
-def ooc_cmd_warninfo(client, arg):
+def ooc_cmd_warninfo(client, arg: str) -> None:
 	"""
 	Get information about a warn.
 	Usage: /warninfo <warn_id>

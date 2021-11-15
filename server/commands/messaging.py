@@ -23,7 +23,8 @@ __all__ = [
 	'ooc_cmd_call',
 	'ooc_cmd_acceptcall',
 	'ooc_cmd_endcall',
-	'ooc_cmd_holdcall'
+	'ooc_cmd_holdcall',
+	'ooc_cmd_discord'
 ]
 
 
@@ -165,6 +166,12 @@ def ooc_cmd_g(client, arg):
 		raise ArgumentError("You can't send an empty message.")
 	client.server.broadcast_global(client, arg)
 	database.log_room('chat.global', client, client.area, message=arg)
+
+def ooc_cmd_discord(client, arg):
+	if len(arg) > 0:
+		raise ClientError('This command does not take any arguments!')
+	
+	client.send_ooc('Join our Discord here!:\n https://discord.gg/HxvKZtJsYz')
 
 def ooc_cmd_p(client, arg):
 	"""

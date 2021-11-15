@@ -52,14 +52,14 @@ __all__ = [
 	'ooc_cmd_gethubs'
 ]
 
-def ooc_cmd_totalmulticlients(client, arg):
+def ooc_cmd_totalmulticlients(client, arg: str) -> None:
 	"""
 	Show information about all areas.
 	Usage: /getareas
 	"""
 	client.send_area_info(client.area, False, False, True)
 
-def ooc_cmd_poslock(client, arg):
+def ooc_cmd_poslock(client, arg: str) -> None:
 	if len(arg) == 0:
 		if len(client.area.poslock) > 0:
 			msg = 'This area is poslocked to:'
@@ -89,7 +89,7 @@ def ooc_cmd_poslock(client, arg):
 		client.area.broadcast_ooc(f'Locked pos into {pos}.')
 		client.area.send_command('SD', '*'.join(client.area.poslock))
 
-def ooc_cmd_allclients(client, arg):
+def ooc_cmd_allclients(client, arg: str) -> None:
 	if not client.is_mod:
 		raise ArgumentError('You must be authorized to do that.')
 	msg = 'Connected clients:'
@@ -97,7 +97,7 @@ def ooc_cmd_allclients(client, arg):
 		msg += f'\n{c.name}'
 	client.send_ooc(msg)
 
-def ooc_cmd_shouts(client, arg):
+def ooc_cmd_shouts(client, arg: str) -> None:
 	if client not in client.area.owners and not client.is_mod:
 		raise ClientError('You must be a CM.')
 	if client.area.shouts_allowed:
@@ -107,7 +107,7 @@ def ooc_cmd_shouts(client, arg):
 		client.area.shouts_allowed = True
 		client.area.broadcast_ooc('Shouts have been allowed in this area.')
 
-def ooc_cmd_hidecount(client, arg):
+def ooc_cmd_hidecount(client, arg: str) -> None:
 	if client not in client.area.owners and not client.is_mod:
 		raise ClientError('You must be a CM.')
 	if len(arg) > 0:
@@ -128,7 +128,7 @@ def ooc_cmd_hidecount(client, arg):
 			client.area.sub_arup_players()
 		client.area.broadcast_ooc('The playercount for this area has been revealed.')
 	
-def ooc_cmd_savehub(client, arg):
+def ooc_cmd_savehub(client, arg: str) -> None:
 	if not client.area.is_hub:
 		raise ClientError('You must be in a hub.')
 	if not client in client.area.owners and not client.is_mod:
@@ -139,7 +139,7 @@ def ooc_cmd_savehub(client, arg):
 		raise ArgumentError('Contains bad characters')
 	client.server.hub_manager.savehub(client, arg)
 	
-def ooc_cmd_loadhub(client, arg):
+def ooc_cmd_loadhub(client, arg: str) -> None:
 	if not client.area.is_hub:
 		raise ClientError('You must be in a hub.')
 	if not client in client.area.owners and not client.is_mod:
@@ -148,7 +148,7 @@ def ooc_cmd_loadhub(client, arg):
 		raise ArgumentError('Contains bad characters')
 	client.server.hub_manager.loadhub(client, arg)
 
-def ooc_cmd_addarea(client, arg):
+def ooc_cmd_addarea(client, arg: str) -> None:
 	if not client.area.is_hub and not client.area.sub:
 		raise ClientError('You can only create areas in hubs.')
 	if not client in client.area.owners and not client.is_mod:
@@ -162,7 +162,7 @@ def ooc_cmd_addarea(client, arg):
 		raise ArgumentError('That name is too long!')
 	client.server.hub_manager.addsub(client, arg)
 	
-def ooc_cmd_addareas(client, arg):
+def ooc_cmd_addareas(client, arg: str) -> None:
 	if not client.area.is_hub and not client.area.sub:
 		raise ClientError('You can only create areas in hubs.')
 	if not client in client.area.owners and not client.is_mod:
@@ -178,7 +178,7 @@ def ooc_cmd_addareas(client, arg):
 		raise ArgumentError('Must input at least 1 or more.')
 	client.server.hub_manager.addmoresubs(client, amount)
 
-def ooc_cmd_removearea(client, arg):
+def ooc_cmd_removearea(client, arg: str) -> None:
 	if not client.area.sub:
 		raise ClientError('Cannot destroy a non-subarea.')
 	if client not in client.area.owners and not client.is_mod:
@@ -187,7 +187,7 @@ def ooc_cmd_removearea(client, arg):
 		raise ArgumentError('This command takes no arguments.')
 	client.server.hub_manager.removesub(client)
 
-def ooc_cmd_clearhub(client, arg):
+def ooc_cmd_clearhub(client, arg: str) -> None:
 	if not client.area.is_hub:
 		raise ClientError('Must be in a hub to clear a hub.')
 	if client not in client.area.owners and not client.is_mod:
@@ -197,7 +197,7 @@ def ooc_cmd_clearhub(client, arg):
 	client.server.hub_manager.clearhub(client)
 
 
-def ooc_cmd_rename(client, arg):
+def ooc_cmd_rename(client, arg: str) -> None:
 	if client not in client.area.owners and not client.is_mod:
 		raise ClientError('You must be a CM.')
 	if not client.area.is_hub and not client.area.sub:
@@ -258,7 +258,7 @@ def ooc_cmd_rename(client, arg):
 		client.area.hub.sub_arup_lock()
 	client.send_ooc('Area renamed!')
 
-def ooc_cmd_bg(client, arg):
+def ooc_cmd_bg(client, arg: str) -> None:
 	"""
 	Set the background of a room.
 	Usage: /bg <background>
@@ -281,7 +281,7 @@ def ooc_cmd_bg(client, arg):
 		f'{client.char_name} changed the background to {arg}.')
 	database.log_room('bg', client, client.area, message=arg)
 
-def ooc_cmd_addcustom(client, arg):
+def ooc_cmd_addcustom(client, arg: str) -> None:
 	"""
 	Adds a link to the custom list.
 	Usage: /addcustom <link>
@@ -294,7 +294,7 @@ def ooc_cmd_addcustom(client, arg):
 	else:
 		raise ClientError('You must play as a custom character.')
 
-def ooc_cmd_removecustom(client, arg):
+def ooc_cmd_removecustom(client, arg: str) -> None:
 	"""
 	Removes a link from the custom list.
 	Usage: /removecustom
@@ -306,7 +306,7 @@ def ooc_cmd_removecustom(client, arg):
 	except KeyError:
 		raise ClientError('You do not have a custom set.')
 
-def ooc_cmd_customlist(client, arg):
+def ooc_cmd_customlist(client, arg: str) -> None:
 	"""
 	Updates the custom list and then shows it.
 	Usage: /customlist
@@ -320,7 +320,7 @@ def ooc_cmd_customlist(client, arg):
 		msg += f' \n{customadder}: {customlink}'
 	client.send_ooc(msg)
 
-def ooc_cmd_clearcustomlist(client, arg):
+def ooc_cmd_clearcustomlist(client, arg: str) -> None:
 	"""
 	Updates the custom list and then shows it.
 	Usage: /customlist
@@ -328,7 +328,7 @@ def ooc_cmd_clearcustomlist(client, arg):
 	client.area.custom_list.clear()
 	client.area.broadcast_ooc('The custom list was cleared.')
 
-def ooc_cmd_bglock(client, arg):
+def ooc_cmd_bglock(client, arg: str) -> None:
 	"""
 	Toggle whether or not non-moderators are allowed to change
 	the background of a room.
@@ -350,7 +350,7 @@ def ooc_cmd_bglock(client, arg):
 
 
 @mod_only()
-def ooc_cmd_allowiniswap(client, arg):
+def ooc_cmd_allowiniswap(client, arg: str) -> None:
 	"""
 	Toggle whether or not users are allowed to swap INI files in character
 	folders to allow playing as a character other than the one chosen in
@@ -365,7 +365,7 @@ def ooc_cmd_allowiniswap(client, arg):
 	database.log_room('iniswap', client, client.area, message=client.area.iniswap_allowed)
 
 
-def ooc_cmd_allowblankposting(client, arg):
+def ooc_cmd_allowblankposting(client, arg: str) -> None:
 	"""
 	Toggle whether or not in-character messages purely consisting of spaces
 	are allowed.
@@ -381,7 +381,7 @@ def ooc_cmd_allowblankposting(client, arg):
 	database.log_room('blankposting', client, client.area, message=client.area.blankposting_allowed)
 
 
-def ooc_cmd_forcenonintpres(client, arg):
+def ooc_cmd_forcenonintpres(client, arg: str) -> None:
 	"""
 	Toggle whether or not all pre-animations lack a delay before a
 	character begins speaking.
@@ -397,7 +397,7 @@ def ooc_cmd_forcenonintpres(client, arg):
 	database.log_room('force_nonint_pres', client, client.area, message=client.area.non_int_pres_only)
 
 
-def ooc_cmd_status(client, arg):
+def ooc_cmd_status(client, arg: str) -> None:
 	"""
 	Show or modify the current status of a room.
 	Usage: /status <idle|rp|casing|looking-for-players|lfp|recess|gaming>
@@ -417,7 +417,7 @@ def ooc_cmd_status(client, arg):
 		except AreaError:
 			raise
 	
-def ooc_cmd_hubstatus(client, arg):
+def ooc_cmd_hubstatus(client, arg: str) -> None:
 	"""
 	Changes a hub and all it's subareas to specified status.
 	Usage: /hubstatus <idle|rp|casing|looking-for-players|lfp|recess|gaming>
@@ -436,7 +436,7 @@ def ooc_cmd_hubstatus(client, arg):
 		except AreaError:
 			raise
 
-def ooc_cmd_area(client, arg):
+def ooc_cmd_area(client, arg: str) -> None:
 	"""
 	List areas, or go to another area/room.
 	Usage: /area [id]
@@ -485,7 +485,7 @@ def ooc_cmd_area(client, arg):
 				raise
 		client.send_ooc(f'Area changed to {area.name}')
 
-def ooc_cmd_connect(client, arg):
+def ooc_cmd_connect(client, arg: str) -> None:
 	"""
 	Connects areas together. One way.
 	"""
@@ -512,7 +512,7 @@ def ooc_cmd_connect(client, arg):
 				return
 	raise ArgumentError('Area not found. Use an area\'s abbreviation')
 
-def ooc_cmd_biconnect(client, arg):
+def ooc_cmd_biconnect(client, arg: str) -> None:
 	"""
 	Connects areas together. Two-way.
 	"""
@@ -546,7 +546,7 @@ def ooc_cmd_biconnect(client, arg):
 				return
 	raise ArgumentError('Area not found. Use an area\'s abbreviation')
 
-def ooc_cmd_connectlist(client, arg):
+def ooc_cmd_connectlist(client, arg: str) -> None:
 	"""
 	Shows what areas the current area is connected to.
 	"""
@@ -564,7 +564,7 @@ def ooc_cmd_connectlist(client, arg):
 	msg += '.'
 	client.send_ooc(msg)
 
-def ooc_cmd_clearconnect(client, arg):
+def ooc_cmd_clearconnect(client, arg: str) -> None:
 	"""
 	Removes all connections to other areas. One-way.
 	"""
@@ -576,7 +576,7 @@ def ooc_cmd_clearconnect(client, arg):
 	client.area.is_restricted = False
 	client.area.broadcast_ooc(f'All {client.area.name} connections cleared.')
 
-def ooc_cmd_hubclearconnect(client, arg):
+def ooc_cmd_hubclearconnect(client, arg: str) -> None:
 	"""
 	Removes all connections to other areas. One-way.
 	"""
@@ -591,7 +591,7 @@ def ooc_cmd_hubclearconnect(client, arg):
 		area.is_restricted = False
 	client.area.broadcast_ooc(f'All connections in hub cleared.')
 
-def ooc_cmd_disconnect(client, arg):
+def ooc_cmd_disconnect(client, arg: str) -> None:
 	"""
 	Removes a one-way connection to an area.
 	"""
@@ -610,7 +610,7 @@ def ooc_cmd_disconnect(client, arg):
 	else:
 		raise ArgumentError('No areas to disconnect from, use /clearconnect to unrestrict the area.')
 
-def ooc_cmd_bidisconnect(client, arg):
+def ooc_cmd_bidisconnect(client, arg: str) -> None:
 	"""
 	Removes two-way connection between areas.
 	"""
@@ -629,7 +629,7 @@ def ooc_cmd_bidisconnect(client, arg):
 					area.connections.remove(client.area)
 				client.send_ooc('Area disconnected!')
 
-def ooc_cmd_bgslist(client, arg):
+def ooc_cmd_bgslist(client, arg: str) -> None:
 	"""
 	Sends a list of the backgrounds available over 
 	OOC.
@@ -653,42 +653,42 @@ def ooc_cmd_bgslist(client, arg):
 	bgslist = client.send_server_bgs()
 	client.send_ooc('Backgrounds list:\n'+'\n'.join(bgslist))
 	
-def ooc_cmd_getarea(client, arg):
+def ooc_cmd_getarea(client, arg: str) -> None:
 	"""
 	Show information about the current area.
 	Usage: /getarea
 	"""
 	client.send_area_info(client.area, False)
 	
-def ooc_cmd_ga(client, arg):
+def ooc_cmd_ga(client, arg: str) -> None:
 	"""
 	Show information about the current area.
 	Usage: /getarea
 	"""
 	client.send_area_info(client.area, False)
 
-def ooc_cmd_getareas(client, arg):
+def ooc_cmd_getareas(client, arg: str) -> None:
 	"""
 	Show information about all areas.
 	Usage: /getareas
 	"""
 	client.send_area_info(client.area, True)
 	
-def ooc_cmd_gas(client, arg):
+def ooc_cmd_gas(client, arg: str) -> None:
 	"""
 	Show information about all areas.
 	Usage: /getareas
 	"""
 	client.send_area_info(client.area, True)
 	
-def ooc_cmd_gethubs(client, arg):
+def ooc_cmd_gethubs(client, arg: str) -> None:
 	"""
 	Show information about all areas.
 	Usage: /getareas
 	"""
 	client.send_area_info(client.area, True, True)
 
-def ooc_cmd_lock(client, arg):
+def ooc_cmd_lock(client, arg: str) -> None:
 	"""
 	Prevent users from joining the current area.
 	Usage: /lock <optional password>
@@ -713,7 +713,7 @@ def ooc_cmd_lock(client, arg):
 	else:
 		raise ClientError('Only CM can lock the area.')
 
-def ooc_cmd_password(client, arg):
+def ooc_cmd_password(client, arg: str) -> None:
 	if client not in client.area.owners and not client.is_mod:
 		raise ClientError('You must be CM')
 	if client.area.is_locked == client.area.Locked.FREE:
@@ -731,7 +731,7 @@ def ooc_cmd_password(client, arg):
 		raise ArgumentError('Too many arguments, use /password <password> or no argument.')
 		
 	
-def ooc_cmd_unlock(client, arg):
+def ooc_cmd_unlock(client, arg: str) -> None:
 	"""
 	Allow anyone to freely join the current area.
 	Usage: /unlock
@@ -746,7 +746,7 @@ def ooc_cmd_unlock(client, arg):
 		raise ClientError('Only CM can unlock area.')
 
 
-def ooc_cmd_spectatable(client, arg):
+def ooc_cmd_spectatable(client, arg: str) -> None:
 	"""
 	Allow users to join the current area, but only as spectators.
 	Usage: /spectatable
@@ -761,7 +761,7 @@ def ooc_cmd_spectatable(client, arg):
 		raise ClientError('Only CM can make the area spectatable.')
 		
 
-def ooc_cmd_invite(client, arg):
+def ooc_cmd_invite(client, arg: str) -> None:
 	"""
 	Allow a particular user to join a locked or spectator-only area.
 	Usage: /invite <id>
@@ -782,7 +782,7 @@ def ooc_cmd_invite(client, arg):
 	except:
 		raise ClientError('You must specify a target. Use /invite <id>')
 
-def ooc_cmd_uninvite(client, arg):
+def ooc_cmd_uninvite(client, arg: str) -> None:
 	"""
 	Revoke an invitation for a particular user.
 	Usage: /uninvite <id>
@@ -815,7 +815,7 @@ def ooc_cmd_uninvite(client, arg):
 		client.send_ooc("No targets found.")
 
 
-def ooc_cmd_uninviteall(client, arg):
+def ooc_cmd_uninviteall(client, arg: str) -> None:
 	"""
 	Revoke invitations for all new users.
 	Usage: /uninviteall
@@ -837,7 +837,7 @@ def ooc_cmd_uninviteall(client, arg):
 		else:
 			client.area.broadcast_ooc("IClock enabled.")
 
-def ooc_cmd_iclock(client, arg):
+def ooc_cmd_iclock(client, arg: str) -> None:
 	if len(arg) > 0:
 		raise ArgumentError('This command takes no arguments.')
 	if (client.area.is_locked != client.area.Locked.FREE 
@@ -855,7 +855,7 @@ def ooc_cmd_iclock(client, arg):
 			client.area.invite_list[c.id] = None
 		client.area.broadcast_ooc("IClock enabled.")
 
-def ooc_cmd_areakick(client, arg):
+def ooc_cmd_areakick(client, arg: str) -> None:
 	"""
 	Remove a user from the current area and move them to another area.
 	Usage: /area_kick <id> [destination]

@@ -720,7 +720,7 @@ class ClientManager:
 							info += f' ({c.showname})'
 			return info
 			
-		def send_server_bgs(self):
+		def send_server_bgs(self) -> list:
 			"""
 			Sends a list of the backgrounds available in the server.
 			
@@ -856,7 +856,7 @@ class ClientManager:
 				char_list[x] = 0
 			return char_list
 
-		def auth_mod(self, password):
+		def auth_mod(self, password: str) -> None:
 			"""
 			Attempt to log in as a moderator.
 			:param password: password string
