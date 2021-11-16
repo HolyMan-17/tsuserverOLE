@@ -49,9 +49,6 @@ class AOProtocol(asyncio.Protocol):
 	flpacket = features_fl()
 	#Sets of parameters for IC message validators:
 	msgpre260 = validator_pre260()
-	msg130 = validator_130()
-	msg135 = validator_135()
-	msg140 = validator_140()
 	msg270 = validator_270()
 	msg290 = validator_290()
 
@@ -440,36 +437,7 @@ class AOProtocol(asyncio.Protocol):
 			(msg_type, pre, folder, anim, text, pos, sfx, 
 			anim_type, cid, sfx_delay, button, evidence, flip, 
 			ding, color) = args
-
-		#-Break off into net_cmd_validate_130, calling validate_net_cmd with appropriate parameters
-		elif self.validate_net_cmd(args, *AOProtocol.msg130):
-			# 1.3.0 validation monstrosity.
-			(msg_type, pre, folder, anim, text, pos, sfx, 
-			anim_type, cid, sfx_delay, button, evidence, flip, 
-			ding, color, showname) = args
-			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
-				self.client.send_host_message("Showname changes are forbidden in this area!")
-				return
 		
-		#-Break off into net_cmd_validate_135, calling validate_net_cmd with appropriate parameters
-		elif self.validate_net_cmd(args, *AOProtocol.msg135):
-			# 1.3.5 validation monstrosity.
-			(msg_type, pre, folder, anim, text, pos, sfx, 
-			anim_type, cid, sfx_delay, button, evidence, flip, 
-			ding, color, showname, charid_pair, offset_pair) = args
-			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
-				self.client.send_host_message("Showname changes are forbidden in this area!")
-				return
-		
-		#-Break off into net_cmd_validate_140, calling validate_net_cmd with appropriate parameters
-		elif self.validate_net_cmd(args, *AOProtocol.msg140):
-			# 1.4.0 validation monstrosity.
-			(msg_type, pre, folder, anim, text, pos, sfx, anim_type,
-			cid, sfx_delay, button, evidence, flip, ding, color,
-			showname, charid_pair, offset_pair, nonint_pre) = args
-			if len(showname) > 0 and not self.client.area.showname_changes_allowed:
-				self.client.send_host_message("Showname changes are forbidden in this area!")
-				return
 		#-Break off into net_cmd_validate_27, calling validate_net_cmd with appropriate parameters
 		elif self.validate_net_cmd(args, *AOProtocol.msg270):
 			# 2.7.0 validation monstrosity
