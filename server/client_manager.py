@@ -644,7 +644,7 @@ class ClientManager:
 			if (
 			self not in area.owners 
 			and self not in area.clients and not 
-			self.is_mod and area.hidden
+			self.is_mod and area.hidden == True
 			  ):
 				info += f'[{area.abbreviation}]: [Hidden][{area.status}]{lock[area.is_locked]}'
 				info += '\r\n'
@@ -710,17 +710,12 @@ class ClientManager:
 						info += f'[{c.id}] {c.char_name}'
 					if self.is_mod:
 						info += f' ({c.ipid}): {c.name}'
-					if (
-					self in area.owners or self 
-					in area.clients or 
-					self.is_mod or area == 
-					self.server.area_manager.default_area()
-					  ):
-						if c.showname != '':
-							info += f' ({c.showname})'
+					if c.showname != '':
+						info += f' ({c.showname})'
+
 			return info
 			
-		def send_server_bgs(self) -> list:
+		def send_server_bgs(self):
 			"""
 			Sends a list of the backgrounds available in the server.
 			
@@ -856,7 +851,7 @@ class ClientManager:
 				char_list[x] = 0
 			return char_list
 
-		def auth_mod(self, password: str) -> None:
+		def auth_mod(self, password):
 			"""
 			Attempt to log in as a moderator.
 			:param password: password string
