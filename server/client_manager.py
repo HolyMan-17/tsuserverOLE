@@ -644,7 +644,7 @@ class ClientManager:
 			if (
 			self not in area.owners 
 			and self not in area.clients and not 
-			self.is_mod and area.hidden == True
+			self.is_mod and area.hidden
 			  ):
 				info += f'[{area.abbreviation}]: [Hidden][{area.status}]{lock[area.is_locked]}'
 				info += '\r\n'
