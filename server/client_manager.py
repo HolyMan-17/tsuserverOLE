@@ -145,7 +145,7 @@ class ClientManager:
 			]
 			
 
-		def ann_alarm(self):
+		def ann_alarm(self, alarmtype, alarmtime):
 			if alarmtype == 'seconds':
 				self.send_ooc(f'Alarm: {alarmtime:0.0f} seconds have passed.')
 			if alarmtype == 'hours':
