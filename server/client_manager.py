@@ -181,7 +181,7 @@ class ClientManager:
 			else:
 				self.send_raw_message(f'{command}#%')
 
-		def send_ooc(self, msg):
+		def send_ooc(self, msg: str) -> None:
 			"""
 			Send an out-of-character message to the client.
 			:param msg: message to send
@@ -227,7 +227,7 @@ class ClientManager:
 			limit = self.server.config['playerlimit']
 			self.send_ooc(f'{players}/{limit} players online.')
 
-		def is_valid_name(self, name):
+		def is_valid_name(self, name: str) -> bool:
 			"""
 			Check if the given string is valid as an OOC name.
 			:param name: name to check
@@ -244,7 +244,10 @@ class ClientManager:
 			"""Disconnect the client gracefully."""
 			self.transport.close()
 
-		def change_character(self, char_id, force=False, switch=False):
+		def change_character(
+			self, char_id: str, 
+			force: bool = False, 
+			switch: bool = False) -> None:
 			"""
 			Change the client's character or force the character selection
 			screen to appear for the client.
@@ -622,7 +625,7 @@ class ClientManager:
 					msg += ' [*]'
 			self.send_ooc(msg)
 
-		def get_area_info(self, a, hubs=False):
+		def get_area_info(self, a, hubs: bool = False) -> str:
 			"""
 			Get information about a specific area.
 			:param area_id: area ID
@@ -644,7 +647,7 @@ class ClientManager:
 			if (
 			self not in area.owners 
 			and self not in area.clients and not 
-			self.is_mod and area.hidden == True
+			self.is_mod and area.hidden
 			  ):
 				info += f'[{area.abbreviation}]: [Hidden][{area.status}]{lock[area.is_locked]}'
 				info += '\r\n'
@@ -708,14 +711,16 @@ class ClientManager:
 						info += f'[{c.id}][WEB] {c.char_name}'
 					else:
 						info += f'[{c.id}] {c.char_name}'
+
 					if self.is_mod:
 						info += f' ({c.ipid}): {c.name}'
+
 					if c.showname != '':
 						info += f' ({c.showname})'
 
 			return info
 			
-		def send_server_bgs(self):
+		def send_server_bgs(self) -> list:
 			"""
 			Sends a list of the backgrounds available in the server.
 			
@@ -851,7 +856,7 @@ class ClientManager:
 				char_list[x] = 0
 			return char_list
 
-		def auth_mod(self, password):
+		def auth_mod(self, password: str) -> None:
 			"""
 			Attempt to log in as a moderator.
 			:param password: password string
@@ -915,7 +920,7 @@ class ClientManager:
 				return None
 			return self.server.char_list[self.char_id]
 
-		def change_position(self, pos=''):
+		def change_position(self, pos: str = '') -> None:
 			"""
 			Change the character's current position in the area.
 			:param pos: position in area (Default value = '')
@@ -1031,9 +1036,6 @@ class ClientManager:
 							client.server.hub_manager.removesub(self, sub)
 							if sub.is_locked != sub.Locked.FREE:
 								sub.unlock()
-		#if len(client.area.clients) < 1:
-		#	if client.area.is_locked != client.area.Locked.FREE:
-		#		client.area.unlock()
 		for c in client.following:
 			c.followers.remove(client)
 			c.send_ooc(f'{client.char_name} disconnected and is no longer following you.')
