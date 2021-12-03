@@ -4,6 +4,10 @@ from server.exceptions import ClientError, ArgumentError, AreaError
 
 from . import mod_only
 
+# List with all OOC commands in this file.
+# If you wish to add a new OOC command, insert it here.
+# Otherwise, it won't work.
+
 __all__ = [
 	'ooc_cmd_a',
 	'ooc_cmd_s',

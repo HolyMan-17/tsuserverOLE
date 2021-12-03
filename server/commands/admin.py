@@ -12,6 +12,10 @@ from server.exceptions import ClientError, ServerError, ArgumentError
 
 from . import mod_only
 
+# List with all OOC commands in this file.
+# If you wish to add a new OOC command, insert it here.
+# Otherwise, it won't work.
+
 __all__ = [
 	'ooc_cmd_derp',
 	'ooc_cmd_motd',

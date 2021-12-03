@@ -717,6 +717,9 @@ class ClientManager:
 
 					if c.showname != '':
 						info += f' ({c.showname})'
+					
+					if c.afk:
+						info += ' [AFK]'
 
 			return info
 			
