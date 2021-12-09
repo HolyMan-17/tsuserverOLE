@@ -252,7 +252,7 @@ class AOProtocol(asyncio.Protocol):
 		self.client.send_command(*AOProtocol.flpacket)
 
 		if self.server.config['asset_url'] != '':
-    			self.client.send_command('ASS', self.server.config['asset_url'])
+			self.client.send_command('ASS', self.server.config['asset_url'])
 
 	def net_cmd_ch(self, _):
 		"""Reset the client drop timeout (keepalive).
@@ -636,6 +636,7 @@ class AOProtocol(asyncio.Protocol):
 			charid_pair = -1
 			#offset_pair = 0
 		
+
 		send_args = [msg_type, pre, folder, anim, msg,
                      pos, sfx, anim_type, cid, sfx_delay,
                      button, self.client.evi_list[evidence],
