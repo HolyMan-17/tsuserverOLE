@@ -198,7 +198,8 @@ class AOProtocol(asyncio.Protocol):
 		return True
 
 	def net_cmd_hi(self, args):
-		"""Handshake.
+		"""
+		Handshake.
 		
 		HI#<hdid:string>#%
 
@@ -213,6 +214,7 @@ class AOProtocol(asyncio.Protocol):
 		database.add_hdid(ipid, hdid)
 		ban = database.find_ban(ipid, hdid)
 		if ban is not None:
+			
 			if ban.unban_date is not None:
 				unban_date = arrow.get(ban.unban_date)
 			else:
@@ -220,12 +222,17 @@ class AOProtocol(asyncio.Protocol):
 	
 			msg = f'{ban.reason}\r\n'
 			msg += f'ID: {ban.ban_id}\r\n'
-			msg += f'Until: {unban_date.humanize()}'
+			
+			if unban_date == 'N/A':
+				msg += f'Until: {unban_date}'
+			else:
+				msg += f'Until: {unban_date.humanize()}'
 	
 			database.log_connect(self.client, failed=True)
 			self.client.send_command('BD', msg)
 			self.client.disconnect()
 			return
+			
 		else:
 			self.client.is_checked = True
 
@@ -636,6 +643,8 @@ class AOProtocol(asyncio.Protocol):
 			charid_pair = -1
 			#offset_pair = 0
 		
+		if self.client.afk:
+			self.client.server.client_manager.toggle_afk(self.client)
 
 		send_args = [msg_type, pre, folder, anim, msg,
                      pos, sfx, anim_type, cid, sfx_delay,
