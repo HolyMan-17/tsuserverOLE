@@ -1,8 +1,12 @@
 # tsuserverOLE
 
-A Python-based server for Attorney Online, forked from [RealKaiser/tsuserverCC](https://github.com/RealKaiser/tsuserverCC)
+tsuserverOLE is a Python-based server for Attorney Online, forked from [RealKaiser/tsuserverCC](https://github.com/RealKaiser/tsuserverCC). 
 
-Requires Python 3.7+ and PyYAML.
+tsuOLE has all of TsuCC's features (Please keep in mind that some of these features might be modified or completely redesigned) along with several bug fixes, extra commands, minor code readability improvements, etc. 
+
+If you ever wish to contribute to TsuOLE's development, don't be afraid of forking this repository and opening a PR! 
+
+Requires Python 3.8+ and PyYAML.
 
 ### Changes/additions from tsuserver3
 * Testimony recording/playback system,
@@ -46,6 +50,12 @@ Requires Python 3.7+ and PyYAML.
 
 * **help**
     - Links to this readme
+* **discord**
+    - Returns an invite to OLE Discord Server
+* **about** 
+    - Returns information regarding the server's current 
+    release version, the download link of the current release,
+    and its maintainers. 
 * **g** "message" 
     - Sends a serverwide message
 * **toggleglobal** 
@@ -303,7 +313,7 @@ Requires Python 3.7+ and PyYAML.
 	- Toggles 'ambiance' or server-side looping. While on, allows new clients joining an area to hear a set song once it loops without needing to play it themselves.
 
 #### Testimony Recording
-* A new feature in tsuserverCC - you can now record testimonies and play them back with automatic formatting!
+* This feature comes from vanilla TsuserverCC - you can record testimonies and play them back with automatic formatting!
 * You can now record your testimonies by putting in IC `//[Your Testimony Title]`. Formatting works just as normal, and this will automatically do the WT woosh.
 * While recording, you can add new statements by putting in IC `+[Your Statement]`. These will show up as if you're just normally testifying for the first time. 
     - If you're paired and want your partner to have a statement, have the pair add the statement instead. (Make sure they are also a CM.)

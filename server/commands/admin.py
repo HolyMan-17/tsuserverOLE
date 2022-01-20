@@ -323,10 +323,23 @@ def ooc_cmd_help(client, arg):
 	"""
 	if len(arg) != 0:
 		raise ArgumentError('This command has no arguments.')
-	help_url = 'https://github.com/RealKaiser/tsuserverCC/blob/master/README.md'
+	help_url = 'https://github.com/HolyMan-17/tsuserverOLE#readme'
 	help_msg = f'The commands available on this server can be found here: {help_url}'
 	client.send_ooc(help_msg)
 
+def ooc_cmd_about(client, arg):
+	"""
+	Shows information about the latest version
+	of the server's content and its maintainers.
+	Usage: /about
+	"""
+
+	release_url = "https://drive.google.com/file/d/1Bqa1Q4FuZvS0K6CB7Zhm6rJjzpO16FbX/view?usp=sharing"
+	
+	client.send_ooc(
+		f"OLE's current release version is OLEXMAS1.3\nYou can download it from here: {release_url}\
+		\nMaintained by: Official Law Empire Development Team" 
+		)
 
 @mod_only()
 def ooc_cmd_kick(client, arg: str) -> None:

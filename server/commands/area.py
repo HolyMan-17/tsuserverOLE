@@ -904,6 +904,9 @@ def ooc_cmd_areakick(client, arg: str) -> None:
 				client.send_ooc(
 					"Attempting to kick {} to area {}.".format(
 						c.char_name, output))
+				if c.area.id != client.area.id:
+					client.send_ooc(f'{c.char_name} is not in this area.')
+					return
 				c.change_area(area)
 				c.send_ooc(
 					f"You were kicked from the area to area {output}.")
