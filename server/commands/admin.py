@@ -49,7 +49,8 @@ __all__ = [
 	'ooc_cmd_addmod',
 	'ooc_cmd_removemod',
 	'ooc_cmd_spy',
-	'ooc_cmd_geoiprefresh'
+	'ooc_cmd_geoiprefresh',
+	'ooc_cmd_about'
 ]
 
 def ooc_cmd_geoiprefresh(client, arg):
