@@ -2,7 +2,8 @@ PyYAML
 websockets
 arrow
 timeparse-plus
-geoip2
 requests
+geoip2
 ffmpeg
 ffprobe
+pystun3
