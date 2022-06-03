@@ -18,7 +18,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 import asyncio
-
+import ipaddress
 from websockets import ConnectionClosed
 
 from server.network.aoprotocol import AOProtocol
@@ -41,7 +41,20 @@ class AOProtocolWS(AOProtocol):
 
             """
             remote_address = self.ws.remote_address
-            if (remote_address[0] == "172.20.0.1"):
+            
+            ip = ipaddress.ip_address(remote_address[0])
+            subnets = ['127.0.0.0/8', '192.0.0.0/24', '172.16.0.0/12',
+            '10.0.0.0/8']
+            
+            subnet = ''
+            proxy_check = False
+            for i in subnets: 
+                subnet = ipaddress.ip_network(i)
+                if ip in subnet:
+                    proxy_check = True
+                    break
+
+            if (proxy_check):
                 # See if proxy
                 try:
                     remote_address = (self.ws.request_headers['X-Forwarded-For'], 0)
