@@ -882,6 +882,13 @@ class AOProtocol(asyncio.Protocol):
 			self.client.send_ooc('That name is reserved!')
 			return
 
+		if self.client.afk:
+			self.client.server.client_manager.toggle_afk(self.client)
+		
+		if args[1] == '/afk' and self.client.afk:
+			self.client.server.client_manager.toggle_afk(self.client)
+			return
+
 		if args[1].startswith(' /'):
 			self.client.send_ooc(
 				'Your message was not sent for safety reasons: you left a space before that slash.'

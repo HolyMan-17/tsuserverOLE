@@ -58,17 +58,16 @@ class MasterServerClient:
         loop = asyncio.get_event_loop()
         cfg = self.server.config
         body = {
-            'ip': await loop.run_in_executor(None, self.get_my_ip),
+            'ip': cfg['masterserver_custom_hostname'],
             'port': cfg['port'],
             'name': cfg['masterserver_name'],
             'description': cfg['masterserver_description'],
             'players': self.server.player_count
         }
 
-        if 'masterserver_custom_hostname' in cfg:
-            body['ip'] = cfg['masterserver_custom_hostname']
+    
         if cfg['use_websockets']:
-            body['ws_port'] = cfg['websocket_port']
+            body['ws_port'] = 80
 
         async with http.post(f'{API_BASE_URL}/servers', json=body) as res:
             err_body = await res.text()
