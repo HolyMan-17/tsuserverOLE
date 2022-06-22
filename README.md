@@ -1,10 +1,11 @@
-# tsuserverOLE
+# tsuserverOLE (Deprecated)
+
 
 tsuserverOLE is a Python-based server for Attorney Online, forked from [RealKaiser/tsuserverCC](https://github.com/RealKaiser/tsuserverCC). 
 
-tsuOLE has all of TsuCC's features (Please keep in mind that some of these features might be modified or completely redesigned) along with several bug fixes, extra commands, minor code readability improvements, etc. 
+tsuOLE has most of TsuCC's features along with several bug fixes, extra commands, minor code readability improvements, etc. 
 
-If you ever wish to contribute to TsuOLE's development, don't be afraid of forking this repository and opening a PR! 
+TsuOLE is deprecated but don't be afraid of forking this repository if so you wish.
 
 Requires Python 3.8+ and PyYAML.
 
